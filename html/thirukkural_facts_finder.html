@@ -1,0 +1,213 @@
+<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="திருக்குறள் சுவாரஸ்யமான உண்மைகள் மற்றும் 1330 குறள்களை ஆராயும் தளம்.">
+    <meta name="keywords" content="திருக்குறள், திருவள்ளுவர், தமிழ், Thirukkural, Thiruvalluvar, Tamil, Facts, Kurals, Aram, Porul, Inbam">
+    <title>திருக்குறள் சுவாரஸ்யமான உண்மைகள் | Thirukkural Facts Finder</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Global Styles & Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/facts.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Sidebar Controls -->
+        <aside id="sidebar" class="glass-panel">
+            <div id="sidebar-top">
+                <header class="app-header">
+                    <div class="logo-area">
+                        <span class="icon">📜</span>
+                        <h1>திருக்குறள்</h1>
+                    </div>
+                    <p class="subtitle">உண்மை அறிதல் & குறள் தேடல் | Facts & Couplet Explorer</p>
+                </header>
+
+                <div class="top-controls">
+                    <!-- Facts Selector Card -->
+                    <section class="control-panel card">
+                        <h2>
+                            <span>🔍 சுவாரஸ்யமான உண்மைகள்</span>
+                        </h2>
+                        <div class="input-group">
+                            <label for="fact-select">தகவலைத் தேர்ந்தெடுக்கவும் (Select a Fact)</label>
+                            <div class="select-wrapper">
+                                <select id="fact-select">
+                                    <option value="" selected>-- ஒரு தகவலைத் தேர்ந்தெடுக்கவும் --</option>
+                                    <option value="fruit">ஒரே பழம்: நெருஞ்சிப்பழம் (Fruit: Nerunjipazham)</option>
+                                    <option value="seed">ஒரே விதை: குன்றிமணி (Seed: Kundrimani)</option>
+                                    <option value="flowers">இரு மலர்கள்: அனிச்சம், குவளை (Flowers: Anicham, Kuvalai)</option>
+                                    <option value="trees">இரு மரங்கள்: பனை, மூங்கில் (Trees: Palmyra, Bamboo)</option>
+                                    <option value="vowel">பயன்படுத்தப்படாத ஒரே உயிர் எழுத்து: ஔ (Vowel: ஔ)</option>
+                                    <option value="words">இடம் பெறாத சொற்கள்: 'தமிழ்', 'கடவுள்' (Words: 'Tamil', 'God')</option>
+                                    <option value="chapter_title">இருமுறை வரும் ஒரே அதிகாரத் தலைப்பு: குறிப்பறிதல்</option>
+                                    <option value="print_year">முதன்முதலில் அச்சிடப்பட்ட ஆண்டு: 1812</option>
+                                    <option value="printer_name">முதன்முதலில் அச்சிட்டவர்: தஞ்சை ஞானப்பிரகாசர்</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Browse / Navigation Card -->
+                    <section class="control-panel card">
+                        <h2><span>📂 குறள் உலா (Browse Kurals)</span></h2>
+                        
+                        <div class="input-group">
+                            <label for="section-select">பால் (Section)</label>
+                            <div class="select-wrapper">
+                                <select id="section-select">
+                                    <option value="all">அனைத்துப் பால்கள் (All Sections)</option>
+                                    <option value="அறத்துப்பால்">அறத்துப்பால் (Virtue)</option>
+                                    <option value="பொருட்பால்">பொருட்பால் (Wealth)</option>
+                                    <option value="இன்பத்துப்பால்">இன்பத்துப்பால் / காமத்துப்பால் (Love)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group" style="margin-top: 12px;">
+                            <label for="chapter-select">அதிகாரம் (Chapter)</label>
+                            <div class="select-wrapper">
+                                <select id="chapter-select">
+                                    <option value="">-- அதிகாரத்தைத் தேர்ந்தெடுக்கவும் --</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Search Card -->
+                    <section class="control-panel card">
+                        <h2><span>🔎 விரைவுத் தேடல் (Quick Search)</span></h2>
+                        <div class="input-group">
+                            <div class="search-box">
+                                <input type="text" id="kural-search" placeholder="குறள் எண் அல்லது சொல் (e.g. 1120, அனிச்சம்)..." autocomplete="off">
+                                <button id="search-clear-btn" style="background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted); display: none;">✕</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="app-footer">
+                <p>வள்ளுவன் தன்னை உலகினுக்கே தந்து வான்புகழ் கொண்ட தமிழ்நாடு.</p>
+                <p style="margin-top: 4px; font-size: 9px; opacity: 0.6;">Designed by Manivasagam Karunakaran</p>
+            </footer>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main id="content-container">
+            <!-- Floating Home Button -->
+            <button id="home-btn" class="floating-btn home-btn" aria-label="Go Home">
+                <span>🏠</span>
+            </button>
+            
+            <!-- Floating Theme Toggle Button -->
+            <button id="theme-toggle" class="floating-btn" aria-label="Toggle Theme">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+
+            <!-- Scrollable Page Content -->
+            <div id="main-scroll-area" class="scrollable-content">
+                <!-- Welcome/Home Section -->
+                <section id="welcome-section" class="active">
+                    <div class="welcome-hero">
+                        <div class="valluvar-image-frame">
+                            <img src="thiruvalluvar.png" alt="திருவள்ளுவர் portrait" id="thiruvalluvar-img">
+                            <div class="image-glow-ring"></div>
+                        </div>
+                        <h1 class="main-title">திருவள்ளுவர் அருளிய திருக்குறள்</h1>
+                        <p class="main-subtitle">சுவாரஸ்யமான உண்மைகள் & குறள் விளக்கங்கள்</p>
+                    </div>
+
+                    <div class="welcome-stats-grid">
+                        <div class="stat-card card">
+                            <span class="stat-num">3</span>
+                            <span class="stat-name">பால்கள் (Sections)</span>
+                            <span class="stat-desc">அறம், பொருள், இன்பம்</span>
+                        </div>
+                        <div class="stat-card card">
+                            <span class="stat-num">133</span>
+                            <span class="stat-name">அதிகாரங்கள் (Chapters)</span>
+                            <span class="stat-desc">இயல் வாரியாக பிரிக்கப்பட்டவை</span>
+                        </div>
+                        <div class="stat-card card">
+                            <span class="stat-num">1330</span>
+                            <span class="stat-name">குறள்கள் (Couplets)</span>
+                            <span class="stat-desc">ஈரடி வெண்பா வடிவில்</span>
+                        </div>
+                    </div>
+
+                    <div class="welcome-info card">
+                        <h3>திருக்குறள் பற்றி (About Thirukkural)</h3>
+                        <p>
+                            திருக்குறள் உலக மக்கள் அனைவருக்கும், எந்தக் காலத்திற்கும் பொருந்தும் பொதுவான நெறிகளைப் போதிப்பதால் 
+                            <strong>"உலகப் பொதுமறை"</strong> என்று அழைக்கப்படுகிறது. இது வாழ்வியலின் அனைத்துப் பரிமாணங்களையும் 
+                            முறையே அறம், பொருள், இன்பம் என்ற முப்பால்களில் விளக்குகிறது.
+                        </p>
+                        <p style="margin-top: 10px;">
+                            இடதுபுறக் கட்டுப்பாட்டுப் பேனலில் உள்ள <strong>"சுவாரஸ்யமான உண்மைகள்"</strong> என்ற பகுதி மூலமாக, 
+                            திருக்குறள் பற்றிய அரிய விபரங்களையும், அவை இடம்பெற்றுள்ள குறிப்பிட்ட திருக்குறள் பாடல்களையும் 
+                            ஒரே சொடுக்கில் நீங்கள் நேரடியாகக் கண்டறியலாம்.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Kurals Explorer Section -->
+                <section id="explorer-section">
+                    <!-- Current View Header Banner -->
+                    <div id="view-header-banner" class="glass-panel">
+                        <div class="header-banner-left">
+                            <span class="badge" id="active-paal-badge">-</span>
+                            <h2 id="active-chapter-title">-</h2>
+                            <p id="active-chapter-desc">-</p>
+                        </div>
+                        <div class="header-banner-right" id="chapter-navigation-controls">
+                            <button id="prev-chapter-btn" class="nav-arrow-btn">◀ முந்தைய அதிகாரம்</button>
+                            <button id="next-chapter-btn" class="nav-arrow-btn">அடுத்த அதிகாரம் ▶</button>
+                        </div>
+                    </div>
+
+                    <!-- Selected Fact Information Banner -->
+                    <div id="fact-alert-banner" class="hidden">
+                        <div class="fact-alert-icon">💡</div>
+                        <div class="fact-alert-body">
+                            <h4 id="fact-alert-title">உண்மை விபரம்</h4>
+                            <p id="fact-alert-content">விளக்கம்...</p>
+                        </div>
+                        <button id="fact-alert-close" class="close-btn">✕</button>
+                    </div>
+
+                    <!-- Search Result Info Banner -->
+                    <div id="search-info-banner" class="hidden">
+                        <span>🔍 தேடல் முடிவுகள்: <strong id="search-query-text">""</strong> - <span id="search-count">0</span> குறள்கள் கண்டறியப்பட்டன.</span>
+                    </div>
+
+                    <!-- Kurals List Container -->
+                    <div id="kurals-list" class="kurals-grid">
+                        <!-- Dynamically populated via javascript -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="hidden">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p id="loading-message">திருக்குறள் தரவுகள் ஏற்றப்படுகின்றன...</p>
+        </div>
+    </div>
+
+    <!-- Custom Javascript App Logic -->
+    <script src="js/facts_app.js"></script>
+</body>
+</html>

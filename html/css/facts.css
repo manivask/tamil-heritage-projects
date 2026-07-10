@@ -1,0 +1,598 @@
+/* Script Designer / AI Prompt Engineer : Manivasagam Karunakaran */
+/* Custom Stylesheet for Thirukkural Facts Finder */
+
+/* Theme Extension & Local Variables */
+:root {
+    --color-gold: #f59e0b;
+    --color-gold-glow: rgba(245, 158, 11, 0.25);
+    --color-success-bg: rgba(16, 185, 129, 0.1);
+    --color-success-border: rgba(16, 185, 129, 0.3);
+    --color-kural-bg: rgba(22, 28, 45, 0.45);
+    --font-tamil: 'Noto Sans Tamil', 'Inter', sans-serif;
+}
+
+body.light-theme {
+    --color-kural-bg: rgba(255, 255, 255, 0.7);
+}
+
+/* Custom Scrollbar for Main Workspace */
+#main-scroll-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+#main-scroll-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#main-scroll-area::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+body.light-theme #main-scroll-area::-webkit-scrollbar-thumb {
+    background: rgba(15, 23, 42, 0.1);
+}
+
+#main-scroll-area::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+body.light-theme #main-scroll-area::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 23, 42, 0.2);
+}
+
+/* Main Layout Fixes */
+#content-container {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-scroll-area {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Welcome Section Styling */
+#welcome-section, #explorer-section {
+    display: none;
+    opacity: 0;
+    transition: opacity var(--transition-normal) ease-in-out;
+}
+
+#welcome-section.active, #explorer-section.active {
+    display: block;
+    opacity: 1;
+}
+
+.welcome-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.valluvar-image-frame {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    padding: 6px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-gold) 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform var(--transition-normal);
+}
+
+.valluvar-image-frame:hover {
+    transform: scale(1.03);
+}
+
+#thiruvalluvar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #070a13;
+    display: block;
+}
+
+.image-glow-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    opacity: 0.5;
+    animation: pulse-ring 3s infinite ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes pulse-ring {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.06);
+        opacity: 0.1;
+    }
+}
+
+.main-title {
+    font-family: var(--font-header);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #ffffff 0%, var(--color-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .main-title {
+    background: linear-gradient(135deg, #0f172a 0%, #b45309 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-subtitle {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Statistics Grid */
+.welcome-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--bg-card);
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.stat-num {
+    font-family: var(--font-header);
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-gold);
+    text-shadow: 0 0 15px var(--color-gold-glow);
+    margin-bottom: 6px;
+}
+
+.stat-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-title);
+    margin-bottom: 4px;
+}
+
+.stat-desc {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.welcome-info {
+    padding: 24px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.welcome-info h3 {
+    font-family: var(--font-header);
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--color-primary);
+}
+
+/* Explorer Section Headers */
+#view-header-banner {
+    padding: 20px 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-card);
+}
+
+.header-banner-left .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: var(--color-primary-glow);
+    color: var(--color-primary);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    margin-bottom: 8px;
+}
+
+#active-chapter-title {
+    font-family: var(--font-header);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-title);
+    margin-bottom: 4px;
+}
+
+#active-chapter-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.nav-arrow-btn {
+    padding: 8px 16px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.nav-arrow-btn:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.header-banner-right {
+    display: flex;
+    gap: 8px;
+}
+
+/* Fact Alert Banner */
+#fact-alert-banner {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    animation: slide-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#fact-alert-banner.hidden {
+    display: none;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fact-alert-icon {
+    font-size: 24px;
+    background: var(--color-accent-glow);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px var(--color-accent-glow);
+}
+
+.fact-alert-body {
+    flex-grow: 1;
+}
+
+#fact-alert-title {
+    font-family: var(--font-header);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: 4px;
+}
+
+#fact-alert-content {
+    font-size: 13px;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color var(--transition-fast);
+}
+
+.close-btn:hover {
+    color: #ef4444;
+}
+
+/* Search Info Banner */
+#search-info-banner {
+    padding: 12px 20px;
+    background: var(--color-primary-glow);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: var(--text-main);
+}
+
+#search-info-banner.hidden {
+    display: none;
+}
+
+/* Kurals Grid */
+.kurals-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+/* Kural Card Component */
+.kural-card {
+    background: var(--color-kural-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.kural-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.light-theme .kural-card:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.kural-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.kural-number-badge {
+    background: var(--bg-header);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.kural-section-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Kural couplet text typography */
+.kural-couplet {
+    font-family: var(--font-tamil);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: var(--text-title);
+    letter-spacing: 0.2px;
+}
+
+.kural-couplet .line1 {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.kural-couplet .line2 {
+    display: block;
+    padding-left: 20px;
+}
+
+/* Explanation Section & Tabs */
+.kural-explanations-wrapper {
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.explanation-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.tab-btn {
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+body.light-theme .tab-btn:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.tab-btn.active {
+    color: var(--color-primary);
+    background: var(--color-primary-glow);
+    border-color: rgba(59, 130, 246, 0.25);
+}
+
+.explanation-content-panel {
+    min-height: 50px;
+    position: relative;
+}
+
+.explanation-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-main);
+    display: none;
+    animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.explanation-text.active {
+    display: block;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.explanation-text.english-text {
+    font-style: italic;
+    color: var(--text-muted);
+    border-left: 3px solid var(--color-primary);
+    padding-left: 12px;
+}
+
+/* Glow Highlight Animation for Selected facts */
+.kural-card.glow-highlight {
+    border-color: var(--color-gold);
+    box-shadow: 0 0 25px var(--color-gold-glow);
+    transform: scale(1.01);
+    animation: border-pulse 2s infinite ease-in-out;
+}
+
+@keyframes border-pulse {
+    0%, 100% {
+        border-color: var(--color-gold);
+        box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+    }
+    50% {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+    }
+}
+
+/* Floating Home Button */
+.home-btn {
+    right: 80px;
+}
+
+.floating-btn span {
+    font-size: 18px;
+}
+
+/* Clear search button positioning */
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+#search-clear-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent !important;
+    border: none !important;
+    color: var(--text-muted);
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 6px;
+}
+
+#search-clear-btn:hover {
+    color: #ef4444;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive Overrides */
+@media (max-width: 950px) {
+    #sidebar {
+        height: 40vh;
+    }
+    
+    #main-scroll-area {
+        padding: 20px;
+    }
+    
+    .home-btn {
+        right: 70px;
+    }
+    
+    #view-header-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .header-banner-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .nav-arrow-btn {
+        flex: 1;
+        text-align: center;
+    }
+}

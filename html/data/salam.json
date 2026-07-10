@@ -1,0 +1,165 @@
+﻿{
+    "keyword":  "salam",
+    "total_count":  19,
+    "country_count":  5,
+    "countries":  {
+                      "Chile":  {
+                                    "id":  "Q56134",
+                                    "name":  "Salamanca",
+                                    "type":  "administrative territorial entity",
+                                    "lat":  -31.766666666,
+                                    "lon":  -70.966666666,
+                                    "link":  "http://www.wikidata.org/entity/Q56134"
+                                },
+                      "Indonesia":  [
+                                        {
+                                            "id":  "Q12513265",
+                                            "name":  "East Salamadeg",
+                                            "type":  "kecamatan",
+                                            "lat":  -8.496642,
+                                            "lon":  115.057573,
+                                            "link":  "http://www.wikidata.org/entity/Q12513265"
+                                        },
+                                        {
+                                            "id":  "Q4266760",
+                                            "name":  "Salam",
+                                            "type":  "desa",
+                                            "lat":  -7.648611111,
+                                            "lon":  110.004444444,
+                                            "link":  "http://www.wikidata.org/entity/Q4266760"
+                                        },
+                                        {
+                                            "id":  "Q13096726",
+                                            "name":  "Salam",
+                                            "type":  "desa",
+                                            "lat":  -8.020833333,
+                                            "lon":  111.9725,
+                                            "link":  "http://www.wikidata.org/entity/Q13096726"
+                                        },
+                                        {
+                                            "id":  "Q12511583",
+                                            "name":  "Salam",
+                                            "type":  "desa",
+                                            "lat":  -7.626388888,
+                                            "lon":  111.090555555,
+                                            "link":  "http://www.wikidata.org/entity/Q12511583"
+                                        },
+                                        {
+                                            "id":  "Q12511584",
+                                            "name":  "Salam",
+                                            "type":  "desa",
+                                            "lat":  -7.647222222,
+                                            "lon":  110.310555555,
+                                            "link":  "http://www.wikidata.org/entity/Q12511584"
+                                        },
+                                        {
+                                            "id":  "Q12511582",
+                                            "name":  "Salam",
+                                            "type":  "desa",
+                                            "lat":  -7.855,
+                                            "lon":  110.484166666,
+                                            "link":  "http://www.wikidata.org/entity/Q12511582"
+                                        },
+                                        {
+                                            "id":  "Q13096728",
+                                            "name":  "Salam",
+                                            "type":  "desa",
+                                            "lat":  -7.413055555,
+                                            "lon":  110.305833333,
+                                            "link":  "http://www.wikidata.org/entity/Q13096728"
+                                        },
+                                        {
+                                            "id":  "Q4119750",
+                                            "name":  "Salam",
+                                            "type":  "kecamatan",
+                                            "lat":  -7.4324,
+                                            "lon":  110.3225,
+                                            "link":  "http://www.wikidata.org/entity/Q4119750"
+                                        },
+                                        {
+                                            "id":  "Q4119755",
+                                            "name":  "Salaman",
+                                            "type":  "kecamatan",
+                                            "lat":  -7.588888888,
+                                            "lon":  110.133333333,
+                                            "link":  "http://www.wikidata.org/entity/Q4119755"
+                                        },
+                                        {
+                                            "id":  "Q4187812",
+                                            "name":  "Salamerta",
+                                            "type":  "desa",
+                                            "lat":  -7.5022496,
+                                            "lon":  109.4854256,
+                                            "link":  "http://www.wikidata.org/entity/Q4187812"
+                                        },
+                                        {
+                                            "id":  "Q12513263",
+                                            "name":  "West Salemadeg",
+                                            "type":  "kecamatan",
+                                            "lat":  -8.502385,
+                                            "lon":  115.017994,
+                                            "link":  "http://www.wikidata.org/entity/Q12513263"
+                                        }
+                                    ],
+                      "Mali":  {
+                                   "id":  "Q2424350",
+                                   "name":  "Salam",
+                                   "type":  "commune of Mali",
+                                   "lat":  17.054166666,
+                                   "lon":  -2.997222222,
+                                   "link":  "http://www.wikidata.org/entity/Q2424350"
+                               },
+                      "Mexico":  [
+                                     {
+                                         "id":  "Q1801321",
+                                         "name":  "Salamanca",
+                                         "type":  "locality of Mexico",
+                                         "lat":  20.569027777,
+                                         "lon":  -101.199611111,
+                                         "link":  "http://www.wikidata.org/entity/Q1801321"
+                                     },
+                                     {
+                                         "id":  "Q20209194",
+                                         "name":  "Salamanca Municipality",
+                                         "type":  "municipality of Mexico",
+                                         "lat":  20.65,
+                                         "lon":  -101.183333333,
+                                         "link":  "http://www.wikidata.org/entity/Q20209194"
+                                     }
+                                 ],
+                      "Spain":  [
+                                    {
+                                        "id":  "Q71080",
+                                        "name":  "Province of Salamanca",
+                                        "type":  "province of Spain",
+                                        "lat":  40.83,
+                                        "lon":  -6,
+                                        "link":  "http://www.wikidata.org/entity/Q71080"
+                                    },
+                                    {
+                                        "id":  "Q1773521",
+                                        "name":  "Salamanca",
+                                        "type":  "district of Madrid",
+                                        "lat":  40.43,
+                                        "lon":  -3.677778,
+                                        "link":  "http://www.wikidata.org/entity/Q1773521"
+                                    },
+                                    {
+                                        "id":  "Q15695",
+                                        "name":  "Salamanca",
+                                        "type":  "municipality of Spain",
+                                        "lat":  40.965,
+                                        "lon":  -5.664166666,
+                                        "link":  "http://www.wikidata.org/entity/Q15695"
+                                    },
+                                    {
+                                        "id":  "Q308963",
+                                        "name":  "University of Salamanca",
+                                        "type":  "open-access publisher",
+                                        "lat":  40.961388888,
+                                        "lon":  -5.666666666,
+                                        "link":  "http://www.wikidata.org/entity/Q308963"
+                                    }
+                                ]
+                  }
+}

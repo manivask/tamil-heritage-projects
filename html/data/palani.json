@@ -1,0 +1,83 @@
+﻿{
+    "keyword":  "palani",
+    "total_count":  9,
+    "country_count":  4,
+    "countries":  {
+                      "Belarus":  [
+                                      {
+                                          "id":  "Q16686891",
+                                          "name":  "Palanica",
+                                          "type":  "village in Belarus",
+                                          "lat":  53.791388888,
+                                          "lon":  31.604444444,
+                                          "link":  "http://www.wikidata.org/entity/Q16686891"
+                                      },
+                                      {
+                                          "id":  "Q1011347",
+                                          "name":  "Palaniečka",
+                                          "type":  "village in Belarus",
+                                          "lat":  53.353055555,
+                                          "lon":  26.263611111,
+                                          "link":  "http://www.wikidata.org/entity/Q1011347"
+                                      },
+                                      {
+                                          "id":  "Q6524181",
+                                          "name":  "Palanievičy",
+                                          "type":  "village in Belarus",
+                                          "lat":  53.631111111,
+                                          "lon":  26.9325,
+                                          "link":  "http://www.wikidata.org/entity/Q6524181"
+                                      }
+                                  ],
+                      "France":  {
+                                     "id":  "Q142",
+                                     "name":  "France",
+                                     "type":  "country",
+                                     "lat":  47,
+                                     "lon":  2,
+                                     "link":  "http://www.wikidata.org/entity/Q142"
+                                 },
+                      "India":  [
+                                    {
+                                        "id":  "Q298706",
+                                        "name":  "Palani",
+                                        "type":  "town",
+                                        "lat":  10.450369444,
+                                        "lon":  77.510427777,
+                                        "link":  "http://www.wikidata.org/entity/Q298706"
+                                    },
+                                    {
+                                        "id":  "Q101199178",
+                                        "name":  "Palani",
+                                        "type":  "ward",
+                                        "lat":  11.031386,
+                                        "lon":  76.002308,
+                                        "link":  "http://www.wikidata.org/entity/Q101199178"
+                                    },
+                                    {
+                                        "id":  "Q31574971",
+                                        "name":  "Palāni",
+                                        "type":  "mountain",
+                                        "lat":  25.068611111,
+                                        "lon":  73.398055555,
+                                        "link":  "http://www.wikidata.org/entity/Q31574971"
+                                    },
+                                    {
+                                        "id":  "Q17081400",
+                                        "name":  "Palani railway station",
+                                        "type":  "station located on surface",
+                                        "lat":  10.458722,
+                                        "lon":  77.521183,
+                                        "link":  "http://www.wikidata.org/entity/Q17081400"
+                                    }
+                                ],
+                      "Iran":  {
+                                   "id":  "Q5850106",
+                                   "name":  "Palani",
+                                   "type":  "village",
+                                   "lat":  25.3578,
+                                   "lon":  60.8322,
+                                   "link":  "http://www.wikidata.org/entity/Q5850106"
+                               }
+                  }
+}

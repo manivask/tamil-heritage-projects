@@ -1,0 +1,129 @@
+﻿<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive global map explorer tracing geographic place names of Tamil origin, such as Palani and Salem, across the world.">
+    <meta name="keywords" content="Tamil toponyms, Palani, Salem, global Tamil names, interactive map, Leaflet, Wikidata, geography">
+    <title>Global Tamil Toponyms Explorer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin=""/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Dashboard / Sidebar Controls -->
+        <aside id="sidebar" class="glass-panel">
+            <div id="sidebar-top">
+                <header class="app-header">
+                    <div class="logo-area">
+                        <span class="icon">🌐</span>
+                        <h1>Tamil toponyms</h1>
+                    </div>
+                    <p class="subtitle">Tracing Tamil geographic heritage across the globe</p>
+                </header>
+
+                <div class="top-controls">
+                    <!-- Dropdown & Search Panel -->
+                    <section class="control-panel card">
+                        <h2>Select Named Places</h2>
+                        
+                        <div class="input-group">
+                            <label for="keyword-select">Select Extracted Word</label>
+                            <div class="select-wrapper">
+                                <select id="keyword-select">
+                                    <option value="palani" selected>PALANI (பழனி)</option>
+                                    <option value="salam">SALAM / SALEM (சேலம்)</option>
+                                    <option value="pandi">PANDI (பாண்டி)</option>
+                                    <option value="kanchi">KANCHI (காஞ்சி)</option>
+                                    <option value="chola">CHOLA (சோழா)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="divider"><span>OR SEARCH LIVE</span></div>
+
+                        <div class="input-group">
+                            <label for="search-input">Query Global Wikidata</label>
+                            <div class="search-box">
+                                <input type="text" id="search-input" placeholder="e.g. Madurai, Chola, Kanchipuram..." autocomplete="off">
+                                <button id="search-button" aria-label="Search Wikidata">🔍</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Statistics Panel -->
+                    <section id="stats-section" class="card">
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-val" id="stat-places">-</span>
+                                <span class="stat-lbl">Places Found</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-val" id="stat-countries">-</span>
+                                <span class="stat-lbl">Countries</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Scrollable Discovered Places Section (Fills remaining height) -->
+            <section class="places-panel card">
+                <div class="panel-header">
+                    <h2>Discovered Places</h2>
+                    <input type="text" id="place-filter" placeholder="Filter by place or country..." autocomplete="off">
+                </div>
+                <div id="places-container" class="scrollable-content">
+                    <!-- Populated dynamically via JavaScript -->
+                    <div class="empty-state">Select or search for a keyword above to populate places.</div>
+                </div>
+            </section>
+
+            <footer class="app-footer">
+                <p>Powered by Wikidata & OpenStreetMap. Made with ❤️</p>
+            </footer>
+        </aside>
+
+        <!-- Map Container -->
+        <main id="map-container">
+            <div id="map"></div>
+            <!-- Floating Theme Toggle Button -->
+            <button id="theme-toggle" class="floating-btn" aria-label="Toggle Theme">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="hidden">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p id="loading-message">Fetching data from Wikidata query service...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container"></div>
+
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+
+    <!-- Custom App Logic -->
+    <script src="js/app.js"></script>
+</body>
+</html>
