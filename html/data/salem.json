@@ -1,0 +1,305 @@
+﻿{
+    "keyword":  "salem",
+    "total_count":  36,
+    "country_count":  9,
+    "countries":  {
+                      "Germany":  [
+                                      {
+                                          "id":  "Q675469",
+                                          "name":  "Salem",
+                                          "type":  "municipality without town privileges in Germany",
+                                          "lat":  53.666666666,
+                                          "lon":  10.816666666,
+                                          "link":  "http://www.wikidata.org/entity/Q675469"
+                                      },
+                                      {
+                                          "id":  "Q557718",
+                                          "name":  "Salem",
+                                          "type":  "municipality without town privileges in Germany",
+                                          "lat":  47.766666666,
+                                          "lon":  9.295833333,
+                                          "link":  "http://www.wikidata.org/entity/Q557718"
+                                      },
+                                      {
+                                          "id":  "Q652382",
+                                          "name":  "Salem Abbey",
+                                          "type":  "monastery",
+                                          "lat":  47.77611111,
+                                          "lon":  9.27722222,
+                                          "link":  "http://www.wikidata.org/entity/Q652382"
+                                      },
+                                      {
+                                          "id":  "Q537352",
+                                          "name":  "Schule Schloss Salem",
+                                          "type":  "boarding school",
+                                          "lat":  47.7762,
+                                          "lon":  9.2789,
+                                          "link":  "http://www.wikidata.org/entity/Q537352"
+                                      }
+                                  ],
+                      "India":  [
+                                    {
+                                        "id":  "Q9863",
+                                        "name":  "Salem",
+                                        "type":  "city",
+                                        "lat":  11.65,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q9863"
+                                    },
+                                    {
+                                        "id":  "Q15192",
+                                        "name":  "Salem district",
+                                        "type":  "district of India",
+                                        "lat":  11.6646,
+                                        "lon":  78.146,
+                                        "link":  "http://www.wikidata.org/entity/Q15192"
+                                    }
+                                ],
+                      "Indonesia":  [
+                                        {
+                                            "id":  "Q11111300",
+                                            "name":  "Salem",
+                                            "type":  "desa",
+                                            "lat":  -6.629722222,
+                                            "lon":  107.506666666,
+                                            "link":  "http://www.wikidata.org/entity/Q11111300"
+                                        },
+                                        {
+                                            "id":  "Q10959397",
+                                            "name":  "Salem",
+                                            "type":  "desa",
+                                            "lat":  -7.180555555,
+                                            "lon":  108.805555555,
+                                            "link":  "http://www.wikidata.org/entity/Q10959397"
+                                        },
+                                        {
+                                            "id":  "Q25343787",
+                                            "name":  "Salem",
+                                            "type":  "kampung of Papua",
+                                            "lat":  -0.791462748,
+                                            "lon":  132.264700727,
+                                            "link":  "http://www.wikidata.org/entity/Q25343787"
+                                        },
+                                        {
+                                            "id":  "Q3818435",
+                                            "name":  "Salem",
+                                            "type":  "kecamatan",
+                                            "lat":  -7.160555555,
+                                            "lon":  108.788611111,
+                                            "link":  "http://www.wikidata.org/entity/Q3818435"
+                                        }
+                                    ],
+                      "Israel":  {
+                                     "id":  "Q1218",
+                                     "name":  "Jerusalem",
+                                     "type":  "city",
+                                     "lat":  31.776679,
+                                     "lon":  35.234156,
+                                     "link":  "http://www.wikidata.org/entity/Q1218"
+                                 },
+                      "Italy":  {
+                                    "id":  "Q481879",
+                                    "name":  "Salemi",
+                                    "type":  "comune of Italy",
+                                    "lat":  37.816666666,
+                                    "lon":  12.8,
+                                    "link":  "http://www.wikidata.org/entity/Q481879"
+                                },
+                      "Palestine":  {
+                                        "id":  "Q1218",
+                                        "name":  "Jerusalem",
+                                        "type":  "city",
+                                        "lat":  31.776679,
+                                        "lon":  35.234156,
+                                        "link":  "http://www.wikidata.org/entity/Q1218"
+                                    },
+                      "Spain":  {
+                                    "id":  "Q737734",
+                                    "name":  "Salem",
+                                    "type":  "municipality of the Valencian Community",
+                                    "lat":  38.855,
+                                    "lon":  -0.381111111,
+                                    "link":  "http://www.wikidata.org/entity/Q737734"
+                                },
+                      "Sweden":  [
+                                     {
+                                         "id":  "Q1022295",
+                                         "name":  "Salem",
+                                         "type":  "human settlement",
+                                         "lat":  59.2,
+                                         "lon":  17.766666666,
+                                         "link":  "http://www.wikidata.org/entity/Q1022295"
+                                     },
+                                     {
+                                         "id":  "Q516080",
+                                         "name":  "Salem Municipality",
+                                         "type":  "municipality of Sweden",
+                                         "lat":  59.233333333,
+                                         "lon":  17.683333333,
+                                         "link":  "http://www.wikidata.org/entity/Q516080"
+                                     },
+                                     {
+                                         "id":  "Q10660419",
+                                         "name":  "Salems socken",
+                                         "type":  "socken",
+                                         "lat":  59.22,
+                                         "lon":  17.77,
+                                         "link":  "http://www.wikidata.org/entity/Q10660419"
+                                     }
+                                 ],
+                      "United States":  [
+                                            {
+                                                "id":  "Q2027197",
+                                                "name":  "Salem",
+                                                "type":  "unincorporated community",
+                                                "lat":  35.7039,
+                                                "lon":  -81.6989,
+                                                "link":  "http://www.wikidata.org/entity/Q2027197"
+                                            },
+                                            {
+                                                "id":  "Q483292",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  40.050555555,
+                                                "lon":  -111.6725,
+                                                "link":  "http://www.wikidata.org/entity/Q483292"
+                                            },
+                                            {
+                                                "id":  "Q195898",
+                                                "name":  "Salem",
+                                                "type":  "town of New York",
+                                                "lat":  43.1633635,
+                                                "lon":  -73.3200469,
+                                                "link":  "http://www.wikidata.org/entity/Q195898"
+                                            },
+                                            {
+                                                "id":  "Q43919",
+                                                "name":  "Salem",
+                                                "type":  "county seat",
+                                                "lat":  44.94,
+                                                "lon":  -123.038888888,
+                                                "link":  "http://www.wikidata.org/entity/Q43919"
+                                            },
+                                            {
+                                                "id":  "Q1125440",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  39.2833,
+                                                "lon":  -80.5628,
+                                                "link":  "http://www.wikidata.org/entity/Q1125440"
+                                            },
+                                            {
+                                                "id":  "Q931178",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  38.604166666,
+                                                "lon":  -86.098888888,
+                                                "link":  "http://www.wikidata.org/entity/Q931178"
+                                            },
+                                            {
+                                                "id":  "Q2446086",
+                                                "name":  "Salem",
+                                                "type":  "town in the United States",
+                                                "lat":  41.483055555,
+                                                "lon":  -72.266388888,
+                                                "link":  "http://www.wikidata.org/entity/Q2446086"
+                                            },
+                                            {
+                                                "id":  "Q580085",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  40.853055555,
+                                                "lon":  -91.620833333,
+                                                "link":  "http://www.wikidata.org/entity/Q580085"
+                                            },
+                                            {
+                                                "id":  "Q54140",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  42.516845,
+                                                "lon":  -70.898503,
+                                                "link":  "http://www.wikidata.org/entity/Q54140"
+                                            },
+                                            {
+                                                "id":  "Q120783",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  38.6269929,
+                                                "lon":  -88.9456158,
+                                                "link":  "http://www.wikidata.org/entity/Q120783"
+                                            },
+                                            {
+                                                "id":  "Q1013102",
+                                                "name":  "Salem",
+                                                "type":  "New England town",
+                                                "lat":  42.788333333,
+                                                "lon":  -71.200833333,
+                                                "link":  "http://www.wikidata.org/entity/Q1013102"
+                                            },
+                                            {
+                                                "id":  "Q2779641",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  37.2647,
+                                                "lon":  -88.2411,
+                                                "link":  "http://www.wikidata.org/entity/Q2779641"
+                                            },
+                                            {
+                                                "id":  "Q1088317",
+                                                "name":  "Salem",
+                                                "type":  "county seat",
+                                                "lat":  39.5682,
+                                                "lon":  -75.4725,
+                                                "link":  "http://www.wikidata.org/entity/Q1088317"
+                                            },
+                                            {
+                                                "id":  "Q502230",
+                                                "name":  "Salem",
+                                                "type":  "independent city in the United States",
+                                                "lat":  37.286895,
+                                                "lon":  -80.055836,
+                                                "link":  "http://www.wikidata.org/entity/Q502230"
+                                            },
+                                            {
+                                                "id":  "Q2189060",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  43.726111111,
+                                                "lon":  -97.386666666,
+                                                "link":  "http://www.wikidata.org/entity/Q2189060"
+                                            },
+                                            {
+                                                "id":  "Q79646",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  36.370555555,
+                                                "lon":  -91.823888888,
+                                                "link":  "http://www.wikidata.org/entity/Q79646"
+                                            },
+                                            {
+                                                "id":  "Q919402",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  40.9008,
+                                                "lon":  -80.8528,
+                                                "link":  "http://www.wikidata.org/entity/Q919402"
+                                            },
+                                            {
+                                                "id":  "Q385726",
+                                                "name":  "Salem",
+                                                "type":  "city in the United States",
+                                                "lat":  37.6455993,
+                                                "lon":  -91.5359808,
+                                                "link":  "http://www.wikidata.org/entity/Q385726"
+                                            },
+                                            {
+                                                "id":  "Q502587",
+                                                "name":  "Salem County",
+                                                "type":  "county of New Jersey",
+                                                "lat":  39.58,
+                                                "lon":  -75.36,
+                                                "link":  "http://www.wikidata.org/entity/Q502587"
+                                            }
+                                        ]
+                  }
+}

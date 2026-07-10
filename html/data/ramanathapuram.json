@@ -1,0 +1,89 @@
+﻿{
+    "keyword":  "ramanathapuram",
+    "total_count":  10,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q775255",
+                                        "name":  "Ramanathapuram",
+                                        "type":  "human settlement",
+                                        "lat":  9.383333333,
+                                        "lon":  78.833333333,
+                                        "link":  "http://www.wikidata.org/entity/Q775255"
+                                    },
+                                    {
+                                        "id":  "Q12449676",
+                                        "name":  "Ramanathapuram",
+                                        "type":  "village in India",
+                                        "lat":  13.874118146,
+                                        "lon":  77.952231669,
+                                        "link":  "http://www.wikidata.org/entity/Q12449676"
+                                    },
+                                    {
+                                        "id":  "Q7288931",
+                                        "name":  "Ramanathapuram Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.367,
+                                        "lon":  78.835,
+                                        "link":  "http://www.wikidata.org/entity/Q7288931"
+                                    },
+                                    {
+                                        "id":  "Q15191",
+                                        "name":  "Ramanathapuram district",
+                                        "type":  "district of India",
+                                        "lat":  9.28044,
+                                        "lon":  77.4336,
+                                        "link":  "http://www.wikidata.org/entity/Q15191"
+                                    },
+                                    {
+                                        "id":  "Q7288934",
+                                        "name":  "Ramanathapuram division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  9.367,
+                                        "lon":  78.835,
+                                        "link":  "http://www.wikidata.org/entity/Q7288934"
+                                    },
+                                    {
+                                        "id":  "Q3532492",
+                                        "name":  "Ramanathapuram Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  9.367,
+                                        "lon":  78.835,
+                                        "link":  "http://www.wikidata.org/entity/Q3532492"
+                                    },
+                                    {
+                                        "id":  "Q24943289",
+                                        "name":  "Ramanathapuram railway station",
+                                        "type":  "railway station",
+                                        "lat":  9.359076531,
+                                        "lon":  78.836971493,
+                                        "link":  "http://www.wikidata.org/entity/Q24943289"
+                                    },
+                                    {
+                                        "id":  "Q7288936",
+                                        "name":  "Ramanathapuram taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  9.367,
+                                        "lon":  78.835,
+                                        "link":  "http://www.wikidata.org/entity/Q7288936"
+                                    },
+                                    {
+                                        "id":  "Q3702802",
+                                        "name":  "Ramanathapuram, Coimbatore",
+                                        "type":  "human settlement",
+                                        "lat":  10.9974,
+                                        "lon":  76.9932,
+                                        "link":  "http://www.wikidata.org/entity/Q3702802"
+                                    },
+                                    {
+                                        "id":  "Q15271543",
+                                        "name":  "Ramanathapuram, Dindigul District",
+                                        "type":  "village in India",
+                                        "lat":  10.388588,
+                                        "lon":  78.085413,
+                                        "link":  "http://www.wikidata.org/entity/Q15271543"
+                                    }
+                                ]
+                  }
+}

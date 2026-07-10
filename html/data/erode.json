@@ -1,0 +1,57 @@
+﻿{
+    "keyword":  "erode",
+    "total_count":  6,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q9824",
+                                        "name":  "Erode",
+                                        "type":  "city",
+                                        "lat":  11.340833333,
+                                        "lon":  77.717222222,
+                                        "link":  "http://www.wikidata.org/entity/Q9824"
+                                    },
+                                    {
+                                        "id":  "Q15155",
+                                        "name":  "Erode district",
+                                        "type":  "district of India",
+                                        "lat":  11.25,
+                                        "lon":  77.3167,
+                                        "link":  "http://www.wikidata.org/entity/Q15155"
+                                    },
+                                    {
+                                        "id":  "Q5395260",
+                                        "name":  "Erode East Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.337,
+                                        "lon":  77.743,
+                                        "link":  "http://www.wikidata.org/entity/Q5395260"
+                                    },
+                                    {
+                                        "id":  "Q4520467",
+                                        "name":  "Erode Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  11.327682,
+                                        "lon":  77.725934,
+                                        "link":  "http://www.wikidata.org/entity/Q4520467"
+                                    },
+                                    {
+                                        "id":  "Q5395251",
+                                        "name":  "Erode Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.3,
+                                        "lon":  77.7,
+                                        "link":  "http://www.wikidata.org/entity/Q5395251"
+                                    },
+                                    {
+                                        "id":  "Q5395272",
+                                        "name":  "Erode West",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.33,
+                                        "lon":  77.659,
+                                        "link":  "http://www.wikidata.org/entity/Q5395272"
+                                    }
+                                ]
+                  }
+}

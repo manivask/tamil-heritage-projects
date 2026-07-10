@@ -1,0 +1,57 @@
+﻿{
+    "keyword":  "tenkasi",
+    "total_count":  6,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q259749",
+                                        "name":  "Tenkasi",
+                                        "type":  "human settlement",
+                                        "lat":  8.96666667,
+                                        "lon":  77.31666667,
+                                        "link":  "http://www.wikidata.org/entity/Q259749"
+                                    },
+                                    {
+                                        "id":  "Q7699904",
+                                        "name":  "Tenkasi Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  8.96,
+                                        "lon":  77.31,
+                                        "link":  "http://www.wikidata.org/entity/Q7699904"
+                                    },
+                                    {
+                                        "id":  "Q25553086",
+                                        "name":  "Tenkasi block",
+                                        "type":  "community development block of Tamil Nadu",
+                                        "lat":  8.97,
+                                        "lon":  77.3,
+                                        "link":  "http://www.wikidata.org/entity/Q25553086"
+                                    },
+                                    {
+                                        "id":  "Q24943235",
+                                        "name":  "Tenkasi Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  8.963993,
+                                        "lon":  77.307338,
+                                        "link":  "http://www.wikidata.org/entity/Q24943235"
+                                    },
+                                    {
+                                        "id":  "Q3532578",
+                                        "name":  "Tenkasi Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  9,
+                                        "lon":  77.3,
+                                        "link":  "http://www.wikidata.org/entity/Q3532578"
+                                    },
+                                    {
+                                        "id":  "Q15703451",
+                                        "name":  "Tenkasingi",
+                                        "type":  "village in India",
+                                        "lat":  19.08659316,
+                                        "lon":  83.656559628,
+                                        "link":  "http://www.wikidata.org/entity/Q15703451"
+                                    }
+                                ]
+                  }
+}

@@ -1,0 +1,145 @@
+﻿{
+    "keyword":  "krishnagiri",
+    "total_count":  17,
+    "country_count":  2,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q6437514",
+                                        "name":  "Krishnagiri",
+                                        "type":  "village in India",
+                                        "lat":  15.55547,
+                                        "lon":  77.83133,
+                                        "link":  "http://www.wikidata.org/entity/Q6437514"
+                                    },
+                                    {
+                                        "id":  "Q1020681",
+                                        "name":  "Krishnagiri",
+                                        "type":  "human settlement",
+                                        "lat":  12.533333333,
+                                        "lon":  78.233333333,
+                                        "link":  "http://www.wikidata.org/entity/Q1020681"
+                                    },
+                                    {
+                                        "id":  "Q12420449",
+                                        "name":  "Krishnagiri",
+                                        "type":  "village in India",
+                                        "lat":  15.32136,
+                                        "lon":  78.10852,
+                                        "link":  "http://www.wikidata.org/entity/Q12420449"
+                                    },
+                                    {
+                                        "id":  "Q6437517",
+                                        "name":  "Krishnagiri Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  12.53,
+                                        "lon":  78.23,
+                                        "link":  "http://www.wikidata.org/entity/Q6437517"
+                                    },
+                                    {
+                                        "id":  "Q6437520",
+                                        "name":  "Krishnagiri block",
+                                        "type":  "community development block of Tamil Nadu",
+                                        "lat":  12.53,
+                                        "lon":  78.23,
+                                        "link":  "http://www.wikidata.org/entity/Q6437520"
+                                    },
+                                    {
+                                        "id":  "Q6437518",
+                                        "name":  "Krishnagiri Dam",
+                                        "type":  "dam",
+                                        "lat":  12.475555555,
+                                        "lon":  78.185277777,
+                                        "link":  "http://www.wikidata.org/entity/Q6437518"
+                                    },
+                                    {
+                                        "id":  "Q15183",
+                                        "name":  "Krishnagiri district",
+                                        "type":  "district of India",
+                                        "lat":  12.518,
+                                        "lon":  78.213,
+                                        "link":  "http://www.wikidata.org/entity/Q15183"
+                                    },
+                                    {
+                                        "id":  "Q6437521",
+                                        "name":  "Krishnagiri division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  12.53,
+                                        "lon":  78.23,
+                                        "link":  "http://www.wikidata.org/entity/Q6437521"
+                                    },
+                                    {
+                                        "id":  "Q6437519",
+                                        "name":  "Krishnagiri Fort",
+                                        "type":  "mountain",
+                                        "lat":  12.537721,
+                                        "lon":  78.214638,
+                                        "link":  "http://www.wikidata.org/entity/Q6437519"
+                                    },
+                                    {
+                                        "id":  "Q138048660",
+                                        "name":  "Krishnagiri Fort, Gingee",
+                                        "type":  "fort",
+                                        "lat":  12.259166666,
+                                        "lon":  79.405833333,
+                                        "link":  "http://www.wikidata.org/entity/Q138048660"
+                                    },
+                                    {
+                                        "id":  "Q3534043",
+                                        "name":  "Krishnagiri Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  12.53,
+                                        "lon":  78.23,
+                                        "link":  "http://www.wikidata.org/entity/Q3534043"
+                                    },
+                                    {
+                                        "id":  "Q60208770",
+                                        "name":  "Krishnagiri mandal",
+                                        "type":  "mandal of Andhra Pradesh",
+                                        "lat":  15.555,
+                                        "lon":  77.83,
+                                        "link":  "http://www.wikidata.org/entity/Q60208770"
+                                    },
+                                    {
+                                        "id":  "Q20873555",
+                                        "name":  "Krishnagiri Stadium",
+                                        "type":  "stadium",
+                                        "lat":  11.66493056,
+                                        "lon":  76.19032778,
+                                        "link":  "http://www.wikidata.org/entity/Q20873555"
+                                    },
+                                    {
+                                        "id":  "Q6437522",
+                                        "name":  "Krishnagiri taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  12.525081388,
+                                        "lon":  78.216808333,
+                                        "link":  "http://www.wikidata.org/entity/Q6437522"
+                                    },
+                                    {
+                                        "id":  "Q60751831",
+                                        "name":  "Krishnagiri Village",
+                                        "type":  "village in India",
+                                        "lat":  11.662462,
+                                        "lon":  76.190278,
+                                        "link":  "http://www.wikidata.org/entity/Q60751831"
+                                    },
+                                    {
+                                        "id":  "Q1006338",
+                                        "name":  "Krishnanagar",
+                                        "type":  "big city",
+                                        "lat":  23.4,
+                                        "lon":  88.5,
+                                        "link":  "http://www.wikidata.org/entity/Q1006338"
+                                    }
+                                ],
+                      "Unknown Country":  {
+                                              "id":  "Q135643087",
+                                              "name":  "Krishnagiri, Telangana",
+                                              "type":  "Geographical Feature",
+                                              "lat":  16.091666666,
+                                              "lon":  78.893888888,
+                                              "link":  "http://www.wikidata.org/entity/Q135643087"
+                                          }
+                  }
+}

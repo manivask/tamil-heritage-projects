@@ -1,0 +1,65 @@
+﻿{
+    "keyword":  "viluppuram",
+    "total_count":  7,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q1325683",
+                                        "name":  "Viluppuram",
+                                        "type":  "human settlement",
+                                        "lat":  11.933333333,
+                                        "lon":  79.483333333,
+                                        "link":  "http://www.wikidata.org/entity/Q1325683"
+                                    },
+                                    {
+                                        "id":  "Q22952160",
+                                        "name":  "Viluppuram Bus Station",
+                                        "type":  "bus station",
+                                        "lat":  11.7416,
+                                        "lon":  78.9627,
+                                        "link":  "http://www.wikidata.org/entity/Q22952160"
+                                    },
+                                    {
+                                        "id":  "Q15205",
+                                        "name":  "Viluppuram district",
+                                        "type":  "district of India",
+                                        "lat":  11.9547,
+                                        "lon":  79.527730555,
+                                        "link":  "http://www.wikidata.org/entity/Q15205"
+                                    },
+                                    {
+                                        "id":  "Q7931228",
+                                        "name":  "Viluppuram division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  11.941,
+                                        "lon":  79.493,
+                                        "link":  "http://www.wikidata.org/entity/Q7931228"
+                                    },
+                                    {
+                                        "id":  "Q16902720",
+                                        "name":  "Viluppuram Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  11.942971,
+                                        "lon":  79.500101,
+                                        "link":  "http://www.wikidata.org/entity/Q16902720"
+                                    },
+                                    {
+                                        "id":  "Q3532551",
+                                        "name":  "Viluppuram Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.94,
+                                        "lon":  79.49,
+                                        "link":  "http://www.wikidata.org/entity/Q3532551"
+                                    },
+                                    {
+                                        "id":  "Q12989197",
+                                        "name":  "Viluppuram taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  11.941,
+                                        "lon":  79.493,
+                                        "link":  "http://www.wikidata.org/entity/Q12989197"
+                                    }
+                                ]
+                  }
+}

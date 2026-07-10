@@ -1,0 +1,261 @@
+﻿{
+    "keyword":  "theni",
+    "total_count":  31,
+    "country_count":  5,
+    "countries":  {
+                      "Algeria":  [
+                                      {
+                                          "id":  "Q111904760",
+                                          "name":  "Brahim Boushaki Library",
+                                          "type":  "library",
+                                          "lat":  36.7258991,
+                                          "lon":  3.5576685,
+                                          "link":  "http://www.wikidata.org/entity/Q111904760"
+                                      },
+                                      {
+                                          "id":  "Q20127536",
+                                          "name":  "Thénia",
+                                          "type":  "railway station",
+                                          "lat":  36.725232,
+                                          "lon":  3.5529626,
+                                          "link":  "http://www.wikidata.org/entity/Q20127536"
+                                      },
+                                      {
+                                          "id":  "Q2225013",
+                                          "name":  "Thénia",
+                                          "type":  "commune of Algeria",
+                                          "lat":  36.727777777,
+                                          "lon":  3.553888888,
+                                          "link":  "http://www.wikidata.org/entity/Q2225013"
+                                      },
+                                      {
+                                          "id":  "Q111306990",
+                                          "name":  "Thenia Cemetery",
+                                          "type":  "cemetery",
+                                          "lat":  36.7202382,
+                                          "lon":  3.5565909,
+                                          "link":  "http://www.wikidata.org/entity/Q111306990"
+                                      },
+                                      {
+                                          "id":  "Q111941661",
+                                          "name":  "Thénia Court",
+                                          "type":  "court",
+                                          "lat":  36.7259108,
+                                          "lon":  3.5559178,
+                                          "link":  "http://www.wikidata.org/entity/Q111941661"
+                                      },
+                                      {
+                                          "id":  "Q3711536",
+                                          "name":  "Thénia District",
+                                          "type":  "district of Algeria",
+                                          "lat":  36.725277777,
+                                          "lon":  3.556388888,
+                                          "link":  "http://www.wikidata.org/entity/Q3711536"
+                                      },
+                                      {
+                                          "id":  "Q18785614",
+                                          "name":  "Thenia Hospital",
+                                          "type":  "hospital",
+                                          "lat":  36.7284,
+                                          "lon":  3.55727,
+                                          "link":  "http://www.wikidata.org/entity/Q18785614"
+                                      },
+                                      {
+                                          "id":  "Q110420175",
+                                          "name":  "Thénia Stadium",
+                                          "type":  "stadium",
+                                          "lat":  36.7241205,
+                                          "lon":  3.5585726,
+                                          "link":  "http://www.wikidata.org/entity/Q110420175"
+                                      },
+                                      {
+                                          "id":  "Q23838393",
+                                          "name":  "Theniet ech Chaar",
+                                          "type":  "mountain pass",
+                                          "lat":  36.166666666,
+                                          "lon":  2.620833333,
+                                          "link":  "http://www.wikidata.org/entity/Q23838393"
+                                      },
+                                      {
+                                          "id":  "Q23837334",
+                                          "name":  "Theniet edh Dhiba",
+                                          "type":  "mountain pass",
+                                          "lat":  35.741944444,
+                                          "lon":  2.344722222,
+                                          "link":  "http://www.wikidata.org/entity/Q23837334"
+                                      },
+                                      {
+                                          "id":  "Q970477",
+                                          "name":  "Théniet El Abed District",
+                                          "type":  "district of Algeria",
+                                          "lat":  35.2469,
+                                          "lon":  6.19062,
+                                          "link":  "http://www.wikidata.org/entity/Q970477"
+                                      },
+                                      {
+                                          "id":  "Q23829994",
+                                          "name":  "Theniet el Ghezlane",
+                                          "type":  "mountain pass",
+                                          "lat":  36.156388888,
+                                          "lon":  2.855555555,
+                                          "link":  "http://www.wikidata.org/entity/Q23829994"
+                                      },
+                                      {
+                                          "id":  "Q3054256",
+                                          "name":  "Theniet El Had",
+                                          "type":  "commune of Algeria",
+                                          "lat":  35.871,
+                                          "lon":  2.02878,
+                                          "link":  "http://www.wikidata.org/entity/Q3054256"
+                                      },
+                                      {
+                                          "id":  "Q3324929",
+                                          "name":  "Théniet El Had District",
+                                          "type":  "district of Algeria",
+                                          "lat":  35.883333333,
+                                          "lon":  2,
+                                          "link":  "http://www.wikidata.org/entity/Q3324929"
+                                      },
+                                      {
+                                          "id":  "Q429470",
+                                          "name":  "Theniet El Had National Park",
+                                          "type":  "national park",
+                                          "lat":  35.853694444,
+                                          "lon":  1.968305555,
+                                          "link":  "http://www.wikidata.org/entity/Q429470"
+                                      },
+                                      {
+                                          "id":  "Q23829188",
+                                          "name":  "Theniet Foudrah",
+                                          "type":  "mountain pass",
+                                          "lat":  36.086944444,
+                                          "lon":  2.763611111,
+                                          "link":  "http://www.wikidata.org/entity/Q23829188"
+                                      },
+                                      {
+                                          "id":  "Q23829292",
+                                          "name":  "Theniet Maamar",
+                                          "type":  "mountain pass",
+                                          "lat":  36.016666666,
+                                          "lon":  2.839722222,
+                                          "link":  "http://www.wikidata.org/entity/Q23829292"
+                                      }
+                                  ],
+                      "Austria":  {
+                                      "id":  "Q96776904",
+                                      "name":  "Thening",
+                                      "type":  "Ortschaft",
+                                      "lat":  48.258386,
+                                      "lon":  14.162757,
+                                      "link":  "http://www.wikidata.org/entity/Q96776904"
+                                  },
+                      "France":  [
+                                     {
+                                         "id":  "Q1172197",
+                                         "name":  "Thénioux",
+                                         "type":  "commune of France",
+                                         "lat":  47.256388888,
+                                         "lon":  1.931388888,
+                                         "link":  "http://www.wikidata.org/entity/Q1172197"
+                                     },
+                                     {
+                                         "id":  "Q636558",
+                                         "name":  "Thenissey",
+                                         "type":  "commune of France",
+                                         "lat":  47.495833333,
+                                         "lon":  4.623888888,
+                                         "link":  "http://www.wikidata.org/entity/Q636558"
+                                     },
+                                     {
+                                         "id":  "Q1459059",
+                                         "name":  "Thénisy",
+                                         "type":  "commune of France",
+                                         "lat":  48.489444444,
+                                         "lon":  3.176111111,
+                                         "link":  "http://www.wikidata.org/entity/Q1459059"
+                                     }
+                                 ],
+                      "India":  [
+                                    {
+                                        "id":  "Q131292408",
+                                        "name":  "Theni",
+                                        "type":  "administrative territorial entity",
+                                        "lat":  10.0079,
+                                        "lon":  77.4735,
+                                        "link":  "http://www.wikidata.org/entity/Q131292408"
+                                    },
+                                    {
+                                        "id":  "Q7781393",
+                                        "name":  "Theni Allinagaram",
+                                        "type":  "human settlement",
+                                        "lat":  10.011944444,
+                                        "lon":  77.478611111,
+                                        "link":  "http://www.wikidata.org/entity/Q7781393"
+                                    },
+                                    {
+                                        "id":  "Q1553931",
+                                        "name":  "Theni Allinagaram",
+                                        "type":  "small town",
+                                        "lat":  10,
+                                        "lon":  77.483333333,
+                                        "link":  "http://www.wikidata.org/entity/Q1553931"
+                                    },
+                                    {
+                                        "id":  "Q7781371",
+                                        "name":  "Theni Assembly constituency",
+                                        "type":  "former constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  10.01,
+                                        "lon":  77.47,
+                                        "link":  "http://www.wikidata.org/entity/Q7781371"
+                                    },
+                                    {
+                                        "id":  "Q15196",
+                                        "name":  "Theni district",
+                                        "type":  "district of India",
+                                        "lat":  10.066666666,
+                                        "lon":  77.75,
+                                        "link":  "http://www.wikidata.org/entity/Q15196"
+                                    },
+                                    {
+                                        "id":  "Q7781368",
+                                        "name":  "Theni Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  10.01,
+                                        "lon":  77.48,
+                                        "link":  "http://www.wikidata.org/entity/Q7781368"
+                                    },
+                                    {
+                                        "id":  "Q18394074",
+                                        "name":  "Theni Medical College",
+                                        "type":  "medical college in India",
+                                        "lat":  10.006752,
+                                        "lon":  77.554252,
+                                        "link":  "http://www.wikidata.org/entity/Q18394074"
+                                    },
+                                    {
+                                        "id":  "Q7781373",
+                                        "name":  "Thenimalai",
+                                        "type":  "human settlement",
+                                        "lat":  12.2,
+                                        "lon":  79.11,
+                                        "link":  "http://www.wikidata.org/entity/Q7781373"
+                                    },
+                                    {
+                                        "id":  "Q7781375",
+                                        "name":  "Thenipatti",
+                                        "type":  "village in India",
+                                        "lat":  10.1743,
+                                        "lon":  78.9091,
+                                        "link":  "http://www.wikidata.org/entity/Q7781375"
+                                    }
+                                ],
+                      "Somalia":  {
+                                      "id":  "Q49631664",
+                                      "name":  "Ambuu",
+                                      "type":  "island",
+                                      "lat":  -0.817222222,
+                                      "lon":  42.210555555,
+                                      "link":  "http://www.wikidata.org/entity/Q49631664"
+                                  }
+                  }
+}

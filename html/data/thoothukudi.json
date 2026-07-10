@@ -1,0 +1,81 @@
+﻿{
+    "keyword":  "thoothukudi",
+    "total_count":  9,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q41562",
+                                        "name":  "Thoothukudi",
+                                        "type":  "city",
+                                        "lat":  8.783333333,
+                                        "lon":  78.133333333,
+                                        "link":  "http://www.wikidata.org/entity/Q41562"
+                                    },
+                                    {
+                                        "id":  "Q15198",
+                                        "name":  "Thoothukudi district",
+                                        "type":  "district of India",
+                                        "lat":  8.803,
+                                        "lon":  78.1445,
+                                        "link":  "http://www.wikidata.org/entity/Q15198"
+                                    },
+                                    {
+                                        "id":  "Q3534206",
+                                        "name":  "Thoothukudi Lok Sabha Constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  8.78,
+                                        "lon":  78.1,
+                                        "link":  "http://www.wikidata.org/entity/Q3534206"
+                                    },
+                                    {
+                                        "id":  "Q19898640",
+                                        "name":  "Thoothukudi Medical College",
+                                        "type":  "university",
+                                        "lat":  8.78421,
+                                        "lon":  78.1202,
+                                        "link":  "http://www.wikidata.org/entity/Q19898640"
+                                    },
+                                    {
+                                        "id":  "Q16308952",
+                                        "name":  "Thoothukudi Municipal Corporation",
+                                        "type":  "Municipal Corporation (India)",
+                                        "lat":  8.81667,
+                                        "lon":  78.1333,
+                                        "link":  "http://www.wikidata.org/entity/Q16308952"
+                                    },
+                                    {
+                                        "id":  "Q15424349",
+                                        "name":  "Thoothukudi railway station",
+                                        "type":  "railway station",
+                                        "lat":  8.806109,
+                                        "lon":  78.155359,
+                                        "link":  "http://www.wikidata.org/entity/Q15424349"
+                                    },
+                                    {
+                                        "id":  "Q54073499",
+                                        "name":  "Thoothukudi violence",
+                                        "type":  "massacre",
+                                        "lat":  8.784117,
+                                        "lon":  78.099142,
+                                        "link":  "http://www.wikidata.org/entity/Q54073499"
+                                    },
+                                    {
+                                        "id":  "Q3522770",
+                                        "name":  "Tuticorin Airport",
+                                        "type":  "commercial traffic aerodrome",
+                                        "lat":  8.724166666,
+                                        "lon":  78.025833333,
+                                        "link":  "http://www.wikidata.org/entity/Q3522770"
+                                    },
+                                    {
+                                        "id":  "Q12006136",
+                                        "name":  "Tuticorin Thermal Power Station",
+                                        "type":  "coal-fired power station",
+                                        "lat":  8.76417,
+                                        "lon":  78.1767,
+                                        "link":  "http://www.wikidata.org/entity/Q12006136"
+                                    }
+                                ]
+                  }
+}

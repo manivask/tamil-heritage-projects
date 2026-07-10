@@ -1,0 +1,89 @@
+﻿{
+    "keyword":  "tiruppur",
+    "total_count":  10,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q836527",
+                                        "name":  "Tiruppur",
+                                        "type":  "city",
+                                        "lat":  11.1075,
+                                        "lon":  77.3398,
+                                        "link":  "http://www.wikidata.org/entity/Q836527"
+                                    },
+                                    {
+                                        "id":  "Q7809407",
+                                        "name":  "Tiruppur Assembly constituency",
+                                        "type":  "former constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.11,
+                                        "lon":  77.36,
+                                        "link":  "http://www.wikidata.org/entity/Q7809407"
+                                    },
+                                    {
+                                        "id":  "Q15202",
+                                        "name":  "Tiruppur district",
+                                        "type":  "district of India",
+                                        "lat":  10.83813,
+                                        "lon":  77.40542,
+                                        "link":  "http://www.wikidata.org/entity/Q15202"
+                                    },
+                                    {
+                                        "id":  "Q55635935",
+                                        "name":  "Tiruppur Kulipalayam railway station",
+                                        "type":  "station located on surface",
+                                        "lat":  11.1443,
+                                        "lon":  77.3902,
+                                        "link":  "http://www.wikidata.org/entity/Q55635935"
+                                    },
+                                    {
+                                        "id":  "Q7809406",
+                                        "name":  "Tiruppur Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.1,
+                                        "lon":  77.4,
+                                        "link":  "http://www.wikidata.org/entity/Q7809406"
+                                    },
+                                    {
+                                        "id":  "Q131388555",
+                                        "name":  "Tiruppur metropolitan area",
+                                        "type":  "administrative territorial entity",
+                                        "lat":  11.1085,
+                                        "lon":  77.3411,
+                                        "link":  "http://www.wikidata.org/entity/Q131388555"
+                                    },
+                                    {
+                                        "id":  "Q12984186",
+                                        "name":  "Tiruppur Municipal Corporation",
+                                        "type":  "Municipal Corporation (India)",
+                                        "lat":  11.1833,
+                                        "lon":  77.25,
+                                        "link":  "http://www.wikidata.org/entity/Q12984186"
+                                    },
+                                    {
+                                        "id":  "Q7809416",
+                                        "name":  "Tiruppur North Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.146,
+                                        "lon":  77.353,
+                                        "link":  "http://www.wikidata.org/entity/Q7809416"
+                                    },
+                                    {
+                                        "id":  "Q16901756",
+                                        "name":  "Tiruppur railway station",
+                                        "type":  "railway station",
+                                        "lat":  11.108906,
+                                        "lon":  77.341247,
+                                        "link":  "http://www.wikidata.org/entity/Q16901756"
+                                    },
+                                    {
+                                        "id":  "Q7809412",
+                                        "name":  "Tiruppur South Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.086,
+                                        "lon":  77.347,
+                                        "link":  "http://www.wikidata.org/entity/Q7809412"
+                                    }
+                                ]
+                  }
+}

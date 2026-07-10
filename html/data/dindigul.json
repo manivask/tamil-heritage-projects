@@ -1,0 +1,89 @@
+﻿{
+    "keyword":  "dindigul",
+    "total_count":  10,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q853945",
+                                        "name":  "Dindigul",
+                                        "type":  "city",
+                                        "lat":  10.362,
+                                        "lon":  77.973611111,
+                                        "link":  "http://www.wikidata.org/entity/Q853945"
+                                    },
+                                    {
+                                        "id":  "Q5277998",
+                                        "name":  "Dindigul Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  10.35,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q5277998"
+                                    },
+                                    {
+                                        "id":  "Q25552444",
+                                        "name":  "Dindigul block",
+                                        "type":  "Block Panchayat",
+                                        "lat":  10.35,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q25552444"
+                                    },
+                                    {
+                                        "id":  "Q15154",
+                                        "name":  "Dindigul district",
+                                        "type":  "district of India",
+                                        "lat":  10.4,
+                                        "lon":  77.8,
+                                        "link":  "http://www.wikidata.org/entity/Q15154"
+                                    },
+                                    {
+                                        "id":  "Q5278001",
+                                        "name":  "Dindigul division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  10.35,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q5278001"
+                                    },
+                                    {
+                                        "id":  "Q3534110",
+                                        "name":  "Dindigul Fort",
+                                        "type":  "fort",
+                                        "lat":  10.360555555,
+                                        "lon":  77.963055555,
+                                        "link":  "http://www.wikidata.org/entity/Q3534110"
+                                    },
+                                    {
+                                        "id":  "Q18111896",
+                                        "name":  "Dindigul Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  10.35381,
+                                        "lon":  77.985472,
+                                        "link":  "http://www.wikidata.org/entity/Q18111896"
+                                    },
+                                    {
+                                        "id":  "Q3532565",
+                                        "name":  "Dindigul Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  10.35,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q3532565"
+                                    },
+                                    {
+                                        "id":  "Q12983953",
+                                        "name":  "Dindigul taluk",
+                                        "type":  "Geographical Feature",
+                                        "lat":  10.35,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q12983953"
+                                    },
+                                    {
+                                        "id":  "Q868395",
+                                        "name":  "Roman Catholic Diocese of Dindigul",
+                                        "type":  "diocese of the Catholic Church",
+                                        "lat":  10.361675,
+                                        "lon":  77.97295,
+                                        "link":  "http://www.wikidata.org/entity/Q868395"
+                                    }
+                                ]
+                  }
+}

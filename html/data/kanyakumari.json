@@ -1,0 +1,97 @@
+﻿{
+    "keyword":  "kanyakumari",
+    "total_count":  11,
+    "country_count":  3,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q946721",
+                                        "name":  "Cape Comorin",
+                                        "type":  "cape",
+                                        "lat":  8.07795,
+                                        "lon":  77.55045,
+                                        "link":  "http://www.wikidata.org/entity/Q946721"
+                                    },
+                                    {
+                                        "id":  "Q222267",
+                                        "name":  "Kanniyakumari",
+                                        "type":  "city",
+                                        "lat":  8.091111111,
+                                        "lon":  77.541666666,
+                                        "link":  "http://www.wikidata.org/entity/Q222267"
+                                    },
+                                    {
+                                        "id":  "Q15158",
+                                        "name":  "Kanniyakumari district",
+                                        "type":  "district of India",
+                                        "lat":  8.32,
+                                        "lon":  77.34,
+                                        "link":  "http://www.wikidata.org/entity/Q15158"
+                                    },
+                                    {
+                                        "id":  "Q12418044",
+                                        "name":  "Kanniyakumari railway station",
+                                        "type":  "railway station",
+                                        "lat":  8.088028,
+                                        "lon":  77.542504,
+                                        "link":  "http://www.wikidata.org/entity/Q12418044"
+                                    },
+                                    {
+                                        "id":  "Q11735010",
+                                        "name":  "Kanyakumari",
+                                        "type":  "human settlement",
+                                        "lat":  8.06667,
+                                        "lon":  77.5333,
+                                        "link":  "http://www.wikidata.org/entity/Q11735010"
+                                    },
+                                    {
+                                        "id":  "Q15708023",
+                                        "name":  "Kanyakumari Bhagavathy Amman",
+                                        "type":  "Hindu temple",
+                                        "lat":  8.079586,
+                                        "lon":  77.550969,
+                                        "link":  "http://www.wikidata.org/entity/Q15708023"
+                                    },
+                                    {
+                                        "id":  "Q6365811",
+                                        "name":  "Kanyakumari Government Medical College",
+                                        "type":  "medical college in India",
+                                        "lat":  8.17387222,
+                                        "lon":  77.39387778,
+                                        "link":  "http://www.wikidata.org/entity/Q6365811"
+                                    },
+                                    {
+                                        "id":  "Q12418045",
+                                        "name":  "Kanyakumari Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  8.1,
+                                        "lon":  77.5,
+                                        "link":  "http://www.wikidata.org/entity/Q12418045"
+                                    },
+                                    {
+                                        "id":  "Q16979364",
+                                        "name":  "Kanyakumari Wildlife Sanctuary",
+                                        "type":  "wildlife refuge",
+                                        "lat":  8.3543,
+                                        "lon":  77.34334,
+                                        "link":  "http://www.wikidata.org/entity/Q16979364"
+                                    }
+                                ],
+                      "Kanniyakumari":  {
+                                            "id":  "Q15708023",
+                                            "name":  "Kanyakumari Bhagavathy Amman",
+                                            "type":  "Hindu temple",
+                                            "lat":  8.079586,
+                                            "lon":  77.550969,
+                                            "link":  "http://www.wikidata.org/entity/Q15708023"
+                                        },
+                      "Tamil Nadu":  {
+                                         "id":  "Q15708023",
+                                         "name":  "Kanyakumari Bhagavathy Amman",
+                                         "type":  "Hindu temple",
+                                         "lat":  8.079586,
+                                         "lon":  77.550969,
+                                         "link":  "http://www.wikidata.org/entity/Q15708023"
+                                     }
+                  }
+}

@@ -1,0 +1,105 @@
+﻿{
+    "keyword":  "cuddalore",
+    "total_count":  12,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q111387266",
+                                        "name":  "Cuddalore",
+                                        "type":  "port",
+                                        "lat":  11.716666666,
+                                        "lon":  79.766666666,
+                                        "link":  "http://www.wikidata.org/entity/Q111387266"
+                                    },
+                                    {
+                                        "id":  "Q279951",
+                                        "name":  "Cuddalore",
+                                        "type":  "city",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q279951"
+                                    },
+                                    {
+                                        "id":  "Q5192484",
+                                        "name":  "Cuddalore Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q5192484"
+                                    },
+                                    {
+                                        "id":  "Q25552784",
+                                        "name":  "Cuddalore block",
+                                        "type":  "community development block of Tamil Nadu",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q25552784"
+                                    },
+                                    {
+                                        "id":  "Q5192482",
+                                        "name":  "Cuddalore Central Prison",
+                                        "type":  "prison",
+                                        "lat":  11.755802,
+                                        "lon":  79.766541,
+                                        "link":  "http://www.wikidata.org/entity/Q5192482"
+                                    },
+                                    {
+                                        "id":  "Q15150",
+                                        "name":  "Cuddalore district",
+                                        "type":  "district of India",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q15150"
+                                    },
+                                    {
+                                        "id":  "Q5192486",
+                                        "name":  "Cuddalore division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q5192486"
+                                    },
+                                    {
+                                        "id":  "Q5192483",
+                                        "name":  "Cuddalore Government Museum",
+                                        "type":  "museum",
+                                        "lat":  11.75543,
+                                        "lon":  79.76514,
+                                        "link":  "http://www.wikidata.org/entity/Q5192483"
+                                    },
+                                    {
+                                        "id":  "Q48732419",
+                                        "name":  "Cuddalore IL\u0026FS Thermal Power Station",
+                                        "type":  "coal-fired power station",
+                                        "lat":  11.52161111,
+                                        "lon":  79.75183333,
+                                        "link":  "http://www.wikidata.org/entity/Q48732419"
+                                    },
+                                    {
+                                        "id":  "Q3534221",
+                                        "name":  "Cuddalore Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q3534221"
+                                    },
+                                    {
+                                        "id":  "Q17065711",
+                                        "name":  "Cuddalore Port Junction railway station",
+                                        "type":  "station located on surface",
+                                        "lat":  11.715119,
+                                        "lon":  79.766287,
+                                        "link":  "http://www.wikidata.org/entity/Q17065711"
+                                    },
+                                    {
+                                        "id":  "Q5192488",
+                                        "name":  "Cuddalore taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  11.75,
+                                        "lon":  79.75,
+                                        "link":  "http://www.wikidata.org/entity/Q5192488"
+                                    }
+                                ]
+                  }
+}

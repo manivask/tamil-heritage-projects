@@ -1,0 +1,89 @@
+﻿{
+    "keyword":  "sivaganga",
+    "total_count":  10,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q876609",
+                                        "name":  "Roman Catholic Diocese of Sivagangai",
+                                        "type":  "diocese of the Catholic Church",
+                                        "lat":  9.84675,
+                                        "lon":  78.479225,
+                                        "link":  "http://www.wikidata.org/entity/Q876609"
+                                    },
+                                    {
+                                        "id":  "Q1025396",
+                                        "name":  "Sivaganga",
+                                        "type":  "city",
+                                        "lat":  9.85,
+                                        "lon":  78.5,
+                                        "link":  "http://www.wikidata.org/entity/Q1025396"
+                                    },
+                                    {
+                                        "id":  "Q33159331",
+                                        "name":  "Sivaganga",
+                                        "type":  "second-level administrative division",
+                                        "lat":  9.92762,
+                                        "lon":  78.53763,
+                                        "link":  "http://www.wikidata.org/entity/Q33159331"
+                                    },
+                                    {
+                                        "id":  "Q26779989",
+                                        "name":  "Śivagaṅga (India)",
+                                        "type":  "mountain",
+                                        "lat":  13.170277777,
+                                        "lon":  77.222777777,
+                                        "link":  "http://www.wikidata.org/entity/Q26779989"
+                                    },
+                                    {
+                                        "id":  "Q12978435",
+                                        "name":  "Sivaganga Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.85,
+                                        "lon":  78.49,
+                                        "link":  "http://www.wikidata.org/entity/Q12978435"
+                                    },
+                                    {
+                                        "id":  "Q15195",
+                                        "name":  "Sivaganga district",
+                                        "type":  "district of India",
+                                        "lat":  9.716666666,
+                                        "lon":  78.816666666,
+                                        "link":  "http://www.wikidata.org/entity/Q15195"
+                                    },
+                                    {
+                                        "id":  "Q7532312",
+                                        "name":  "Sivaganga Fort",
+                                        "type":  "fort",
+                                        "lat":  10.784444444,
+                                        "lon":  79.131666666,
+                                        "link":  "http://www.wikidata.org/entity/Q7532312"
+                                    },
+                                    {
+                                        "id":  "Q3534136",
+                                        "name":  "Sivaganga Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  9.8,
+                                        "lon":  78.5,
+                                        "link":  "http://www.wikidata.org/entity/Q3534136"
+                                    },
+                                    {
+                                        "id":  "Q18708399",
+                                        "name":  "Sivaganga Palace",
+                                        "type":  "palace",
+                                        "lat":  9.84861,
+                                        "lon":  78.4864,
+                                        "link":  "http://www.wikidata.org/entity/Q18708399"
+                                    },
+                                    {
+                                        "id":  "Q28406477",
+                                        "name":  "Sivaganga railway station",
+                                        "type":  "railway station",
+                                        "lat":  9.85297,
+                                        "lon":  78.499069,
+                                        "link":  "http://www.wikidata.org/entity/Q28406477"
+                                    }
+                                ]
+                  }
+}

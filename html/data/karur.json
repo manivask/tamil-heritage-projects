@@ -1,0 +1,261 @@
+﻿{
+    "keyword":  "karur",
+    "total_count":  31,
+    "country_count":  6,
+    "countries":  {
+                      "Estonia":  {
+                                      "id":  "Q61395270",
+                                      "name":  "Karurahu",
+                                      "type":  "island",
+                                      "lat":  58.950555555,
+                                      "lon":  23.515277777,
+                                      "link":  "http://www.wikidata.org/entity/Q61395270"
+                                  },
+                      "India":  [
+                                    {
+                                        "id":  "Q12992924",
+                                        "name":  "Karur",
+                                        "type":  "village in India",
+                                        "lat":  13.55086,
+                                        "lon":  80.0586,
+                                        "link":  "http://www.wikidata.org/entity/Q12992924"
+                                    },
+                                    {
+                                        "id":  "Q817218",
+                                        "name":  "Karur",
+                                        "type":  "city",
+                                        "lat":  10.96,
+                                        "lon":  78.075,
+                                        "link":  "http://www.wikidata.org/entity/Q817218"
+                                    },
+                                    {
+                                        "id":  "Q6373719",
+                                        "name":  "Karur",
+                                        "type":  "village in India",
+                                        "lat":  9.982586,
+                                        "lon":  79.024952,
+                                        "link":  "http://www.wikidata.org/entity/Q6373719"
+                                    },
+                                    {
+                                        "id":  "Q6373720",
+                                        "name":  "Karur Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  10.95,
+                                        "lon":  78.08,
+                                        "link":  "http://www.wikidata.org/entity/Q6373720"
+                                    },
+                                    {
+                                        "id":  "Q71533790",
+                                        "name":  "Karur Branch Post Office",
+                                        "type":  "branch post office",
+                                        "lat":  10.31,
+                                        "lon":  76.31,
+                                        "link":  "http://www.wikidata.org/entity/Q71533790"
+                                    },
+                                    {
+                                        "id":  "Q15182",
+                                        "name":  "Karur district",
+                                        "type":  "district of India",
+                                        "lat":  10.958,
+                                        "lon":  78.08,
+                                        "link":  "http://www.wikidata.org/entity/Q15182"
+                                    },
+                                    {
+                                        "id":  "Q6373726",
+                                        "name":  "Karur division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  10.95,
+                                        "lon":  78.08,
+                                        "link":  "http://www.wikidata.org/entity/Q6373726"
+                                    },
+                                    {
+                                        "id":  "Q18126624",
+                                        "name":  "Karur Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  10.965642,
+                                        "lon":  78.085087,
+                                        "link":  "http://www.wikidata.org/entity/Q18126624"
+                                    },
+                                    {
+                                        "id":  "Q3532480",
+                                        "name":  "Karur Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  10.95,
+                                        "lon":  78.08,
+                                        "link":  "http://www.wikidata.org/entity/Q3532480"
+                                    },
+                                    {
+                                        "id":  "Q6373727",
+                                        "name":  "Karur taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  10.95,
+                                        "lon":  78.08,
+                                        "link":  "http://www.wikidata.org/entity/Q6373727"
+                                    },
+                                    {
+                                        "id":  "Q60751312",
+                                        "name":  "Karuria",
+                                        "type":  "village in India",
+                                        "lat":  22.68157,
+                                        "lon":  87.50536,
+                                        "link":  "http://www.wikidata.org/entity/Q60751312"
+                                    },
+                                    {
+                                        "id":  "Q15691960",
+                                        "name":  "Karuru",
+                                        "type":  "village in India",
+                                        "lat":  12.74409928,
+                                        "lon":  78.360032315,
+                                        "link":  "http://www.wikidata.org/entity/Q15691960"
+                                    }
+                                ],
+                      "Kenya":  [
+                                    {
+                                        "id":  "Q35337827",
+                                        "name":  "Karura",
+                                        "type":  "stream",
+                                        "lat":  -0.45,
+                                        "lon":  37.13333,
+                                        "link":  "http://www.wikidata.org/entity/Q35337827"
+                                    },
+                                    {
+                                        "id":  "Q35337812",
+                                        "name":  "Karura",
+                                        "type":  "stream",
+                                        "lat":  -1.23333,
+                                        "lon":  36.86667,
+                                        "link":  "http://www.wikidata.org/entity/Q35337812"
+                                    },
+                                    {
+                                        "id":  "Q35337797",
+                                        "name":  "Karura",
+                                        "type":  "stream",
+                                        "lat":  -0.83333,
+                                        "lon":  37.05,
+                                        "link":  "http://www.wikidata.org/entity/Q35337797"
+                                    },
+                                    {
+                                        "id":  "Q6373728",
+                                        "name":  "Karura Forest",
+                                        "type":  "forest",
+                                        "lat":  -1.24027778,
+                                        "lon":  36.82361111,
+                                        "link":  "http://www.wikidata.org/entity/Q6373728"
+                                    },
+                                    {
+                                        "id":  "Q48817107",
+                                        "name":  "Karura Hydroelectric Power Station",
+                                        "type":  "hydroelectric power station",
+                                        "lat":  -0.7825,
+                                        "lon":  37.88888889,
+                                        "link":  "http://www.wikidata.org/entity/Q48817107"
+                                    },
+                                    {
+                                        "id":  "Q6373732",
+                                        "name":  "Karuri",
+                                        "type":  "human settlement",
+                                        "lat":  -0.7,
+                                        "lon":  37.18333,
+                                        "link":  "http://www.wikidata.org/entity/Q6373732"
+                                    },
+                                    {
+                                        "id":  "Q35337899",
+                                        "name":  "Karuruma",
+                                        "type":  "stream",
+                                        "lat":  -0.49595,
+                                        "lon":  37.71708,
+                                        "link":  "http://www.wikidata.org/entity/Q35337899"
+                                    },
+                                    {
+                                        "id":  "Q35337913",
+                                        "name":  "Karuruma",
+                                        "type":  "stream",
+                                        "lat":  -0.8,
+                                        "lon":  37.083333333,
+                                        "link":  "http://www.wikidata.org/entity/Q35337913"
+                                    },
+                                    {
+                                        "id":  "Q35338013",
+                                        "name":  "Karurumo",
+                                        "type":  "stream",
+                                        "lat":  -0.21667,
+                                        "lon":  37.61667,
+                                        "link":  "http://www.wikidata.org/entity/Q35338013"
+                                    }
+                                ],
+                      "Rwanda":  [
+                                     {
+                                         "id":  "Q31706673",
+                                         "name":  "Karurama",
+                                         "type":  "mountain",
+                                         "lat":  -1.4516,
+                                         "lon":  30.0684,
+                                         "link":  "http://www.wikidata.org/entity/Q31706673"
+                                     },
+                                     {
+                                         "id":  "Q35337970",
+                                         "name":  "Karuruma",
+                                         "type":  "stream",
+                                         "lat":  -2.010833333,
+                                         "lon":  29.764722222,
+                                         "link":  "http://www.wikidata.org/entity/Q35337970"
+                                     },
+                                     {
+                                         "id":  "Q35337942",
+                                         "name":  "Karuruma",
+                                         "type":  "stream",
+                                         "lat":  -1.903055555,
+                                         "lon":  30.051388888,
+                                         "link":  "http://www.wikidata.org/entity/Q35337942"
+                                     },
+                                     {
+                                         "id":  "Q35337984",
+                                         "name":  "Karuruma",
+                                         "type":  "stream",
+                                         "lat":  -2.098333333,
+                                         "lon":  29.884722222,
+                                         "link":  "http://www.wikidata.org/entity/Q35337984"
+                                     },
+                                     {
+                                         "id":  "Q35337999",
+                                         "name":  "Karuruma",
+                                         "type":  "stream",
+                                         "lat":  -2.191666666,
+                                         "lon":  29.213333333,
+                                         "link":  "http://www.wikidata.org/entity/Q35337999"
+                                     },
+                                     {
+                                         "id":  "Q35337955",
+                                         "name":  "Karuruma",
+                                         "type":  "stream",
+                                         "lat":  -1.510833333,
+                                         "lon":  29.8125,
+                                         "link":  "http://www.wikidata.org/entity/Q35337955"
+                                     },
+                                     {
+                                         "id":  "Q35337928",
+                                         "name":  "Karuruma",
+                                         "type":  "stream",
+                                         "lat":  -1.3625,
+                                         "lon":  30.216944444,
+                                         "link":  "http://www.wikidata.org/entity/Q35337928"
+                                     }
+                                 ],
+                      "Tanzania":  {
+                                       "id":  "Q31392859",
+                                       "name":  "Karurumpeta Ridge",
+                                       "type":  "ridge",
+                                       "lat":  -5.58333,
+                                       "lon":  29.91667,
+                                       "link":  "http://www.wikidata.org/entity/Q31392859"
+                                   },
+                      "Venezuela":  {
+                                        "id":  "Q138208329",
+                                        "name":  "Karuray",
+                                        "type":  "place",
+                                        "lat":  6.2644515,
+                                        "lon":  -63.1142236,
+                                        "link":  "http://www.wikidata.org/entity/Q138208329"
+                                    }
+                  }
+}

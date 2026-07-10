@@ -1,0 +1,65 @@
+﻿{
+    "keyword":  "chengalpattu",
+    "total_count":  7,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q888769",
+                                        "name":  "Chengalpattu",
+                                        "type":  "city",
+                                        "lat":  12.69055556,
+                                        "lon":  79.97777778,
+                                        "link":  "http://www.wikidata.org/entity/Q888769"
+                                    },
+                                    {
+                                        "id":  "Q5091285",
+                                        "name":  "Chengalpattu Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  12.683333333,
+                                        "lon":  79.983333333,
+                                        "link":  "http://www.wikidata.org/entity/Q5091285"
+                                    },
+                                    {
+                                        "id":  "Q15209396",
+                                        "name":  "Chengalpattu Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  12.692864,
+                                        "lon":  79.981519,
+                                        "link":  "http://www.wikidata.org/entity/Q15209396"
+                                    },
+                                    {
+                                        "id":  "Q3532542",
+                                        "name":  "Chengalpattu Lok Sabha constituency",
+                                        "type":  "former constituency of the Lok Sabha",
+                                        "lat":  12.683333333,
+                                        "lon":  79.983333333,
+                                        "link":  "http://www.wikidata.org/entity/Q3532542"
+                                    },
+                                    {
+                                        "id":  "Q5091284",
+                                        "name":  "Chengalpattu Medical College",
+                                        "type":  "medical college in India",
+                                        "lat":  12.670871,
+                                        "lon":  79.980128,
+                                        "link":  "http://www.wikidata.org/entity/Q5091284"
+                                    },
+                                    {
+                                        "id":  "Q4503701",
+                                        "name":  "Chengalpattu taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  12.683333333,
+                                        "lon":  79.983333333,
+                                        "link":  "http://www.wikidata.org/entity/Q4503701"
+                                    },
+                                    {
+                                        "id":  "Q1069918",
+                                        "name":  "Chingleput District",
+                                        "type":  "district of British India",
+                                        "lat":  12.684,
+                                        "lon":  79.983,
+                                        "link":  "http://www.wikidata.org/entity/Q1069918"
+                                    }
+                                ]
+                  }
+}

@@ -1,0 +1,73 @@
+﻿{
+    "keyword":  "perambalur",
+    "total_count":  8,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q1025402",
+                                        "name":  "Perambalur",
+                                        "type":  "small town",
+                                        "lat":  11.2342,
+                                        "lon":  78.8807,
+                                        "link":  "http://www.wikidata.org/entity/Q1025402"
+                                    },
+                                    {
+                                        "id":  "Q7166912",
+                                        "name":  "Perambalur Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.23,
+                                        "lon":  78.88,
+                                        "link":  "http://www.wikidata.org/entity/Q7166912"
+                                    },
+                                    {
+                                        "id":  "Q24939471",
+                                        "name":  "Perambalur Buddhas",
+                                        "type":  "Geographical Feature",
+                                        "lat":  11.57583333,
+                                        "lon":  78.77833333,
+                                        "link":  "http://www.wikidata.org/entity/Q24939471"
+                                    },
+                                    {
+                                        "id":  "Q15186",
+                                        "name":  "Perambalur district",
+                                        "type":  "district of India",
+                                        "lat":  11.2335,
+                                        "lon":  78.883311111,
+                                        "link":  "http://www.wikidata.org/entity/Q15186"
+                                    },
+                                    {
+                                        "id":  "Q7166911",
+                                        "name":  "Perambalur division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  11.23,
+                                        "lon":  78.88,
+                                        "link":  "http://www.wikidata.org/entity/Q7166911"
+                                    },
+                                    {
+                                        "id":  "Q3534214",
+                                        "name":  "Perambalur Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.23,
+                                        "lon":  78.88,
+                                        "link":  "http://www.wikidata.org/entity/Q3534214"
+                                    },
+                                    {
+                                        "id":  "Q31368625",
+                                        "name":  "Perambalur Madanagopala Swamy Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  11.2382852,
+                                        "lon":  78.8610384,
+                                        "link":  "http://www.wikidata.org/entity/Q31368625"
+                                    },
+                                    {
+                                        "id":  "Q16313984",
+                                        "name":  "Perambalur taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  11.23,
+                                        "lon":  78.88,
+                                        "link":  "http://www.wikidata.org/entity/Q16313984"
+                                    }
+                                ]
+                  }
+}

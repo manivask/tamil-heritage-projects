@@ -1,0 +1,33 @@
+﻿{
+    "keyword":  "nilgiris",
+    "total_count":  3,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q10094",
+                                        "name":  "Nilgiri Mountains",
+                                        "type":  "mountain range",
+                                        "lat":  11.375,
+                                        "lon":  76.761111111,
+                                        "link":  "http://www.wikidata.org/entity/Q10094"
+                                    },
+                                    {
+                                        "id":  "Q15188",
+                                        "name":  "Nilgiris district",
+                                        "type":  "district of India",
+                                        "lat":  11.4,
+                                        "lon":  76.7,
+                                        "link":  "http://www.wikidata.org/entity/Q15188"
+                                    },
+                                    {
+                                        "id":  "Q3534177",
+                                        "name":  "Nilgiris Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.5,
+                                        "lon":  76.6,
+                                        "link":  "http://www.wikidata.org/entity/Q3534177"
+                                    }
+                                ]
+                  }
+}

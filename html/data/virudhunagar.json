@@ -1,0 +1,65 @@
+﻿{
+    "keyword":  "virudhunagar",
+    "total_count":  7,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q937745",
+                                        "name":  "Virudhunagar",
+                                        "type":  "human settlement",
+                                        "lat":  9.6,
+                                        "lon":  77.966666666,
+                                        "link":  "http://www.wikidata.org/entity/Q937745"
+                                    },
+                                    {
+                                        "id":  "Q7935266",
+                                        "name":  "Virudhunagar Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.583333333,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q7935266"
+                                    },
+                                    {
+                                        "id":  "Q25552864",
+                                        "name":  "Virudhunagar block",
+                                        "type":  "community development block of Tamil Nadu",
+                                        "lat":  9.583333333,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q25552864"
+                                    },
+                                    {
+                                        "id":  "Q15209",
+                                        "name":  "Virudhunagar district",
+                                        "type":  "district of India",
+                                        "lat":  9.5842,
+                                        "lon":  77.9582,
+                                        "link":  "http://www.wikidata.org/entity/Q15209"
+                                    },
+                                    {
+                                        "id":  "Q18395477",
+                                        "name":  "Virudhunagar Junction railway station",
+                                        "type":  "station located on surface",
+                                        "lat":  9.596405,
+                                        "lon":  77.957737,
+                                        "link":  "http://www.wikidata.org/entity/Q18395477"
+                                    },
+                                    {
+                                        "id":  "Q3534127",
+                                        "name":  "Virudhunagar Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  9.6,
+                                        "lon":  78,
+                                        "link":  "http://www.wikidata.org/entity/Q3534127"
+                                    },
+                                    {
+                                        "id":  "Q7935264",
+                                        "name":  "Virudhunagar taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  9.583333333,
+                                        "lon":  77.95,
+                                        "link":  "http://www.wikidata.org/entity/Q7935264"
+                                    }
+                                ]
+                  }
+}

@@ -21,7 +21,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="light-theme">
     <div id="app-container">
         <!-- Dashboard / Sidebar Controls -->
         <aside id="sidebar" class="glass-panel">
@@ -40,19 +40,15 @@
                         <h2>Select Named Places</h2>
                         
                         <div class="input-group">
-                            <label for="keyword-select">Select Extracted Word</label>
-                            <div class="select-wrapper">
-                                <select id="keyword-select">
-                                    <option value="palani" selected>PALANI (பழனி)</option>
-                                    <option value="salam">SALAM / SALEM (சேலம்)</option>
-                                    <option value="pandi">PANDI (பாண்டி)</option>
-                                    <option value="kanchi">KANCHI (காஞ்சி)</option>
-                                    <option value="chola">CHOLA (சோழா)</option>
-                                    <option value="madurai">MADURAI (மதுரை)</option>
-                                    <option value="thanjavur">THANJAVUR (தஞ்சாவூர்)</option>
-                                    <option value="coimbatore">COIMBATORE (கோயம்புத்தூர்)</option>
-                                    <option value="trichy">TRICHY (திருச்சி)</option>
-                                </select>
+                            <label for="combobox-input">Select or Type District</label>
+                            <div class="combobox-container">
+                                <div class="combobox-wrapper">
+                                    <input type="text" id="combobox-input" placeholder="Type to search district..." autocomplete="off">
+                                    <span class="combobox-arrow">▼</span>
+                                </div>
+                                <ul id="combobox-options" class="combobox-options hidden">
+                                    <!-- Populated dynamically in app.js -->
+                                </ul>
                             </div>
                         </div>
 

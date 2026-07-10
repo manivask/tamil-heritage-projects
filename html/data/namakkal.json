@@ -1,0 +1,113 @@
+﻿{
+    "keyword":  "namakkal",
+    "total_count":  13,
+    "country_count":  2,
+    "countries":  {
+                      "Finland":  {
+                                      "id":  "Q24322555",
+                                      "name":  "Namakkaluokka",
+                                      "type":  "hill",
+                                      "lat":  68.851666666,
+                                      "lon":  21.571388888,
+                                      "link":  "http://www.wikidata.org/entity/Q24322555"
+                                  },
+                      "India":  [
+                                    {
+                                        "id":  "Q9923",
+                                        "name":  "Namakkal",
+                                        "type":  "small town",
+                                        "lat":  11.233333333,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q9923"
+                                    },
+                                    {
+                                        "id":  "Q24939672",
+                                        "name":  "Namakkal Anjaneyar Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  11.22222222,
+                                        "lon":  78.1625,
+                                        "link":  "http://www.wikidata.org/entity/Q24939672"
+                                    },
+                                    {
+                                        "id":  "Q10963458",
+                                        "name":  "Namakkal Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.233333333,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q10963458"
+                                    },
+                                    {
+                                        "id":  "Q25553150",
+                                        "name":  "Namakkal block",
+                                        "type":  "community development block of Tamil Nadu",
+                                        "lat":  11.233333333,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q25553150"
+                                    },
+                                    {
+                                        "id":  "Q15187",
+                                        "name":  "Namakkal district",
+                                        "type":  "district of India",
+                                        "lat":  11.219,
+                                        "lon":  78.167,
+                                        "link":  "http://www.wikidata.org/entity/Q15187"
+                                    },
+                                    {
+                                        "id":  "Q6961241",
+                                        "name":  "Namakkal division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  11.233333333,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q6961241"
+                                    },
+                                    {
+                                        "id":  "Q15260872",
+                                        "name":  "Namakkal Fort",
+                                        "type":  "fort",
+                                        "lat":  11.233333,
+                                        "lon":  78.166667,
+                                        "link":  "http://www.wikidata.org/entity/Q15260872"
+                                    },
+                                    {
+                                        "id":  "Q19894426",
+                                        "name":  "Namakkal Kavingyar Maaligai",
+                                        "type":  "building",
+                                        "lat":  13.081230653,
+                                        "lon":  80.286736129,
+                                        "link":  "http://www.wikidata.org/entity/Q19894426"
+                                    },
+                                    {
+                                        "id":  "Q6961238",
+                                        "name":  "Namakkal Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.233333333,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q6961238"
+                                    },
+                                    {
+                                        "id":  "Q18128464",
+                                        "name":  "Namakkal railway station",
+                                        "type":  "railway station",
+                                        "lat":  11.226080555,
+                                        "lon":  78.179061111,
+                                        "link":  "http://www.wikidata.org/entity/Q18128464"
+                                    },
+                                    {
+                                        "id":  "Q6961242",
+                                        "name":  "Namakkal taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  11.233333333,
+                                        "lon":  78.166666666,
+                                        "link":  "http://www.wikidata.org/entity/Q6961242"
+                                    },
+                                    {
+                                        "id":  "Q12985081",
+                                        "name":  "Narasimhaswamy Temple, Namakkal",
+                                        "type":  "Hindu temple",
+                                        "lat":  11.22222222,
+                                        "lon":  78.16416667,
+                                        "link":  "http://www.wikidata.org/entity/Q12985081"
+                                    }
+                                ]
+                  }
+}

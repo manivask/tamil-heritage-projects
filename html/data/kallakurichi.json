@@ -1,0 +1,57 @@
+﻿{
+    "keyword":  "kallakurichi",
+    "total_count":  6,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q2308206",
+                                        "name":  "Kallakurichi",
+                                        "type":  "small town",
+                                        "lat":  11.7404,
+                                        "lon":  78.959,
+                                        "link":  "http://www.wikidata.org/entity/Q2308206"
+                                    },
+                                    {
+                                        "id":  "Q6353516",
+                                        "name":  "Kallakurichi Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.738,
+                                        "lon":  78.962,
+                                        "link":  "http://www.wikidata.org/entity/Q6353516"
+                                    },
+                                    {
+                                        "id":  "Q6353501",
+                                        "name":  "Kallakurichi Block",
+                                        "type":  "community development block of Tamil Nadu",
+                                        "lat":  11.738,
+                                        "lon":  78.962,
+                                        "link":  "http://www.wikidata.org/entity/Q6353501"
+                                    },
+                                    {
+                                        "id":  "Q60493360",
+                                        "name":  "Kallakurichi district",
+                                        "type":  "district of India",
+                                        "lat":  11.738,
+                                        "lon":  78.962,
+                                        "link":  "http://www.wikidata.org/entity/Q60493360"
+                                    },
+                                    {
+                                        "id":  "Q6353499",
+                                        "name":  "Kallakurichi Division",
+                                        "type":  "Geographical Feature",
+                                        "lat":  11.738,
+                                        "lon":  78.962,
+                                        "link":  "http://www.wikidata.org/entity/Q6353499"
+                                    },
+                                    {
+                                        "id":  "Q6353510",
+                                        "name":  "Kallakurichi Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11.7,
+                                        "lon":  79,
+                                        "link":  "http://www.wikidata.org/entity/Q6353510"
+                                    }
+                                ]
+                  }
+}

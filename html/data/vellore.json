@@ -1,0 +1,197 @@
+﻿{
+    "keyword":  "vellore",
+    "total_count":  23,
+    "country_count":  5,
+    "countries":  {
+                      "Canada":  [
+                                     {
+                                         "id":  "Q115174596",
+                                         "name":  "Vellore",
+                                         "type":  "compact rural community",
+                                         "lat":  43.833333333,
+                                         "lon":  -79.5575,
+                                         "link":  "http://www.wikidata.org/entity/Q115174596"
+                                     },
+                                     {
+                                         "id":  "Q100363093",
+                                         "name":  "Vellore School and Township Hall",
+                                         "type":  "city hall",
+                                         "lat":  43.832909,
+                                         "lon":  -79.557432,
+                                         "link":  "http://www.wikidata.org/entity/Q100363093"
+                                     },
+                                     {
+                                         "id":  "Q105790752",
+                                         "name":  "Vellore Village Library",
+                                         "type":  "public library",
+                                         "lat":  43.83614,
+                                         "lon":  -79.56038,
+                                         "link":  "http://www.wikidata.org/entity/Q105790752"
+                                     },
+                                     {
+                                         "id":  "Q7919214",
+                                         "name":  "Vellore Woods Public School",
+                                         "type":  "Geographical Feature",
+                                         "lat":  43.8381,
+                                         "lon":  -79.5557,
+                                         "link":  "http://www.wikidata.org/entity/Q7919214"
+                                     }
+                                 ],
+                      "France":  {
+                                     "id":  "Q901887",
+                                     "name":  "Velloreille-lès-Choye",
+                                     "type":  "commune of France",
+                                     "lat":  47.392222222,
+                                     "lon":  5.736944444,
+                                     "link":  "http://www.wikidata.org/entity/Q901887"
+                                 },
+                      "India":  [
+                                    {
+                                        "id":  "Q4801373",
+                                        "name":  "Katpadi Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  12.972734,
+                                        "lon":  79.135341,
+                                        "link":  "http://www.wikidata.org/entity/Q4801373"
+                                    },
+                                    {
+                                        "id":  "Q17075380",
+                                        "name":  "tourism in Vellore",
+                                        "type":  "tourism in a region",
+                                        "lat":  12.732363,
+                                        "lon":  79.056673,
+                                        "link":  "http://www.wikidata.org/entity/Q17075380"
+                                    },
+                                    {
+                                        "id":  "Q16310858",
+                                        "name":  "Vellore",
+                                        "type":  "village in India",
+                                        "lat":  13.40977,
+                                        "lon":  79.80422,
+                                        "link":  "http://www.wikidata.org/entity/Q16310858"
+                                    },
+                                    {
+                                        "id":  "Q300577",
+                                        "name":  "Vellore",
+                                        "type":  "city",
+                                        "lat":  12.933333333,
+                                        "lon":  79.133333333,
+                                        "link":  "http://www.wikidata.org/entity/Q300577"
+                                    },
+                                    {
+                                        "id":  "Q3334278",
+                                        "name":  "Vellore Airport",
+                                        "type":  "airport",
+                                        "lat":  12.908611111,
+                                        "lon":  79.066666666,
+                                        "link":  "http://www.wikidata.org/entity/Q3334278"
+                                    },
+                                    {
+                                        "id":  "Q7919206",
+                                        "name":  "Vellore Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  12.920219,
+                                        "lon":  79.133306,
+                                        "link":  "http://www.wikidata.org/entity/Q7919206"
+                                    },
+                                    {
+                                        "id":  "Q7919208",
+                                        "name":  "Vellore Cantt railway station",
+                                        "type":  "railway station",
+                                        "lat":  12.910718,
+                                        "lon":  79.127493,
+                                        "link":  "http://www.wikidata.org/entity/Q7919208"
+                                    },
+                                    {
+                                        "id":  "Q7919210",
+                                        "name":  "Vellore Central Prison",
+                                        "type":  "prison",
+                                        "lat":  12.886429,
+                                        "lon":  79.120277,
+                                        "link":  "http://www.wikidata.org/entity/Q7919210"
+                                    },
+                                    {
+                                        "id":  "Q15206",
+                                        "name":  "Vellore district",
+                                        "type":  "district of India",
+                                        "lat":  12.911111111,
+                                        "lon":  79.136111111,
+                                        "link":  "http://www.wikidata.org/entity/Q15206"
+                                    },
+                                    {
+                                        "id":  "Q3390913",
+                                        "name":  "Vellore Fort",
+                                        "type":  "fort",
+                                        "lat":  12.920833333,
+                                        "lon":  79.128333333,
+                                        "link":  "http://www.wikidata.org/entity/Q3390913"
+                                    },
+                                    {
+                                        "id":  "Q3298919",
+                                        "name":  "Vellore Institute of Technology",
+                                        "type":  "engineering college",
+                                        "lat":  12.9722,
+                                        "lon":  79.1592,
+                                        "link":  "http://www.wikidata.org/entity/Q3298919"
+                                    },
+                                    {
+                                        "id":  "Q3534098",
+                                        "name":  "Vellore Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  12.920219,
+                                        "lon":  79.133306,
+                                        "link":  "http://www.wikidata.org/entity/Q3534098"
+                                    },
+                                    {
+                                        "id":  "Q7919212",
+                                        "name":  "Vellore Municipal Corporation",
+                                        "type":  "Municipal Corporation (India)",
+                                        "lat":  12.9203,
+                                        "lon":  79.1333,
+                                        "link":  "http://www.wikidata.org/entity/Q7919212"
+                                    },
+                                    {
+                                        "id":  "Q115803451",
+                                        "name":  "Vellore New Bus Terminus",
+                                        "type":  "bus station",
+                                        "lat":  12.9346,
+                                        "lon":  79.1366,
+                                        "link":  "http://www.wikidata.org/entity/Q115803451"
+                                    },
+                                    {
+                                        "id":  "Q63357258",
+                                        "name":  "Vellore Town railway station",
+                                        "type":  "railway station",
+                                        "lat":  12.923647,
+                                        "lon":  79.125213,
+                                        "link":  "http://www.wikidata.org/entity/Q63357258"
+                                    }
+                                ],
+                      "United Kingdom":  [
+                                             {
+                                                 "id":  "Q26674668",
+                                                 "name":  "Bath Spa Hotel",
+                                                 "type":  "hotel",
+                                                 "lat":  51.38597,
+                                                 "lon":  -2.344609,
+                                                 "link":  "http://www.wikidata.org/entity/Q26674668"
+                                             },
+                                             {
+                                                 "id":  "Q138427620",
+                                                 "name":  "Vellore Road bridge 51",
+                                                 "type":  "road bridge",
+                                                 "lat":  55.972496,
+                                                 "lon":  -3.67279,
+                                                 "link":  "http://www.wikidata.org/entity/Q138427620"
+                                             }
+                                         ],
+                      "United States":  {
+                                            "id":  "Q30268371",
+                                            "name":  "Vellore Christian Medical College Foundation",
+                                            "type":  "nonprofit organization",
+                                            "lat":  40.81085,
+                                            "lon":  -73.964029,
+                                            "link":  "http://www.wikidata.org/entity/Q30268371"
+                                        }
+                  }
+}

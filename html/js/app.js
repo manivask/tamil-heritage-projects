@@ -6,7 +6,7 @@ let map;
 let markersLayer;
 let darkTileLayer;
 let lightTileLayer;
-let isDarkTheme = true;
+let isDarkTheme = false; // Default to light theme (Apple style)
 let currentData = null;
 const markersMap = new Map(); // Keep track of Leaflet markers by place ID for direct opening
 
@@ -43,23 +43,19 @@ function initMap() {
         maxZoom: 20
     });
 
-    // Default to dark theme tiles
-    darkTileLayer.addTo(map);
+    // Default to light theme tiles
+    lightTileLayer.addTo(map);
 
     markersLayer = L.layerGroup().addTo(map);
 }
 
 // Attach Event Listeners
 function setupEventListeners() {
-    const select = document.getElementById("keyword-select");
+    initCombobox();
+    
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
     const filterInput = document.getElementById("place-filter");
-
-    // Pre-extracted dropdown keyword select
-    select.addEventListener("change", (e) => {
-        loadKeyword(e.target.value);
-    });
 
     // Live search click button
     searchButton.addEventListener("click", () => {
@@ -246,22 +242,12 @@ async function triggerLiveSearch(keyword, isFallback = false) {
         
         if (parsedData.total_count > 0) {
             showToast(`Found ${parsedData.total_count} places for "${keyword.toUpperCase()}" via live Wikidata!`, "success");
-            // If live search, update dropdown selection to none or matching keyword
+            // If live search, update combobox selection to matching keyword
             if (!isFallback) {
-                // Add temporary search result option to dropdown if not present
-                const select = document.getElementById("keyword-select");
-                
-                // Remove existing temp live options
-                const oldTemp = select.querySelector('option[data-temp="true"]');
-                if (oldTemp) oldTemp.remove();
-                
-                // Add new temp option and select it
-                const option = document.createElement("option");
-                option.value = keyword.toLowerCase();
-                option.textContent = `LIVE: ${keyword.toUpperCase()}`;
-                option.setAttribute("data-temp", "true");
-                option.selected = true;
-                select.appendChild(option);
+                const comboboxInput = document.getElementById("combobox-input");
+                if (comboboxInput) {
+                    comboboxInput.value = `LIVE: ${keyword.toUpperCase()}`;
+                }
             }
         } else {
             showToast(`No places found for "${keyword}" on Wikidata`, "info");
@@ -553,5 +539,123 @@ function toggleTheme() {
         map.removeLayer(darkTileLayer);
         lightTileLayer.addTo(map);
         showToast("Switched to Light Mode", "info");
+    }
+}
+
+// 38 Districts of Tamil Nadu + Heritage Keywords
+const DISTRICTS = [
+    { id: "palani", en: "Palani (Heritage)", ta: "பழனி" },
+    { id: "salam", en: "Salem / Salam", ta: "சேலம்" },
+    { id: "pandi", en: "Pandi (Heritage)", ta: "பாண்டி" },
+    { id: "kanchi", en: "Kanchi (Heritage)", ta: "காஞ்சி" },
+    { id: "chola", en: "Chola (Heritage)", ta: "சோழா" },
+    { id: "ariyalur", en: "Ariyalur", ta: "அரியலூர்" },
+    { id: "chengalpattu", en: "Chengalpattu", ta: "செங்கல்பட்டு" },
+    { id: "chennai", en: "Chennai", ta: "சென்னை" },
+    { id: "coimbatore", en: "Coimbatore", ta: "கோயம்புத்தூர்" },
+    { id: "cuddalore", en: "Cuddalore", ta: "கடலூர்" },
+    { id: "dharmapuri", en: "Dharmapuri", ta: "தர்மபுரி" },
+    { id: "dindigul", en: "Dindigul", ta: "திண்டுக்கல்" },
+    { id: "erode", en: "Erode", ta: "ஈரோடு" },
+    { id: "kallakurichi", en: "Kallakurichi", ta: "கள்ளக்குறிச்சி" },
+    { id: "kanchipuram", en: "Kanchipuram", ta: "காஞ்சிபுரம்" },
+    { id: "kanyakumari", en: "Kanyakumari", ta: "கன்னியாகுமரி" },
+    { id: "karur", en: "Karur", ta: "கரூர்" },
+    { id: "krishnagiri", en: "Krishnagiri", ta: "கிருஷ்ணகிரி" },
+    { id: "madurai", en: "Madurai", ta: "மதுரை" },
+    { id: "mayiladuthurai", en: "Mayiladuthurai", ta: "மயிலாடுதுறை" },
+    { id: "nagapattinam", en: "Nagapattinam", ta: "நாகப்பட்டினம்" },
+    { id: "namakkal", en: "Namakkal", ta: "நாமக்கல்" },
+    { id: "nilgiris", en: "Nilgiris", ta: "நீலகிரி" },
+    { id: "perambalur", en: "Perambalur", ta: "பெரம்பலூர்" },
+    { id: "pudukkottai", en: "Pudukkottai", ta: "புதுக்கோட்டை" },
+    { id: "ramanathapuram", en: "Ramanathapuram", ta: "ராமநாதபுரம்" },
+    { id: "ranipet", en: "Ranipet", ta: "ராணிப்பேட்டை" },
+    { id: "salem", en: "Salem", ta: "சேலம்" },
+    { id: "sivaganga", en: "Sivaganga", ta: "சிவகங்கை" },
+    { id: "tenkasi", en: "Tenkasi", ta: "தென்காசி" },
+    { id: "thanjavur", en: "Thanjavur", ta: "தஞ்சாவூர்" },
+    { id: "theni", en: "Theni", ta: "தேனி" },
+    { id: "thoothukudi", en: "Thoothukudi", ta: "தூத்துக்குடி" },
+    { id: "tiruchirappalli", en: "Tiruchirappalli", ta: "திருச்சிராப்பள்ளி" },
+    { id: "tirunelveli", en: "Tirunelveli", ta: "திருநெல்வேலி" },
+    { id: "tirupathur", en: "Tirupathur", ta: "திருப்பத்தூர்" },
+    { id: "tiruppur", en: "Tiruppur", ta: "திருப்பூர்" },
+    { id: "tiruvallur", en: "Tiruvallur", ta: "திருவள்ளூர்" },
+    { id: "tiruvannamalai", en: "Tiruvannamalai", ta: "திருவண்ணாமலை" },
+    { id: "tiruvarur", en: "Tiruvarur", ta: "திருவாரூர்" },
+    { id: "vellore", en: "Vellore", ta: "வேலூர்" },
+    { id: "viluppuram", en: "Viluppuram", ta: "விழுப்புரம்" },
+    { id: "virudhunagar", en: "Virudhunagar", ta: "விருதுநகர்" }
+];
+
+// Initialize custom searchable combobox
+function initCombobox() {
+    const input = document.getElementById("combobox-input");
+    const optionsList = document.getElementById("combobox-options");
+    const container = input.closest(".combobox-container");
+    
+    // Set initial value
+    input.value = "PALANI (பழனி)";
+    
+    // Render all options initially
+    renderComboboxOptions(DISTRICTS);
+    
+    // Filter options as user types
+    input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+        const filtered = DISTRICTS.filter(d => 
+            d.en.toLowerCase().includes(query) || 
+            d.ta.includes(query)
+        );
+        renderComboboxOptions(filtered);
+        optionsList.classList.remove("hidden");
+    });
+    
+    // Show options on focus
+    input.addEventListener("focus", () => {
+        optionsList.classList.remove("hidden");
+    });
+    
+    // Toggle on container click
+    container.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (e.target.id === "combobox-input" || e.target.classList.contains("combobox-arrow")) {
+            optionsList.classList.toggle("hidden");
+        }
+    });
+    
+    // Hide dropdown when clicking outside
+    document.addEventListener("click", () => {
+        optionsList.classList.add("hidden");
+    });
+    
+    function renderComboboxOptions(list) {
+        optionsList.innerHTML = "";
+        if (list.length === 0) {
+            const li = document.createElement("li");
+            li.className = "combobox-option";
+            li.style.color = "var(--text-muted)";
+            li.textContent = "No matches found";
+            optionsList.appendChild(li);
+            return;
+        }
+        
+        list.forEach(d => {
+            const li = document.createElement("li");
+            li.className = "combobox-option";
+            li.setAttribute("data-id", d.id);
+            li.innerHTML = `
+                <span class="english-text">${d.en}</span>
+                <span class="tamil-text">${d.ta}</span>
+            `;
+            
+            li.addEventListener("click", () => {
+                input.value = `${d.en.toUpperCase()} (${d.ta})`;
+                optionsList.classList.add("hidden");
+                loadKeyword(d.id);
+            });
+            optionsList.appendChild(li);
+        });
     }
 }

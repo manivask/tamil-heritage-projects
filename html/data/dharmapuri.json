@@ -1,0 +1,209 @@
+﻿{
+    "keyword":  "dharmapuri",
+    "total_count":  25,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q107406174",
+                                        "name":  "Dharmapuri",
+                                        "type":  "human settlement",
+                                        "lat":  18.948416666,
+                                        "lon":  79.101638888,
+                                        "link":  "http://www.wikidata.org/entity/Q107406174"
+                                    },
+                                    {
+                                        "id":  "Q13000305",
+                                        "name":  "Dharmapuri",
+                                        "type":  "village in India",
+                                        "lat":  13.10495,
+                                        "lon":  78.64769,
+                                        "link":  "http://www.wikidata.org/entity/Q13000305"
+                                    },
+                                    {
+                                        "id":  "Q33158502",
+                                        "name":  "Dharmapuri",
+                                        "type":  "second-level administrative division",
+                                        "lat":  12.13,
+                                        "lon":  78.24,
+                                        "link":  "http://www.wikidata.org/entity/Q33158502"
+                                    },
+                                    {
+                                        "id":  "Q1224758",
+                                        "name":  "Dharmapuri",
+                                        "type":  "village in India",
+                                        "lat":  18.9475,
+                                        "lon":  79.094,
+                                        "link":  "http://www.wikidata.org/entity/Q1224758"
+                                    },
+                                    {
+                                        "id":  "Q9894",
+                                        "name":  "Dharmapuri",
+                                        "type":  "small town",
+                                        "lat":  12.127,
+                                        "lon":  78.158,
+                                        "link":  "http://www.wikidata.org/entity/Q9894"
+                                    },
+                                    {
+                                        "id":  "Q13000306",
+                                        "name":  "Dharmapuri (R)",
+                                        "type":  "village in India",
+                                        "lat":  18.0875182,
+                                        "lon":  83.4124881,
+                                        "link":  "http://www.wikidata.org/entity/Q13000306"
+                                    },
+                                    {
+                                        "id":  "Q5269298",
+                                        "name":  "Dharmapuri Assembly constituency",
+                                        "type":  "constituency of the Telangana Legislative Assembly",
+                                        "lat":  18.95,
+                                        "lon":  79.09,
+                                        "link":  "http://www.wikidata.org/entity/Q5269298"
+                                    },
+                                    {
+                                        "id":  "Q15152",
+                                        "name":  "Dharmapuri district",
+                                        "type":  "district of India",
+                                        "lat":  12.126,
+                                        "lon":  78.154,
+                                        "link":  "http://www.wikidata.org/entity/Q15152"
+                                    },
+                                    {
+                                        "id":  "Q16878711",
+                                        "name":  "Dharmapuri division",
+                                        "type":  "revenue division in Tamil Nadu",
+                                        "lat":  12.126,
+                                        "lon":  78.154,
+                                        "link":  "http://www.wikidata.org/entity/Q16878711"
+                                    },
+                                    {
+                                        "id":  "Q31367867",
+                                        "name":  "Dharmapuri Harihara Natha Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  12.1336894,
+                                        "lon":  78.1638381,
+                                        "link":  "http://www.wikidata.org/entity/Q31367867"
+                                    },
+                                    {
+                                        "id":  "Q15213879",
+                                        "name":  "Dharmapuri Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  12.126595,
+                                        "lon":  78.154742,
+                                        "link":  "http://www.wikidata.org/entity/Q15213879"
+                                    },
+                                    {
+                                        "id":  "Q31367835",
+                                        "name":  "Dharmapuri Kamakshy Amman Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  12.1427712,
+                                        "lon":  78.1651856,
+                                        "link":  "http://www.wikidata.org/entity/Q31367835"
+                                    },
+                                    {
+                                        "id":  "Q3532436",
+                                        "name":  "Dharmapuri Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  12.126,
+                                        "lon":  78.154,
+                                        "link":  "http://www.wikidata.org/entity/Q3532436"
+                                    },
+                                    {
+                                        "id":  "Q26808952",
+                                        "name":  "Dharmāpuri Minor",
+                                        "type":  "canal",
+                                        "lat":  20.833888888,
+                                        "lon":  79.848333333,
+                                        "link":  "http://www.wikidata.org/entity/Q26808952"
+                                    },
+                                    {
+                                        "id":  "Q26805589",
+                                        "name":  "Dharmāpuri Minor",
+                                        "type":  "canal",
+                                        "lat":  21.260277777,
+                                        "lon":  79.472222222,
+                                        "link":  "http://www.wikidata.org/entity/Q26805589"
+                                    },
+                                    {
+                                        "id":  "Q31367837",
+                                        "name":  "Dharmapuri Paravasudeva Perumal Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  12.1426794,
+                                        "lon":  78.1634505,
+                                        "link":  "http://www.wikidata.org/entity/Q31367837"
+                                    },
+                                    {
+                                        "id":  "Q31367894",
+                                        "name":  "Dharmapuri Road Vinayagar Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  12.199177,
+                                        "lon":  78.1897218,
+                                        "link":  "http://www.wikidata.org/entity/Q31367894"
+                                    },
+                                    {
+                                        "id":  "Q31367895",
+                                        "name":  "Dharmapuri Sitaramadasa Anjaneya Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  12.1327537,
+                                        "lon":  78.1633749,
+                                        "link":  "http://www.wikidata.org/entity/Q31367895"
+                                    },
+                                    {
+                                        "id":  "Q31367891",
+                                        "name":  "Dharmapuri Sivasubramaniam Swamy Temple",
+                                        "type":  "Hindu temple",
+                                        "lat":  12.1375604,
+                                        "lon":  78.1558179,
+                                        "link":  "http://www.wikidata.org/entity/Q31367891"
+                                    },
+                                    {
+                                        "id":  "Q5269306",
+                                        "name":  "Dharmapuri taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  12.126,
+                                        "lon":  78.154,
+                                        "link":  "http://www.wikidata.org/entity/Q5269306"
+                                    },
+                                    {
+                                        "id":  "Q28601242",
+                                        "name":  "Dharmapuri(Puducherry)",
+                                        "type":  "human-geographic territorial entity",
+                                        "lat":  11.939612,
+                                        "lon":  79.77848,
+                                        "link":  "http://www.wikidata.org/entity/Q28601242"
+                                    },
+                                    {
+                                        "id":  "Q60751428",
+                                        "name":  "Dharmapuri, Parbhani",
+                                        "type":  "village in India",
+                                        "lat":  19.31222222,
+                                        "lon":  76.74222222,
+                                        "link":  "http://www.wikidata.org/entity/Q60751428"
+                                    },
+                                    {
+                                        "id":  "Q107406058",
+                                        "name":  "Dharmapuri, Parbhani",
+                                        "type":  "human settlement",
+                                        "lat":  18.732583333,
+                                        "lon":  76.631611111,
+                                        "link":  "http://www.wikidata.org/entity/Q107406058"
+                                    },
+                                    {
+                                        "id":  "Q5269300",
+                                        "name":  "Dharmapuri, Tamil Nadu Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  12.126,
+                                        "lon":  78.154,
+                                        "link":  "http://www.wikidata.org/entity/Q5269300"
+                                    },
+                                    {
+                                        "id":  "Q868357",
+                                        "name":  "Roman Catholic Diocese of Dharmapuri",
+                                        "type":  "diocese of the Catholic Church",
+                                        "lat":  12.13615,
+                                        "lon":  78.1643,
+                                        "link":  "http://www.wikidata.org/entity/Q868357"
+                                    }
+                                ]
+                  }
+}
