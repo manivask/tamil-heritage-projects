@@ -1000,3 +1000,16 @@ body.light-theme #sidebar::-webkit-scrollbar-thumb:hover {
     font-weight: 500;
 }
 
+.combobox-option .type-badge {
+    font-size: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+body:not(.light-theme) .combobox-option .type-badge {
+    background: rgba(255, 255, 255, 0.08);
+}
+

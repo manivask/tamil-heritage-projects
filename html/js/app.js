@@ -9,11 +9,23 @@ let lightTileLayer;
 let isDarkTheme = false; // Default to light theme (Apple style)
 let currentData = null;
 const markersMap = new Map(); // Keep track of Leaflet markers by place ID for direct opening
+let subdivisionsData = []; // Store TN administrative subdivisions loaded from JSON
 
 // Initialize map on DOM load
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     initMap();
     setupEventListeners();
+    
+    // Load subdivisions list dynamically
+    try {
+        const response = await fetch("data/subdivisions.json");
+        if (response.ok) {
+            subdivisionsData = await response.json();
+            initCombobox();
+        }
+    } catch (err) {
+        console.error("Failed to load subdivisions list:", err);
+    }
     
     // Load initial data (Palani)
     loadKeyword("palani");
@@ -51,8 +63,6 @@ function initMap() {
 
 // Attach Event Listeners
 function setupEventListeners() {
-    initCombobox();
-    
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
     const filterInput = document.getElementById("place-filter");
@@ -542,53 +552,6 @@ function toggleTheme() {
     }
 }
 
-// 38 Districts of Tamil Nadu + Heritage Keywords
-const DISTRICTS = [
-    { id: "palani", en: "Palani (Heritage)", ta: "பழனி" },
-    { id: "salam", en: "Salem / Salam", ta: "சேலம்" },
-    { id: "pandi", en: "Pandi (Heritage)", ta: "பாண்டி" },
-    { id: "kanchi", en: "Kanchi (Heritage)", ta: "காஞ்சி" },
-    { id: "chola", en: "Chola (Heritage)", ta: "சோழா" },
-    { id: "ariyalur", en: "Ariyalur", ta: "அரியலூர்" },
-    { id: "chengalpattu", en: "Chengalpattu", ta: "செங்கல்பட்டு" },
-    { id: "chennai", en: "Chennai", ta: "சென்னை" },
-    { id: "coimbatore", en: "Coimbatore", ta: "கோயம்புத்தூர்" },
-    { id: "cuddalore", en: "Cuddalore", ta: "கடலூர்" },
-    { id: "dharmapuri", en: "Dharmapuri", ta: "தர்மபுரி" },
-    { id: "dindigul", en: "Dindigul", ta: "திண்டுக்கல்" },
-    { id: "erode", en: "Erode", ta: "ஈரோடு" },
-    { id: "kallakurichi", en: "Kallakurichi", ta: "கள்ளக்குறிச்சி" },
-    { id: "kanchipuram", en: "Kanchipuram", ta: "காஞ்சிபுரம்" },
-    { id: "kanyakumari", en: "Kanyakumari", ta: "கன்னியாகுமரி" },
-    { id: "karur", en: "Karur", ta: "கரூர்" },
-    { id: "krishnagiri", en: "Krishnagiri", ta: "கிருஷ்ணகிரி" },
-    { id: "madurai", en: "Madurai", ta: "மதுரை" },
-    { id: "mayiladuthurai", en: "Mayiladuthurai", ta: "மயிலாடுதுறை" },
-    { id: "nagapattinam", en: "Nagapattinam", ta: "நாகப்பட்டினம்" },
-    { id: "namakkal", en: "Namakkal", ta: "நாமக்கல்" },
-    { id: "nilgiris", en: "Nilgiris", ta: "நீலகிரி" },
-    { id: "perambalur", en: "Perambalur", ta: "பெரம்பலூர்" },
-    { id: "pudukkottai", en: "Pudukkottai", ta: "புதுக்கோட்டை" },
-    { id: "ramanathapuram", en: "Ramanathapuram", ta: "ராமநாதபுரம்" },
-    { id: "ranipet", en: "Ranipet", ta: "ராணிப்பேட்டை" },
-    { id: "salem", en: "Salem", ta: "சேலம்" },
-    { id: "sivaganga", en: "Sivaganga", ta: "சிவகங்கை" },
-    { id: "tenkasi", en: "Tenkasi", ta: "தென்காசி" },
-    { id: "thanjavur", en: "Thanjavur", ta: "தஞ்சாவூர்" },
-    { id: "theni", en: "Theni", ta: "தேனி" },
-    { id: "thoothukudi", en: "Thoothukudi", ta: "தூத்துக்குடி" },
-    { id: "tiruchirappalli", en: "Tiruchirappalli", ta: "திருச்சிராப்பள்ளி" },
-    { id: "tirunelveli", en: "Tirunelveli", ta: "திருநெல்வேலி" },
-    { id: "tirupathur", en: "Tirupathur", ta: "திருப்பத்தூர்" },
-    { id: "tiruppur", en: "Tiruppur", ta: "திருப்பூர்" },
-    { id: "tiruvallur", en: "Tiruvallur", ta: "திருவள்ளூர்" },
-    { id: "tiruvannamalai", en: "Tiruvannamalai", ta: "திருவண்ணாமலை" },
-    { id: "tiruvarur", en: "Tiruvarur", ta: "திருவாரூர்" },
-    { id: "vellore", en: "Vellore", ta: "வேலூர்" },
-    { id: "viluppuram", en: "Viluppuram", ta: "விழுப்புரம்" },
-    { id: "virudhunagar", en: "Virudhunagar", ta: "விருதுநகர்" }
-];
-
 // Initialize custom searchable combobox
 function initCombobox() {
     const input = document.getElementById("combobox-input");
@@ -599,14 +562,15 @@ function initCombobox() {
     input.value = "PALANI (பழனி)";
     
     // Render all options initially
-    renderComboboxOptions(DISTRICTS);
+    renderComboboxOptions(subdivisionsData);
     
     // Filter options as user types
     input.addEventListener("input", () => {
         const query = input.value.trim().toLowerCase();
-        const filtered = DISTRICTS.filter(d => 
+        const filtered = subdivisionsData.filter(d => 
             d.en.toLowerCase().includes(query) || 
-            d.ta.includes(query)
+            d.ta.includes(query) ||
+            d.type.toLowerCase().includes(query)
         );
         renderComboboxOptions(filtered);
         optionsList.classList.remove("hidden");
@@ -641,21 +605,37 @@ function initCombobox() {
             return;
         }
         
-        list.forEach(d => {
+        // Show top 100 matches to prevent rendering lags
+        const visibleList = list.slice(0, 100);
+        
+        visibleList.forEach(d => {
             const li = document.createElement("li");
             li.className = "combobox-option";
             li.setAttribute("data-id", d.id);
             li.innerHTML = `
-                <span class="english-text">${d.en}</span>
-                <span class="tamil-text">${d.ta}</span>
+                <div class="option-left" style="display: flex; flex-direction: column; gap: 2px;">
+                    <span class="english-text" style="font-weight: 500;">${d.en}</span>
+                    <span class="tamil-text" style="font-size: 11px; color: var(--text-muted);">${d.ta}</span>
+                </div>
+                <span class="type-badge">${d.type}</span>
             `;
             
             li.addEventListener("click", () => {
                 input.value = `${d.en.toUpperCase()} (${d.ta})`;
                 optionsList.classList.add("hidden");
-                loadKeyword(d.id);
+                loadKeyword(d.search_term || d.id);
             });
             optionsList.appendChild(li);
         });
+        
+        if (list.length > 100) {
+            const li = document.createElement("li");
+            li.className = "combobox-option";
+            li.style.color = "var(--text-muted)";
+            li.style.fontSize = "12px";
+            li.style.justifyContent = "center";
+            li.textContent = `Showing 100 of ${list.length} matches. Type to refine...`;
+            optionsList.appendChild(li);
+        }
     }
 }
