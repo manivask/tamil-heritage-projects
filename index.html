@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tamil Heritage Digital Projects Portal - Explore Thirukkural Facts Finder and Global Tamil Toponyms Explorer.">
-    <title>Tamil Heritage Digital Projects Portal</title>
+    <meta name="description" content="Tamil Heritage Digital Projects Portal - Explore literature, geography, organic farming, and maritime history.">
+    <title>Tamil Heritage Projects Portal</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,15 +14,15 @@
     
     <style>
         :root {
-            --bg-color: #0b0f19;
-            --accent-color: #3b82f6;
-            --accent-glow: rgba(59, 130, 246, 0.15);
-            --card-bg: rgba(17, 24, 39, 0.7);
-            --card-border: rgba(255, 255, 255, 0.08);
-            --text-primary: #f3f4f6;
-            --text-secondary: #9ca3af;
-            --font-display: 'Outfit', sans-serif;
-            --font-body: 'Inter', sans-serif;
+            --bg-color: #f5f5f7; /* Apple's signature light grey background */
+            --accent-color: #0071e3; /* Apple Blue */
+            --accent-glow: rgba(0, 113, 227, 0.12);
+            --card-bg: #ffffff;
+            --card-border: rgba(0, 0, 0, 0.08);
+            --text-primary: #1d1d1f; /* Apple black */
+            --text-secondary: #86868b; /* Apple grey */
+            --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
         }
 
         * {
@@ -33,11 +33,6 @@
 
         body {
             background-color: var(--bg-color);
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(17, 24, 39, 1) 0, transparent 50%),
-                radial-gradient(at 50% 0%, rgba(59, 130, 246, 0.1) 0, transparent 50%),
-                radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.08) 0, transparent 50%);
-            background-attachment: fixed;
             color: var(--text-primary);
             font-family: var(--font-body);
             min-height: 100vh;
@@ -46,7 +41,7 @@
             justify-content: space-between;
             align-items: center;
             overflow-x: hidden;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
         .container {
@@ -57,163 +52,176 @@
         }
 
         header {
-            margin-bottom: 4rem;
+            margin-bottom: 3.5rem;
             animation: fadeInDown 0.8s ease-out;
         }
 
         .badge {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            color: #60a5fa;
+            background: rgba(0, 113, 227, 0.06);
+            border: 1px solid rgba(0, 113, 227, 0.15);
+            color: var(--accent-color);
             padding: 0.5rem 1rem;
             border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
+            font-size: 0.8rem;
+            font-weight: 600;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             display: inline-block;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
             font-family: var(--font-display);
         }
 
         h1 {
             font-family: var(--font-display);
-            font-size: 3.5rem;
+            font-size: 3.25rem;
             font-weight: 800;
             line-height: 1.15;
-            background: linear-gradient(135deg, #ffffff 30%, #93c5fd 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.025em;
         }
 
         .subtitle {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--text-secondary);
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
-            line-height: 1.6;
-            font-weight: 300;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-align: left;
+            margin: 3.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--card-border);
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
         }
 
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 4rem;
+            gap: 2rem;
+            margin-bottom: 2rem;
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
         .project-card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 3rem 2rem;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
             text-decoration: none;
             color: inherit;
             text-align: left;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            backdrop-filter: blur(16px);
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
             position: relative;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.4s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
         }
 
         .project-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-5px);
+            border-color: rgba(0, 113, 227, 0.3);
             box-shadow: 
-                0 20px 40px rgba(0, 0, 0, 0.3),
-                0 0 50px var(--accent-glow);
-        }
-
-        .project-card:hover::before {
-            opacity: 1;
+                0 12px 30px rgba(0, 0, 0, 0.06),
+                0 0 0 1px var(--accent-glow);
         }
 
         .card-icon {
-            font-size: 3rem;
-            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
             display: inline-block;
-            position: relative;
-            z-index: 1;
         }
 
         .card-content {
-            position: relative;
-            z-index: 1;
             flex-grow: 1;
         }
 
         .card-title {
             font-family: var(--font-display);
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 1rem;
-            color: #ffffff;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
             letter-spacing: -0.01em;
         }
 
         .card-description {
             color: var(--text-secondary);
             line-height: 1.6;
-            margin-bottom: 2rem;
-            font-weight: 300;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 400;
         }
 
         .card-action {
             display: flex;
             align-items: center;
-            color: #60a5fa;
+            color: var(--accent-color);
             font-weight: 600;
+            font-size: 0.95rem;
             font-family: var(--font-display);
             transition: transform 0.2s ease;
-            position: relative;
-            z-index: 1;
         }
 
         .card-action span {
-            margin-left: 0.5rem;
+            margin-left: 0.4rem;
             transition: transform 0.2s ease;
         }
 
         .project-card:hover .card-action span {
-            transform: translateX(6px);
+            transform: translateX(4px);
+        }
+
+        /* Profile details list inside pioneer cards */
+        .profile-bullets {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .profile-bullets li {
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .profile-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
         }
 
         footer {
-            color: rgba(255, 255, 255, 0.3);
-            font-size: 0.875rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
             width: 100%;
             padding-top: 2rem;
-            margin-top: auto;
+            margin-top: 4rem;
             text-align: center;
-            font-weight: 300;
-            animation: fadeIn 1s ease-out 0.4s both;
+            font-weight: 400;
         }
 
         /* Animations */
         @keyframes fadeInDown {
             from {
                 opacity: 0;
-                transform: translateY(-20px);
+                transform: translateY(-15px);
             }
             to {
                 opacity: 1;
@@ -224,7 +232,7 @@
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
@@ -232,26 +240,14 @@
             }
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
         /* Responsive adjustments */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.25rem;
             }
             .projects-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            .project-card {
-                padding: 2.5rem 1.5rem;
+                gap: 1.25rem;
             }
         }
     </style>
@@ -261,46 +257,116 @@
         <header>
             <div class="badge">Digital Humanities</div>
             <h1>Tamil Heritage Projects</h1>
-            <p class="subtitle">Interactive web applications exploring Tamil history, literature, geography, and culture.</p>
+            <p class="subtitle">Exploring Tamil history, literature, oceanography, traditional agriculture, and culture through modern tools.</p>
         </header>
 
-        <main class="projects-grid">
-            <!-- Project 1: Toponyms Explorer -->
-            <a href="html/toponyms.html" class="project-card" id="card-toponyms">
-                <div>
-                    <span class="card-icon" aria-hidden="true">🌐</span>
-                    <div class="card-content">
-                        <h2 class="card-title">Global Toponyms Explorer</h2>
-                        <p class="card-description">
-                            An interactive geospatial map visualizing and tracing names of Tamil origin (like Palani, Salem, Pandi) mapped across the globe using Wikidata and Leaflet.
-                        </p>
+        <main>
+            <!-- SECTION 1: Interactive Applications -->
+            <h2 class="section-title">Interactive Applications</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Toponyms Explorer -->
+                <a href="html/toponyms.html" class="project-card" id="card-toponyms">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🌐</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Global Toponyms Explorer</h2>
+                            <p class="card-description">
+                                An interactive geospatial map visualizing and tracing names of Tamil origin (like Palani, Salem, Pandi) mapped across the globe using Wikidata.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-action">
-                    Launch Application <span>&rarr;</span>
-                </div>
-            </a>
+                    <div class="card-action">
+                        Launch Application <span>&rarr;</span>
+                    </div>
+                </a>
 
-            <!-- Project 2: Thirukkural Facts Finder -->
-            <a href="html/thirukkural_facts_finder.html" class="project-card" id="card-facts-finder">
-                <div>
-                    <span class="card-icon" aria-hidden="true">📜</span>
-                    <div class="card-content">
-                        <h2 class="card-title">Thirukkural Facts Finder</h2>
-                        <p class="card-description">
-                            A fast search and statistical explorer for the 1,330 couplets (Kurals) of the ancient Tamil moral text, organized by chapter, section, and translation.
-                        </p>
+                <!-- Project 2: Thirukkural Facts Finder -->
+                <a href="html/thirukkural_facts_finder.html" class="project-card" id="card-facts-finder">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">📜</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Thirukkural Facts Finder</h2>
+                            <p class="card-description">
+                                A fast search and statistical explorer for the 1,330 couplets (Kurals) of the ancient Tamil moral text, organized by chapter, section, and translation.
+                            </p>
+                        </div>
                     </div>
+                    <div class="card-action">
+                        Launch Application <span>&rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- SECTION 2: Heritage Pioneers & Researchers -->
+            <h2 class="section-title">Heritage Pioneers & Researchers</h2>
+            <div class="projects-grid">
+                <!-- Pioneer 1: Orissa Balu -->
+                <div class="project-card" id="card-orissa-balu">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🐢</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Orissa Balu (ஒரிசா பாலு)</h2>
+                            <p class="card-description">
+                                World-renowned Tamil researcher and oceanographer who dedicated his life to researching ancient Tamil maritime history, sea trade routes, and connection to ocean currents.
+                            </p>
+                            <ul class="profile-bullets">
+                                <li>Mapped turtle migration pathways matching ancient Tamil trade routes.</li>
+                                <li>Researched "Kumari Kandam" (sunken landmass) and maritime history.</li>
+                                <li>Linked names of Tamil origin in East Asia, Africa, and global coastlines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://www.whatyoumissedintamilclass.io/post/who-was-world-renowned-tamil-researcher-orissa-balu" target="_blank" class="card-action">
+                        Read Biography <span>&rarr;</span>
+                    </a>
                 </div>
-                <div class="card-action">
-                    Launch Application <span>&rarr;</span>
+
+                <!-- Pioneer 2: G. Nammalvar -->
+                <div class="project-card" id="card-nammalvar">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🌱</span>
+                        <div class="card-content">
+                            <h2 class="card-title">G. Nammalvar (கோ. நம்மாழ்வார்)</h2>
+                            <p class="card-description">
+                                Pioneer agricultural scientist, organic farming crusader, and environmentalist who fought against chemical agriculture and successfully revived traditional Tamil farming systems.
+                            </p>
+                            <ul class="profile-bullets">
+                                <li>Founded "Vanagam", an ecological crusade center.</li>
+                                <li>Rescued and popularized native grain/paddy varieties in Tamil Nadu.</li>
+                                <li>Educated thousands of farmers globally in zero-cost natural farming.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/G._Nammalvar" target="_blank" class="card-action">
+                        Read Wikipedia Profile <span>&rarr;</span>
+                    </a>
                 </div>
-            </a>
+            </div>
+
+            <!-- SECTION 3: Developer & Research Tools -->
+            <h2 class="section-title">Developer & Research Tools</h2>
+            <div class="projects-grid">
+                <!-- Tool 1: Content Extractor -->
+                <a href="html/extractor.html" class="project-card" id="card-extractor">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">⚡</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Content Extractor Tool</h2>
+                            <p class="card-description">
+                                A utility to scrape webpage text or transcribe YouTube video/shorts audio, delivering clean text output to save LLM tokens during research discussions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        Open Extractor UI <span>&rarr;</span>
+                    </div>
+                </a>
+            </div>
         </main>
     </div>
 
     <footer>
-        <p>&copy; 2026 Manivasagam Karunakaran. Designed & built with modern web technologies.</p>
+        <p>&copy; 2026 Manivasagam Karunakaran. Designed & built with modern Apple-style aesthetics.</p>
     </footer>
 </body>
 </html>

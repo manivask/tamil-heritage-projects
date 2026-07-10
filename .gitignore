@@ -1,0 +1,10 @@
+# Python compilation cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Local configuration / OS files
+.DS_Store
+Thumbs.db
