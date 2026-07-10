@@ -1,0 +1,121 @@
+﻿{
+    "keyword":  "Madurai",
+    "total_count":  14,
+    "country_count":  1,
+    "countries":  {
+                      "India":  [
+                                    {
+                                        "id":  "Q228405",
+                                        "name":  "Madurai",
+                                        "type":  "city",
+                                        "lat":  9.919661111,
+                                        "lon":  78.119394444,
+                                        "link":  "http://www.wikidata.org/entity/Q228405"
+                                    },
+                                    {
+                                        "id":  "Q6728807",
+                                        "name":  "Madurai Central",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.923,
+                                        "lon":  78.12,
+                                        "link":  "http://www.wikidata.org/entity/Q6728807"
+                                    },
+                                    {
+                                        "id":  "Q15184",
+                                        "name":  "Madurai district",
+                                        "type":  "district of India",
+                                        "lat":  9.833333333,
+                                        "lon":  77.833333333,
+                                        "link":  "http://www.wikidata.org/entity/Q15184"
+                                    },
+                                    {
+                                        "id":  "Q6728810",
+                                        "name":  "Madurai East Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.9281247,
+                                        "lon":  77.9747348,
+                                        "link":  "http://www.wikidata.org/entity/Q6728810"
+                                    },
+                                    {
+                                        "id":  "Q24947834",
+                                        "name":  "Madurai East railway station",
+                                        "type":  "station located on surface",
+                                        "lat":  9.908505,
+                                        "lon":  78.134188,
+                                        "link":  "http://www.wikidata.org/entity/Q24947834"
+                                    },
+                                    {
+                                        "id":  "Q3465662",
+                                        "name":  "Madurai International Airport",
+                                        "type":  "airport",
+                                        "lat":  9.833611111,
+                                        "lon":  78.089444444,
+                                        "link":  "http://www.wikidata.org/entity/Q3465662"
+                                    },
+                                    {
+                                        "id":  "Q6728812",
+                                        "name":  "Madurai Junction railway station",
+                                        "type":  "railway station",
+                                        "lat":  9.919907,
+                                        "lon":  78.110314,
+                                        "link":  "http://www.wikidata.org/entity/Q6728812"
+                                    },
+                                    {
+                                        "id":  "Q3276104",
+                                        "name":  "Madurai Kamaraj University",
+                                        "type":  "state public university",
+                                        "lat":  9.940391666,
+                                        "lon":  78.010536111,
+                                        "link":  "http://www.wikidata.org/entity/Q3276104"
+                                    },
+                                    {
+                                        "id":  "Q3534013",
+                                        "name":  "Madurai Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  9.9,
+                                        "lon":  78.1,
+                                        "link":  "http://www.wikidata.org/entity/Q3534013"
+                                    },
+                                    {
+                                        "id":  "Q6728817",
+                                        "name":  "Madurai Medical College",
+                                        "type":  "medical college in India",
+                                        "lat":  9.927849,
+                                        "lon":  78.136822,
+                                        "link":  "http://www.wikidata.org/entity/Q6728817"
+                                    },
+                                    {
+                                        "id":  "Q6728819",
+                                        "name":  "Madurai North Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.935393,
+                                        "lon":  78.0879473,
+                                        "link":  "http://www.wikidata.org/entity/Q6728819"
+                                    },
+                                    {
+                                        "id":  "Q6728820",
+                                        "name":  "Madurai South Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.877919,
+                                        "lon":  78.0387823,
+                                        "link":  "http://www.wikidata.org/entity/Q6728820"
+                                    },
+                                    {
+                                        "id":  "Q6728842",
+                                        "name":  "Madurai West Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  9.93,
+                                        "lon":  78.085,
+                                        "link":  "http://www.wikidata.org/entity/Q6728842"
+                                    },
+                                    {
+                                        "id":  "Q16314656",
+                                        "name":  "Madurai-North taluk",
+                                        "type":  "Taluk of Tamil Nadu",
+                                        "lat":  9.935393,
+                                        "lon":  78.0879473,
+                                        "link":  "http://www.wikidata.org/entity/Q16314656"
+                                    }
+                                ]
+                  }
+}

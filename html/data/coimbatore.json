@@ -1,0 +1,121 @@
+﻿{
+    "keyword":  "Coimbatore",
+    "total_count":  14,
+    "country_count":  2,
+    "countries":  {
+                      "British Raj":  {
+                                          "id":  "Q5141500",
+                                          "name":  "Coimbatore District",
+                                          "type":  "district of British India",
+                                          "lat":  11.25,
+                                          "lon":  77.3167,
+                                          "link":  "http://www.wikidata.org/entity/Q5141500"
+                                      },
+                      "India":  [
+                                    {
+                                        "id":  "Q9885",
+                                        "name":  "Coimbatore",
+                                        "type":  "city",
+                                        "lat":  11.000833333,
+                                        "lon":  76.963333333,
+                                        "link":  "http://www.wikidata.org/entity/Q9885"
+                                    },
+                                    {
+                                        "id":  "Q505572",
+                                        "name":  "Coimbatore Airport",
+                                        "type":  "commercial traffic aerodrome",
+                                        "lat":  11.030528,
+                                        "lon":  77.041888,
+                                        "link":  "http://www.wikidata.org/entity/Q505572"
+                                    },
+                                    {
+                                        "id":  "Q5141499",
+                                        "name":  "Coimbatore Central Prison",
+                                        "type":  "prison",
+                                        "lat":  11.013624,
+                                        "lon":  76.972235,
+                                        "link":  "http://www.wikidata.org/entity/Q5141499"
+                                    },
+                                    {
+                                        "id":  "Q15136",
+                                        "name":  "Coimbatore district",
+                                        "type":  "district of India",
+                                        "lat":  11.0125,
+                                        "lon":  76.971388888,
+                                        "link":  "http://www.wikidata.org/entity/Q15136"
+                                    },
+                                    {
+                                        "id":  "Q12977637",
+                                        "name":  "Coimbatore East",
+                                        "type":  "former constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.02,
+                                        "lon":  77.03,
+                                        "link":  "http://www.wikidata.org/entity/Q12977637"
+                                    },
+                                    {
+                                        "id":  "Q5141504",
+                                        "name":  "Coimbatore Institute of Technology",
+                                        "type":  "academic institution",
+                                        "lat":  11.028604,
+                                        "lon":  77.027225,
+                                        "link":  "http://www.wikidata.org/entity/Q5141504"
+                                    },
+                                    {
+                                        "id":  "Q3532594",
+                                        "name":  "Coimbatore Junction",
+                                        "type":  "railway station",
+                                        "lat":  10.997639,
+                                        "lon":  76.966298,
+                                        "link":  "http://www.wikidata.org/entity/Q3532594"
+                                    },
+                                    {
+                                        "id":  "Q3534118",
+                                        "name":  "Coimbatore Lok Sabha constituency",
+                                        "type":  "Lok Sabha constituency",
+                                        "lat":  11,
+                                        "lon":  77,
+                                        "link":  "http://www.wikidata.org/entity/Q3534118"
+                                    },
+                                    {
+                                        "id":  "Q5141507",
+                                        "name":  "Coimbatore Medical College",
+                                        "type":  "medical college in India",
+                                        "lat":  11.028728,
+                                        "lon":  77.023838,
+                                        "link":  "http://www.wikidata.org/entity/Q5141507"
+                                    },
+                                    {
+                                        "id":  "Q5141509",
+                                        "name":  "Coimbatore North Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.09,
+                                        "lon":  76.97,
+                                        "link":  "http://www.wikidata.org/entity/Q5141509"
+                                    },
+                                    {
+                                        "id":  "Q5141508",
+                                        "name":  "Coimbatore North Junction",
+                                        "type":  "railway station",
+                                        "lat":  11.019937,
+                                        "lon":  76.954304,
+                                        "link":  "http://www.wikidata.org/entity/Q5141508"
+                                    },
+                                    {
+                                        "id":  "Q5141511",
+                                        "name":  "Coimbatore South Assembly constituency",
+                                        "type":  "constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  10.93,
+                                        "lon":  76.96,
+                                        "link":  "http://www.wikidata.org/entity/Q5141511"
+                                    },
+                                    {
+                                        "id":  "Q12980530",
+                                        "name":  "Coimbatore West",
+                                        "type":  "former constituency of the Tamil Nadu Legislative Assembly",
+                                        "lat":  11.024,
+                                        "lon":  76.906,
+                                        "link":  "http://www.wikidata.org/entity/Q12980530"
+                                    }
+                                ]
+                  }
+}

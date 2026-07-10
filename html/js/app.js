@@ -1,4 +1,4 @@
-﻿// Script Designer / AI Prompt Engineer : Manivasagam Karunakaran
+// Script Designer / AI Prompt Engineer : Manivasagam Karunakaran
 // Global Tamil Toponyms Explorer - Map & UI Logic
 
 // Global state variables
@@ -91,6 +91,49 @@ function setupEventListeners() {
     // Theme toggle button click
     const themeToggle = document.getElementById("theme-toggle");
     themeToggle.addEventListener("click", toggleTheme);
+
+    // Setup feedback form listener
+    const feedbackForm = document.getElementById("feedback-form");
+    if (feedbackForm) {
+        feedbackForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const messageInput = document.getElementById("feedback-message");
+            const message = messageInput.value.trim();
+            if (!message) return;
+            
+            const submitBtn = feedbackForm.querySelector("button");
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = "Sending... ⏳";
+            
+            try {
+                const response = await fetch("https://formsubmit.co/ajax/manivask@gmail.com", {
+                    method: "POST",
+                    headers: { 
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        _subject: "Thank you note from Tamil Toponyms Explorer!"
+                    })
+                });
+                
+                if (response.ok) {
+                    showToast("Thank you note sent successfully!", "success");
+                    messageInput.value = "";
+                } else {
+                    throw new Error("Failed to send");
+                }
+            } catch (err) {
+                console.error("Error sending feedback:", err);
+                showToast("Could not send note. Please try again later.", "error");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }
+        });
+    }
 }
 
 // Manage Loading Overlay

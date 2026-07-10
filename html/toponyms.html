@@ -1,4 +1,4 @@
-﻿<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
+<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +48,10 @@
                                     <option value="pandi">PANDI (பாண்டி)</option>
                                     <option value="kanchi">KANCHI (காஞ்சி)</option>
                                     <option value="chola">CHOLA (சோழா)</option>
+                                    <option value="madurai">MADURAI (மதுரை)</option>
+                                    <option value="thanjavur">THANJAVUR (தஞ்சாவூர்)</option>
+                                    <option value="coimbatore">COIMBATORE (கோயம்புத்தூர்)</option>
+                                    <option value="trichy">TRICHY (திருச்சி)</option>
                                 </select>
                             </div>
                         </div>
@@ -88,6 +92,21 @@
                 <div id="places-container" class="scrollable-content">
                     <!-- Populated dynamically via JavaScript -->
                     <div class="empty-state">Select or search for a keyword above to populate places.</div>
+                </div>
+            </section>
+
+            <!-- Feedback Form & Visitor Counter Card -->
+            <section class="feedback-panel card" style="margin-top: 16px;">
+                <h2 style="font-size: 14px; margin-bottom: 8px;">💌 Send a Thank You Note</h2>
+                <form id="feedback-form" style="display: flex; flex-direction: column; gap: 8px;">
+                    <textarea name="message" id="feedback-message" placeholder="Type your thank you note..." required style="width: 100%; min-height: 60px; background: var(--bg-input); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px; color: var(--text-main); font-family: var(--font-body); font-size: 13px; resize: vertical; outline: none; transition: border-color 0.2s;"></textarea>
+                    <button type="submit" style="background: var(--color-primary); color: white; border: none; padding: 8px 12px; border-radius: 8px; font-family: var(--font-header); font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: opacity 0.2s;">
+                        Send Note <span>✉️</span>
+                    </button>
+                </form>
+                <div class="visitor-stats" style="margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: var(--text-muted);">
+                    <span>Unique Visitors:</span>
+                    <img src="https://visitor-badge.laobi.icu/badge?page_id=manivask.tamil-heritage-projects.toponyms&left_color=grey&right_color=blue" alt="Visitor Count" style="border-radius: 4px;" />
                 </div>
             </section>
 
