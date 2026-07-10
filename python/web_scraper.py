@@ -76,6 +76,14 @@ def scrape_url(url):
         return f"Error: Scrape failed - {str(e)}"
 
 if __name__ == "__main__":
+    # Reconfigure output streams to handle UTF-8 characters (like Tamil) on Windows consoles
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        # Fallback for older python versions
+        pass
+        
     if len(sys.argv) < 2:
         print("Usage: python web_scraper.py <url>")
         sys.exit(1)

@@ -91,6 +91,14 @@ def get_transcript(video_id):
         return f"Error: Failed to fetch transcript - {error_msg}"
 
 if __name__ == "__main__":
+    # Reconfigure output streams to handle UTF-8 characters (like Tamil) on Windows consoles
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        # Fallback for older python versions
+        pass
+        
     if len(sys.argv) < 2:
         print("Usage: python youtube_transcriber.py <youtube_url_or_video_id>")
         sys.exit(1)
