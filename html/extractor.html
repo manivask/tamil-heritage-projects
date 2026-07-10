@@ -355,6 +355,7 @@
                     <span class="source-badge" id="source-badge">Webpage Text</span>
                     <div class="action-buttons">
                         <button class="btn-secondary" id="copy-btn">Copy to Clipboard 📋</button>
+                        <button class="btn-secondary" id="save-btn" style="background: var(--color-primary); color: white;">Save to Portal Pages 💾</button>
                         <button class="btn-secondary" id="clear-btn">Clear</button>
                     </div>
                 </div>
@@ -382,6 +383,7 @@
         const outputTextarea = document.getElementById("output-textarea");
         const sourceBadge = document.getElementById("source-badge");
         const copyBtn = document.getElementById("copy-btn");
+        const saveBtn = document.getElementById("save-btn");
         const clearBtn = document.getElementById("clear-btn");
         const statusDot = document.getElementById("status-dot");
         const statusText = document.getElementById("status-text");
@@ -468,6 +470,44 @@
             outputCard.style.display = "none";
             urlInput.value = "";
             urlInput.focus();
+        });
+
+        // 5. Save to Portal Pages CMS POST Handler
+        saveBtn.addEventListener("click", async () => {
+            const url = urlInput.value.trim();
+            const content = outputTextarea.value.trim();
+            if (!url || !content) return;
+
+            saveBtn.disabled = true;
+            saveBtn.textContent = "Saving to Portal...";
+
+            try {
+                const response = await fetch(`${SERVER_URL}/save`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ url, content })
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    toast.textContent = "Saved to Portal successfully! 🎉";
+                    toast.classList.add("show");
+                    setTimeout(() => {
+                        toast.classList.remove("show");
+                        toast.textContent = "Text copied to clipboard!";
+                    }, 4000);
+                } else {
+                    alert(`Save failed: ${data.error}`);
+                }
+            } catch (err) {
+                console.error("Save error:", err);
+                alert("Failed to connect to local server for saving. Please check if extractor_server.py is running.");
+            } finally {
+                saveBtn.disabled = false;
+                saveBtn.textContent = "Save to Portal Pages 💾";
+            }
         });
     </script>
 </body>
