@@ -1,65 +1,87 @@
 <!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
-# Thirukkural Facts Finder & Global Tamil Toponyms Explorer
+# Thirukkural Facts Finder & Global Tamil Toponyms Explorer Portal
 
-This workspace contains two main web applications:
-1. **Thirukkural Facts Finder** (`html/thirukkural_facts_finder.html`): An interactive application to explore facts, search, and browse the 1330 couplets (Kurals) of Thirukkural.
-2. **Global Tamil Toponyms Explorer** (`html/toponyms.html`): An interactive, dark-themed geographic explorer that pins and categorizes places named **Palani**, **Salam/Salem**, or any other search term globally.
+This workspace contains a portal page and multiple web applications organized under the `apps/` directory for clean modularity, making it ready for GitHub.
 
 ## Workspace Structure
 
 ```
 c:\Users\maniv\all_ide_code_ws\
-├── python/
-│   ├── extract.py             # Python Wikidata SPARQL data extractor
-│   └── extract.ps1            # PowerShell Wikidata SPARQL data extractor (Windows native fallback)
-├── html/
-│   ├── css/
-│   │   ├── styles.css         # Modern, glassmorphic dark-theme styles for Toponyms Explorer
-│   │   └── facts.css          # Styles for Thirukkural Facts Finder
-│   ├── js/
-│   │   ├── app.js             # Leaflet map, live API queries, & UI logic for Toponyms Explorer
-│   │   └── facts_app.js       # Core Javascript logic for Thirukkural Facts Finder
-│   ├── data/
-│   │   ├── palani.json        # Pre-extracted Palani location data
-│   │   ├── salam.json         # Pre-extracted Salam location data
-│   │   └── thirukkural.json   # Full structured dataset of 1330 Kurals
-│   ├── thirukkural_facts_finder.html  # Thirukkural Facts Finder page
-│   └── toponyms.html          # Global Tamil Toponyms Explorer page
-└── README.md                  # This documentation file
+├── apps/
+│   ├── thirukkural-facts-finder/
+│   │   ├── css/facts.css               # Styles for Facts Finder
+│   │   ├── js/facts_app.js             # Core Logic for Facts Finder
+│   │   ├── data/thirukkural.json       # Couplet dataset
+│   │   ├── python/                     # Scraping and verification scripts
+│   │   │   ├── fetch_kurals.py
+│   │   │   └── verify_kurals.py
+│   │   └── index.html                  # Thirukkural Facts Finder App
+│   │
+│   ├── toponyms-explorer/
+│   │   ├── css/styles.css              # Custom Map Styles
+│   │   ├── js/app.js                   # Leaflet Map & Wikidata Query Logic
+│   │   ├── data/                       # Pre-extracted JSON place datasets
+│   │   │   ├── palani.json
+│   │   │   └── salam.json
+│   │   ├── python/                     # Toponyms SPARQL extractors
+│   │   │   ├── extract.py
+│   │   │   ├── extract.ps1
+│   │   │   ├── fetch_subdivisions.py
+│   │   │   └── fetch_subdivisions.ps1
+│   │   └── index.html                  # Global Toponyms Explorer App
+│   │
+│   ├── biographies/
+│   │   ├── images/                     # Dynamic downloaded biography images
+│   │   ├── thiruvalluvar.png
+│   │   ├── nammalvar.html              # Nammalvar Slideshow biography
+│   │   └── orissa_balu.html            # Orissa Balu Slideshow biography
+│   │
+│   └── content-extractor/
+│       ├── python/                     # Server backend and utility scripts
+│       │   ├── extractor_server.py
+│       │   ├── web_scraper.py
+│       │   └── youtube_transcriber.py
+│       └── index.html                  # Extractor Tool UI
+│
+├── index.html                          # Main Portal page linking all apps
+└── README.md                           # This documentation file
 ```
 
 ---
 
 ## How to Run
 
-### 1. View the Apps (No Installation Required!)
-- **Thirukkural Facts Finder**: Open **[html/thirukkural_facts_finder.html](file:///c:/Users/maniv/all_ide_code_ws/html/thirukkural_facts_finder.html)** in any modern web browser to search and browse Kurals.
-- **Global Tamil Toponyms Explorer**: Open **[html/toponyms.html](file:///c:/Users/maniv/all_ide_code_ws/html/toponyms.html)** in any modern web browser to view the interactive map.
+### 1. View the Apps
+- **Main Portal**: Open **[index.html](file:///c:/Users/maniv/all_ide_code_ws/index.html)** in any modern web browser to access all projects.
+- **Thirukkural Facts Finder**: Open **[apps/thirukkural-facts-finder/index.html](file:///c:/Users/maniv/all_ide_code_ws/apps/thirukkural-facts-finder/index.html)** directly.
+- **Global Tamil Toponyms Explorer**: Open **[apps/toponyms-explorer/index.html](file:///c:/Users/maniv/all_ide_code_ws/apps/toponyms-explorer/index.html)** directly.
 
 ### 2. Extract New Name Datasets
 If you want to extract names globally and pre-load them in the HTML dropdown:
 
 #### Option A: Using PowerShell (No installation needed on Windows!)
-Open a PowerShell terminal, navigate to the project directory, and run:
+Navigate to the directory and run:
 ```powershell
-powershell -ExecutionPolicy Bypass -File python/extract.ps1 <keyword>
+cd apps/toponyms-explorer/python
+powershell -ExecutionPolicy Bypass -File extract.ps1 <keyword>
 ```
 *Example:*
 ```powershell
-powershell -ExecutionPolicy Bypass -File python/extract.ps1 Madurai
+powershell -ExecutionPolicy Bypass -File extract.ps1 Madurai
 ```
-This will search Wikidata, group results by country, and save `madurai.json` to the `html/data` folder.
+This searches Wikidata and saves `madurai.json` to the `apps/toponyms-explorer/data/` folder.
 
 #### Option B: Using Python
-Once you have Python 3 installed on your system, open your terminal and run:
+Navigate to the directory and run:
 ```bash
-python python/extract.py <keyword>
+cd apps/toponyms-explorer/python
+python extract.py <keyword>
 ```
 *Example:*
 ```bash
-python python/extract.py Chola
+python extract.py Chola
 ```
-This uses only the Python standard library (no pip packages required!) and creates the corresponding JSON file in the data folder.
+This writes the corresponding JSON file directly into the local `data/` folder.
 
 ---
 

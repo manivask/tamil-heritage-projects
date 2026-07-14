@@ -1,0 +1,514 @@
+<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clean Text Extractor - Scrape webpages and transcribe YouTube videos easily to save tokens.">
+    <title>Web & Video Content Extractor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-base: #f5f5f7;
+            --bg-card: #ffffff;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --color-primary: #0071e3;
+            --color-primary-glow: rgba(0, 113, 227, 0.12);
+            --color-success: #34c759;
+            --color-error: #ff3b30;
+            --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* Apple-style header */
+        header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-link {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Server Status Indicator */
+        .status-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--text-secondary);
+            display: inline-block;
+        }
+
+        .status-dot.online {
+            background-color: var(--color-success);
+            box-shadow: 0 0 8px var(--color-success);
+        }
+
+        .status-dot.offline {
+            background-color: var(--color-error);
+            box-shadow: 0 0 8px var(--color-error);
+        }
+
+        /* Card panels */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            margin-bottom: 2rem;
+        }
+
+        /* Form */
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 12px;
+        }
+
+        input[type="url"] {
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 14px 16px;
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        input[type="url"]:focus {
+            background: #ffffff;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px var(--color-primary-glow);
+        }
+
+        button {
+            background: var(--color-primary);
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            padding: 14px 24px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: var(--font-display);
+            cursor: pointer;
+            transition: opacity 0.2s ease, transform 0.1s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        button:disabled {
+            background: var(--text-secondary);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        /* Loader Overlay */
+        .loader {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-top-color: var(--color-primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Output Area */
+        .output-container {
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .output-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .source-badge {
+            background: rgba(0, 113, 227, 0.08);
+            color: var(--color-primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-secondary {
+            background: rgba(0, 0, 0, 0.05);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            border-radius: 8px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 400px;
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            font-family: monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+            resize: vertical;
+            outline: none;
+            white-space: pre-wrap;
+        }
+
+        textarea:focus {
+            border-color: var(--color-primary);
+        }
+
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #1d1d1f;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: auto;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../index.html" class="back-link">&larr; Back to Portal</a>
+            <h1>Content Extractor</h1>
+            <p class="subtitle">Extract clean, raw text from webpages and YouTube video/shorts transcripts.</p>
+            
+            <div class="status-container">
+                <span id="status-dot" class="status-dot"></span>
+                <span id="status-text">Checking Local Server...</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Input Card -->
+            <section class="card">
+                <form id="extractor-form">
+                    <div class="input-group">
+                        <label for="url-input">Enter Webpage or YouTube Video URL</label>
+                        <div class="input-wrapper">
+                            <input type="url" id="url-input" placeholder="e.g. https://en.wikipedia.org/wiki/G._Nammalvar" required>
+                            <button type="submit" id="submit-btn">
+                                <span>Extract</span> &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Loading indicator -->
+                <div id="loader" class="loader">
+                    <div class="spinner"></div>
+                    <span id="loader-msg">Fetching content from URL...</span>
+                </div>
+            </section>
+
+            <!-- Output Card -->
+            <section class="card output-container" id="output-card">
+                <div class="output-header">
+                    <span class="source-badge" id="source-badge">Webpage Text</span>
+                    <div class="action-buttons">
+                        <button class="btn-secondary" id="copy-btn">Copy to Clipboard 📋</button>
+                        <button class="btn-secondary" id="save-btn" style="background: var(--color-primary); color: white;">Save to Portal Pages 💾</button>
+                        <button class="btn-secondary" id="clear-btn">Clear</button>
+                    </div>
+                </div>
+                <textarea id="output-textarea" readonly></textarea>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Text copied to clipboard!</div>
+
+    <footer>
+        <p>&copy; 2026 Tamil Heritage Projects. Created for token-efficient development.</p>
+    </footer>
+
+    <script>
+        const SERVER_URL = "http://localhost:5005";
+        
+        const form = document.getElementById("extractor-form");
+        const urlInput = document.getElementById("url-input");
+        const submitBtn = document.getElementById("submit-btn");
+        const loader = document.getElementById("loader");
+        const loaderMsg = document.getElementById("loader-msg");
+        const outputCard = document.getElementById("output-card");
+        const outputTextarea = document.getElementById("output-textarea");
+        const sourceBadge = document.getElementById("source-badge");
+        const copyBtn = document.getElementById("copy-btn");
+        const saveBtn = document.getElementById("save-btn");
+        const clearBtn = document.getElementById("clear-btn");
+        const statusDot = document.getElementById("status-dot");
+        const statusText = document.getElementById("status-text");
+        const toast = document.getElementById("toast");
+
+        // 1. Check Server Connection Status on load
+        async function checkServerStatus() {
+            try {
+                const response = await fetch(`${SERVER_URL}/status`);
+                if (response.ok) {
+                    statusDot.className = "status-dot online";
+                    statusText.textContent = "Local Server: ONLINE";
+                    submitBtn.disabled = false;
+                } else {
+                    throw new Error("Offline");
+                }
+            } catch (err) {
+                statusDot.className = "status-dot offline";
+                statusText.textContent = "Local Server: OFFLINE (Start backend script)";
+                submitBtn.disabled = true;
+            }
+        }
+        
+        // Initial check and poll status every 10 seconds
+        checkServerStatus();
+        setInterval(checkServerStatus, 10000);
+
+        // 2. Submit & Extraction Handler
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const url = urlInput.value.trim();
+            if (!url) return;
+
+            // Show loading
+            loader.style.display = "flex";
+            outputCard.style.display = "none";
+            submitBtn.disabled = true;
+            
+            // Detect type for UI preview
+            if (url.includes("youtube.com") || url.includes("youtu.be")) {
+                loaderMsg.textContent = "Fetching YouTube Closed Captions Transcript...";
+            } else {
+                loaderMsg.textContent = "Scraping Webpage clean text content...";
+            }
+
+            try {
+                const response = await fetch(`${SERVER_URL}/extract?url=${encodeURIComponent(url)}`);
+                const data = await response.json();
+
+                if (data.success) {
+                    outputTextarea.value = data.content;
+                    sourceBadge.textContent = data.type;
+                    outputCard.style.display = "flex";
+                    
+                    // Smooth scroll to output
+                    outputCard.scrollIntoView({ behavior: "smooth" });
+                } else {
+                    alert(`Extraction Error: ${data.error}`);
+                }
+            } catch (err) {
+                console.error("Connection error:", err);
+                alert("Failed to connect to extraction server. Please check if extractor_server.py is running.");
+            } finally {
+                loader.style.display = "none";
+                submitBtn.disabled = false;
+            }
+        });
+
+        // 3. Copy to Clipboard
+        copyBtn.addEventListener("click", () => {
+            outputTextarea.select();
+            document.execCommand("copy");
+            
+            // Show toast notification
+            toast.classList.add("show");
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        });
+
+        // 4. Clear output
+        clearBtn.addEventListener("click", () => {
+            outputTextarea.value = "";
+            outputCard.style.display = "none";
+            urlInput.value = "";
+            urlInput.focus();
+        });
+
+        // 5. Save to Portal Pages CMS POST Handler
+        saveBtn.addEventListener("click", async () => {
+            const url = urlInput.value.trim();
+            const content = outputTextarea.value.trim();
+            if (!url || !content) return;
+
+            saveBtn.disabled = true;
+            saveBtn.textContent = "Saving to Portal...";
+
+            try {
+                const response = await fetch(`${SERVER_URL}/save`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ url, content })
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    toast.textContent = "Saved to Portal successfully! 🎉";
+                    toast.classList.add("show");
+                    setTimeout(() => {
+                        toast.classList.remove("show");
+                        toast.textContent = "Text copied to clipboard!";
+                    }, 4000);
+                } else {
+                    alert(`Save failed: ${data.error}`);
+                }
+            } catch (err) {
+                console.error("Save error:", err);
+                alert("Failed to connect to local server for saving. Please check if extractor_server.py is running.");
+            } finally {
+                saveBtn.disabled = false;
+                saveBtn.textContent = "Save to Portal Pages 💾";
+            }
+        });
+    </script>
+</body>
+</html>
