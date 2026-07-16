@@ -1,0 +1,32 @@
+name: Scrape Tamil History Events
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  workflow_dispatch: # Enable manual run from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Scraper Script
+        run: python apps/tamil-history-scale/python/fetch_history.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add apps/tamil-history-scale/data/events.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Tamil History events database" && git push)

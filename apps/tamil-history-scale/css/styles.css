@@ -547,3 +547,106 @@ body.light-theme ::webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.2)
         transform: translateX(-50%) !important;
     }
 }
+
+/* Interactive Era Navigator Zoom Scale Panel */
+#zoom-scale-panel {
+    margin: 16px 24px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    z-index: 10;
+}
+
+.zoom-scale-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zoom-scale-header h3 {
+    font-family: var(--font-header);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.zoom-indicator {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.zoom-indicator strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.slider-lbl {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    min-width: 65px;
+}
+
+.slider-wrapper input[type="range"] {
+    flex: 1;
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--bg-input);
+    outline: none;
+    border: 1px solid var(--border-color);
+}
+
+.slider-wrapper input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+    box-shadow: 0 0 8px var(--color-primary-glow);
+    transition: transform var(--transition-fast);
+}
+
+.slider-wrapper input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.quick-epochs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.epoch-btn {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    outline: none;
+}
+
+.epoch-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color-active);
+}
+
+.epoch-btn.active {
+    background: var(--color-primary-glow);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}

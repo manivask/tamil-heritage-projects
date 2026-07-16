@@ -78,13 +78,37 @@
         <main id="timeline-container">
             <header class="timeline-header">
                 <div class="header-left">
-                    <h2>Historical Scale: January 1900 & Surrounding Era</h2>
-                    <p class="timeline-period-desc">Exploring documented Tamil history records, books, authors, and colonial developments.</p>
+                    <h2>Tamil Heritage & History Scale</h2>
+                    <p class="timeline-period-desc">A 5,000-year chronological footprints of Tamil rulers, literature, culture, and achievements.</p>
                 </div>
                 <div class="header-right">
                     <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">☀️</button>
                 </div>
             </header>
+
+            <!-- Floating Zoom Scale Panel -->
+            <div id="zoom-scale-panel" class="card">
+                <div class="zoom-scale-header">
+                    <h3>Interactive Era Navigator</h3>
+                    <div class="zoom-indicator">
+                        Selected: <strong id="zoom-value-label">2026 CE</strong>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <span class="slider-lbl">3000 BCE</span>
+                    <input type="range" id="zoom-range-slider" min="-3000" max="2026" value="2026" step="25">
+                    <span class="slider-lbl">2026 CE</span>
+                </div>
+                <div class="quick-epochs" id="quick-epochs-list">
+                    <button class="epoch-btn" data-year="-3000">3000 BCE</button>
+                    <button class="epoch-btn" data-year="-1500">1500 BCE</button>
+                    <button class="epoch-btn" data-year="-500">Sangam Era (-500)</button>
+                    <button class="epoch-btn" data-year="0">1 CE</button>
+                    <button class="epoch-btn" data-year="1000">Imperial Cholas (1000)</button>
+                    <button class="epoch-btn" data-year="1600">Colonial Era (1600)</button>
+                    <button class="epoch-btn active" data-year="2026">Present (2026)</button>
+                </div>
+            </div>
 
             <!-- Scrollable Timeline Scroll Pane -->
             <div id="timeline-scroll-pane">
