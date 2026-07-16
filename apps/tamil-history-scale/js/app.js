@@ -275,16 +275,27 @@ function renderTimeline() {
         container.appendChild(spinner);
     }
 
+    // Helper to normalize Tamil spellings (e.g. Tolkappiyam / Tholkappiyam / Tolkāppiyam)
+    const normalizeSpelling = (str) => {
+        return str.toLowerCase()
+                  .replace(/h/g, '')
+                  .replace(/ā/g, 'a')
+                  .replace(/ō/g, 'o')
+                  .replace(/ē/g, 'e')
+                  .replace(/ī/g, 'i')
+                  .replace(/ū/g, 'u');
+    };
+    const normFilter = normalizeSpelling(searchFilter);
+
     // Filter static database events
     const filteredStatic = timelineEvents.filter(event => {
-        // If search filter is active, ignore the year slider range so we search the whole database!
         const matchesYearRange = (searchFilter.length > 0 || Math.abs(event.year - activeYear) <= 350);
         const matchesCategory = (activeCategory === "all" || event.category === activeCategory);
         const matchesSearch = (
             searchFilter.length === 0 ||
-            event.title.toLowerCase().includes(searchFilter) ||
-            event.description.toLowerCase().includes(searchFilter) ||
-            event.category.toLowerCase().includes(searchFilter)
+            normalizeSpelling(event.title).includes(normFilter) ||
+            normalizeSpelling(event.description).includes(normFilter) ||
+            normalizeSpelling(event.category).includes(normFilter)
         );
         return matchesYearRange && matchesCategory && matchesSearch;
     });
@@ -294,8 +305,8 @@ function renderTimeline() {
         const matchesCategory = (activeCategory === "all" || event.category === activeCategory);
         const matchesSearch = (
             searchFilter.length === 0 ||
-            event.title.toLowerCase().includes(searchFilter) ||
-            event.description.toLowerCase().includes(searchFilter)
+            normalizeSpelling(event.title).includes(normFilter) ||
+            normalizeSpelling(event.description).includes(normFilter)
         );
         return matchesCategory && matchesSearch;
     });
