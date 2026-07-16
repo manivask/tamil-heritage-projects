@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     // Load subdivisions list dynamically
     try {
-        const response = await fetch("data/subdivisions.json");
+        const response = await fetch("data/subdivisions.json?v=" + new Date().getTime());
         if (response.ok) {
             subdivisionsData = await response.json();
             initCombobox();
@@ -181,7 +181,7 @@ async function loadKeyword(keyword) {
     
     try {
         // Try fetching local pre-extracted JSON file
-        const response = await fetch(`data/${keyword}.json`);
+        const response = await fetch(`data/${keyword}.json?v=` + new Date().getTime());
         if (!response.ok) {
             throw new Error(`Data file data/${keyword}.json not found`);
         }

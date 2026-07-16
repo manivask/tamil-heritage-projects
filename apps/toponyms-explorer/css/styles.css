@@ -24,8 +24,8 @@
     --text-muted: #9ca3af;
     --text-dark: #4b5563;
     
-    --font-header: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+    --font-header: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Noto Sans Tamil", sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Noto Sans Tamil", sans-serif;
     
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -992,6 +992,10 @@ body.light-theme #sidebar::-webkit-scrollbar-thumb:hover {
 
 .combobox-option:hover {
     background: var(--bg-card-hover);
+}
+
+.tamil-text {
+    font-family: "Noto Sans Tamil", sans-serif !important;
 }
 
 .combobox-option .tamil-text {
