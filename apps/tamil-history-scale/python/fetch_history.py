@@ -16,7 +16,6 @@ import re
 WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
 
 def search_wikipedia_history():
-    # Focused queries covering different eras in the 5,000-year timeline
     queries = [
         "Keezhadi excavation archaeology",
         "Sangam literature age",
@@ -29,7 +28,26 @@ def search_wikipedia_history():
         "Silappatikaram epic",
         "Rajaraja Chola Tanjore",
         "Madras Presidency colonial",
-        "Anti-Hindi agitations Tamil Nadu"
+        "Anti-Hindi agitations Tamil Nadu",
+        "Thirumalai Nayak palace Madurai",
+        "Veerapandiya Kattabomman rebellion",
+        "Velu Nachiyar sivaganga",
+        "Maruthu Pandiyar brothers British",
+        "Subramania Bharati poet",
+        "Kambar Ramavataram Tamil",
+        "Bharathidasan poetry",
+        "Manimekalai epic",
+        "Civaka Cintamani epic",
+        "Adichanallur archaeological site",
+        "Kodumanal excavation findings",
+        "Kaveripoompattinam port Chola",
+        "Korkai Pandyan port",
+        "Muziris Chera port",
+        "Kumari Kandam lemuria theory",
+        "U. V. Swaminatha Iyer Tamil manuscript",
+        "Orissa Balu ocean current maritime",
+        "Nammalvar organic farming Vanagam",
+        "Dravidian languages family origin"
     ]
     
     events = []

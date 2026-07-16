@@ -7,6 +7,7 @@ let activeCategory = "all";
 let searchFilter = "";
 let activeYear = 2026;
 let isFetchingLive = false;
+let searchTimeout = null;
 
 document.addEventListener("DOMContentLoaded", () => {
     initApp();
@@ -26,11 +27,18 @@ function setupEventListeners() {
         themeBtn.textContent = isLight ? "🌙" : "☀️";
     });
 
-    // Search Input
+    // Search Input with Debounce live enrichment
     const searchInput = document.getElementById("search-input");
     searchInput.addEventListener("input", (e) => {
         searchFilter = e.target.value.toLowerCase().trim();
         renderTimeline();
+        
+        clearTimeout(searchTimeout);
+        if (searchFilter.length > 2) {
+            searchTimeout = setTimeout(() => {
+                triggerLiveSearchForQuery(searchFilter);
+            }, 850);
+        }
     });
 
     // Category Filter Badges
@@ -100,25 +108,87 @@ function syncEpochButtons(year) {
     }
 }
 
+async function triggerLiveSearchForQuery(query) {
+    // Check if we already have local results matching the search term
+    const localMatches = timelineEvents.filter(event => 
+        event.title.toLowerCase().includes(query) ||
+        event.description.toLowerCase().includes(query)
+    );
+    
+    // Fallback to Wikipedia search only if local matches are low/absent
+    if (localMatches.length >= 3) {
+        return; 
+    }
+    
+    isFetchingLive = true;
+    showLoadingSpinner(true, `Searching the web live for "${query}"...`);
+    
+    try {
+        const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query + ' Tamil')}&format=json&origin=*`;
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            const results = data.query?.search || [];
+            
+            const fetched = results.map(item => {
+                const cleanSnippet = item.snippet.replace(/<[^>]+>/g, '');
+                let category = "General History";
+                const lowerText = (item.title + " " + cleanSnippet).toLowerCase();
+                
+                if (lowerText.includes("king") || lowerText.includes("dynasty") || lowerText.includes("chola") || lowerText.includes("pandya")) {
+                    category = "Rulers & Kingdoms";
+                } else if (lowerText.includes("book") || lowerText.includes("poet") || lowerText.includes("literature") || lowerText.includes("sangam")) {
+                    category = "Literature & Arts";
+                }
+                
+                // Parse year from content
+                let year = activeYear;
+                const bceMatch = cleanSnippet.match(/\b(\d{3,4})\s*B\.?C\.?E?\.?\b/i);
+                if (bceMatch) {
+                    year = -parseInt(bceMatch[1]);
+                } else {
+                    const ceMatch = cleanSnippet.match(/\b(1\d{3}|20\d{2}|[5-9]\d{2})\b/);
+                    if (ceMatch) {
+                        year = parseInt(ceMatch[1]);
+                    }
+                }
+                
+                return {
+                    title: item.title,
+                    description: cleanSnippet + " (Discovered live from Wiki search)",
+                    year: year,
+                    date: year < 0 ? `BCE ${Math.abs(year)}` : `${year} CE`,
+                    category: category,
+                    link: `https://en.wikipedia.org/wiki/${encodeURIComponent(item.title.replace(/ /g, '_'))}`,
+                    isLive: true
+                };
+            });
+            
+            fetched.forEach(fe => {
+                if (!liveEvents.some(le => le.title === fe.title) && !timelineEvents.some(te => te.title === fe.title)) {
+                    liveEvents.push(fe);
+                }
+            });
+        }
+    } catch (err) {
+        console.warn("Live query search failed:", err);
+    } finally {
+        isFetchingLive = false;
+        showLoadingSpinner(false);
+        renderTimeline();
+    }
+}
+
 async function handleYearChange() {
     liveEvents = []; // Reset live events
     renderTimeline();
     
-    // Fetch live events from Wikipedia for the selected year
     isFetchingLive = true;
-    showLoadingSpinner(true);
+    showLoadingSpinner(true, `Searching the web for year ${activeYear < 0 ? Math.abs(activeYear) + ' BCE' : activeYear + ' CE'}...`);
     
     try {
         const queryYear = activeYear < 0 ? `${Math.abs(activeYear)} BC` : `${activeYear}`;
-        const searchTerms = [
-            `"${queryYear}" "Tamil"`,
-            `"${queryYear}" "Madras"`,
-            `"${queryYear}" "Chola"`,
-            `"${queryYear}" "Pandya"`
-        ];
-        
-        // Randomly pick one or use the primary query to find events
-        const query = searchTerms[0];
+        const query = `"${queryYear}" "Tamil"`;
         const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&origin=*`;
         
         const response = await fetch(url);
@@ -128,10 +198,9 @@ async function handleYearChange() {
             
             liveEvents = results.map(item => {
                 const cleanSnippet = item.snippet.replace(/<[^>]+>/g, '');
-                
-                // Deduce category
                 let category = "General History";
                 const lowerText = (item.title + " " + cleanSnippet).toLowerCase();
+                
                 if (lowerText.includes("king") || lowerText.includes("dynasty") || lowerText.includes("chola") || lowerText.includes("pandya")) {
                     category = "Rulers & Kingdoms";
                 } else if (lowerText.includes("book") || lowerText.includes("poet") || lowerText.includes("literature") || lowerText.includes("sangam")) {
@@ -158,7 +227,7 @@ async function handleYearChange() {
     }
 }
 
-function showLoadingSpinner(show) {
+function showLoadingSpinner(show, message = "") {
     const container = document.getElementById("timeline-events-container");
     let spinnerEl = document.getElementById("live-spinner");
     
@@ -169,9 +238,11 @@ function showLoadingSpinner(show) {
             spinnerEl.className = "loading-state";
             spinnerEl.innerHTML = `
                 <div class="spinner"></div>
-                <p>Searching the web for historical information about year ${activeYear < 0 ? Math.abs(activeYear) + ' BCE' : activeYear + ' CE'}...</p>
+                <p id="spinner-msg">${message || 'Searching the web...'}</p>
             `;
             container.prepend(spinnerEl);
+        } else {
+            document.getElementById("spinner-msg").textContent = message;
         }
     } else {
         if (spinnerEl) {
@@ -204,13 +275,13 @@ function renderTimeline() {
         container.appendChild(spinner);
     }
 
-    // Filter static database events based on proximity to selected activeYear (within ±250 years)
+    // Filter static database events
     const filteredStatic = timelineEvents.filter(event => {
-        const yearDiff = Math.abs(event.year - activeYear);
-        const matchesYearRange = (yearDiff <= 350); // Show events near the selected year
-        
+        // If search filter is active, ignore the year slider range so we search the whole database!
+        const matchesYearRange = (searchFilter.length > 0 || Math.abs(event.year - activeYear) <= 350);
         const matchesCategory = (activeCategory === "all" || event.category === activeCategory);
         const matchesSearch = (
+            searchFilter.length === 0 ||
             event.title.toLowerCase().includes(searchFilter) ||
             event.description.toLowerCase().includes(searchFilter) ||
             event.category.toLowerCase().includes(searchFilter)
@@ -222,6 +293,7 @@ function renderTimeline() {
     const filteredLive = liveEvents.filter(event => {
         const matchesCategory = (activeCategory === "all" || event.category === activeCategory);
         const matchesSearch = (
+            searchFilter.length === 0 ||
             event.title.toLowerCase().includes(searchFilter) ||
             event.description.toLowerCase().includes(searchFilter)
         );
@@ -234,8 +306,8 @@ function renderTimeline() {
     if (allRenderedEvents.length === 0 && !isFetchingLive) {
         container.innerHTML = `
             <div class="empty-state">
-                <p>🔍 No historical events found near ${activeYear < 0 ? Math.abs(activeYear) + ' BCE' : activeYear + ' CE'}.</p>
-                <p style="font-size: 12px; margin-top: 8px; color: var(--text-muted)">Try moving the slider or selecting another century epoch.</p>
+                <p>🔍 No historical events found matching "${searchFilter}".</p>
+                <p style="font-size: 12px; margin-top: 8px; color: var(--text-muted)">Try adjusting your search or moving the navigator slider.</p>
             </div>
         `;
         return;

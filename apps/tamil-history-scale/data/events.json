@@ -80,12 +80,36 @@
     "link": "https://en.wikipedia.org/wiki/History_of_Tamil_Nadu"
   },
   {
-    "title": "Pandya Nadu",
-    "description": "historical sites like Keezhadi have been dated to 6th century BCE by the ongoing excavations by the Tamil Nadu Archaeological Department. Between the",
+    "title": "Sources of ancient Tamil history",
+    "description": "locations of many ports on both coasts of the Tamil country. Archaeological excavations of several sites in Tamil Nadu and Kerala have yielded remnants",
     "year": -580,
     "date": "BCE 580",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Pandya_Nadu"
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Sources_of_ancient_Tamil_history"
+  },
+  {
+    "title": "Porunai Museum",
+    "description": "houses archaeological artifacts unearthed during excavations along the banks of the Thamirabarani River, including sites like Sivakalai, Adichanallur and",
+    "year": -580,
+    "date": "BCE 580",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Porunai_Museum"
+  },
+  {
+    "title": "Tamil-Brahmi",
+    "description": "example, Rajan and Yatheeskumar published their findings from excavations at Porunthal and Kodumanal in Tamil Nadu, where numerous graffiti and inscription",
+    "year": -580,
+    "date": "BCE 580",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Tamil-Brahmi"
+  },
+  {
+    "title": "Economy of ancient Tamil country",
+    "description": "blacksmith may have worked with steel, lead, copper and bronze. The Kodumanal excavation recovered several jewellery items and semi precious stones at different",
+    "year": -580,
+    "date": "BCE 580",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Economy_of_ancient_Tamil_country"
   },
   {
     "title": "Ancient Keezhadi Civilisation & Archaeological Findings",
@@ -152,14 +176,6 @@
     "link": "https://en.wikipedia.org/wiki/Sangam_landscape"
   },
   {
-    "title": "Sources of ancient Tamil history",
-    "description": "among these sources is the Sangam literature, generally dated to 5th century BCE to 3rd century CE. The poems in Sangam literature contain vivid descriptions",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Sources_of_ancient_Tamil_history"
-  },
-  {
     "title": "Eight Anthologies",
     "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
     "year": -300,
@@ -208,20 +224,20 @@
     "link": "https://en.wikipedia.org/wiki/Heroic_Age_%28literary_theory%29"
   },
   {
+    "title": "Kuṟuntokai",
+    "description": "traditionally the second of the Eight Anthologies (Ettuthokai) in the Sangam literature. The collection belongs to the akam (love) category, and each poem",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Ku%E1%B9%9Funtokai"
+  },
+  {
     "title": "Paripāṭal",
     "description": "traditionally the fifth of the Eight Anthologies (Ettuthokai) in the Sangam literature. According to Tolkappiyam, Paripadal is a kind of verse dealing only",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Parip%C4%81%E1%B9%ADal"
-  },
-  {
-    "title": "Naming conventions of the Tamilakam",
-    "description": "of the Tamilakam in the Sangam literature have been one of the foremost concerns of Tamilology. The Surnames of the Caṅkam Age: Literary &amp; Tribal, published",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Naming_conventions_of_the_Tamilakam"
   },
   {
     "title": "Nalankilli",
@@ -232,12 +248,20 @@
     "link": "https://en.wikipedia.org/wiki/Nalankilli"
   },
   {
-    "title": "Kuṟuntokai",
-    "description": "traditionally the second of the Eight Anthologies (Ettuthokai) in the Sangam literature. The collection belongs to the akam (love) category, and each poem",
+    "title": "Kapilar",
+    "description": "Vēlir kings. He authored the Inna Narpathu, a didactic work of the Sangam literature. Verse 5 of the Tiruvalluva Maalai is also attributed to him. Kapilar",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Kapilar"
+  },
+  {
+    "title": "Naming conventions of the Tamilakam",
+    "description": "of the Tamilakam in the Sangam literature have been one of the foremost concerns of Tamilology. The Surnames of the Caṅkam Age: Literary &amp; Tribal, published",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Ku%E1%B9%9Funtokai"
+    "link": "https://en.wikipedia.org/wiki/Naming_conventions_of_the_Tamilakam"
   },
   {
     "title": "Religion in ancient Tamilakam",
@@ -246,14 +270,6 @@
     "date": "BCE 300",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Religion_in_ancient_Tamilakam"
-  },
-  {
-    "title": "Kapilar",
-    "description": "Vēlir kings. He authored the Inna Narpathu, a didactic work of the Sangam literature. Verse 5 of the Tiruvalluva Maalai is also attributed to him. Kapilar",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Kapilar"
   },
   {
     "title": "Indian literature",
@@ -304,12 +320,84 @@
     "link": "https://en.wikipedia.org/wiki/Early_Pandyan_kingdom"
   },
   {
+    "title": "Chera dynasty",
+    "description": "The Chera dynasty (or Cēra, IPA: [t͡ʃeːɾɐ]), also known as Kedalaputho, from the early historic or the Sangam period in southern India, ruled over parts",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Chera_dynasty"
+  },
+  {
     "title": "Ramayana",
     "description": "(dated 1st century BCE) and Purananuru (dated 300 BCE), the twin epics of Silappatikaram (dated 2nd century CE) and Manimekalai (cantos 5, 17 and 18), and",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Ramayana"
+  },
+  {
+    "title": "Yu Hsi",
+    "description": "translated the Tirukkural and the poems of Subramaniya Bharathi and poet Bharathidasan in Mandarin. He is the founder and president of the Tamil Sangam in",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Yu_Hsi"
+  },
+  {
+    "title": "Chithalai Chathanar",
+    "description": "சீத்தலைச் சாத்தனார், cītalai cāttanār) was the Tamil poet who composed the epic Manimekalai. A total of 11 verses of the Sangam literature have been attributed",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Chithalai_Chathanar"
+  },
+  {
+    "title": "Nagapattinam",
+    "description": "to 3rd century CE. The neighbouring port, Kaveripoompattinam (modern-day Poompuhar), was the capital of the Chola kingdom of the Sangam Age, referred",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Nagapattinam"
+  },
+  {
+    "title": "Nagapattinam district",
+    "description": "human habitation. The neighbouring port, Kaveripoompattinam (modern day Poompuhar), was the capital of the Chola kingdom of the Sangam Age, referred",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Nagapattinam_district"
+  },
+  {
+    "title": "Industry in ancient Tamil country",
+    "description": "another industry that flourished during the Sangam age. The Pandyan port city of Korkai was the center of pearl trade. But Thoothukudi is used for pearl",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Industry_in_ancient_Tamil_country"
+  },
+  {
+    "title": "C. W. Thamotharampillai",
+    "description": "contemporaries such as U. V. Swaminatha Iyer, was responsible for collecting and cataloguing numerous old Sangam manuscripts and preparing them into",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/C._W._Thamotharampillai"
+  },
+  {
+    "title": "Ten Idylls",
+    "description": "and revered in the context of their temples. U. V. Swaminatha Iyer rediscovered the palm-leaf manuscripts of the Pattuppāṭṭu along with other Sangam literature",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Ten_Idylls"
+  },
+  {
+    "title": "Vaishnavism",
+    "description": "ascribes the tradition in the south to the 3rd century CE. U. V. Swaminatha Iyer, a scholar of Tamil literature, published the Paripatal (Sangam period), which",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Vaishnavism"
   },
   {
     "title": "Composition of Tolkāppiyam",
@@ -336,6 +424,14 @@
     "link": "https://en.wikipedia.org/wiki/Thirukkural"
   },
   {
+    "title": "Devaneya Pavanar",
+    "description": "50,000 BC: Kumari Kandam civilisation 20,000 BC: A lost Tamil culture on Easter Island which had an advanced civilisation 16,000 BC: Lemuria submerged",
+    "year": 0,
+    "date": "BCE 0",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Devaneya_Pavanar"
+  },
+  {
     "title": "Karikala Chola Constructs the Grand Anicut (Kallanai)",
     "description": "The legendary Chola King Karikalan constructed the Grand Anicut dam across the Kaveri river, which remains one of the oldest water-regulation structures still in use today.",
     "year": 150,
@@ -350,6 +446,22 @@
     "date": "250 CE",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Silappatikaram"
+  },
+  {
+    "title": "Brahvi language",
+    "description": "Balochistan, Pakistan. It is geographically isolated from other Dravidian languages, with the nearest being over 1,500 kilometres (930 mi) away in South",
+    "year": 500,
+    "date": "500-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Brahvi_language"
+  },
+  {
+    "title": "Terra Australis",
+    "description": "p. 540: cap. clxiii, &quot;La grant isle de Java&quot;. James R. McClymont, &quot;The Theory of an Antipodal Southern Continent during the Sixteenth Century&quot;, Report",
+    "year": 540,
+    "date": "540-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Terra_Australis"
   },
   {
     "title": "ITC Grand Chola Hotel",
@@ -432,20 +544,20 @@
     "link": "https://en.wikipedia.org/wiki/Rajaraja_Devendravarman"
   },
   {
-    "title": "Thanjavur",
-    "description": "these, the Rajarajesvaram or Brihadisvara Temple, built by the Chola emperor Rajaraja I, is located in the centre of the city. This temple has one of",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Thanjavur"
-  },
-  {
     "title": "Kundavai Pirāttiyār",
     "description": "the Cholas mentioned in the Tanjore inscriptions. He was also the commander of the Chola infantry that fought in Sri Lanka in the days of Rajaraja l. The",
     "year": 985,
     "date": "985-01-01",
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Kundavai_Pir%C4%81ttiy%C4%81r"
+  },
+  {
+    "title": "Thanjavur",
+    "description": "these, the Rajarajesvaram or Brihadisvara Temple, built by the Chola emperor Rajaraja I, is located in the centre of the city. This temple has one of",
+    "year": 985,
+    "date": "985-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Thanjavur"
   },
   {
     "title": "Vallavaraiyan Vandiyadevan",
@@ -480,20 +592,20 @@
     "link": "https://en.wikipedia.org/wiki/Sengunthar"
   },
   {
-    "title": "Gangaikonda Cholapuram",
-    "description": "from single rock. The Chola rulers constructed enormous stone temple complexes with intricate carvings of Hindu gods. Rajaraja I built the famous Brihdrishvara",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
-  },
-  {
     "title": "Kundavai",
     "description": "of Raja Raja Chola and younger sister of Rajendra Chola, the queen of the Eastern Chalukya king Vimaladitya and the mother of Rajaraja Narendra. Sailendra",
     "year": 985,
     "date": "985-01-01",
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Kundavai"
+  },
+  {
+    "title": "Gangaikonda Cholapuram",
+    "description": "from single rock. The Chola rulers constructed enormous stone temple complexes with intricate carvings of Hindu gods. Rajaraja I built the famous Brihdrishvara",
+    "year": 985,
+    "date": "985-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
   },
   {
     "title": "Rajaraja Chola I Ascends the Throne",
@@ -568,12 +680,92 @@
     "link": "https://en.wikipedia.org/wiki/Rajaraja_II"
   },
   {
+    "title": "List of Indigenous peoples",
+    "description": "and the Settler Colonial &#039;Turn&#039;: From Interpretation to Decolonization&quot;. Theory, Culture &amp; Society. 35 (1): 91–115. doi:10.1177/0263276416688544. ISSN 0263-2764",
+    "year": 1177,
+    "date": "1177-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/List_of_Indigenous_peoples"
+  },
+  {
+    "title": "Kambar (poet)",
+    "description": "Kambar, or Kamban (1180–1250), was an Indian poet. He is the author of the Ramavataram, popularly known as Kambaramayanam, the Tamil version of the Hindu",
+    "year": 1180,
+    "date": "1180-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Kambar_%28poet%29"
+  },
+  {
+    "title": "1250 in poetry",
+    "description": "Þiðrekssaga (approx.). Kambar (born 1180), medieval Tamil poet and the author of the Ramavataram Julian of Speyer (born unknown), German Franciscan composer",
+    "year": 1180,
+    "date": "1180-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/1250_in_poetry"
+  },
+  {
+    "title": "Kayalpatnam",
+    "description": "1298 AD. Korkai, Vaguthai, or Kayal was an ancient port in the early Common Era and existed alongside Kollam, another important Pandyan port. While Kollam",
+    "year": 1298,
+    "date": "1298-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Kayalpatnam"
+  },
+  {
+    "title": "National poet",
+    "description": "(1): 108–115. doi:10.1353/man.2006.0035. JSTOR 4230442. &quot;National Poet Subramania Bharati: Thinker ahead of times from Tamil Nadu – Indian Institute of Advanced",
+    "year": 1353,
+    "date": "1353-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/National_poet"
+  },
+  {
+    "title": "Rashtrakavi",
+    "description": "Rashtrakavi is an Indian title meaning &quot;National Poet&quot; and may refer to: Dursa Arha (1535–1655) Subramania Bharati (1882–1921) M. Govinda Pai (1883–1963) Maithili",
+    "year": 1535,
+    "date": "1535-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Rashtrakavi"
+  },
+  {
+    "title": "Tamil culture",
+    "description": "included Ramavataram by Kambar in 12th century CE and Tiruppugal by Arunagirinathar in 15th century CE. In 1578, the Portuguese published a Tamil book in",
+    "year": 1578,
+    "date": "1578-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Tamil_culture"
+  },
+  {
     "title": "Introduction of the Tamil Printing Press",
     "description": "The first book in Tamil, Thambiran Vanakkam, was printed in Coulam (Kollam) by Jesuit missionary Henrique Henriques, making Tamil the first non-European language to be printed.",
     "year": 1578,
     "date": "1578 CE",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Henrique_Henriques"
+  },
+  {
+    "title": "Ramnad estate",
+    "description": "area of Ramnad established by Muthu Krishnappa Nayak in the 1605 AD. After the fall of Madurai Nayaks, the governors established Kingdom of Ramnad. In",
+    "year": 1605,
+    "date": "1605-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Ramnad_estate"
+  },
+  {
+    "title": "Tirumala Nayaka",
+    "description": "the ruler of Madurai Nayak Dynasty from 1623 to 1659. His contributions are found in the many splendid buildings and temples of Madurai. He belongs to",
+    "year": 1623,
+    "date": "1623-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Tirumala_Nayaka"
+  },
+  {
+    "title": "History of Tiruchirappalli",
+    "description": "to Madurai in 1634. In 1665, Chokkanatha Nayak moved the capital once again to Tiruchirappalli. Chokkanatha Nayak partially dismantled the Thirumalai Nayak",
+    "year": 1634,
+    "date": "1634-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/History_of_Tiruchirappalli"
   },
   {
     "title": "Founding of Madras (Chennai)",
@@ -584,12 +776,108 @@
     "link": "https://en.wikipedia.org/wiki/Chennai"
   },
   {
-    "title": "Sir Thomas Munro, 1st Baronet",
-    "description": "(27 May 1761 – 6 July 1827) was a Madras Army officer and colonial administrator who served as the governor of Madras from 1820 to 1827. Munro was born",
-    "year": 1761,
-    "date": "1761-01-01",
+    "title": "Bangaru Thirumala Nayaka",
+    "description": "European Records and notes), was a member of Madurai Nayak royal family and Governor/Commander of the Madurai Nayak King Vijaya Ranga Chokkanatha (1704–1731)",
+    "year": 1704,
+    "date": "1704-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Bangaru_Thirumala_Nayaka"
+  },
+  {
+    "title": "Mangammal",
+    "description": "Mangammal (Mangamma; died 1705) was a queen regent of the Madurai Nayak kingdom (in present-day Madurai, India) during the minority of her grandson Vijaya Ranga",
+    "year": 1705,
+    "date": "1705-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Mangammal"
+  },
+  {
+    "title": "Velu Nachiyar",
+    "description": "Rani Velu Nachiyar (3 January 1730 – 25 December 1796) was a queen of Sivaganga estate from c. 1780–1790. She was the first Indian queen to wage war with",
+    "year": 1730,
+    "date": "1730-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Velu_Nachiyar"
+  },
+  {
+    "title": "Nachiyar",
+    "description": "Nachiyar may refer to: Rajeswari Nachiyar, titular ruler of the estate of Ramnad Velu Nachiyar (1730–1796), queen of Sivaganga estate Nachiyar Koil or",
+    "year": 1730,
+    "date": "1730-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Nachiyar"
+  },
+  {
+    "title": "Women of the Indian independence movement",
+    "description": "Rani Velu Nachiya – The First Indian Queen to Fight the British. Rani Velu Nachiyar (3 January 1730 – 25 December 1796) was the queen of the Sivaganga estate",
+    "year": 1730,
+    "date": "1730-01-01",
     "category": "Colonial Era",
-    "link": "https://en.wikipedia.org/wiki/Sir_Thomas_Munro%2C_1st_Baronet"
+    "link": "https://en.wikipedia.org/wiki/Women_of_the_Indian_independence_movement"
+  },
+  {
+    "title": "Meenakshi (Nayak queen)",
+    "description": "Ranga Chokkanatha Nayak of the Madurai Nayak Kingdom. In 1731, her spouse died without heirs. She adopted the son of Vangaru Thirumalai, had the minor boy",
+    "year": 1731,
+    "date": "1731-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Meenakshi_%28Nayak_queen%29"
+  },
+  {
+    "title": "Kuyili",
+    "description": "Kuyili (29 November 1749 —7 October 1780) was an army commander of queen Velu Nachiyar who participated in campaigns against the East India Company in the",
+    "year": 1749,
+    "date": "1749-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Kuyili"
+  },
+  {
+    "title": "Kalaiyar Kovil",
+    "description": "The second king of Sivaganga, Muthu Vaduga Natha Thevar (1750–1772). The third ruler of the Kingdom of Sivaganga was Rani Velu Nachiyar. She reigned from",
+    "year": 1750,
+    "date": "1750-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Kalaiyar_Kovil"
+  },
+  {
+    "title": "Sivaganga",
+    "description": "over the reign. He was shot dead in 1780 by Nawab&#039;s troops. His widow Velu Nachiyar and infant Vellacci fled the region and were aided by the two Maruthu",
+    "year": 1780,
+    "date": "1780-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Sivaganga"
+  },
+  {
+    "title": "Sivaganga Palace",
+    "description": "residence by queens Velu Nachiyar (1780–90), Vellacci Nachiyar (1790–93) and Rani Kaathama Nachiar (1864–77). No remains of the original Sivaganga Palace exist",
+    "year": 1780,
+    "date": "1780-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Sivaganga_Palace"
+  },
+  {
+    "title": "Sivaganga estate",
+    "description": "Ramnad subdivision. The Sivaganga Kingdom was ruled by a branch of the Marava royal family of Ramnad till 1790 by Rani Velu Nachiyar. After her death, Maruthu",
+    "year": 1790,
+    "date": "1790-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Sivaganga_estate"
+  },
+  {
+    "title": "1730",
+    "description": "Feyenoord and the group returns to Cape Town. January 3 – Velu Nachiyar, queen regnant of Sivaganga (d. 1796) March 7 – Louis Auguste Le Tonnelier de Breteuil",
+    "year": 1796,
+    "date": "1796-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/1730"
+  },
+  {
+    "title": "Polygar",
+    "description": "British between 1798 and 1805. The war between the British and Veerapandiya Kattabomman is often classified as the First Polygar War (1799), while the",
+    "year": 1798,
+    "date": "1798-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Polygar"
   },
   {
     "title": "List of zamindari estates in the Madras Presidency",
@@ -600,12 +888,108 @@
     "link": "https://en.wikipedia.org/wiki/List_of_zamindari_estates_in_the_Madras_Presidency"
   },
   {
+    "title": "Sivagangai Seemai",
+    "description": " After the execution of Veerapandiya Kattabomman on 16 October 1799 at Kayattar, Chinna Marudhu gave asylum to Kattabomman&#039;s brother Oomadurai. The British",
+    "year": 1799,
+    "date": "1799-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Sivagangai_Seemai"
+  },
+  {
+    "title": "Ramanathapuram",
+    "description": "Queen Velu Nachiyar, the Maruthu brothers took charge by paying regular revenue to the East India company. In 1803 the Maruthu Pandiyar of Sivaganga revolted",
+    "year": 1803,
+    "date": "1803-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Ramanathapuram"
+  },
+  {
+    "title": "Bharati",
+    "description": "Hindu monk Gopalakrishna Bharati (1811–1896), Tamil poet and composer Subramania Bharati (1882–1921), Indian Nationalist poet and revolutionary Barati",
+    "year": 1811,
+    "date": "1811-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Bharati"
+  },
+  {
+    "title": "Kathama Nachiar",
+    "description": "Gauri Vallabha, the Istimirar Zamindar of Sivagangai, and his third wife Velu Nachiar. Gauri Vallabha died in 1829 without male heirs. For three decades",
+    "year": 1829,
+    "date": "1829-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Kathama_Nachiar"
+  },
+  {
+    "title": "U. V. Swaminatha Iyer",
+    "description": "Uthamadhanapuram Venkatasubbaiyer Swaminatha Iyer (19 February 1855 – 28 April 1942) was a Tamil scholar and researcher who was instrumental in bringing",
+    "year": 1855,
+    "date": "1855-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/U._V._Swaminatha_Iyer"
+  },
+  {
+    "title": "Madurai Municipal Corporation",
+    "description": "municipal office was established in 1871–1872 in a portion of the Thirumalai Nayak&#039;s palace. The municipality repaired a causeway across the Vaigai River",
+    "year": 1871,
+    "date": "1871-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Madurai_Municipal_Corporation"
+  },
+  {
+    "title": "Subramania Bharati",
+    "description": "Subramania Bharati (Born Chinnaswami Subramaniyan; 11 December 1882 – 11 September 1921) was an Indian writer, poet, composer, journalist, teacher, Indian",
+    "year": 1882,
+    "date": "1882-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Subramania_Bharati"
+  },
+  {
     "title": "Percy Macqueen",
     "description": "1883 – 8 March 1970) was a British colonial administrator, folklorist, and poet who served in the Madras Presidency of British India. Spending nearly four",
     "year": 1883,
     "date": "1883-01-01",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Percy_Macqueen"
+  },
+  {
+    "title": "Tanittamil Iyakkam",
+    "description": "early 20th century, and it was propagated later through the writings of Bharathidasan, Devaneya Pavanar, Perunchithiranar, and Subramania Siva. In 1902, Parithimar",
+    "year": 1902,
+    "date": "1902-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Tanittamil_Iyakkam"
+  },
+  {
+    "title": "V. Kanakasabhai",
+    "description": "the Siddhanta Deepika, Nallaswami Pillai hinted that Lemuria was the long lost land of Kumari Kandam. In 1904, Kanakasabhai published his magnum opus, The",
+    "year": 1904,
+    "date": "1904-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/V._Kanakasabhai"
+  },
+  {
+    "title": "Subramaniam",
+    "description": "diplomat Subrahmanyan Chandrasekhar (1910–1995), Indian physicist Subramania Bharati (1882–1921), Indian writer Subramaniam Badrinath (born 1980), Indian",
+    "year": 1910,
+    "date": "1910-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Subramaniam"
+  },
+  {
+    "title": "Justice Party (India)",
+    "description": "political party in the Madras Presidency of British India. It was established on 20 November 1916 in Victoria Public Hall in Madras by Dr C. Natesa Mudaliar",
+    "year": 1916,
+    "date": "1916-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Justice_Party_%28India%29"
+  },
+  {
+    "title": "1882 in India",
+    "description": "Bharathi, poet, independence fighter and reformer (d.1921). 6 January – Bharatendu Harishchandra, writer and poet (b.1850). &quot;Subramania Bharati&quot;. Encyclopædia",
+    "year": 1921,
+    "date": "1921-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/1882_in_India"
   },
   {
     "title": "Mohammad Usman of Madras",
@@ -640,6 +1024,14 @@
     "link": "https://en.wikipedia.org/wiki/C._Rajagopalachari"
   },
   {
+    "title": "Manimekalai (1940 film)",
+    "description": "Manimekalai (also known as Balasanyasini) is a 1940 Indian Tamil-language film directed and photographed by Bomman Irani. It is based on the epic of the",
+    "year": 1940,
+    "date": "1940-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Manimekalai_%281940_film%29"
+  },
+  {
     "title": "Kannagi (disambiguation)",
     "description": "Kannaki Amman, the divine form of the Silappatikaram character Kannagi (1942 film), an Indian Tamil-language epic film Kannagi (2023 film), an Indian film",
     "year": 1942,
@@ -654,6 +1046,46 @@
     "date": "1947-01-01",
     "category": "Colonial Era",
     "link": "https://en.wikipedia.org/wiki/List_of_colonial_governors_and_presidents_of_the_Madras_Presidency"
+  },
+  {
+    "title": "Velu",
+    "description": "Look up velu in Wiktionary, the free dictionary. Velu or Waylu may refer to: Suthivelu (1947–2012), Telugu actor Velu Nachiyar (1730–1790s), queen regnant",
+    "year": 1947,
+    "date": "1947-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Velu"
+  },
+  {
+    "title": "List of Sahitya Akademi Award winners for Tamil",
+    "description": "Posthumous recipients of the award include Kalki Krishnamurthy (1956), Bharathidasan (1969), Ku. Alagirisami (1970), Aadhavan Sundaram (1987), C. S. Chellappa",
+    "year": 1956,
+    "date": "1956-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_Sahitya_Akademi_Award_winners_for_Tamil"
+  },
+  {
+    "title": "List of 1950s films based on actual events",
+    "description": "Kattabomman, the Brave Warrior (Tamil: வீரபாண்டிய கட்டபொம்மன்) (1959) – Indian Tamil-language historical war film based on the story of Veerapandiya Kattabomman",
+    "year": 1959,
+    "date": "1959-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_1950s_films_based_on_actual_events"
+  },
+  {
+    "title": "List of historical films set in Asia",
+    "description": "albeit with lot of inaccuracies. Veerapandiya Kattabomman 1959 1760–1799 About the resistance of Veerapandiya Kattabomman to the Company rule in India, rule",
+    "year": 1959,
+    "date": "1959-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_historical_films_set_in_Asia"
+  },
+  {
+    "title": "Manimekalai (1959 film)",
+    "description": "Manimekalai is a 1959 Indian Tamil-language epic film directed by V. S. Raghavan and written by Elangovan, starring T. R. Mahalingam and P. Bhanumathi",
+    "year": 1959,
+    "date": "1959-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Manimekalai_%281959_film%29"
   },
   {
     "title": "Dravida Nadu",
@@ -712,12 +1144,36 @@
     "link": "https://en.wikipedia.org/wiki/Elamo-Dravidian_languages"
   },
   {
+    "title": "Sirpi Balasubramaniam",
+    "description": "is published by Jayanthasri Balakrishnan as The Chain of Absolutes. Bharathidasan award (1987) Government of Tamil Nadu award Tamil University award Sahitya",
+    "year": 1987,
+    "date": "1987-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Sirpi_Balasubramaniam"
+  },
+  {
     "title": "1989 Tamil Nadu Legislative Assembly election",
     "description": "The ninth legislative assembly election of Tamil Nadu was held on 21 January 1989. Dravida Munnetra Kazhagam (DMK) won the election and its leader M. Karunanidhi",
     "year": 1989,
     "date": "1989-01-01",
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/1989_Tamil_Nadu_Legislative_Assembly_election"
+  },
+  {
+    "title": "S. Abdul Rahman",
+    "description": "illatha kavithai / விலங்குகள் இல்லாத கவிதை Kalaimamani award (1989) Bharathidasan award (1989) Ashara Award (1992) Sirpi Trust Award (1996) Kalaigner",
+    "year": 1989,
+    "date": "1989-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/S._Abdul_Rahman"
+  },
+  {
+    "title": "S. Janaki",
+    "description": "Award for Mayuri (Hindi Version)[citation needed] 1992 – Paavender Bharathidasan Award (Tamil Nadu State Film Honorary Award) 1997 – Filmfare Lifetime",
+    "year": 1992,
+    "date": "1992-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/S._Janaki"
   },
   {
     "title": "Nirmal Selvamony",
@@ -736,12 +1192,68 @@
     "link": "https://en.wikipedia.org/wiki/Sarvajna_and_Tiruvalluvar_statues_installation"
   },
   {
+    "title": "Kana, West Bengal",
+    "description": "1998–99 under the Center for Archaeological Studies and Training. In these excavations, the Upper Paleolithic archaeological site of Kana and Mahadebbera were",
+    "year": 1998,
+    "date": "1998-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Kana%2C_West_Bengal"
+  },
+  {
+    "title": "List of Indian inventions and discoveries",
+    "description": "Sasisekaran, B; Raghunatha Rao, B (1999). &quot;Technology of Iron and Steel in Kodumanal – An Ancient Industrial Centre in Tamilnadu&quot; (PDF). Indian Journal of",
+    "year": 1999,
+    "date": "1999-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_Indian_inventions_and_discoveries"
+  },
+  {
+    "title": "Sayaji Shinde",
+    "description": "Rajasekaran&#039;s 2000 Tamil film Bharathi, where he played Subramania Bharati, the popular poet and writer from Tamil Nadu. He then went on to appear in",
+    "year": 2000,
+    "date": "2000-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Sayaji_Shinde"
+  },
+  {
+    "title": "Thamarai",
+    "description": "Lyricist – Thenali (2000) Tamil Nadu State Film Honorary Award – Paavender Bharathidasan Award (2006) Ananda Vikatan Cinema Awards Ananda Vikatan Award for Best",
+    "year": 2000,
+    "date": "2000-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Thamarai"
+  },
+  {
     "title": "Anti-Hindi agitation of 1937–1940",
     "description": "pamphleteers and college students. Anti-Hindi agitations of Tamil Nadu Dravidian parties Rise of Dravidian parties to power in Tamil Nadu &quot;Census of India 2001 -",
     "year": 2001,
     "date": "2001-01-01",
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/Anti-Hindi_agitation_of_1937%E2%80%931940"
+  },
+  {
+    "title": "History of metallurgy in the Indian subcontinent",
+    "description": "reliably dated iron furnace in Tamil Nadu was from the 5th century BCE at Kodumanal, Tamil Nadu. See Tewari (2003) and Arnold, 100-101. wisdomlib.org (2017-12-20)",
+    "year": 2003,
+    "date": "2003-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/History_of_metallurgy_in_the_Indian_subcontinent"
+  },
+  {
+    "title": "List of people on the postage stamps of India",
+    "description": "Bhanot, Indian Flight Attendant and Ashok Chakra Winner (2004) Subramania Bharati, poet and statesman (1960) Mukut Behari Bhargava (2003) Vishnu Narayan",
+    "year": 2004,
+    "date": "2004-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/List_of_people_on_the_postage_stamps_of_India"
+  },
+  {
+    "title": "Tamil Nadu State Department of Archaeology",
+    "description": "(2004). Excavations of Archaeological Sites in Tamilnadu, 1969-1995. Department of Archaeology, Government of Tamilnadu. &quot;Archaeological excavations conducted",
+    "year": 2004,
+    "date": "2004-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Tamil_Nadu_State_Department_of_Archaeology"
   },
   {
     "title": "Tirukkural translations",
@@ -758,6 +1270,46 @@
     "date": "2009-01-01",
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/Tirukkural_translations_into_English"
+  },
+  {
+    "title": "Madurai",
+    "description": "100,000 tourists visited Madurai in 2010, out of which foreigners numbered 524,000. The palace complex of Thirumalai Nayak Palace was constructed in the",
+    "year": 2010,
+    "date": "2010-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Madurai"
+  },
+  {
+    "title": "Sri Vikrama Rajasinha",
+    "description": "2010). Madurai Nayak Dynasty: Puli Thevan, Palaiyakkarar, Nayaks of Kandy, Srivilliputhur, Thirumalai Nayak, Rani Mangammal, Chokkanatha Nayak. General",
+    "year": 2010,
+    "date": "2010-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Sri_Vikrama_Rajasinha"
+  },
+  {
+    "title": "Eighteen Lesser Texts",
+    "description": "Patinenkilkkanakku – Works on Akam theme, a translation of seven works by Prof. A. Dakshinamurthy (Thiruchirapalli: Bharathidasan University, 2010) v t e",
+    "year": 2010,
+    "date": "2010-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Eighteen_Lesser_Texts"
+  },
+  {
+    "title": "List of sovereign states and dependent territories by continent",
+    "description": "February 2011. Williams, Kristen P. (2001). Despite nationalist conflicts: theory and practice of maintaining world peace. Greenwood Publishing Group. pp",
+    "year": 2011,
+    "date": "2011-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent"
+  },
+  {
+    "title": "Maruthu Pandiyar",
+    "description": "Retrieved 4 January 2012. Shubendra (2023). Warrior Queen of Sivaganga: The Legend of Rani Velu Nachiyar (1st ed.). New Delhi: Pan Macmillan. ISBN 978-9390742295",
+    "year": 2012,
+    "date": "2012-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Maruthu_Pandiyar"
   },
   {
     "title": "Politics of Tamil Nadu",
@@ -800,6 +1352,14 @@
     "link": "https://en.wikipedia.org/wiki/Paththini_%282016_film%29"
   },
   {
+    "title": "Mu. Metha",
+    "description": "Kaiezhuthu (2016) Thendral Varum Theru (1994) His awards include the Bharathidasan Award from the state government of Tamil Nadu. Modern Tamil literature",
+    "year": 2016,
+    "date": "2016-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Mu._Metha"
+  },
+  {
     "title": "Tamil language",
     "description": "Tamil origin. Between 2017 and 2018, 5,820 artifacts have been found in Keezhadi. These were sent to Beta Analytic in Miami, Florida, for Accelerator Mass",
     "year": 2017,
@@ -814,6 +1374,22 @@
     "date": "2017-01-01",
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/Anti-Hindi_agitations_of_Karnataka"
+  },
+  {
+    "title": "Na. Kamarasan",
+    "description": "on 24 May 2017 due to multiple organ failure. Kamarasan received the Bharathidasan award and the Kalaimamani award. &quot;தமிழ் அறிஞர்கள் அறிவோம்: கவிஞர் நா",
+    "year": 2017,
+    "date": "2017-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Na._Kamarasan"
+  },
+  {
+    "title": "Bahadur Shah Zafar",
+    "description": "(British Library) Poetry Bahadur Shah Zafar at Kavita Kosh Archived 16 September 2018 at the Wayback Machine (in Hindi) Bahadur Shah Zafar Poetry Extracts from",
+    "year": 2018,
+    "date": "2018-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Bahadur_Shah_Zafar"
   },
   {
     "title": "Tamil inscriptions",
@@ -840,12 +1416,44 @@
     "link": "https://en.wikipedia.org/wiki/Chronology_of_Tamil_history"
   },
   {
-    "title": "Tirukkural translations into German",
-    "description": "Ajey Kumar (2023). Thirukkural Translations in World Languages. Chennai: ValaiTamil Publications. Rajaram, M. (2009). Thirukkural: Pearls of Inspiration",
+    "title": "List of Indian independence activists",
+    "description": "September 2021. Retrieved 11 September 2021. &quot;100 years later, Malabar Rebellion fights for screen space&quot;. The Hindu. 23 June 2020. Archived from the original",
+    "year": 2021,
+    "date": "2021-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists"
+  },
+  {
+    "title": "Who Owns That Song",
+    "description": "Indian poet Subramania Bharati. Sethi, Devika (2021). &quot;Book review: A. R. Venkatachalapathy, Who Owns That Song? The Battle for Subramania Bharati&#039;s Copyright&quot;",
+    "year": 2021,
+    "date": "2021-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Who_Owns_That_Song"
+  },
+  {
+    "title": "Halebidu",
+    "description": "Machine, Archaeological Survey of India, Bengaluru Circle Kedaresvara Temple, Halebid Archived 26 August 2021 at the Wayback Machine, Archaeological Survey",
+    "year": 2021,
+    "date": "2021-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Halebidu"
+  },
+  {
+    "title": "List of oldest extant buildings",
+    "description": "Retrieved 2022-06-05. Kalyanaraman, M. (12 January 2018). &quot;The ghosts of Adichanallur: Artefacts that suggest an ancient Tamil civilisation of great sophistication&quot;",
+    "year": 2022,
+    "date": "2022-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_oldest_extant_buildings"
+  },
+  {
+    "title": "Vellacci",
+    "description": "AGAINST BRITISH&quot;. Shubendra (2023). Warrior Queen of Sivaganga: The Legend of Rani Velu Nachiyar (1st ed.). New Delhi: Pan Macmillan. ISBN 978-9390742295",
     "year": 2023,
     "date": "2023-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Tirukkural_translations_into_German"
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Vellacci"
   },
   {
     "title": "Chief Minister of Tamil Nadu",
@@ -854,5 +1462,13 @@
     "date": "2026-01-01",
     "category": "Colonial Era",
     "link": "https://en.wikipedia.org/wiki/Chief_Minister_of_Tamil_Nadu"
+  },
+  {
+    "title": "Madurai R. Muralidaran",
+    "description": "com/maruthu-pandiyar-nadagam/ https://tnmirrornews.com/2042-2/ https://nba24x7.com/archives/16929 https://www.dtnext.in/news/chennai/maruthu-pandiyars",
+    "year": 2042,
+    "date": "2042-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Madurai_R._Muralidaran"
   }
 ]
