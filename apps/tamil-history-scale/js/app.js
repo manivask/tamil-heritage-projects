@@ -103,7 +103,7 @@ function syncEpochButtons(year) {
         }
     });
 
-    if (closestBtn && minDiff < 300) {
+    if (closestBtn && minDiff < 400) {
         closestBtn.classList.add("active");
     }
 }
@@ -124,14 +124,16 @@ async function triggerLiveSearchForQuery(query) {
     showLoadingSpinner(true, `Searching the web live for "${query}"...`);
     
     try {
-        const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query + ' Tamil')}&format=json&origin=*`;
+        // Query Wikipedia using generator=search to fetch extracts and pageimages (thumbnails) in one call
+        const url = `https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query + ' Tamil')}&prop=pageimages|extracts&piprop=thumbnail&pithumbsize=400&exintro=1&explaintext=1&exchars=250&format=json&origin=*`;
+        
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            const results = data.query?.search || [];
+            const pages = data.query?.pages || {};
             
-            const fetched = results.map(item => {
-                const cleanSnippet = item.snippet.replace(/<[^>]+>/g, '');
+            const fetched = Object.values(pages).map(item => {
+                const cleanSnippet = (item.extract || "").trim();
                 let category = "General History";
                 const lowerText = (item.title + " " + cleanSnippet).toLowerCase();
                 
@@ -139,6 +141,8 @@ async function triggerLiveSearchForQuery(query) {
                     category = "Rulers & Kingdoms";
                 } else if (lowerText.includes("book") || lowerText.includes("poet") || lowerText.includes("literature") || lowerText.includes("sangam")) {
                     category = "Literature & Arts";
+                } else if (lowerText.includes("archaeology") || lowerText.includes("excavation") || lowerText.includes("temple")) {
+                    category = "Culture & Heritage";
                 }
                 
                 // Parse year from content
@@ -160,6 +164,7 @@ async function triggerLiveSearchForQuery(query) {
                     date: year < 0 ? `BCE ${Math.abs(year)}` : `${year} CE`,
                     category: category,
                     link: `https://en.wikipedia.org/wiki/${encodeURIComponent(item.title.replace(/ /g, '_'))}`,
+                    image: item.thumbnail?.source || "",
                     isLive: true
                 };
             });
@@ -189,15 +194,15 @@ async function handleYearChange() {
     try {
         const queryYear = activeYear < 0 ? `${Math.abs(activeYear)} BC` : `${activeYear}`;
         const query = `"${queryYear}" "Tamil"`;
-        const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&origin=*`;
+        const url = `https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&prop=pageimages|extracts&piprop=thumbnail&pithumbsize=400&exintro=1&explaintext=1&exchars=250&format=json&origin=*`;
         
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            const results = data.query?.search || [];
+            const pages = data.query?.pages || {};
             
-            liveEvents = results.map(item => {
-                const cleanSnippet = item.snippet.replace(/<[^>]+>/g, '');
+            liveEvents = Object.values(pages).map(item => {
+                const cleanSnippet = (item.extract || "").trim();
                 let category = "General History";
                 const lowerText = (item.title + " " + cleanSnippet).toLowerCase();
                 
@@ -205,6 +210,8 @@ async function handleYearChange() {
                     category = "Rulers & Kingdoms";
                 } else if (lowerText.includes("book") || lowerText.includes("poet") || lowerText.includes("literature") || lowerText.includes("sangam")) {
                     category = "Literature & Arts";
+                } else if (lowerText.includes("archaeology") || lowerText.includes("excavation") || lowerText.includes("temple")) {
+                    category = "Culture & Heritage";
                 }
                 
                 return {
@@ -214,6 +221,7 @@ async function handleYearChange() {
                     date: activeYear < 0 ? `BCE ${Math.abs(activeYear)}` : `${activeYear} CE`,
                     category: category,
                     link: `https://en.wikipedia.org/wiki/${encodeURIComponent(item.title.replace(/ /g, '_'))}`,
+                    image: item.thumbnail?.source || "",
                     isLive: true
                 };
             });
@@ -289,7 +297,7 @@ function renderTimeline() {
 
     // Filter static database events
     const filteredStatic = timelineEvents.filter(event => {
-        const matchesYearRange = (searchFilter.length > 0 || Math.abs(event.year - activeYear) <= 350);
+        const matchesYearRange = (searchFilter.length > 0 || Math.abs(event.year - activeYear) <= 500); // 500 years window for 10k timeline
         const matchesCategory = (activeCategory === "all" || event.category === activeCategory);
         const matchesSearch = (
             searchFilter.length === 0 ||
@@ -317,8 +325,8 @@ function renderTimeline() {
     if (allRenderedEvents.length === 0 && !isFetchingLive) {
         container.innerHTML = `
             <div class="empty-state">
-                <p>🔍 No historical events found matching "${searchFilter}".</p>
-                <p style="font-size: 12px; margin-top: 8px; color: var(--text-muted)">Try adjusting your search or moving the navigator slider.</p>
+                <p>🔍 No historical events found matching "${searchFilter}" near the selected era.</p>
+                <p style="font-size: 12px; margin-top: 8px; color: var(--text-muted)">Try adjusting your search, moving the navigator slider, or picking another century epoch.</p>
             </div>
         `;
         return;
@@ -335,12 +343,16 @@ function renderTimeline() {
         else if (event.category === "Colonial Era") catClass = "cat-colonial";
 
         const badgeText = event.isLive ? `${event.category} • LIVE` : event.category;
+        
+        // Image banner element
+        const imgHtml = event.image ? `<img src="${event.image}" class="event-image-banner" alt="${event.title}" loading="lazy">` : "";
 
         const card = document.createElement("article");
         card.className = `timeline-event-card ${sideClass} ${catClass}`;
         card.innerHTML = `
             <div class="timeline-dot"></div>
             <div class="event-card-inner">
+                ${imgHtml}
                 <div class="event-header">
                     <span class="event-date-badge">${event.date}</span>
                     <span class="event-category-badge">${badgeText}</span>
