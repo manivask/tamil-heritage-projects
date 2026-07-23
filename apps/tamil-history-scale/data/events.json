@@ -126,13 +126,13 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg"
   },
   {
-    "title": "Old Tamil",
-    "description": "of the culture associated with the Neolithic complexes of South India. The earliest epigraphic attestations of Tamil are generally taken to have been written",
+    "title": "Dravidian peoples",
+    "description": "of the ancient Indus Valley civilisation. The discovery in Tamil Nadu of a late Neolithic (early 2nd millennium BCE, i.e. post-dating Harappan decline)",
     "year": -3000,
     "date": "BCE 3000",
     "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Old_Tamil",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/South_India_in_Sangam_Period_Tamilakam.jpg/500px-South_India_in_Sangam_Period_Tamilakam.jpg"
+    "link": "https://en.wikipedia.org/wiki/Dravidian_peoples",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Dravidian_map.svg/500px-Dravidian_map.svg.png"
   },
   {
     "title": "Dihar (archaeological site)",
@@ -315,15 +315,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Statue_of_Avvaiyar.jpg/500px-Statue_of_Avvaiyar.jpg"
   },
   {
-    "title": "Sangam landscape",
-    "description": "device that was characteristic of love poetry in classical Tamil Sangam literature. The core of the device was the categorisation of poems into different",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Sangam_landscape",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png"
-  },
-  {
     "title": "Sources of ancient Tamil history",
     "description": "among these sources is the Sangam literature, generally dated to 5th century BCE to 3rd century CE. The poems in Sangam literature contain vivid descriptions",
     "year": -300,
@@ -333,22 +324,22 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg"
   },
   {
-    "title": "Eight Anthologies",
-    "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
+    "title": "Sangam landscape",
+    "description": "device that was characteristic of love poetry in classical Tamil Sangam literature. The core of the device was the categorisation of poems into different",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Eight_Anthologies",
-    "image": ""
+    "link": "https://en.wikipedia.org/wiki/Sangam_landscape",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png"
   },
   {
-    "title": "Tamil literature",
-    "description": "economical, political and cultural trends of various periods. The early Sangam literature, dated before 300 BCE, contain anthologies of various poets dealing",
+    "title": "Ramayana in Tamil literature",
+    "description": "the 12th century. The age of Sangam literature (Tamil: சங்க இலக்கியம், caṅka ilakkiyam) refers to the ancient Tamil literature roughly extends between",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Tamil_literature",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AE%BE%E0%AE%AF%E0%AF%8D_%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%85%E0%AE%95%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%88.JPG"
+    "link": "https://en.wikipedia.org/wiki/Ramayana_in_Tamil_literature",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg/500px-Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg"
   },
   {
     "title": "Vaishnavism in Ancient Tamilakam",
@@ -357,6 +348,15 @@
     "date": "BCE 300",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Vaishnavism_in_Ancient_Tamilakam",
+    "image": ""
+  },
+  {
+    "title": "Eight Anthologies",
+    "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Eight_Anthologies",
     "image": ""
   },
   {
@@ -378,13 +378,13 @@
     "image": ""
   },
   {
-    "title": "Ramayana in Tamil literature",
-    "description": "the 12th century. The age of Sangam literature (Tamil: சங்க இலக்கியம், caṅka ilakkiyam) refers to the ancient Tamil literature roughly extends between",
+    "title": "Tamil literature",
+    "description": "economical, political and cultural trends of various periods. The early Sangam literature, dated before 300 BCE, contain anthologies of various poets dealing",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Ramayana_in_Tamil_literature",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg/500px-Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg"
+    "link": "https://en.wikipedia.org/wiki/Tamil_literature",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AE%BE%E0%AE%AF%E0%AF%8D_%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%85%E0%AE%95%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%88.JPG"
   },
   {
     "title": "Nalankilli",
@@ -414,21 +414,21 @@
     "image": ""
   },
   {
-    "title": "Ay Andiran",
-    "description": "contemporary of the Chera ruler Anthuvan Cheral (dated to c. 140 CE). In the Sangam Literature (the early historic Tamil corpus), particularly in Purananuru (quatrain",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Ay_Andiran",
-    "image": ""
-  },
-  {
     "title": "Kapilar",
     "description": "Vēlir kings. He authored the Inna Narpathu, a didactic work of the Sangam literature. Verse 5 of the Tiruvalluva Maalai is also attributed to him. Kapilar",
     "year": -300,
     "date": "BCE 300",
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Kapilar",
+    "image": ""
+  },
+  {
+    "title": "Ay Andiran",
+    "description": "contemporary of the Chera ruler Anthuvan Cheral (dated to c. 140 CE). In the Sangam Literature (the early historic Tamil corpus), particularly in Purananuru (quatrain",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Ay_Andiran",
     "image": ""
   },
   {
@@ -675,6 +675,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Spiritual_16.jpg/500px-Spiritual_16.jpg"
   },
   {
+    "title": "Old Tamil",
+    "description": "Tamil (700–1600) and Modern Tamil (1600–present). In November 2007, an excavation at Quseir al Qadim revealed Ancient Egyptian pottery dating back to first",
+    "year": 700,
+    "date": "700-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Old_Tamil",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/South_India_in_Sangam_Period_Tamilakam.jpg/500px-South_India_in_Sangam_Period_Tamilakam.jpg"
+  },
+  {
     "title": "Shore Temple",
     "description": "Temple complex in the category of structural temples goes to the King Rajasimha (700–28 AD), also known as Narasimhavarman II, of the Pallava Dynasty",
     "year": 700,
@@ -727,6 +736,15 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Uttama_%28Chola_dynasty%29",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chola_coin_with_legend_%22Uttama%22.png"
+  },
+  {
+    "title": "Kannagi",
+    "description": "Literature and Art – Tears of Kaṇṇaki: Annals and Iconology of the Silappatikāram. Sharada Publishing House. ISBN 978-9-383-22114-1. Archived from the",
+    "year": 978,
+    "date": "978-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Kannagi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Statue_of_Kannagi.jpg/500px-Statue_of_Kannagi.jpg"
   },
   {
     "title": "Kundavai Pirāttiyār",
@@ -973,7 +991,7 @@
   },
   {
     "title": "Tirumala Nayaka",
-    "description": "the ruler of Madurai Nayak Dynasty from 1623 to 1659. His contributions are found in the many splendid buildings and temples of Madurai. He belongs to",
+    "description": "ruler of Madurai Nayak Dynasty from 1623 until his death in 1659. His contributions are found in the many splendid buildings and temples of Madurai. He belongs",
     "year": 1623,
     "date": "1623-01-01",
     "category": "Rulers & Kingdoms",
@@ -1278,15 +1296,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Chakravarthi_Rajagopalachari.jpg"
   },
   {
-    "title": "Manimekalai (disambiguation)",
-    "description": "titular character of the epic, first appears as the daughter of Kovalan and Madhavi in a preceding Tamil epic Silappatikaram Manimekalai (1940 film),",
-    "year": 1940,
-    "date": "1940-01-01",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Manimekalai_%28disambiguation%29",
-    "image": ""
-  },
-  {
     "title": "Manimekalai (1940 film)",
     "description": "Manimekalai (also known as Balasanyasini) is a 1940 Indian Tamil-language film directed and photographed by Bomman Irani. It is based on the epic of the",
     "year": 1940,
@@ -1332,21 +1341,21 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Sahitya_Akademi_Award_-_Surjit_Patar.JPG/500px-Sahitya_Akademi_Award_-_Surjit_Patar.JPG"
   },
   {
-    "title": "List of 1950s films based on actual events",
-    "description": "Kattabomman, the Brave Warrior (Tamil: வீரபாண்டிய கட்டபொம்மன்) (1959) – Indian Tamil-language historical war film based on the story of Veerapandiya Kattabomman",
-    "year": 1959,
-    "date": "1959-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/List_of_1950s_films_based_on_actual_events",
-    "image": ""
-  },
-  {
     "title": "List of historical films set in Asia",
     "description": "albeit with lot of inaccuracies. Veerapandiya Kattabomman 1959 1760–1799 About the resistance of Veerapandiya Kattabomman to the Company rule in India, rule",
     "year": 1959,
     "date": "1959-01-01",
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/List_of_historical_films_set_in_Asia",
+    "image": ""
+  },
+  {
+    "title": "List of 1950s films based on actual events",
+    "description": "Kattabomman, the Brave Warrior (Tamil: வீரபாண்டிய கட்டபொம்மன்) (1959) – Indian Tamil-language historical war film based on the story of Veerapandiya Kattabomman",
+    "year": 1959,
+    "date": "1959-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/List_of_1950s_films_based_on_actual_events",
     "image": ""
   },
   {
