@@ -36,21 +36,21 @@
     "image": ""
   },
   {
-    "title": "Tamil Nadu State Department of Archaeology",
-    "description": "type of primitive human activity at one of these sites, Attirampakkam, reveals a Paleolithic culture. Numerous microlithic implements were yielded at",
-    "year": -8000,
-    "date": "BCE 8000",
-    "category": "Culture & Heritage",
-    "link": "https://en.wikipedia.org/wiki/Tamil_Nadu_State_Department_of_Archaeology",
-    "image": ""
-  },
-  {
     "title": "List of archaeological sites by country",
     "description": "Aquincum Gorsium Üllő5 Ajanta Caves Adichanallur Adi Badri, Haryana Attirampakkam Alamgirpur Assandh Ambadevi rock shelters Acheulean, site of Chirki-on-Pravara",
     "year": -8000,
     "date": "BCE 8000",
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/List_of_archaeological_sites_by_country",
+    "image": ""
+  },
+  {
+    "title": "Tamil Nadu State Department of Archaeology",
+    "description": "type of primitive human activity at one of these sites, Attirampakkam, reveals a Paleolithic culture. Numerous microlithic implements were yielded at",
+    "year": -8000,
+    "date": "BCE 8000",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Tamil_Nadu_State_Department_of_Archaeology",
     "image": ""
   },
   {
@@ -135,6 +135,15 @@
     "image": ""
   },
   {
+    "title": "Dravidian folk religion",
+    "description": "believe that the Dravidian religion was a belief system unique to the Neolithic people of South Asia before the origin of Indo-Aryan languages. Pope believes",
+    "year": -3000,
+    "date": "BCE 3000",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Dravidian_folk_religion",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Dravidian_-_Tamil_Folk_Deity_Aiyanar_with_his_wives.jpg/500px-Dravidian_-_Tamil_Folk_Deity_Aiyanar_with_his_wives.jpg"
+  },
+  {
     "title": "Neolithic Settlements in Tamil Nadu",
     "description": "Emergence of early farming, pastoralism, and polished stone axes in the hills of northern Tamil Nadu, marking the transition from hunter-gatherers to village settlements.",
     "year": -3000,
@@ -189,15 +198,6 @@
     "image": ""
   },
   {
-    "title": "Adichanallur",
-    "description": "Adichanallur - Keezhadi Mann Mooodiya Mahathaana Nahariham published by Dina Thanthi Archaeological Survey of India&#039;s Page on Adichanallur excavations Rudimentary",
-    "year": -580,
-    "date": "BCE 580",
-    "category": "Culture & Heritage",
-    "link": "https://en.wikipedia.org/wiki/Adichanallur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Adichanallur_Urn.jpg/500px-Adichanallur_Urn.jpg"
-  },
-  {
     "title": "Keelnamandi archaeological site",
     "description": "back to the 17th century BCE. Arikamedu Adichanallur archaeological site Kodumanal Keezhadi excavation site &quot;தொல்பொருளியல் திணைக்களத்தால் நடத்தப்பட்ட தொல்பொருள்",
     "year": -580,
@@ -207,6 +207,15 @@
     "image": ""
   },
   {
+    "title": "Adichanallur",
+    "description": "Adichanallur - Keezhadi Mann Mooodiya Mahathaana Nahariham published by Dina Thanthi Archaeological Survey of India&#039;s Page on Adichanallur excavations Rudimentary",
+    "year": -580,
+    "date": "BCE 580",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Adichanallur",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Adichanallur_Urn.jpg/500px-Adichanallur_Urn.jpg"
+  },
+  {
     "title": "Tenkasi Pandyas",
     "description": "on Dravidian culture and history Origin Indus Valley Civilisation Keezhadi excavation site History History of South India Ancient history of Sri Lanka",
     "year": -580,
@@ -214,6 +223,15 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Tenkasi_Pandyas",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Twin_fish_flag_of_Pandyas.svg/500px-Twin_fish_flag_of_Pandyas.svg.png"
+  },
+  {
+    "title": "Sources of ancient Tamil history",
+    "description": "locations of many ports on both coasts of the Tamil country. Archaeological excavations of several sites in Tamil Nadu and Kerala have yielded remnants",
+    "year": -580,
+    "date": "BCE 580",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Sources_of_ancient_Tamil_history",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg"
   },
   {
     "title": "Porunai Museum",
@@ -315,13 +333,13 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Statue_of_Avvaiyar.jpg/500px-Statue_of_Avvaiyar.jpg"
   },
   {
-    "title": "Sources of ancient Tamil history",
-    "description": "among these sources is the Sangam literature, generally dated to 5th century BCE to 3rd century CE. The poems in Sangam literature contain vivid descriptions",
+    "title": "Eight Anthologies",
+    "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Sources_of_ancient_Tamil_history",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg"
+    "link": "https://en.wikipedia.org/wiki/Eight_Anthologies",
+    "image": ""
   },
   {
     "title": "Tamil literature",
@@ -342,13 +360,13 @@
     "image": ""
   },
   {
-    "title": "Eight Anthologies",
-    "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
+    "title": "Sangam landscape",
+    "description": "device that was characteristic of love poetry in classical Tamil Sangam literature. The core of the device was the categorisation of poems into different",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Eight_Anthologies",
-    "image": ""
+    "link": "https://en.wikipedia.org/wiki/Sangam_landscape",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png"
   },
   {
     "title": "Ramayana in Tamil literature",
@@ -360,15 +378,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg/500px-Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg"
   },
   {
-    "title": "Sangam landscape",
-    "description": "device that was characteristic of love poetry in classical Tamil Sangam literature. The core of the device was the categorisation of poems into different",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Sangam_landscape",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png"
-  },
-  {
     "title": "Paripāṭal",
     "description": "traditionally the fifth of the Eight Anthologies (Ettuthokai) in the Sangam literature. According to Tolkappiyam, Paripadal is a kind of verse dealing only",
     "year": -300,
@@ -378,12 +387,12 @@
     "image": ""
   },
   {
-    "title": "Nalankilli",
-    "description": "Tamilakam (modern-day Southern India) and was mentioned in the ancient Sangam Literature. He was the son of the emperor Karikala Chola. Nalankilli was mentioned",
+    "title": "Heroic Age (literary theory)",
+    "description": "India have an extensive literature describing their Heroic Age (the Sangam period). The Sangam poems share common themes with their Greek and German counterparts",
     "year": -300,
     "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Nalankilli",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Heroic_Age_%28literary_theory%29",
     "image": ""
   },
   {
@@ -396,30 +405,12 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Murugan_by_Raja_Ravi_Varma.jpg/500px-Murugan_by_Raja_Ravi_Varma.jpg"
   },
   {
-    "title": "Heroic Age (literary theory)",
-    "description": "India have an extensive literature describing their Heroic Age (the Sangam period). The Sangam poems share common themes with their Greek and German counterparts",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Heroic_Age_%28literary_theory%29",
-    "image": ""
-  },
-  {
     "title": "Kuṟuntokai",
     "description": "traditionally the second of the Eight Anthologies (Ettuthokai) in the Sangam literature. The collection belongs to the akam (love) category, and each poem",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Ku%E1%B9%9Funtokai",
-    "image": ""
-  },
-  {
-    "title": "Ay Andiran",
-    "description": "contemporary of the Chera ruler Anthuvan Cheral (dated to c. 140 CE). In the Sangam Literature (the early historic Tamil corpus), particularly in Purananuru (quatrain",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Ay_Andiran",
     "image": ""
   },
   {
@@ -432,6 +423,15 @@
     "image": ""
   },
   {
+    "title": "Nalankilli",
+    "description": "Tamilakam (modern-day Southern India) and was mentioned in the ancient Sangam Literature. He was the son of the emperor Karikala Chola. Nalankilli was mentioned",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Nalankilli",
+    "image": ""
+  },
+  {
     "title": "Naming conventions of the Tamilakam",
     "description": "of the Tamilakam in the Sangam literature have been one of the foremost concerns of Tamilology. The Surnames of the Caṅkam Age: Literary &amp; Tribal, published",
     "year": -300,
@@ -441,12 +441,21 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg"
   },
   {
-    "title": "Perunarkilli",
-    "description": "பெருநற்கிள்ளி) was one of the Tamil kings of the Early Cholas mentioned in Sangam Literature. There are no definite details about this Chola or his reign. The",
+    "title": "Ay Andiran",
+    "description": "contemporary of the Chera ruler Anthuvan Cheral (dated to c. 140 CE). In the Sangam Literature (the early historic Tamil corpus), particularly in Purananuru (quatrain",
     "year": -300,
     "date": "BCE 300",
     "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Perunarkilli",
+    "link": "https://en.wikipedia.org/wiki/Ay_Andiran",
+    "image": ""
+  },
+  {
+    "title": "Indian literature",
+    "description": "Sanskrit literature developed rapidly during the first few centuries of the first millennium BCE, as did the Pāli Canon and Tamil Sangam literature.[citation",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Indian_literature",
     "image": ""
   },
   {
@@ -456,15 +465,6 @@
     "date": "BCE 300",
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Tolk%C4%81ppiyam",
-    "image": ""
-  },
-  {
-    "title": "Indian literature",
-    "description": "more than 2500 years (Sangam period: 5th century BCE-3rd century CE.) Tolkaappiyam (3rd century BCE) has been credited as the oldest work in Tamil available",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Indian_literature",
     "image": ""
   },
   {
@@ -540,15 +540,6 @@
     "image": ""
   },
   {
-    "title": "Ancient clans of Lanka",
-    "description": "kingdom of Lanka were mentioned in the great epics of Mahavamsa, Vargapurnika, Mahabaratha, Manimekalai, Ramayana and Sangams. Yaksha kingdom Rakshasa",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Ancient_clans_of_Lanka",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Devil_Mask_-_Aida%2C_Bentota.jpg/500px-Devil_Mask_-_Aida%2C_Bentota.jpg"
-  },
-  {
     "title": "Nachinarkiniyar",
     "description": "the most studied Tamil texts such as the Tolkappiyam, Kuruntokai and Civaka Cintamani have guided scholarship that followed him, including modern era studies",
     "year": -300,
@@ -585,15 +576,6 @@
     "image": ""
   },
   {
-    "title": "History of Karur",
-    "description": "capital of early Chera kings of Sangam age. And Kongunadu is only the Chera Kingdom that extended up to the western coast till Muziri in Kerala, South",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/History_of_Karur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Karur_Pasupateeswarar_kovil.jpg/500px-Karur_Pasupateeswarar_kovil.jpg"
-  },
-  {
     "title": "C. W. Thamotharampillai",
     "description": "contemporaries such as U. V. Swaminatha Iyer, was responsible for collecting and cataloguing numerous old Sangam manuscripts and preparing them into",
     "year": -300,
@@ -610,15 +592,6 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Ten_Idylls",
     "image": ""
-  },
-  {
-    "title": "Vaishnavism",
-    "description": "ascribes the tradition in the south to the 3rd century CE. U. V. Swaminatha Iyer, a scholar of Tamil literature, published the Paripatal (Sangam period), which",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Vaishnavism",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hindu_God_Vishnu_as_Narayana_witth_Consorts_10_AD_Sculpture_at_LA_County_Museum_of_Art.tif/lossy-page1-500px-Hindu_God_Vishnu_as_Narayana_witth_Consorts_10_AD_Sculpture_at_LA_County_Museum_of_Art.tif.jpg"
   },
   {
     "title": "Composition of Tolkāppiyam",
@@ -684,6 +657,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Theatrum_Orbis_Terrarum%2C_by_Abraham_Ortelius%2C_World%2C_1572.jpg/500px-Theatrum_Orbis_Terrarum%2C_by_Abraham_Ortelius%2C_World%2C_1572.jpg"
   },
   {
+    "title": "Mahendravarman I",
+    "description": "Mahendravarman I (reigned 590–630) was a Pallava emperor who ruled over a realm covering the southern portions of present-day Andhra region and northern",
+    "year": 590,
+    "date": "590-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Mahendravarman_I",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mahendravarman_I.jpg/500px-Mahendravarman_I.jpg"
+  },
+  {
     "title": "ITC Grand Chola Hotel",
     "description": "the Karikalan Suite and a six-bay grand presidential suite named the Rajaraja Chola Suite spread over 4,380 sq ft. The single rooms occupy an area of 615 sq ft",
     "year": 615,
@@ -729,6 +711,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Adiyarkku-nallar_commentary_on_Silappathikaram_page_10.jpg/500px-Adiyarkku-nallar_commentary_on_Silappathikaram_page_10.jpg"
   },
   {
+    "title": "Architecture of Tamil Nadu",
+    "description": "Tamil Nadu is renowned for its ancient temple architecture, with nearly 33,000 temples–many between 800 and 2,000 years old–scattered across the state",
+    "year": 800,
+    "date": "800-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Architecture_of_Tamil_Nadu",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Gopuras_in_Kumbakonam_-_India.JPG/500px-Gopuras_in_Kumbakonam_-_India.JPG"
+  },
+  {
     "title": "Chera Perumals of Kerala",
     "description": "dynasty, also known as the Perumal dynasty of Kerala, or the Chera Perumals of Makotai or Mahodayapuram (fl. c. 844—c. 1124 CE), was a ruling dynasty",
     "year": 844,
@@ -756,15 +747,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chola_coin_with_legend_%22Uttama%22.png"
   },
   {
-    "title": "Kannagi",
-    "description": "Literature and Art – Tears of Kaṇṇaki: Annals and Iconology of the Silappatikāram. Sharada Publishing House. ISBN 978-9-383-22114-1. Archived from the",
-    "year": 978,
-    "date": "978-01-01",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Kannagi",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Statue_of_Kannagi.jpg/500px-Statue_of_Kannagi.jpg"
-  },
-  {
     "title": "Rajaraja Devendravarman",
     "description": "between the Cholas and the Gangas. Conflict with the Somavanshis: Dirghasi inscription states that Ganpati, the brahmana chieftain of Rajaraja I destroyed",
     "year": 985,
@@ -781,6 +763,15 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Kundavai_Pir%C4%81ttiy%C4%81r",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Ilaiya_Piratti_Kundavai.png"
+  },
+  {
+    "title": "Thanjavur",
+    "description": "these, the Rajarajesvaram or Brihadisvara Temple, built by the Chola emperor Rajaraja I, is located in the centre of the city. This temple has one of",
+    "year": 985,
+    "date": "985-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Thanjavur",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Thanjavur_2.jpg/500px-Thanjavur_2.jpg"
   },
   {
     "title": "Chola–Chalukya Wars",
@@ -801,6 +792,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Horse_statue_in_chennai.jpeg/500px-Horse_statue_in_chennai.jpeg"
   },
   {
+    "title": "History of China–India relations",
+    "description": "earlier Chola Empire. Under Rajaraja Chola and his son Rajendra Chola, the Cholas had strong trading links with the Chinese Song dynasty. The Chola dynasty",
+    "year": 985,
+    "date": "985-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/History_of_China%E2%80%93India_relations",
+    "image": ""
+  },
+  {
     "title": "Airavatesvara Temple",
     "description": "in the South Indian state of Tamil Nadu. This temple, built by Chola emperor Rajaraja II in the 12th century CE is a UNESCO World Heritage Site, along",
     "year": 985,
@@ -817,24 +817,6 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Sengunthar",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Veerabahu_navaveerargal_painting.jpg/500px-Veerabahu_navaveerargal_painting.jpg"
-  },
-  {
-    "title": "Gangaikonda Cholapuram",
-    "description": "from single rock. The Chola rulers constructed enormous stone temple complexes with intricate carvings of Hindu gods. Rajaraja I built the famous Brihdrishvara",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/GangaiKonda_Cholapuram%28Front_View%29.JPG/500px-GangaiKonda_Cholapuram%28Front_View%29.JPG"
-  },
-  {
-    "title": "Kundavai",
-    "description": "of Raja Raja Chola and younger sister of Rajendra Chola, the queen of the Eastern Chalukya king Vimaladitya and the mother of Rajaraja Narendra. Sailendra",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Kundavai",
-    "image": ""
   },
   {
     "title": "Rajaraja Chola I Ascends the Throne",
@@ -1116,6 +1098,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Kalayarkoil_%284%29.jpg/500px-Kalayarkoil_%284%29.jpg"
   },
   {
+    "title": "Sir Thomas Munro, 1st Baronet",
+    "description": "(27 May 1761 – 6 July 1827) was a Madras Army officer and colonial administrator who served as the governor of Madras from 1820 to 1827. Munro was born",
+    "year": 1761,
+    "date": "1761-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Sir_Thomas_Munro%2C_1st_Baronet",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Sir_Thomas_Munro%2C_1st_Bt_by_Sir_Martin_Archer_Shee.jpg/500px-Sir_Thomas_Munro%2C_1st_Bt_by_Sir_Martin_Archer_Shee.jpg"
+  },
+  {
     "title": "Sivaganga",
     "description": "over the reign. He was shot dead in 1780 by Nawab&#039;s troops. His widow Velu Nachiyar and infant Vellacci fled the region and were aided by the two Maruthu",
     "year": 1780,
@@ -1287,12 +1278,12 @@
     "image": ""
   },
   {
-    "title": "Dravidian movement",
-    "description": "The Dravidian movement started in British India with the formation of the Justice Party on 20 November 1916 in Victoria Public Hall in Madras by C. Natesa",
-    "year": 1916,
-    "date": "1916-01-01",
-    "category": "Colonial Era",
-    "link": "https://en.wikipedia.org/wiki/Dravidian_movement",
+    "title": "1882 in India",
+    "description": "Bharathi, poet, independence fighter and reformer (d.1921). 6 January – Bharatendu Harishchandra, writer and poet (b.1850). &quot;Subramania Bharati&quot;. Encyclopædia",
+    "year": 1921,
+    "date": "1921-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/1882_in_India",
     "image": ""
   },
   {
@@ -1303,15 +1294,6 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Suratha",
     "image": ""
-  },
-  {
-    "title": "Tiruchirappalli",
-    "description": "1930. Tiruchirappalli was an epicentre of the anti-Hindi agitations of Tamil Nadu when a team of Tamil language supporters gathered and organised a rally",
-    "year": 1930,
-    "date": "1930-01-01",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Tiruchirappalli",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Rock_Fortress_-_Tiruchirappalli_-_India.JPG/500px-Rock_Fortress_-_Tiruchirappalli_-_India.JPG"
   },
   {
     "title": "Madras Presidency",
@@ -1438,6 +1420,15 @@
     "category": "Culture & Heritage",
     "link": "https://en.wikipedia.org/wiki/C._N._Annadurai",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/CN_Annadurai.jpg/500px-CN_Annadurai.jpg"
+  },
+  {
+    "title": "Madras State",
+    "description": "official communications. The Anti-Hindi agitations of Tamil Nadu led to the rise of Dravidian parties that formed Tamil Nadu&#039;s first government in 1967.",
+    "year": 1967,
+    "date": "1967-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Madras_State",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Madras_in_India_%281951%29.svg/500px-Madras_in_India_%281951%29.svg.png"
   },
   {
     "title": "Valluvar Kottam",
@@ -1591,15 +1582,6 @@
     "category": "Culture & Heritage",
     "link": "https://en.wikipedia.org/wiki/History_of_metallurgy_in_the_Indian_subcontinent",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/SamudraguptaCoin.jpg/500px-SamudraguptaCoin.jpg"
-  },
-  {
-    "title": "Namakkal",
-    "description": "Namakkal (Tamil: [nɑːməkkəl]) is a city and the headquarters of Namakkal district, Tamil Nadu. It is the first ISO 14001-2004 certified municipality in",
-    "year": 2004,
-    "date": "2004-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Namakkal",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/%E0%AE%A8%E0%AE%BE%E0%AE%AE%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%89%E0%AE%B3%E0%AF%8D%E0%AE%B3_%E0%AE%A8%E0%AE%B0%E0%AE%9A%E0%AE%BF%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%B0%E0%AF%8D_%E0%AE%86%E0%AE%B2%E0%AE%AF%E0%AE%AE%E0%AF%8D.jpg/500px-%E0%AE%A8%E0%AE%BE%E0%AE%AE%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%89%E0%AE%B3%E0%AF%8D%E0%AE%B3_%E0%AE%A8%E0%AE%B0%E0%AE%9A%E0%AE%BF%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%B0%E0%AF%8D_%E0%AE%86%E0%AE%B2%E0%AE%AF%E0%AE%AE%E0%AF%8D.jpg"
   },
   {
     "title": "Yu Hsi",
@@ -1764,15 +1746,6 @@
     "image": ""
   },
   {
-    "title": "Black pepper",
-    "description": "&quot;Artefacts from the lost Port of Muziris.&quot; Archived 13 January 2016 at the Wayback Machine The Hindu. 3 December 2014. &quot;Muziris, at last?&quot; Archived 23 July",
-    "year": 2016,
-    "date": "2016-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Black_pepper",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-107.jpg"
-  },
-  {
     "title": "Anti-Hindi agitations of Karnataka",
     "description": "Anti-Hindi agitations in the Indian state of Karnataka escalated in 2017 in response to use of Hindi language on signs for the Namma Metro project. After",
     "year": 2017,
@@ -1845,6 +1818,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Halebidu_monuments_map%2C_1930_survey%2C_the_Dorasamudra_of_Hoysala_dynasty.jpg/500px-Halebidu_monuments_map%2C_1930_survey%2C_the_Dorasamudra_of_Hoysala_dynasty.jpg"
   },
   {
+    "title": "Tirukkural translations into German",
+    "description": "Ajey Kumar (2023). Thirukkural Translations in World Languages. Chennai: ValaiTamil Publications. Rajaram, M. (2009). Thirukkural: Pearls of Inspiration",
+    "year": 2023,
+    "date": "2023-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Tirukkural_translations_into_German",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Karl_Graul_%28IZ_43-1864_S_424_E_G%29.jpg/500px-Karl_Graul_%28IZ_43-1864_S_424_E_G%29.jpg"
+  },
+  {
     "title": "Vellacci",
     "description": "AGAINST BRITISH&quot;. Shubendra (2023). Warrior Queen of Sivaganga: The Legend of Rani Velu Nachiyar (1st ed.). New Delhi: Pan Macmillan. ISBN 978-9390742295",
     "year": 2023,
@@ -1879,6 +1861,15 @@
     "category": "Colonial Era",
     "link": "https://en.wikipedia.org/wiki/Chief_Minister_of_Tamil_Nadu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seal_of_Tamil_Nadu.svg/500px-Seal_of_Tamil_Nadu.svg.png"
+  },
+  {
+    "title": "Pattanam",
+    "description": "| Muziris heritage project | KCHR&quot;. muziris Project. Retrieved 27 July 2026. &quot;Muziris Tourism, Muziris Heritage Tourism, Muziris Pattanam, Muziris Excavations",
+    "year": 2026,
+    "date": "2026-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Pattanam",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pattanam_-_Muziris_excavation_museum_-_Muziris_Heritage_-_WikiSangamotsavam_2018%2C_Kottappuram%2C_Kodungalloor_%2810%29.jpg/500px-Pattanam_-_Muziris_excavation_museum_-_Muziris_Heritage_-_WikiSangamotsavam_2018%2C_Kottappuram%2C_Kodungalloor_%2810%29.jpg"
   },
   {
     "title": "Madurai R. Muralidaran",
