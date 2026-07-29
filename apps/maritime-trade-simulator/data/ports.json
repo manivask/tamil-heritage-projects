@@ -1,0 +1,65 @@
+[
+  {
+    "id": "musiri",
+    "name": "Musiri (Muziris)",
+    "coordinates": [10.21, 76.21],
+    "region": "Chera Kingdom (Malabar Coast)",
+    "description": "The crown jewel of Roman trade in India, famed for its massive exports of black pepper, malabathrum (cinnamon leaves), and high-quality ivory.",
+    "exports": ["Black Pepper", "Malabathrum", "Ivory", "Beryl Gems"],
+    "imports": ["Roman Gold Coins", "Italian Wine", "Glassware", "Lead"]
+  },
+  {
+    "id": "poompuhar",
+    "name": "Poompuhar (Kaveripoompattinam)",
+    "coordinates": [11.14, 79.85],
+    "region": "Chola Kingdom (Coromandel Coast)",
+    "description": "A magnificent port city at the mouth of the Kaveri River, described in Sangam literature (Pattinappalai) as a bustling metropolis of international traders.",
+    "exports": ["Fine Cotton/Silk", "Spices", "Pearls", "Sandalwood"],
+    "imports": ["Arabian Horses", "Chinese Silk", "Saffron", "Tin"]
+  },
+  {
+    "id": "korkai",
+    "name": "Korkai",
+    "coordinates": [8.63, 78.04],
+    "region": "Pandya Kingdom (Gulf of Mannar)",
+    "description": "The legendary center of pearl diving. Celebrated by Greek geographers and Tamil poets alike for the finest pearls in the ancient world.",
+    "exports": ["Gulf of Mannar Pearls", "Chank Shells", "Valampuri Sanggu"],
+    "imports": ["Gold", "Wine", "Pottery"]
+  },
+  {
+    "id": "arikamedu",
+    "name": "Arikamedu (Poduke)",
+    "coordinates": [11.90, 79.81],
+    "region": "Coromandel Trade Emporium",
+    "description": "An active manufacturing and shipping hub where Romans established a permanent trading post. Famed for bead-making (glass and semi-precious stones).",
+    "exports": ["Beads", "Muslin Textiles", "Spices"],
+    "imports": ["Amphorae Wine", "Arretine Ware Pottery", "Roman Glass"]
+  },
+  {
+    "id": "berenike",
+    "name": "Berenike",
+    "coordinates": [23.90, 35.47],
+    "region": "Roman Egypt (Red Sea)",
+    "description": "The desert gate to the Roman Empire. Cargo from Muziris was unloaded here and carried via camel caravans to the Nile, then shipped to Rome.",
+    "exports": ["Roman Gold Coins", "Garum Sauce", "Mediterranean Wine"],
+    "imports": ["Indian Pepper", "Silk", "Spices", "Indigo Dye"]
+  },
+  {
+    "id": "kadaram",
+    "name": "Kadaram (Kedah Valley)",
+    "coordinates": [5.68, 100.38],
+    "region": "Kadaram (Southeast Asia / Malaysia)",
+    "description": "A crucial maritime crossroads in the Malacca Strait. Visited by Chola fleets and merchants trading in tin and exotic spices.",
+    "exports": ["Tin", "Aromatic Woods", "Cardamom", "Chinese Silk"],
+    "imports": ["Tamil Ironware", "Cotton Textiles", "Spices", "Glassware"]
+  },
+  {
+    "id": "guangzhou",
+    "name": "Guangzhou (Khanfu)",
+    "coordinates": [23.13, 113.26],
+    "region": "Imperial China (Tang/Song)",
+    "description": "The easternmost destination of ancient Tamil merchant guilds like the *Ayyavole 500*. Trade centered around premium silks, porcelain, and aromatics.",
+    "exports": ["Raw Silk", "Porcelain", "Tea", "Camphor"],
+    "imports": ["Frankincense", "Black Pepper", "Cotton Textiles", "Pearls"]
+  }
+]

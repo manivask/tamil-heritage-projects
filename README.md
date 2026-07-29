@@ -36,12 +36,18 @@ c:\Users\maniv\all_ide_code_ws\
 │   │   ├── nammalvar.html              # Nammalvar Slideshow biography
 │   │   └── orissa_balu.html            # Orissa Balu Slideshow biography
 │   │
-│   └── content-extractor/
-│       ├── python/                     # Server backend and utility scripts
-│       │   ├── extractor_server.py
-│       │   ├── web_scraper.py
-│       │   └── youtube_transcriber.py
-│       └── index.html                  # Extractor Tool UI
+│   ├── content-extractor/
+│   │   ├── python/                     # Server backend and utility scripts
+│   │   │   ├── extractor_server.py
+│   │   │   ├── web_scraper.py
+│   │   │   └── youtube_transcriber.py
+│   │   └── index.html                  # Extractor Tool UI
+│   │
+│   └── maritime-trade-simulator/
+│       ├── css/styles.css              # Custom Dark Simulator Styles
+│       ├── js/simulator.js             # Simulation loop and audio engine
+│       ├── data/ports.json             # Ports coordinates and historical details
+│       └── index.html                  # Ancient Maritime Voyage Simulator App
 │
 ├── index.html                          # Main Portal page linking all apps
 └── README.md                           # This documentation file
@@ -55,6 +61,7 @@ c:\Users\maniv\all_ide_code_ws\
 - **Main Portal**: Open **[index.html](file:///c:/Users/maniv/all_ide_code_ws/index.html)** in any modern web browser to access all projects.
 - **Thirukkural Facts Finder**: Open **[apps/thirukkural-facts-finder/index.html](file:///c:/Users/maniv/all_ide_code_ws/apps/thirukkural-facts-finder/index.html)** directly.
 - **Global Tamil Toponyms Explorer**: Open **[apps/toponyms-explorer/index.html](file:///c:/Users/maniv/all_ide_code_ws/apps/toponyms-explorer/index.html)** directly.
+- **Ancient Maritime Voyage Simulator**: Open **[apps/maritime-trade-simulator/index.html](file:///c:/Users/maniv/all_ide_code_ws/apps/maritime-trade-simulator/index.html)** directly.
 
 ### 2. Extract New Name Datasets
 If you want to extract names globally and pre-load them in the HTML dropdown:

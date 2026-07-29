@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive maritime voyage simulator detailing ancient Tamil trade routes, monsoons, and sea lanes.">
+    <meta name="keywords" content="Muziris, Poompuhar, Roman Trade, Sangam Literature, Orissa Balu, Sea Turtles, Monsoons">
+    <title>Ancient Tamil Maritime Voyage Simulator</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin=""/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Sidebar Panels -->
+        <aside id="sidebar">
+            <header class="app-header">
+                <a href="../../index.html" class="back-btn">
+                    <span>&larr;</span> Back to Portal
+                </a>
+                <div class="logo-area">
+                    <span class="icon">🌊</span>
+                    <h1>Maritime Voyage</h1>
+                </div>
+                <p class="subtitle">Simulating ancient Tamil ocean trade routes guided by monsoon currents and seasonal migrations.</p>
+            </header>
+
+            <div class="controls-scroll">
+                <!-- Select Route & Cargo -->
+                <section class="card">
+                    <h2>Voyage configuration</h2>
+                    
+                    <div class="input-group">
+                        <label for="origin-port">Origin Port (Tamil Nadu/Kerala)</label>
+                        <select id="origin-port">
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="destination-port">Destination Port</label>
+                        <select id="destination-port">
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="vessel-type">Select Vessel Type</label>
+                        <select id="vessel-type">
+                            <option value="nava">Chola Navy Nava (Strong & Safe)</option>
+                            <option value="sanggu">Pandya Merchant Ship (High Capacity)</option>
+                            <option value="catamaran">Chera Catamaran (Fast & Light)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cargo-type">Trade Cargo</label>
+                        <select id="cargo-type">
+                            <option value="Black Pepper">🌿 Black Pepper (Malabar Gold)</option>
+                            <option value="Gulf Pearls">💎 Gulf of Mannar Pearls</option>
+                            <option value="Fine Cotton/Silk">👕 Fine Cotton & Silk Textiles</option>
+                            <option value="Roman Gold Coins">🪙 Roman Gold Coins (Aurii)</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Environment / Monsoon Config -->
+                <section class="card">
+                    <h2>Environmental Settings</h2>
+                    
+                    <div class="input-group">
+                        <label for="monsoon-season">Monsoon System</label>
+                        <select id="monsoon-season">
+                            <option value="southwest">Southwest Monsoon (SW to NE)</option>
+                            <option value="northeast">Northeast Monsoon (NE to SW)</option>
+                        </select>
+                        <p id="monsoon-desc" style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 6px;"></p>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Sea Turtle Migrations (Orissa Balu)</label>
+                        <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px;">
+                            <input type="checkbox" id="turtle-migration-toggle" style="cursor: pointer; width: 16px; height: 16px;">
+                            <span style="font-size: 0.8rem; color: var(--text-secondary);">Show Turtle Navigation Lanes</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Console and Actions -->
+                <section class="card">
+                    <h2>Sailing Logs</h2>
+                    <div class="console-log" id="console-log">
+                        <div id="console-log-content">
+                            <div class="log-entry system">Ready for voyage. Choose parameters and select Start Voyage.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="simulation-triggers" style="margin-top: 1rem;">
+                        <button id="start-voyage-btn" class="primary-btn">⚓ Start Voyage</button>
+                        <button id="stop-voyage-btn" class="secondary-btn" style="display: none;">🛑 Cancel Voyage</button>
+                    </div>
+                </section>
+
+                <!-- Audio Widget -->
+                <div class="audio-widget">
+                    <span style="font-size: 0.8rem; font-weight: 500;">Ambient Soundscape</span>
+                    <button id="mute-audio-btn" class="sound-toggle">🔇 Sound Off</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Map & Floating HUD -->
+        <div id="map-wrapper">
+            <!-- HUD Display -->
+            <div class="hud-panel">
+                <div class="hud-stat">
+                    <span class="hud-label">Crew Morale</span>
+                    <span class="hud-value" id="hud-morale">-</span>
+                </div>
+                <div class="hud-stat">
+                    <span class="hud-label">Cargo Condition</span>
+                    <span class="hud-value" id="hud-cargo-cond">-</span>
+                </div>
+                <div class="hud-stat">
+                    <span class="hud-label">Distance Sail</span>
+                    <span class="hud-value" id="hud-distance">0 mi</span>
+                </div>
+                <div class="hud-stat">
+                    <span class="hud-label">Profit</span>
+                    <span class="hud-value gold" id="hud-gold">0 Aurii</span>
+                </div>
+            </div>
+
+            <!-- Leaflet Map Container -->
+            <div id="map"></div>
+        </div>
+
+        <!-- Popups/Toasts -->
+        <div id="toast">Voyage started!</div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+            
+    <!-- Custom Simulator JS -->
+    <script src="js/simulator.js"></script>
+</body>
+</html>
