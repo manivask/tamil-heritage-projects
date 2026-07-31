@@ -1,20 +1,26 @@
 // Script Designer / AI Prompt Engineer : Manivasagam Karunakaran
-// Global Tamil Toponyms Explorer - Map & UI Logic
+// Global Tamil Toponyms Explorer - Kid-Friendly Interactive Game Logic
 
 // Global state variables
 let map;
 let markersLayer;
 let darkTileLayer;
 let lightTileLayer;
-let isDarkTheme = false; // Default to light theme (Apple style)
+let isDarkTheme = false; 
 let currentData = null;
-const markersMap = new Map(); // Keep track of Leaflet markers by place ID for direct opening
-let subdivisionsData = []; // Store TN administrative subdivisions loaded from JSON
+const markersMap = new Map(); 
+let subdivisionsData = []; 
+let audioContext = null;
 
-// Initialize map on DOM load
+// Toponyms Detective Quest State
+const clickedPlaces = new Set();
+const QUEST_TARGET = 3;
+
+// Initialize app on DOM load
 document.addEventListener("DOMContentLoaded", async () => {
     initMap();
     setupEventListeners();
+    setupQuestUI();
     
     // Load subdivisions list dynamically
     try {
@@ -33,7 +39,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Initialize Leaflet Map
 function initMap() {
-    // Center map globally over India/Indian Ocean area initially
     map = L.map("map", {
         center: [20.0, 77.0],
         zoom: 3,
@@ -41,15 +46,15 @@ function initMap() {
         maxBounds: [[-85, -180], [85, 180]]
     });
 
-    // CartoDB Dark Matter tile layer for premium dark aesthetics
-    darkTileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    // Bright, colorful, kid-friendly tile layer (Voyager)
+    lightTileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 20
     });
 
-    // CartoDB Positron tile layer for premium light aesthetics
-    lightTileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    // POSITRON fallback
+    darkTileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 20
@@ -61,13 +66,111 @@ function initMap() {
     markersLayer = L.layerGroup().addTo(map);
 }
 
+// Sound Synthesizer Node
+function playQuestSound(success = true) {
+    // Initialize audio context
+    if (!audioContext) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioContext = new AudioContextClass();
+    }
+    if (audioContext.state === 'suspended') {
+        audioContext.resume();
+    }
+
+    const now = audioContext.currentTime;
+    const gain = audioContext.createGain();
+    gain.connect(audioContext.destination);
+
+    if (success) {
+        // Happy ding-ding double chime!
+        const osc1 = audioContext.createOscillator();
+        const osc2 = audioContext.createOscillator();
+        osc1.type = "sine";
+        osc2.type = "sine";
+        
+        osc1.frequency.setValueAtTime(587.33, now); // D5
+        osc1.frequency.setValueAtTime(880.00, now + 0.12); // A5
+        osc2.frequency.setValueAtTime(1174.66, now + 0.12); // D6
+
+        gain.gain.setValueAtTime(0.04, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+
+        osc1.connect(gain);
+        osc2.connect(gain);
+        osc1.start();
+        osc2.start();
+        osc1.stop(now + 0.6);
+        osc2.stop(now + 0.6);
+    } else {
+        // High Fanfare chord for Badge unlock!
+        const notes = [523.25, 659.25, 783.99, 1046.50]; // C Major chord C5-E5-G5-C6
+        notes.forEach((freq, idx) => {
+            const osc = audioContext.createOscillator();
+            osc.type = "triangle";
+            osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+            
+            gain.gain.setValueAtTime(0.03, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 1.2);
+            
+            osc.connect(gain);
+            osc.start();
+            osc.stop(now + 1.3);
+        });
+    }
+}
+
+// Quest UI Setup
+function setupQuestUI() {
+    const modalClose = document.getElementById("modal-close-btn");
+    const modal = document.getElementById("achievement-modal");
+    
+    if (modalClose) {
+        modalClose.addEventListener("click", () => {
+            modal.classList.remove("show");
+        });
+    }
+}
+
+// Handle discovery tracking
+function discoverPlace(placeId) {
+    if (clickedPlaces.has(placeId)) return;
+    
+    clickedPlaces.add(placeId);
+    const count = Math.min(QUEST_TARGET, clickedPlaces.size);
+    
+    // Update progress label & bar width
+    document.getElementById("quest-count").textContent = `${count} / ${QUEST_TARGET}`;
+    const progressPercent = (count / QUEST_TARGET) * 100;
+    document.getElementById("quest-progress-bar").style.width = `${progressPercent}%`;
+    
+    if (clickedPlaces.size === QUEST_TARGET) {
+        // Unlock badge!
+        setTimeout(() => {
+            playQuestSound(false); // Fanfare sound!
+            document.getElementById("achievement-modal").classList.add("show");
+        }, 600);
+    } else {
+        playQuestSound(true); // Short chime!
+    }
+}
+
+// Map place category type to emojis
+function getPlaceEmoji(type) {
+    const t = type.toLowerCase();
+    if (t.includes("mountain") || t.includes("hill") || t.includes("ridge") || t.includes("peak") || t.includes("volcano")) return "⛰️";
+    if (t.includes("island") || t.includes("lake") || t.includes("river") || t.includes("stream") || t.includes("ocean") || t.includes("sea") || t.includes("reservoir")) return "🏝️";
+    if (t.includes("city") || t.includes("town") || t.includes("village") || t.includes("settlement") || t.includes("commune") || t.includes("municipality")) return "🏢";
+    if (t.includes("temple") || t.includes("church") || t.includes("mosque") || t.includes("ruins") || t.includes("monument") || t.includes("archaeological") || t.includes("historic")) return "⛩️";
+    if (t.includes("forest") || t.includes("park") || t.includes("nature") || t.includes("reserve")) return "🌳";
+    return "📍";
+}
+
 // Attach Event Listeners
 function setupEventListeners() {
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
     const filterInput = document.getElementById("place-filter");
 
-    // Live search click button
     searchButton.addEventListener("click", () => {
         const query = searchInput.value.trim();
         if (query) {
@@ -77,7 +180,6 @@ function setupEventListeners() {
         }
     });
 
-    // Live search Enter key press
     searchInput.addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
             const query = searchInput.value.trim();
@@ -89,16 +191,13 @@ function setupEventListeners() {
         }
     });
 
-    // Filter sidebar place cards
     filterInput.addEventListener("input", (e) => {
         filterPlacesList(e.target.value.trim().toLowerCase());
     });
 
-    // Theme toggle button click
     const themeToggle = document.getElementById("theme-toggle");
     themeToggle.addEventListener("click", toggleTheme);
 
-    // Setup feedback form listener
     const feedbackForm = document.getElementById("feedback-form");
     if (feedbackForm) {
         feedbackForm.addEventListener("submit", async (e) => {
@@ -168,7 +267,6 @@ function showToast(message, type = "info") {
     toast.innerHTML = `<span>${icon}</span> <span>${message}</span>`;
     container.appendChild(toast);
     
-    // Auto-remove toast after 4 seconds
     setTimeout(() => {
         toast.style.animation = "toast-in 0.3s reverse forwards";
         setTimeout(() => toast.remove(), 300);
@@ -180,7 +278,6 @@ async function loadKeyword(keyword) {
     showLoading(`Loading data for '${keyword.toUpperCase()}'...`);
     
     try {
-        // Try fetching local pre-extracted JSON file
         const response = await fetch(`data/${keyword}.json?v=` + new Date().getTime());
         if (!response.ok) {
             throw new Error(`Data file data/${keyword}.json not found`);
@@ -190,11 +287,9 @@ async function loadKeyword(keyword) {
         renderData(data);
         showToast(`Loaded ${data.total_count} places for keyword "${data.keyword.toUpperCase()}"`, "success");
         
-        // Reset search input UI
         document.getElementById("search-input").value = "";
     } catch (err) {
         console.warn("[*] Local file load failed, querying Wikidata live instead...", err);
-        // Fallback to Live Query
         await triggerLiveSearch(keyword, true);
     } finally {
         hideLoading();
@@ -252,7 +347,6 @@ async function triggerLiveSearch(keyword, isFallback = false) {
         
         if (parsedData.total_count > 0) {
             showToast(`Found ${parsedData.total_count} places for "${keyword.toUpperCase()}" via live Wikidata!`, "success");
-            // If live search, update combobox selection to matching keyword
             if (!isFallback) {
                 const comboboxInput = document.getElementById("combobox-input");
                 if (comboboxInput) {
@@ -294,7 +388,6 @@ function parseWikidataResponse(rawData, keyword) {
         const country = bind.countryLabel ? bind.countryLabel.value : "Unknown Country";
         const type = bind.typeLabel ? bind.typeLabel.value : "Geographical Feature";
 
-        // Parse Point(longitude latitude)
         if (!coordVal || !coordVal.startsWith("Point(")) return;
 
         try {
@@ -331,7 +424,6 @@ function parseWikidataResponse(rawData, keyword) {
     parsed.total_count = seenIds.size;
     parsed.country_count = Object.keys(parsed.countries).length;
 
-    // Sort place items alphabetically in each country
     for (const country in parsed.countries) {
         parsed.countries[country].sort((a, b) => a.name.localeCompare(b.name));
     }
@@ -341,13 +433,11 @@ function parseWikidataResponse(rawData, keyword) {
 
 // Render data onto Leaflet Map and Sidebar UI
 function renderData(data) {
-    // 1. Reset variables & elements
     markersLayer.clearLayers();
     markersMap.clear();
     const container = document.getElementById("places-container");
     container.innerHTML = "";
     
-    // Update Stats counters
     document.getElementById("stat-places").textContent = data.total_count;
     document.getElementById("stat-countries").textContent = data.country_count;
 
@@ -356,23 +446,18 @@ function renderData(data) {
         return;
     }
 
-    // Sort countries alphabetically for rendering
     const sortedCountries = Object.keys(data.countries).sort();
     const bounds = L.latLngBounds();
 
-    // 2. Create Dynamic Accordion and Map Markers
     sortedCountries.forEach((countryName, index) => {
         const places = data.countries[countryName];
         
-        // Country group panel
         const groupEl = document.createElement("div");
         groupEl.className = "country-group";
-        // Expand the first country by default, collapse others
         if (index > 0) {
             groupEl.classList.add("collapsed");
         }
 
-        // Country Header
         const headerEl = document.createElement("div");
         headerEl.className = "country-header";
         headerEl.innerHTML = `
@@ -383,37 +468,37 @@ function renderData(data) {
             <span class="country-count">${places.length}</span>
         `;
         
-        // Toggle Collapse/Expand
         headerEl.addEventListener("click", () => {
             groupEl.classList.toggle("collapsed");
         });
 
-        // Places Container inside Country Group
         const placesContainerEl = document.createElement("div");
         placesContainerEl.className = "country-places";
 
         places.forEach(place => {
-            // A. Create Map Marker
+            const placeEmoji = getPlaceEmoji(place.type);
+
+            // Custom kid-friendly emoji pin marker
             const customIcon = L.divIcon({
-                html: '<div class="marker-pin"></div>',
+                html: `<div class="marker-emoji-pin" style="background: white; border: 3px solid var(--color-primary); border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; width: 36px; height: 36px; transition: transform 0.2s;">${placeEmoji}</div>`,
                 className: 'custom-marker',
-                iconSize: [20, 20],
-                iconAnchor: [10, 10],
-                popupAnchor: [0, -10]
+                iconSize: [36, 36],
+                iconAnchor: [18, 18],
+                popupAnchor: [0, -18]
             });
 
             const marker = L.marker([place.lat, place.lon], { icon: customIcon });
             
-            // Custom Popup Design
             const popupContent = `
-                <div class="popup-details">
-                    <div class="popup-title">${place.name}</div>
-                    <div class="popup-type">${place.type}</div>
+                <div class="popup-details" style="font-family: var(--font-body); font-size: 0.9rem;">
+                    <div class="popup-title" style="font-weight: 800; font-size: 1.05rem; margin-bottom: 4px; color: var(--color-primary);">${place.name}</div>
+                    <div class="popup-type" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; color: var(--color-accent); margin-bottom: 8px;">${placeEmoji} ${place.type}</div>
                     <div class="popup-row"><strong>Country:</strong> ${countryName}</div>
                     <div class="popup-row"><strong>Coordinates:</strong> ${place.lat.toFixed(4)}, ${place.lon.toFixed(4)}</div>
-                    <a href="${place.link}" target="_blank" rel="noopener" class="popup-link">View in Wikidata ↗</a>
-                    <br>
-                    <a href="https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lon}" target="_blank" rel="noopener" class="popup-link">Google Maps ↗</a>
+                    <div style="margin-top: 8px; display: flex; gap: 8px;">
+                        <a href="${place.link}" target="_blank" rel="noopener" class="popup-link" style="color: var(--color-primary); text-decoration: none; font-weight: bold; font-size: 0.8rem;">Wikidata ↗</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lon}" target="_blank" rel="noopener" class="popup-link" style="color: var(--color-primary); text-decoration: none; font-weight: bold; font-size: 0.8rem;">Google Maps ↗</a>
+                    </div>
                 </div>
             `;
             
@@ -422,7 +507,6 @@ function renderData(data) {
             markersMap.set(place.id, marker);
             bounds.extend([place.lat, place.lon]);
 
-            // B. Create Place card inside sidebar
             const latDir = place.lat >= 0 ? 'N' : 'S';
             const lonDir = place.lon >= 0 ? 'E' : 'W';
             const coordsFormatted = `${Math.abs(place.lat).toFixed(3)}° ${latDir}, ${Math.abs(place.lon).toFixed(3)}° ${lonDir}`;
@@ -433,7 +517,7 @@ function renderData(data) {
             placeCard.innerHTML = `
                 <div class="place-item-body">
                     <div class="place-name-row">
-                        <span class="place-icon">📍</span>
+                        <span class="place-icon">${placeEmoji}</span>
                         <span class="place-name">${place.name}</span>
                     </div>
                     <div class="place-meta-row">
@@ -443,27 +527,24 @@ function renderData(data) {
                 </div>
             `;
 
-            // Click listener: Smooth pan & zoom to the marker, open popup
             placeCard.addEventListener("click", () => {
                 focusPlace(place, marker);
+                discoverPlace(place.id); // Track quest progress
                 
-                // Highlight active place in sidebar
                 document.querySelectorAll(".place-item").forEach(item => item.classList.remove("active"));
                 placeCard.classList.add("active");
             });
 
-            // Map marker opens sidebar details too
             marker.on("click", () => {
-                // Highlight list item
+                discoverPlace(place.id); // Track quest progress
+                
                 document.querySelectorAll(".place-item").forEach(item => item.classList.remove("active"));
                 placeCard.classList.add("active");
                 
-                // Auto-expand this country's accordion if collapsed
                 if (groupEl.classList.contains("collapsed")) {
                     groupEl.classList.remove("collapsed");
                 }
                 
-                // Scroll the sidebar to bring the active place item into view
                 placeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             });
 
@@ -475,7 +556,6 @@ function renderData(data) {
         container.appendChild(groupEl);
     });
 
-    // Fit map view to bounds if points exist
     if (data.total_count > 0) {
         map.fitBounds(bounds, {
             padding: [50, 50],
@@ -494,7 +574,6 @@ function focusPlace(place, marker) {
         zoom: { duration: 1.0 }
     });
     
-    // Delay opening popup slightly for transition to complete
     setTimeout(() => {
         marker.openPopup();
     }, 400);
@@ -511,9 +590,8 @@ function filterPlacesList(searchTerm) {
         
         items.forEach(item => {
             const placeName = item.querySelector(".place-name").textContent.toLowerCase();
-            const placeType = item.querySelector(".place-type").textContent.toLowerCase();
+            const placeType = item.querySelector(".place-type-badge").textContent.toLowerCase();
             
-            // Check if place details match search
             if (placeName.includes(searchTerm) || placeType.includes(searchTerm) || countryTitle.includes(searchTerm)) {
                 item.style.display = "block";
                 visibleCount++;
@@ -522,10 +600,8 @@ function filterPlacesList(searchTerm) {
             }
         });
         
-        // Show/hide country groups based on items visibility
         if (visibleCount > 0) {
             group.style.display = "block";
-            // Expand group if filter is active
             if (searchTerm.length > 0) {
                 group.classList.remove("collapsed");
             }
@@ -535,7 +611,7 @@ function filterPlacesList(searchTerm) {
     });
 }
 
-// Toggle between Dark Theme (CartoDB Dark Matter) and Light Theme (CartoDB Positron)
+// Toggle between Dark/Light Tile layers
 function toggleTheme() {
     isDarkTheme = !isDarkTheme;
     
@@ -543,12 +619,12 @@ function toggleTheme() {
         document.body.classList.remove("light-theme");
         map.removeLayer(lightTileLayer);
         darkTileLayer.addTo(map);
-        showToast("Switched to Dark Mode", "info");
+        showToast("Switched to Dark Mode 🌙", "info");
     } else {
         document.body.classList.add("light-theme");
         map.removeLayer(darkTileLayer);
         lightTileLayer.addTo(map);
-        showToast("Switched to Light Mode", "info");
+        showToast("Switched to Light Mode ☀️", "info");
     }
 }
 
@@ -558,13 +634,9 @@ function initCombobox() {
     const optionsList = document.getElementById("combobox-options");
     const container = input.closest(".combobox-container");
     
-    // Set initial value
     input.value = "PALANI (பழனி)";
-    
-    // Render all options initially
     renderComboboxOptions(subdivisionsData);
     
-    // Filter options as user types
     input.addEventListener("input", () => {
         const query = input.value.trim().toLowerCase();
         const filtered = subdivisionsData.filter(d => 
@@ -576,12 +648,10 @@ function initCombobox() {
         optionsList.classList.remove("hidden");
     });
     
-    // Show options on focus
     input.addEventListener("focus", () => {
         optionsList.classList.remove("hidden");
     });
     
-    // Toggle on container click
     container.addEventListener("click", (e) => {
         e.stopPropagation();
         if (e.target.id === "combobox-input" || e.target.classList.contains("combobox-arrow")) {
@@ -589,7 +659,6 @@ function initCombobox() {
         }
     });
     
-    // Hide dropdown when clicking outside
     document.addEventListener("click", () => {
         optionsList.classList.add("hidden");
     });
@@ -605,7 +674,6 @@ function initCombobox() {
             return;
         }
         
-        // Show top 100 matches to prevent rendering lags
         const visibleList = list.slice(0, 100);
         
         visibleList.forEach(d => {

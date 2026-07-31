@@ -19,7 +19,7 @@
           crossorigin=""/>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.0.1">
 </head>
 <body class="light-theme">
     <div id="app-container">
@@ -28,13 +28,30 @@
             <div id="sidebar-top">
                 <header class="app-header">
                     <div class="logo-area">
-                        <span class="icon">🌐</span>
+                        <img src="images/logo.png" alt="Tamil Toponyms Logo" class="kids-logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary);">
                         <h1>Tamil toponyms</h1>
                     </div>
-                    <p class="subtitle">Tracing Tamil geographic heritage across the globe</p>
+                    <p class="subtitle">Join the quest! Discover how Tamil place names are mapped all across our world.</p>
                 </header>
 
                 <div class="top-controls">
+                    <!-- Detective Quest Board -->
+                    <section class="card detective-quest-card">
+                        <h2 style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">🕵️‍♂️ Toponyms Detective Quest!</h2>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 10px; font-weight: 500; line-height: 1.4;">
+                            Discover 3 Tamil place names on the map to earn your Master Detective Badge!
+                        </p>
+                        <div class="quest-progress-container" style="background: var(--bg-input); padding: 8px; border-radius: 8px;">
+                            <div class="quest-progress-label" style="display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">
+                                <span>Places Inspected:</span>
+                                <strong id="quest-count" style="color: var(--color-primary);">0 / 3</strong>
+                            </div>
+                            <div class="quest-progress-bar-bg" style="width: 100%; height: 8px; background: rgba(0,0,0,0.05); border-radius: 4px; overflow: hidden;">
+                                <div id="quest-progress-bar" class="quest-progress-bar-fill" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--color-primary) 0%, #38b6ff 100%); transition: width 0.3s ease;"></div>
+                            </div>
+                        </div>
+                    </section>
+
                     <!-- Dropdown & Search Panel -->
                     <section class="control-panel card">
                         <h2>Select Named Places</h2>
@@ -130,6 +147,21 @@
         </div>
     </div>
 
+    <!-- Achievement Badge Modal -->
+    <div id="achievement-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <span class="modal-badge" style="background: #4caf50; color: white;">QUEST COMPLETED!</span>
+            </div>
+            <h2>🏆 Master Toponyms Detective!</h2>
+            <div class="modal-illustration">🏆</div>
+            <p>Outstanding work, Captain! You inspected 3 places with Tamil names across the globe and unlocked your Master Detective Badge!</p>
+            <div class="modal-choices">
+                <button id="modal-close-btn" class="modal-btn primary-btn">Keep Investigating! 🔍</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast Notifications -->
     <div id="toast-container"></div>
 
@@ -139,6 +171,6 @@
             crossorigin=""></script>
 
     <!-- Custom App Logic -->
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=1.0.1"></script>
 </body>
 </html>
