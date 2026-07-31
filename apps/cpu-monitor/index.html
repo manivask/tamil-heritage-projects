@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A live performance and diagnostics dashboard tracking CPU usage, memory load, and thermal warnings for your computer.">
+    <title>System Diagnostics & CPU Monitor Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-theme">
+    <div id="app-container">
+        <!-- Sidebar Controls -->
+        <aside id="sidebar" class="glass-panel">
+            <header class="app-header">
+                <a href="../../index.html" class="back-btn">
+                    <span>&larr;</span> Back to Portal
+                </a>
+                <div class="logo-area">
+                    <span class="icon">💻</span>
+                    <h1>System Health</h1>
+                </div>
+                <p class="subtitle">Live CPU performance tracking and thermal diagnostics compiled daily.</p>
+            </header>
+
+            <div class="controls-scroll">
+                <!-- Report Selector Card -->
+                <section class="card">
+                    <h2>📅 Select Health Report</h2>
+                    <div class="input-group">
+                        <label for="report-select">Select Date</label>
+                        <select id="report-select">
+                            <option value="latest">Latest Live Diagnostics</option>
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+                </section>
+
+                <!-- System Specs Card -->
+                <section class="card spec-card">
+                    <h2>🖥️ System Specifications</h2>
+                    <div class="spec-row">
+                        <span class="spec-label">Operating System</span>
+                        <span id="spec-os" class="spec-value">-</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Processor</span>
+                        <span id="spec-processor" class="spec-value">-</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">CPU Cores</span>
+                        <span id="spec-cores" class="spec-value">-</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Total RAM</span>
+                        <span id="spec-ram" class="spec-value">-</span>
+                    </div>
+                </section>
+
+                <footer class="app-footer">
+                    <p>Compiled by local System Diagnostic Tool. Made with ❤️</p>
+                </footer>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard View -->
+        <main id="dashboard-view">
+            <!-- Gauges Grid -->
+            <div class="gauges-grid">
+                <!-- CPU Gauge Card -->
+                <div class="gauge-card card">
+                    <h3>⚙️ CPU LOAD</h3>
+                    <div class="gauge-value" id="gauge-cpu-val">-</div>
+                    <div class="progress-bar-bg">
+                        <div id="gauge-cpu-bar" class="progress-bar-fill cpu" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <!-- RAM Gauge Card -->
+                <div class="gauge-card card">
+                    <h3>📦 MEMORY (RAM)</h3>
+                    <div class="gauge-value" id="gauge-ram-val">-</div>
+                    <div class="progress-bar-bg">
+                        <div id="gauge-ram-bar" class="progress-bar-fill ram" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <!-- Thermal Gauge Card -->
+                <div class="gauge-card card">
+                    <h3>🔥 ESTIMATED HEAT</h3>
+                    <div class="gauge-value" id="gauge-temp-val">-</div>
+                    <div class="progress-bar-bg">
+                        <div id="gauge-temp-bar" class="progress-bar-fill heat" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Stats Area (2 Columns) -->
+            <div class="details-grid">
+                <!-- Process Table Card -->
+                <section class="card process-card">
+                    <h2>🔥 Top Resource Consumers</h2>
+                    <table class="process-table">
+                        <thead>
+                            <tr>
+                                <th>PID</th>
+                                <th>Application Name</th>
+                                <th class="num-col">CPU %</th>
+                                <th class="num-col">RAM %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="process-list">
+                            <tr>
+                                <td colspan="4" class="empty-row">No report loaded yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Diagnostics Warnings Card -->
+                <section class="card diagnostics-card">
+                    <h2>🩺 Diagnostic Findings & Fixes</h2>
+                    <div id="diagnostics-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script imports -->
+    <script src="js/app.js"></script>
+</body>
+</html>

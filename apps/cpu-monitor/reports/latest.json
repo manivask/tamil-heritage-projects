@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-31 11:09:31",
+  "os": "Windows 11",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "cores": "4 Physical | 8 Logical",
+  "ram_total_gb": 15.73,
+  "cpu_usage_percent": 22.4,
+  "ram_usage_percent": 65.4,
+  "ram_used_gb": 10.3,
+  "cpu_temp": "Unavailable",
+  "hogs": [
+    {
+      "pid": 0,
+      "name": "System Idle Process",
+      "cpu_percent": 613.1,
+      "memory_percent": 0.0
+    },
+    {
+      "pid": 19112,
+      "name": "python.exe",
+      "cpu_percent": 38.6,
+      "memory_percent": 0.3
+    },
+    {
+      "pid": 12908,
+      "name": "Antigravity IDE.exe",
+      "cpu_percent": 33.8,
+      "memory_percent": 4.5
+    },
+    {
+      "pid": 14396,
+      "name": "Zoom.exe",
+      "cpu_percent": 14.5,
+      "memory_percent": 1.1
+    },
+    {
+      "pid": 14232,
+      "name": "dwm.exe",
+      "cpu_percent": 13.5,
+      "memory_percent": 0.9
+    }
+  ],
+  "recommendations": [
+    "Resource Hogs Detected: System Idle Process, python.exe, Antigravity IDE.exe are using significant CPU. This is the primary driver of heat and fan noise.",
+    "Sustained Load: The CPU is currently stable. If the fan noise is loud while load is low, dust build-up or degraded thermal paste is likely the cause."
+  ]
+}
