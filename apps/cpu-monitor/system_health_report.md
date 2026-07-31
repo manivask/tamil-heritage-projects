@@ -1,0 +1,39 @@
+# 💻 System Health & CPU Diagnostics Report
+
+Generated on: 2026-07-31 11:06:16
+
+## 📊 System Specifications
+- **Operating System**: Windows 11
+- **Processor**: Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+- **CPU Cores**: 4 Physical | 8 Logical
+- **Total Installed Memory (RAM)**: 15.73 GB
+
+## 📈 Current Performance Metrics
+- **Current CPU Load**: 28.1%
+- **Current RAM Usage**: 65.7% (10.3 / 15.7 GB Used)
+- **CPU Temperature**: Unavailable
+
+## 🔥 Top Resource Consumers
+| PID | Process Name | CPU % | RAM % |
+| --- | --- | --- | --- |
+| 0 | System Idle Process | 605.6% | 0.0% |
+| 19112 | python.exe | 36.9% | 0.3% |
+| 12908 | Antigravity IDE.exe | 27.5% | 4.5% |
+| 16628 | audiodg.exe | 10.4% | 0.8% |
+| 14396 | Zoom.exe | 9.5% | 1.2% |
+
+
+## 🩺 Diagnostic Analysis & Recommendations
+
+### Why is my CPU Fan Noise increasing?
+Laptop fans increase speed (producing whirring noise) as a direct response to **heat build-up** on the CPU. When multiple applications are run or a single application uses sustained CPU power, the processor consumes more wattage, heating up. The system automatically turns on fans to protect the chip from permanent thermal damage.
+
+### Actionable Fixes to Reduce Fan Noise & Heat:
+- **Resource Hogs Detected**: System Idle Process, python.exe, Antigravity IDE.exe are using significant CPU. This is the primary driver of heat and fan noise.
+- **Sustained Load**: The CPU is currently stable. If the fan noise is loud while load is low, dust build-up or degraded thermal paste is likely the cause.
+- **Windows Power Settings**: Go to Control Panel -> Power Options and choose the **Balanced** power plan. This allows Windows to throttle down CPU clocks when idle, reducing heat significantly.
+- **Dust and Ventilation**: Ensure the laptop is placed on a hard, flat surface. Soft surfaces like beds block air vents, trapping heat. Clean out dust from exhaust ports.
+- **Thermal Paste Renewal**: Since this is an older (but high configuration) laptop, the thermal paste between the CPU and the cooling block might have dried out over time. Renewing the paste can lower temperatures by up to 10-15°C!
+
+---
+*Report generated successfully by the CLI Diagnostic Tool.*
