@@ -130,6 +130,26 @@
                         <!-- Populated dynamically -->
                     </div>
                 </section>
+
+                <!-- Activity Tracker Card -->
+                <section class="card activity-card" style="grid-column: span 2;">
+                    <h2>⏱️ Daily Active App Usage Breakdown</h2>
+                    <table class="process-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Application Process Name</th>
+                                <th class="num-col">Time Active</th>
+                                <th class="num-col">Share %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="activity-list">
+                            <tr>
+                                <td colspan="4" class="empty-row">No activity tracker logged yet. Log in to start tracking.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </main>
     </div>

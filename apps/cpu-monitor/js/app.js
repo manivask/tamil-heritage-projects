@@ -37,8 +37,15 @@ async function loadReportsIndex() {
 // Fetch and render selected report
 async function loadReport(reportKey) {
     let url = "reports/latest.json";
+    let dateStr = "latest";
+    
     if (reportKey !== "latest") {
         url = reportKey;
+        // Extract YYYY-MM-DD from 'reports/report_YYYY-MM-DD.json'
+        const match = reportKey.match(/report_(\d{4}-\d{2}-\d{2})\.json/);
+        if (match) {
+            dateStr = match[1];
+        }
     }
     
     try {
@@ -47,9 +54,33 @@ async function loadReport(reportKey) {
         
         const data = await response.json();
         renderReport(data);
+        
+        // Load the matching activity tracker report
+        loadActivityReport(dateStr);
     } catch (err) {
         console.error("Error loading report:", err);
-        showToast("Error loading health report data", "error");
+    }
+}
+
+// Load matching activity report
+async function loadActivityReport(dateStr) {
+    let url = "reports/active_latest.json";
+    if (dateStr !== "latest") {
+        url = `reports/activity_${dateStr}.json`;
+    }
+    
+    try {
+        const response = await fetch(url + "?v=" + new Date().getTime());
+        if (!response.ok) {
+            document.getElementById("activity-list").innerHTML = '<tr><td colspan="4" class="empty-row">No activity logged for this date.</td></tr>';
+            return;
+        }
+        
+        const data = await response.json();
+        renderActivity(data);
+    } catch (err) {
+        console.error("Error loading activity report:", err);
+        document.getElementById("activity-list").innerHTML = '<tr><td colspan="4" class="empty-row">No activity logged for this date.</td></tr>';
     }
 }
 
@@ -117,5 +148,27 @@ function renderReport(data) {
         });
     } else {
         diagList.innerHTML = '<div class="diag-item">✅ System state is healthy. No issues detected.</div>';
+    }
+}
+
+// Bind activity log data to HTML
+function renderActivity(data) {
+    const listBody = document.getElementById("activity-list");
+    listBody.innerHTML = "";
+    
+    if (data.activities && data.activities.length > 0) {
+        data.activities.forEach((act, idx) => {
+            const share = ((act.seconds / data.total_active_seconds) * 100).toFixed(1);
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${idx + 1}</td>
+                <td><strong>${act.app}</strong></td>
+                <td class="num-col">${act.formatted}</td>
+                <td class="num-col">${share}%</td>
+            `;
+            listBody.appendChild(tr);
+        });
+    } else {
+        listBody.innerHTML = '<tr><td colspan="4" class="empty-row">No activity logged.</td></tr>';
     }
 }

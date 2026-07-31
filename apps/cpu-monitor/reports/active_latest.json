@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-31",
+  "last_updated": "2026-07-31 11:28:34",
+  "total_active_seconds": 35,
+  "total_active_formatted": "35s",
+  "activities": [
+    {
+      "app": "Idle/Unknown",
+      "seconds": 35,
+      "formatted": "35s"
+    }
+  ]
+}
