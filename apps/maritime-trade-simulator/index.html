@@ -29,16 +29,16 @@
                     <span>&larr;</span> Back to Portal
                 </a>
                 <div class="logo-area">
-                    <span class="icon">🌊</span>
+                    <img src="images/logo.png" alt="Maritime Voyage Logo" class="kids-logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-cyan);">
                     <h1>Maritime Voyage</h1>
                 </div>
-                <p class="subtitle">Simulating ancient Tamil ocean trade routes guided by monsoon currents and seasonal migrations.</p>
+                <p class="subtitle">Join the adventure! Learn how ancient Tamil merchant fleets used monsoon winds and sea turtles to sail the Indian Ocean.</p>
             </header>
 
             <div class="controls-scroll">
                 <!-- Select Route & Cargo -->
                 <section class="card">
-                    <h2>Voyage configuration</h2>
+                    <h2>🚢 Voyage configuration</h2>
                     
                     <div class="input-group">
                         <label for="origin-port">Origin Port (Tamil Nadu/Kerala)</label>
@@ -57,9 +57,9 @@
                     <div class="input-group">
                         <label for="vessel-type">Select Vessel Type</label>
                         <select id="vessel-type">
-                            <option value="nava">Chola Navy Nava (Strong & Safe)</option>
-                            <option value="sanggu">Pandya Merchant Ship (High Capacity)</option>
-                            <option value="catamaran">Chera Catamaran (Fast & Light)</option>
+                            <option value="nava">🚢 Chola Navy Nava (Strong & Safe)</option>
+                            <option value="sanggu">⛵ Pandya Merchant Ship (High Capacity)</option>
+                            <option value="catamaran">⛵ Chera Catamaran (Fast & Light)</option>
                         </select>
                     </div>
 
@@ -76,19 +76,19 @@
 
                 <!-- Environment / Monsoon Config -->
                 <section class="card">
-                    <h2>Environmental Settings</h2>
+                    <h2>🌍 Environmental Settings</h2>
                     
                     <div class="input-group">
                         <label for="monsoon-season">Monsoon System</label>
                         <select id="monsoon-season">
-                            <option value="southwest">Southwest Monsoon (SW to NE)</option>
-                            <option value="northeast">Northeast Monsoon (NE to SW)</option>
+                            <option value="southwest">💨 Southwest Monsoon (SW to NE)</option>
+                            <option value="northeast">🌬️ Northeast Monsoon (NE to SW)</option>
                         </select>
                         <p id="monsoon-desc" style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 6px;"></p>
                     </div>
 
                     <div class="input-group">
-                        <label>Sea Turtle Migrations (Orissa Balu)</label>
+                        <label>🐢 Sea Turtle Migrations (Orissa Balu)</label>
                         <div style="display: flex; align-items: center; gap: 8px; margin-top: 4px;">
                             <input type="checkbox" id="turtle-migration-toggle" style="cursor: pointer; width: 16px; height: 16px;">
                             <span style="font-size: 0.8rem; color: var(--text-secondary);">Show Turtle Navigation Lanes</span>
@@ -98,10 +98,10 @@
 
                 <!-- Console and Actions -->
                 <section class="card">
-                    <h2>Sailing Logs</h2>
+                    <h2>📜 Sailing Logs</h2>
                     <div class="console-log" id="console-log">
                         <div id="console-log-content">
-                            <div class="log-entry system">Ready for voyage. Choose parameters and select Start Voyage.</div>
+                            <div class="log-entry system">⚓ Ahoy Captain! Choose your port, ship, and cargo, then click Start Voyage.</div>
                         </div>
                     </div>
                     
@@ -124,25 +124,41 @@
             <!-- HUD Display -->
             <div class="hud-panel">
                 <div class="hud-stat">
-                    <span class="hud-label">Crew Morale</span>
+                    <span class="hud-label">Morale 😊</span>
                     <span class="hud-value" id="hud-morale">-</span>
                 </div>
                 <div class="hud-stat">
-                    <span class="hud-label">Cargo Condition</span>
+                    <span class="hud-label">Cargo 📦</span>
                     <span class="hud-value" id="hud-cargo-cond">-</span>
                 </div>
                 <div class="hud-stat">
-                    <span class="hud-label">Distance Sail</span>
+                    <span class="hud-label">Distance 🗺️</span>
                     <span class="hud-value" id="hud-distance">0 mi</span>
                 </div>
                 <div class="hud-stat">
-                    <span class="hud-label">Profit</span>
+                    <span class="hud-label">Gold Coins 🪙</span>
                     <span class="hud-value gold" id="hud-gold">0 Aurii</span>
                 </div>
             </div>
 
             <!-- Leaflet Map Container -->
             <div id="map"></div>
+        </div>
+
+        <!-- Interactive Game Choice / Trivia Modal -->
+        <div id="game-modal" class="modal-overlay">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <span id="modal-badge" class="modal-badge">EVENT</span>
+                    <button id="modal-close" class="modal-close-btn" style="display: none;">&times;</button>
+                </div>
+                <h2 id="modal-title">Storm Ahead!</h2>
+                <div id="modal-illustration" class="modal-illustration">⛈️</div>
+                <p id="modal-text">A heavy storm approaches! Choose what to do.</p>
+                <div id="modal-choices" class="modal-choices">
+                    <!-- Choice buttons populated dynamically -->
+                </div>
+            </div>
         </div>
 
         <!-- Popups/Toasts -->
