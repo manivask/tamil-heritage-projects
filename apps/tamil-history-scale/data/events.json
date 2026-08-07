@@ -117,15 +117,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Neolithic_ashmound.jpg/500px-Neolithic_ashmound.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
-    "title": "Religion in ancient Tamilakam",
-    "description": "major religions that prevailed in the Tamil region predating the Common Era, as early as the Sangam period. A Neolithic cattle-herding culture existed in",
-    "year": -3000,
-    "date": "BCE 3000",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Religion_in_ancient_Tamilakam",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  {
     "title": "Dravidian peoples",
     "description": "of the ancient Indus Valley civilisation. The discovery in Tamil Nadu of a late Neolithic (early 2nd millennium BCE, i.e. post-dating Harappan decline)",
     "year": -3000,
@@ -288,6 +279,15 @@
     "image": ""
   },
   {
+    "title": "Religion in ancient Tamilakam",
+    "description": "the early Tamils the practice of erecting hero stones (nadukkal) had appeared, and it continued for quite a long time after the Sangam age, down to about",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Religion_in_ancient_Tamilakam",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
     "title": "Sangam literature",
     "description": "The Sangam literature (Tamil: சங்க இலக்கியம், caṅka ilakkiyam), historically known as the Poetry of the Noble Ones (Tamil: சான்றோர் செய்யுள், Cāṉṟōr ceyyuḷ)",
     "year": -300,
@@ -315,13 +315,13 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg/500px-Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
-    "title": "Vaishnavism in Ancient Tamilakam",
-    "description": "வைணவம், வைணவ சமயம்) in Tamil Nadu is documented in ancient Tamil Sangam literature dating back to the 5th century BCE. Perumal, traditionally considered",
+    "title": "Sangam landscape",
+    "description": "device that was characteristic of love poetry in classical Tamil Sangam literature. The core of the device was the categorisation of poems into different",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Vaishnavism_in_Ancient_Tamilakam",
-    "image": ""
+    "link": "https://en.wikipedia.org/wiki/Sangam_landscape",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Avvaiyar (Sangam poet)",
@@ -333,13 +333,22 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Statue_of_Avvaiyar.jpg/500px-Statue_of_Avvaiyar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
-    "title": "Sangam landscape",
-    "description": "device that was characteristic of love poetry in classical Tamil Sangam literature. The core of the device was the categorisation of poems into different",
+    "title": "Eight Anthologies",
+    "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Sangam_landscape",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "link": "https://en.wikipedia.org/wiki/Eight_Anthologies",
+    "image": ""
+  },
+  {
+    "title": "Tamil literature",
+    "description": "economical, political and cultural trends of various periods. The early Sangam literature, dated before 300 BCE, contain anthologies of various poets dealing",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Tamil_literature",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AE%BE%E0%AE%AF%E0%AF%8D_%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%85%E0%AE%95%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%88.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "title": "Naming conventions of the Tamilakam",
@@ -349,15 +358,6 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Naming_conventions_of_the_Tamilakam",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  {
-    "title": "Eight Anthologies",
-    "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Eight_Anthologies",
-    "image": ""
   },
   {
     "title": "Sources of ancient Tamil history",
@@ -378,13 +378,13 @@
     "image": ""
   },
   {
-    "title": "Tamil literature",
-    "description": "economical, political and cultural trends of various periods. The early Sangam literature, dated before 300 BCE, contain anthologies of various poets dealing",
+    "title": "Vaishnavism in Ancient Tamilakam",
+    "description": "வைணவம், வைணவ சமயம்) in Tamil Nadu is documented in ancient Tamil Sangam literature dating back to the 5th century BCE. Perumal, traditionally considered",
     "year": -300,
     "date": "BCE 300",
     "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Tamil_literature",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AE%BE%E0%AE%AF%E0%AF%8D_%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%85%E0%AE%95%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%88.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    "link": "https://en.wikipedia.org/wiki/Vaishnavism_in_Ancient_Tamilakam",
+    "image": ""
   },
   {
     "title": "Tirumurukāṟṟuppaṭai",
@@ -429,15 +429,6 @@
     "date": "BCE 300",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Ku%E1%B9%9Funtokai",
-    "image": ""
-  },
-  {
-    "title": "Kapilar",
-    "description": "Vēlir kings. He authored the Inna Narpathu, a didactic work of the Sangam literature. Verse 5 of the Tiruvalluva Maalai is also attributed to him. Kapilar",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Kapilar",
     "image": ""
   },
   {
@@ -520,15 +511,6 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Chithalai_Chathanar",
     "image": ""
-  },
-  {
-    "title": "Ancient clans of Lanka",
-    "description": "kingdom of Lanka were mentioned in the great epics of Mahavamsa, Vargapurnika, Mahabaratha, Manimekalai, Ramayana and Sangams. Yaksha kingdom Rakshasa",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Ancient_clans_of_Lanka",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Devil_Mask_-_Aida%2C_Bentota.jpg/500px-Devil_Mask_-_Aida%2C_Bentota.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Nachinarkiniyar",
@@ -711,15 +693,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Adiyarkku-nallar_commentary_on_Silappathikaram_page_10.jpg/500px-Adiyarkku-nallar_commentary_on_Silappathikaram_page_10.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
-    "title": "Architecture of Tamil Nadu",
-    "description": "Tamil Nadu is renowned for its ancient temple architecture, with nearly 33,000 temples–many between 800 and 2,000 years old–scattered across the state",
-    "year": 800,
-    "date": "800-01-01",
-    "category": "Culture & Heritage",
-    "link": "https://en.wikipedia.org/wiki/Architecture_of_Tamil_Nadu",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Gopuras_in_Kumbakonam_-_India.JPG/500px-Gopuras_in_Kumbakonam_-_India.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Chera Perumals of Kerala",
     "description": "dynasty, also known as the Perumal dynasty of Kerala, or the Chera Perumals of Makotai or Mahodayapuram (fl. c. 844—c. 1124 CE), was a ruling dynasty",
     "year": 844,
@@ -765,15 +738,6 @@
     "image": ""
   },
   {
-    "title": "Thanjavur",
-    "description": "these, the Rajarajesvaram or Brihadisvara Temple, built by the Chola emperor Rajaraja I, is located in the centre of the city. This temple has one of",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Thanjavur",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Thanjavur_2.jpg/500px-Thanjavur_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Kundavai Pirāttiyār",
     "description": "the Cholas mentioned in the Tanjore inscriptions. He was also the commander of the Chola infantry that fought in Sri Lanka in the days of Rajaraja l. The",
     "year": 985,
@@ -783,15 +747,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Ilaiya_Piratti_Kundavai.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
-    "title": "Vallavaraiyan Vandiyadevan",
-    "description": "Vandiyadevan was a general of the Chola Army. He was one among the famous chieftains of the Chola emperors Rajaraja I and Rajendra I and chief of the",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Vallavaraiyan_Vandiyadevan",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Horse_statue_in_chennai.jpeg/500px-Horse_statue_in_chennai.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Chola–Chalukya Wars",
     "description": "Rajendra Chola led Rajaraja Chola I&#039;s army in Vengi and expelled the rulers in battle. Vengi was later the site of the coronation of Rajendra Chola&#039;s nephew",
     "year": 985,
@@ -799,6 +754,15 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Chola%E2%80%93Chalukya_Wars",
     "image": ""
+  },
+  {
+    "title": "Vallavaraiyan Vandiyadevan",
+    "description": "Vandiyadevan was a general of the Chola Army. He was one among the famous chieftains of the Chola emperors Rajaraja I and Rajendra I and chief of the",
+    "year": 985,
+    "date": "985-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Vallavaraiyan_Vandiyadevan",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Horse_statue_in_chennai.jpeg/500px-Horse_statue_in_chennai.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Airavatesvara Temple",
@@ -1251,15 +1215,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Kanakasabaipillai.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
-    "title": "T. Rattinasami Nadar",
-    "description": "Nadar community under the presidency of his uncle in 1910. The Sangam was founded to extend demands for membership in the Madras Legislative Council. Rattinasami",
-    "year": 1910,
-    "date": "1910-01-01",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/T._Rattinasami_Nadar",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Rattinasami_Nadar.jpg/500px-Rattinasami_Nadar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Subramaniam",
     "description": "diplomat Subrahmanyan Chandrasekhar (1910–1995), Indian physicist Subramania Bharati (1882–1921), Indian writer Subramaniam Badrinath (born 1980), Indian",
     "year": 1910,
@@ -1296,15 +1251,6 @@
     "image": ""
   },
   {
-    "title": "Tiruchirappalli",
-    "description": "1930. Tiruchirappalli was an epicentre of the anti-Hindi agitations of Tamil Nadu when a team of Tamil language supporters gathered and organised a rally",
-    "year": 1930,
-    "date": "1930-01-01",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Tiruchirappalli",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Rock_Fortress_-_Tiruchirappalli_-_India.JPG/500px-Rock_Fortress_-_Tiruchirappalli_-_India.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Madras Presidency",
     "description": "The Madras Presidency, officially designated as the Presidency of Fort St. George until 1937 and later known as the Madras Province, was an administrative",
     "year": 1937,
@@ -1321,6 +1267,15 @@
     "category": "Colonial Era",
     "link": "https://en.wikipedia.org/wiki/1937_Madras_Presidency_Legislative_Assembly_election",
     "image": ""
+  },
+  {
+    "title": "C. Rajagopalachari",
+    "description": "Hindi compulsory in schools in 1937. During the anti-Hindi agitations, Rajagopalachari was constantly identified as an enemy and destroyer of Tamil thai",
+    "year": 1937,
+    "date": "1937-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/C._Rajagopalachari",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Chakravarthi_Rajagopalachari.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "title": "Manimekalai (1940 film)",
@@ -1437,6 +1392,15 @@
     "date": "1979-01-01",
     "category": "Culture & Heritage",
     "link": "https://en.wikipedia.org/wiki/List_of_oldest_extant_buildings",
+    "image": ""
+  },
+  {
+    "title": "Bharathiar University",
+    "description": "university in Coimbatore, Tamil Nadu, India. Named after Tamil poet Subramania Bharati, the university was established in February 1982 under the provision",
+    "year": 1982,
+    "date": "1982-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Bharathiar_University",
     "image": ""
   },
   {
@@ -1800,6 +1764,15 @@
     "image": ""
   },
   {
+    "title": "Tirukkural translations into German",
+    "description": "Ajey Kumar (2023). Thirukkural Translations in World Languages. Chennai: ValaiTamil Publications. Rajaram, M. (2009). Thirukkural: Pearls of Inspiration",
+    "year": 2023,
+    "date": "2023-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Tirukkural_translations_into_German",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Karl_Graul_%28IZ_43-1864_S_424_E_G%29.jpg/500px-Karl_Graul_%28IZ_43-1864_S_424_E_G%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
     "title": "Vellacci",
     "description": "AGAINST BRITISH&quot;. Shubendra (2023). Warrior Queen of Sivaganga: The Legend of Rani Velu Nachiyar (1st ed.). New Delhi: Pan Macmillan. ISBN 978-9390742295",
     "year": 2023,
@@ -1852,14 +1825,5 @@
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/Madurai_R._Muralidaran",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Sri_Madurai_R_Muralidaran.jpg/500px-Sri_Madurai_R_Muralidaran.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
-    "title": "Tirukkural translations into Punjabi",
-    "description": "2050 (in Tamil) (1 ed.). Chennai: Periyar Enthusiasts Group. p. 683. &quot;Thirukkural in Punjabi and Rajasthani&quot;. OOCities. Retrieved 23 April 2017. Mariappan",
-    "year": 2050,
-    "date": "2050-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Tirukkural_translations_into_Punjabi",
-    "image": ""
   }
 ]
