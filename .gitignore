@@ -8,3 +8,7 @@ __pycache__/
 # Local configuration / OS files
 .DS_Store
 Thumbs.db
+
+# Local standalone copies
+apps/attendance-tracker/
+apps/attendance-tracker.zip
