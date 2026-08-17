@@ -1,13 +1,78 @@
 {
-  "date": "2026-07-31",
-  "last_updated": "2026-07-31 11:28:34",
-  "total_active_seconds": 35,
-  "total_active_formatted": "35s",
+  "date": "2026-08-17",
+  "last_updated": "2026-08-17 10:34:47",
+  "total_active_seconds": 9670,
+  "total_active_formatted": "2h 41m",
   "activities": [
     {
+      "app": "horizon-client.exe",
+      "seconds": 5055,
+      "formatted": "1h 24m"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 1910,
+      "formatted": "31m 50s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 1085,
+      "formatted": "18m 5s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 450,
+      "formatted": "7m 30s"
+    },
+    {
+      "app": "EXCEL.EXE",
+      "seconds": 390,
+      "formatted": "6m 30s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 350,
+      "formatted": "5m 50s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 325,
+      "formatted": "5m 25s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 60,
+      "formatted": "1m 0s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
       "app": "Idle/Unknown",
-      "seconds": 35,
-      "formatted": "35s"
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
     }
   ]
 }

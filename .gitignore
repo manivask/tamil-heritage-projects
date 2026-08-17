@@ -10,5 +10,5 @@ __pycache__/
 Thumbs.db
 
 # Local standalone copies
-apps/attendance-tracker/
+
 apps/attendance-tracker.zip
