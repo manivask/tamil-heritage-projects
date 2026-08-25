@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manager dashboard for August employee time sheet completion.">
+  <title>Timewise · August Time Tracking</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/month-selector.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview"><span class="brand-mark">T</span><span>time<span>wise</span></span></a>
+      <p class="workspace">MANAGER WORKSPACE</p>
+      <label class="month-switcher"><span><small>REPORTING MONTH</small><select id="monthSwitcher" aria-label="Select reporting month"><option value="2026-06">June 2026</option><option value="2026-07">July 2026</option><option value="2026-08" selected>August 2026</option></select></span><span>⌄</span></label>
+      <nav aria-label="Dashboard sections">
+        <button class="nav-link active" data-view="overview"><span>◈</span> Overview</button>
+        <button class="nav-link" data-view="team"><span>◉</span> Team compliance</button>
+        <button class="nav-link" data-view="projects"><span>▦</span> Project allocation</button>
+      </nav>
+      <div class="sidebar-bottom"><p class="workspace">DATA SOURCE</p><div class="source-status"><i></i><span>Excel sample dataset</span></div><small>Last refreshed · 24 Aug, 09:42</small></div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div><p class="eyebrow" id="eyebrow">AUGUST 2026 · MONTH-END VIEW</p><h1 id="pageTitle">Timesheet health</h1></div>
+        <div class="top-actions"><button class="icon-button" id="helpButton" aria-label="Help">?</button><button class="refresh-button" id="refreshButton">↻ <span>Refresh data</span></button><div class="avatar">MS</div></div>
+      </header>
+      <section class="content" id="appContent"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="data/sample-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

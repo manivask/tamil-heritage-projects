@@ -1,0 +1,7 @@
+.month-switcher { padding: 9px 12px; }
+.month-switcher b { display: initial; }
+.month-switcher small { display: block; font: 8px 'DM Mono', monospace; letter-spacing: .5px; margin: 0 0 2px; }
+.month-switcher select { appearance: none; background: transparent; border: 0; color: #fff; cursor: pointer; font: 700 12px Manrope, sans-serif; outline: 0; width: 150px; }
+.month-switcher option { background: #1b3a51; color: #fff; }
+.month-chip { align-items: center; background: #fff; border: 1px solid #dce6e9; border-radius: 7px; color: #47606d; display: inline-flex; font-size: 12px; font-weight: 700; height: 36px; padding: 0 12px; }
+@media (max-width: 720px) { .month-switcher select { display: none; } }
