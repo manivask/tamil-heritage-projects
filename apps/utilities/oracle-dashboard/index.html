@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive Oracle database operations dashboard using sample data.">
+  <title>OracleOps · Utility Dashboard</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview"><span class="brand-mark">O</span><span>Oracle<span>Ops</span></span></a>
+      <p class="environment-label">ENVIRONMENT</p>
+      <button class="instance-switcher" id="instanceSwitcher" aria-label="Change instance"><span><b id="instanceName">FINPRD01</b><small>Production · us-east-1</small></span><span>⌄</span></button>
+      <nav aria-label="Dashboard sections">
+        <button class="nav-link active" data-page="overview"><span>◈</span> Overview</button>
+        <button class="nav-link" data-page="performance"><span>◌</span> Performance</button>
+        <button class="nav-link" data-page="storage"><span>▣</span> Storage</button>
+        <button class="nav-link" data-page="database"><span>⌘</span> Database objects</button>
+        <button class="nav-link" data-page="security"><span>♙</span> Users & security</button>
+      </nav>
+      <div class="sidebar-bottom"><p class="environment-label">SYSTEM STATUS</p><div class="status-summary"><i></i><span>All systems operational</span></div><small>Last refresh <span id="sidebarRefresh">just now</span></small></div>
+    </aside>
+    <main>
+      <header class="topbar"><div><p class="eyebrow" id="pageEyebrow">ORACLE DATABASE MONITORING</p><h1 id="pageTitle">Good morning, Manivas</h1></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">♢<b>3</b></button><button class="refresh-button" id="refreshButton">↻ <span>Refresh data</span></button><div class="avatar">M</div></div></header>
+      <section class="content" id="appContent"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
