@@ -153,6 +153,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Fertile_crescent_Neolithic_B_circa_7500_BC.svg/500px-Fertile_crescent_Neolithic_B_circa_7500_BC.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
+    "title": "Vejalka",
+    "description": "Tradition (2600 – 1600 BCE) Based on Vagad and Other Sites in Gujarat, India&quot;. Iranian Journal of Archaeological Studies, 12, 2, 2022, 15-35. doi:10.22111/ijas",
+    "year": -1600,
+    "date": "BCE 1600",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Vejalka",
+    "image": ""
+  },
+  {
     "title": "Keezhadi excavation site",
     "description": "Keezhadi, or Keeladi (Tamil: [kiːɻaɖi], ISO: Kīḻaṭi), is a Sangam period settlement site, where excavation is being carried out by the Archaeological",
     "year": -580,
@@ -297,15 +306,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Thinai_en.svg/500px-Thinai_en.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
-    "title": "Ramayana in Tamil literature",
-    "description": "the 12th century. The age of Sangam literature (Tamil: சங்க இலக்கியம், caṅka ilakkiyam) refers to the ancient Tamil literature roughly extends between",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Ramayana_in_Tamil_literature",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg/500px-Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Eight Anthologies",
     "description": "the literature, is a classical Tamil poetic work that forms part of the Eighteen Greater Texts (Patiṉeṇmēlkaṇakku) anthology series of the Sangam Literature",
     "year": -300,
@@ -315,12 +315,12 @@
     "image": ""
   },
   {
-    "title": "Vaishnavism in Ancient Tamilakam",
-    "description": "வைணவம், வைணவ சமயம்) in Tamil Nadu is documented in ancient Tamil Sangam literature dating back to the 5th century BCE. Perumal, traditionally considered",
+    "title": "Nalankilli",
+    "description": "Tamilakam (modern-day Southern India) and was mentioned in the ancient Sangam Literature. He was the son of the emperor Karikala Chola. Nalankilli was mentioned",
     "year": -300,
     "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Vaishnavism_in_Ancient_Tamilakam",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Nalankilli",
     "image": ""
   },
   {
@@ -351,13 +351,22 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D%E0%AE%A4%E0%AF%8D_%E0%AE%A4%E0%AE%BE%E0%AE%AF%E0%AF%8D_%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%85%E0%AE%95%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%9A%E0%AE%BF%E0%AE%B2%E0%AF%88.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
-    "title": "Nalankilli",
-    "description": "Tamilakam (modern-day Southern India) and was mentioned in the ancient Sangam Literature. He was the son of the emperor Karikala Chola. Nalankilli was mentioned",
+    "title": "Vaishnavism in Ancient Tamilakam",
+    "description": "வைணவம், வைணவ சமயம்) in Tamil Nadu is documented in ancient Tamil Sangam literature dating back to the 5th century BCE. Perumal, traditionally considered",
     "year": -300,
     "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Nalankilli",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Vaishnavism_in_Ancient_Tamilakam",
     "image": ""
+  },
+  {
+    "title": "Ramayana in Tamil literature",
+    "description": "the 12th century. The age of Sangam literature (Tamil: சங்க இலக்கியம், caṅka ilakkiyam) refers to the ancient Tamil literature roughly extends between",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Ramayana_in_Tamil_literature",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg/500px-Rama_and_Hanuman_fighting_Ravana%2C_an_album_painting_on_paper%2C_c1820.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Paripāṭal",
@@ -369,30 +378,21 @@
     "image": ""
   },
   {
-    "title": "Kuṟuntokai",
-    "description": "traditionally the second of the Eight Anthologies (Ettuthokai) in the Sangam literature. The collection belongs to the akam (love) category, and each poem",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Ku%E1%B9%9Funtokai",
-    "image": ""
-  },
-  {
-    "title": "Kapilar",
-    "description": "Vēlir kings. He authored the Inna Narpathu, a didactic work of the Sangam literature. Verse 5 of the Tiruvalluva Maalai is also attributed to him. Kapilar",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Kapilar",
-    "image": ""
-  },
-  {
     "title": "Perunarkilli",
     "description": "பெருநற்கிள்ளி) was one of the Tamil kings of the Early Cholas mentioned in Sangam Literature. There are no definite details about this Chola or his reign. The",
     "year": -300,
     "date": "BCE 300",
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Perunarkilli",
+    "image": ""
+  },
+  {
+    "title": "Kuṟuntokai",
+    "description": "traditionally the second of the Eight Anthologies (Ettuthokai) in the Sangam literature. The collection belongs to the akam (love) category, and each poem",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Ku%E1%B9%9Funtokai",
     "image": ""
   },
   {
@@ -442,12 +442,21 @@
   },
   {
     "title": "List of Tamil monarchs",
-    "description": "as Muvendar were the traditional three Tamil dynasties that ruled the Tamilakam since the Sangam era. Chera Chola Pandyan Koon Pandiyan (ta:அரிகேசரி) Nedunjeliyan",
+    "description": "three crowned kings known as Muvendar were the traditional three Tamil dynasties that ruled the Tamilakam since the Sangam era. Chera Chola Pandyan Koon",
     "year": -300,
     "date": "BCE 300",
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/List_of_Tamil_monarchs",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "title": "Chera dynasty",
+    "description": "The Chera dynasty (or Cēra, IPA: [t͡ʃeːɾɐ]), also known as Kedalaputho, from the early historic or the Sangam period in southern India, ruled over parts",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Chera_dynasty",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chera_country_%28early_historic_south_India%29.jpg/500px-Chera_country_%28early_historic_south_India%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Ramayana",
@@ -457,15 +466,6 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Ramayana",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/R%C4%81ma_slays_R%C4%81va%E1%B9%87a.png/500px-R%C4%81ma_slays_R%C4%81va%E1%B9%87a.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
-    "title": "Samhita Arni",
-    "description": "collective fury. It led to what she calls an obsession with Silappatikaram, the Sangam period epic, a story of love, betrayal, grief and above all, wrath.",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Samhita_Arni",
-    "image": ""
   },
   {
     "title": "Chithalai Chathanar",
@@ -495,15 +495,6 @@
     "image": ""
   },
   {
-    "title": "Nachiyar Tirumoli",
-    "description": "Sangam Literature Five Great Epics Silappatikaram Manimekalai Civaka Cintamani Valayapathi Kundalakesi Five Minor Epics Neelakesi Culamani Naga Kumara",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/Nachiyar_Tirumoli",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/NarayanaTirumala5.JPG/500px-NarayanaTirumala5.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
     "title": "Nagapattinam",
     "description": "to 3rd century CE. The neighbouring port, Kaveripoompattinam (modern-day Poompuhar), was the capital of the Chola kingdom of the Sangam Age, referred",
     "year": -300,
@@ -531,15 +522,6 @@
     "image": ""
   },
   {
-    "title": "C. W. Thamotharampillai",
-    "description": "contemporaries such as U. V. Swaminatha Iyer, was responsible for collecting and cataloguing numerous old Sangam manuscripts and preparing them into",
-    "year": -300,
-    "date": "BCE 300",
-    "category": "Literature & Arts",
-    "link": "https://en.wikipedia.org/wiki/C._W._Thamotharampillai",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/C.W.Thamotharampillai.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  {
     "title": "Ten Idylls",
     "description": "and revered in the context of their temples. U. V. Swaminatha Iyer rediscovered the palm-leaf manuscripts of the Pattuppāṭṭu along with other Sangam literature",
     "year": -300,
@@ -547,6 +529,15 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Ten_Idylls",
     "image": ""
+  },
+  {
+    "title": "C. W. Thamotharampillai",
+    "description": "contemporaries such as U. V. Swaminatha Iyer, was responsible for collecting and cataloguing numerous old Sangam manuscripts and preparing them into",
+    "year": -300,
+    "date": "BCE 300",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/C._W._Thamotharampillai",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/C.W.Thamotharampillai.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "title": "Composition of Tolkāppiyam",
@@ -564,15 +555,6 @@
     "date": "BCE 200",
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Sri_Lankan_Tamil_literature",
-    "image": ""
-  },
-  {
-    "title": "Timeline of ancient history",
-    "description": "Maya city, flourishes. 200 BC: Paper is invented in the Han dynasty. c. 200 BC: Chera dynasty in South India. 199 BC: Ankhwennefer succeeds Horwennefer",
-    "year": -200,
-    "date": "BCE 200",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Timeline_of_ancient_history",
     "image": ""
   },
   {
@@ -738,6 +720,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chola_coin_with_legend_%22Uttama%22.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
+    "title": "Dharma",
+    "description": " 144–154. ISBN 978-1-107-01736-8. Iraianban, Swamiji (1997). Ambrosia of Thirukkural. Abhinav Publications. p. 13. ISBN 978-81-7017-346-5. Purnalingam Pillai",
+    "year": 978,
+    "date": "978-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Dharma",
+    "image": ""
+  },
+  {
     "title": "Rajaraja I",
     "description": " as well as increasing Chola influence across the Indian Ocean. Rajaraja&#039;s birth name is Arulmozhi Varman. Rajaraja&#039;s empire encompassed vast territories",
     "year": 985,
@@ -756,15 +747,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Ilaiya_Piratti_Kundavai.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
-    "title": "Rajaraja Devendravarman",
-    "description": "between the Cholas and the Gangas. Conflict with the Somavanshis: Dirghasi inscription states that Ganpati, the brahmana chieftain of Rajaraja I destroyed",
-    "year": 985,
-    "date": "985-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Rajaraja_Devendravarman",
-    "image": ""
-  },
-  {
     "title": "Vallavaraiyan Vandiyadevan",
     "description": "Vandiyadevan was a general of the Chola Army. He was one among the famous chieftains of the Chola emperors Rajaraja I and Rajendra I and chief of the",
     "year": 985,
@@ -781,6 +763,15 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/GangaiKonda_Cholapuram%28Front_View%29.JPG/500px-GangaiKonda_Cholapuram%28Front_View%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "title": "Rajaraja Devendravarman",
+    "description": "between the Cholas and the Gangas. Conflict with the Somavanshis: Dirghasi inscription states that Ganpati, the brahmana chieftain of Rajaraja I destroyed",
+    "year": 985,
+    "date": "985-01-01",
+    "category": "Rulers & Kingdoms",
+    "link": "https://en.wikipedia.org/wiki/Rajaraja_Devendravarman",
+    "image": ""
   },
   {
     "title": "Chola–Chalukya Wars",
@@ -835,15 +826,6 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Rajaraja_I",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Rajaraja_Chola_Portrait.jpg/400px-Rajaraja_Chola_Portrait.jpg"
-  },
-  {
-    "title": "Rajadhiraja I",
-    "description": "Rajadhiraja Chola I (994 – 28 May 1052), was a Chola emperor, as the successor of his father, Rajendra I. He was the only Chola emperor who was killed",
-    "year": 994,
-    "date": "994-01-01",
-    "category": "Rulers & Kingdoms",
-    "link": "https://en.wikipedia.org/wiki/Rajadhiraja_I",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Coin_of_Rajadhiraja_Chola.png/500px-Coin_of_Rajadhiraja_Chola.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Tamil inscriptions",
@@ -988,15 +970,6 @@
     "category": "Rulers & Kingdoms",
     "link": "https://en.wikipedia.org/wiki/Tirumala_Nayaka",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Tnayak-edited.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  {
-    "title": "History of Tiruchirappalli",
-    "description": "to Madurai in 1634. In 1665, Chokkanatha Nayak moved the capital once again to Tiruchirappalli. Chokkanatha Nayak partially dismantled the Thirumalai Nayak",
-    "year": 1634,
-    "date": "1634-01-01",
-    "category": "Culture & Heritage",
-    "link": "https://en.wikipedia.org/wiki/History_of_Tiruchirappalli",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tiruchirapalli1955.jpg/500px-Tiruchirapalli1955.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "title": "Chokkanatha Nayak",
@@ -1206,6 +1179,15 @@
     "image": ""
   },
   {
+    "title": "Madurai Municipal Corporation",
+    "description": "municipal office was established in 1871–1872 in a portion of the Thirumalai Nayak&#039;s palace. The municipality repaired a causeway across the Vaigai River",
+    "year": 1871,
+    "date": "1871-01-01",
+    "category": "General History",
+    "link": "https://en.wikipedia.org/wiki/Madurai_Municipal_Corporation",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Madurai_Municipal_Flag.png/500px-Madurai_Municipal_Flag.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
     "title": "Subramania Bharati",
     "description": "Subramania Bharati (born Chinnaswami Subramaniyan; 11 December 1882 – 11 September 1921) was an Indian writer, poet, composer, journalist, teacher, Indian",
     "year": 1882,
@@ -1260,6 +1242,15 @@
     "image": ""
   },
   {
+    "title": "M. Gopala Krishna Iyer",
+    "description": "Varalaru (in Tamil). &quot;Viveka Bodhini&quot; (in Tamil). 1919. &quot;Tamil poet Subramania Bharati&#039;s lesser-known love affair with Rabindranath Tagore&#039;s work&quot;. ThePrint",
+    "year": 1919,
+    "date": "1919-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/M._Gopala_Krishna_Iyer",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Profile_picture_of_M._Gopala_Krishna_Iyer.jpg/500px-Profile_picture_of_M._Gopala_Krishna_Iyer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
     "title": "1882 in India",
     "description": "Bharathi, poet, independence fighter and reformer (d.1921). 6 January – Bharatendu Harishchandra, writer and poet (b.1850). &quot;Subramania Bharati&quot;. Encyclopædia",
     "year": 1921,
@@ -1276,6 +1267,15 @@
     "category": "Literature & Arts",
     "link": "https://en.wikipedia.org/wiki/Suratha",
     "image": ""
+  },
+  {
+    "title": "Mohammad Usman of Madras",
+    "description": "Home for the Madras Presidency in the Justice Party government of the Raja of Bobbili and as the first Indian acting Governor of Madras from 16 May 1934",
+    "year": 1934,
+    "date": "1934-01-01",
+    "category": "Colonial Era",
+    "link": "https://en.wikipedia.org/wiki/Mohammad_Usman_of_Madras",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Khan_Bagadur_Sir_Mohammad_Usman.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "title": "Madras Presidency",
@@ -1303,6 +1303,15 @@
     "category": "General History",
     "link": "https://en.wikipedia.org/wiki/C._Rajagopalachari",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Chakravarthi_Rajagopalachari.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "title": "Manimekalai (disambiguation)",
+    "description": "titular character of the epic, first appears as the daughter of Kovalan and Madhavi in a preceding Tamil epic Silappatikaram Manimekalai (1940 film),",
+    "year": 1940,
+    "date": "1940-01-01",
+    "category": "Literature & Arts",
+    "link": "https://en.wikipedia.org/wiki/Manimekalai_%28disambiguation%29",
+    "image": ""
   },
   {
     "title": "Manimekalai (1940 film)",
@@ -1539,6 +1548,15 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Periyarkutiarasu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
+    "title": "Periyar",
+    "description": "January 2003). &quot;History: A Chronology of Anti-Hindi Agitations in Tamil Nadu and What the Future Holds&quot;. Tamil Tribune. Archived from the original on 30",
+    "year": 2003,
+    "date": "2003-01-01",
+    "category": "Culture & Heritage",
+    "link": "https://en.wikipedia.org/wiki/Periyar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/C._N._Annadurai_and_E._V._Ramasami_%28cropped%29.JPG/500px-C._N._Annadurai_and_E._V._Ramasami_%28cropped%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
     "title": "History of metallurgy in the Indian subcontinent",
     "description": "reliably dated iron furnace in Tamil Nadu was from the 5th century BCE at Kodumanal, Tamil Nadu. See Tewari (2003) and Arnold, 100-101. wisdomlib.org (2017-12-20)",
     "year": 2003,
@@ -1737,15 +1755,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Main_rajagopuram.jpg/500px-Main_rajagopuram.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
-    "title": "Thiruvalluvar",
-    "description": "&quot;Six months on, Thiruvalluvar&#039;s statue unveiled in Haridwar&quot;. The Times of India. Retrieved 18 April 2020. &quot;Tamilische Statue &quot;Thirukkural&quot; trägt wichtige",
-    "year": 2020,
-    "date": "2020-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Thiruvalluvar",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Stamp_of_India_-_1960_-_Colnect_141769_-_1_-_Thiruvalluvar_Commemoration.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  {
     "title": "List of Indian independence activists",
     "description": "September 2021. Retrieved 11 September 2021. &quot;100 years later, Malabar Rebellion fights for screen space&quot;. The Hindu. 23 June 2020. Archived from the original",
     "year": 2021,
@@ -1771,15 +1780,6 @@
     "category": "Culture & Heritage",
     "link": "https://en.wikipedia.org/wiki/Halebidu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Halebidu_monuments_map%2C_1930_survey%2C_the_Dorasamudra_of_Hoysala_dynasty.jpg/500px-Halebidu_monuments_map%2C_1930_survey%2C_the_Dorasamudra_of_Hoysala_dynasty.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-  },
-  {
-    "title": "Tirukkural translations into Rajasthani",
-    "description": "portal Pallu, Nelza Mara; Mohanty, Panchanan; Durga, Shiva (May 2023). &quot;Thirukkural Translations: A Sacred Text From the Town of Peacocks—Mayilâpûr India&quot;",
-    "year": 2023,
-    "date": "2023-01-01",
-    "category": "General History",
-    "link": "https://en.wikipedia.org/wiki/Tirukkural_translations_into_Rajasthani",
-    "image": ""
   },
   {
     "title": "Tirukkural translations into German",
