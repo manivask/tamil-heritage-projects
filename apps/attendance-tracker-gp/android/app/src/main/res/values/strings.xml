@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Attendance Tracker GP</string>
-    <string name="title_activity_main">Attendance Tracker GP</string>
-    <string name="package_name">com.attendance.tracker.gp</string>
-    <string name="custom_url_scheme">com.attendance.tracker.gp</string>
-</resources>
