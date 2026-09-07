@@ -1,0 +1,1272 @@
+<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI App Prompt Generator - Package any application into a single token-optimized LLM prompt to rebuild or extend anywhere.">
+    <title>AI App Prompt Generator | Tamil Heritage Digital Tools</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-base: #f5f5f7;
+            --bg-card: #ffffff;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --border-subtle: rgba(0, 0, 0, 0.04);
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --color-primary: #0071e3;
+            --color-primary-hover: #0077ed;
+            --color-primary-glow: rgba(0, 113, 227, 0.15);
+            --color-success: #34c759;
+            --color-warning: #ff9500;
+            --color-error: #ff3b30;
+            --color-purple: #af52de;
+            --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+            --font-mono: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2.5rem 1.5rem 4rem 1.5rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        /* Header Navigation */
+        header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-link {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(0, 113, 227, 0.06);
+            transition: all 0.2s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(0, 113, 227, 0.12);
+            transform: translateX(-2px);
+        }
+
+        .badge-tag {
+            background: rgba(0, 113, 227, 0.08);
+            border: 1px solid rgba(0, 113, 227, 0.2);
+            color: var(--color-primary);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+            font-family: var(--font-display);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 2.75rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Server Status Pill */
+        .status-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 6px 14px;
+            border-radius: 24px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-top: 1.25rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--text-secondary);
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .status-dot.online {
+            background-color: var(--color-success);
+            box-shadow: 0 0 8px var(--color-success);
+        }
+
+        .status-dot.offline {
+            background-color: var(--color-warning);
+            box-shadow: 0 0 8px var(--color-warning);
+        }
+
+        /* Card components */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 1.75rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .card-header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Grid of Workspace Apps */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-card-item {
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.25rem;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .app-card-item:hover {
+            background: #ffffff;
+            border-color: var(--color-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px var(--color-primary-glow);
+        }
+
+        .app-card-item.selected {
+            background: #ffffff;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 2px var(--color-primary), 0 8px 20px var(--color-primary-glow);
+        }
+
+        .app-item-title {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .app-item-desc {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .app-item-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .tag-pill {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .tag-pill.code {
+            background: rgba(0, 113, 227, 0.08);
+            color: var(--color-primary);
+        }
+
+        /* Custom / Standalone Folder Picker */
+        .picker-divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 1.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .picker-divider::before, .picker-divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .picker-divider span {
+            padding: 0 1rem;
+        }
+
+        .custom-picker-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .custom-picker-btn {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .custom-picker-btn:hover {
+            background: rgba(0, 113, 227, 0.05);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        /* File Tree & Optimization Section */
+        .tree-container {
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1rem;
+            max-height: 280px;
+            overflow-y: auto;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .file-tree-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 6px;
+            border-radius: 6px;
+            transition: background 0.15s ease;
+        }
+
+        .file-tree-item:hover {
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .file-tree-item input[type="checkbox"] {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-primary);
+        }
+
+        .file-name {
+            flex-grow: 1;
+            color: var(--text-primary);
+        }
+
+        .file-size-badge {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            background: rgba(0, 0, 0, 0.04);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .tree-actions-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .quick-btn {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .quick-btn:hover {
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        /* Token Dashboard Stats Pill */
+        .token-stat-bar {
+            display: flex;
+            gap: 1rem;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .stat-val {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .stat-val.highlight {
+            color: var(--color-primary);
+        }
+
+        /* Form Controls */
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        select, input[type="text"], textarea {
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+            color: var(--text-primary);
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        select:focus, input[type="text"]:focus, textarea:focus {
+            background: #ffffff;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px var(--color-primary-glow);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        /* Primary Action Buttons */
+        .btn-primary {
+            background: var(--color-primary);
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: var(--font-display);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 14px var(--color-primary-glow);
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px var(--color-primary-glow);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.99);
+        }
+
+        .btn-primary:disabled {
+            background: var(--text-secondary);
+            cursor: not-allowed;
+            opacity: 0.6;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Output View Section */
+        .output-card {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .output-actions-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .action-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 10px;
+            padding: 9px 16px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            font-family: var(--font-display);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background: rgba(0, 0, 0, 0.04);
+            border-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-action.highlight {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: #ffffff;
+        }
+
+        .btn-action.highlight:hover {
+            background: var(--color-primary-hover);
+        }
+
+        .prompt-textarea {
+            width: 100%;
+            min-height: 460px;
+            background: #1e1e24;
+            color: #e6edf3;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 1.25rem;
+            font-family: var(--font-mono);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            resize: vertical;
+            white-space: pre;
+            outline: none;
+        }
+
+        .prompt-textarea:focus {
+            border-color: var(--color-primary);
+        }
+
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #1d1d1f;
+            color: #ffffff;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: var(--font-display);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Spinner */
+        .spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .card { padding: 1.25rem; }
+            .back-link { position: static; margin-bottom: 1rem; display: inline-flex; }
+            .token-stat-bar { flex-direction: column; gap: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../index.html" class="back-link">&larr; Back to Portal</a>
+            <div class="badge-tag">LLM Prompt Engineering Suite</div>
+            <h1>AI App Prompt Generator</h1>
+            <p class="subtitle">Select any application folder to generate a token-optimized, self-contained LLM prompt that allows anyone to recreate or extend the entire project on their machine in a single shot.</p>
+            
+            <div class="status-container">
+                <span id="status-dot" class="status-dot"></span>
+                <span id="status-text">Checking Workspace Server...</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- SECTION 1: App Selection -->
+            <section class="card">
+                <div class="card-header-bar">
+                    <h2 class="card-title"><span>📂</span> 1. Select Application Folder</h2>
+                    <span id="app-counter-badge" class="tag-pill">Scanning...</span>
+                </div>
+
+                <!-- Workspace Apps Grid -->
+                <div id="apps-grid" class="apps-grid">
+                    <!-- Populated dynamically via JS -->
+                </div>
+
+                <!-- Or manual / standalone picker -->
+                <div class="picker-divider">
+                    <span>OR PICK / DROP ANY LOCAL FOLDER</span>
+                </div>
+
+                <div class="custom-picker-row">
+                    <label for="folder-upload-input" class="custom-picker-btn">
+                        <span>📁</span> Pick Folder from Computer
+                        <input type="file" id="folder-upload-input" webkitdirectory directory multiple style="display: none;">
+                    </label>
+                    <div style="flex-grow: 1; display: flex; gap: 8px;">
+                        <input type="text" id="custom-path-input" placeholder="e.g. apps/attendance-tracker" style="flex-grow: 1;">
+                        <button type="button" id="load-path-btn" class="quick-btn" style="padding: 10px 18px; font-weight: 600;">Load Path</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: File Structure & Token Optimization -->
+            <section class="card" id="scan-details-card" style="display: none;">
+                <div class="card-header-bar">
+                    <h2 class="card-title"><span>⚡</span> 2. Files & Token Optimization</h2>
+                    <div class="tag-pill code" id="selected-app-pill">No App Selected</div>
+                </div>
+
+                <!-- Token & Size Dashboard -->
+                <div class="token-stat-bar">
+                    <div class="stat-item">
+                        <div class="stat-label">Estimated Tokens</div>
+                        <div class="stat-val highlight" id="stat-tokens">~0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Included Files</div>
+                        <div class="stat-val" id="stat-included-files">0 / 0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Total Code Size</div>
+                        <div class="stat-val" id="stat-code-size">0 KB</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Detected Stack</div>
+                        <div class="stat-val" id="stat-tech-stack" style="font-size: 1rem; font-weight: 600; line-height: 1.4;">-</div>
+                    </div>
+                </div>
+
+                <!-- File checklist controls -->
+                <div class="tree-actions-row">
+                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Included Source Files:</span>
+                    <div style="display: flex; gap: 6px;">
+                        <button type="button" class="quick-btn" id="btn-select-all">Select All Code</button>
+                        <button type="button" class="quick-btn" id="btn-deselect-all">Deselect All</button>
+                        <button type="button" class="quick-btn" id="btn-smart-filter">Smart Token-Saver</button>
+                    </div>
+                </div>
+
+                <!-- File checklist tree -->
+                <div class="tree-container" id="file-tree-list">
+                    <!-- Checkboxes populated dynamically -->
+                </div>
+
+                <!-- Prompt Config Form -->
+                <div class="controls-grid">
+                    <div class="input-group">
+                        <label for="llm-target-select">Target AI Model</label>
+                        <select id="llm-target-select">
+                            <option value="Claude 3.7 / Claude Sonnet">Claude 3.7 / Sonnet (Anthropic)</option>
+                            <option value="OpenAI GPT-4o / o3-mini">OpenAI GPT-4o / o3-mini</option>
+                            <option value="Google Gemini 2.0 / 1.5 Pro">Google Gemini 2.0 / 1.5 Pro</option>
+                            <option value="DeepSeek V3 / R1">DeepSeek V3 / R1</option>
+                            <option value="Universal LLM" selected>Universal LLM (Standard)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="prompt-mode-select">Prompt Purpose / Strategy</label>
+                        <select id="prompt-mode-select">
+                            <option value="full_rebuild" selected>🏗️ Complete 1-Shot App Rebuild</option>
+                            <option value="architecture_spec">📐 Architecture & Logic Blueprint</option>
+                            <option value="feature_extension">⚡ Feature Extension / Refactor</option>
+                            <option value="compact">🗜️ Ultra-Compact Token Saver</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 1.5rem;">
+                    <label for="custom-instructions-input">Specific User Instructions (Optional)</label>
+                    <textarea id="custom-instructions-input" placeholder="e.g. Build with dark mode support, add unit tests, or convert backend to Express..."></textarea>
+                </div>
+
+                <!-- Generate Action Button -->
+                <button type="button" class="btn-primary" id="btn-generate-prompt">
+                    <span id="gen-btn-spinner" class="spinner" style="display: none;"></span>
+                    <span id="gen-btn-text">Generate Complete LLM Rebuild Prompt 🚀</span>
+                </button>
+            </section>
+
+            <!-- SECTION 3: Output Preview & Actions -->
+            <section class="card output-card" id="output-section">
+                <div class="card-header-bar">
+                    <h2 class="card-title"><span>📝</span> 3. Generated LLM Prompt</h2>
+                    <div class="tag-pill code" id="output-stats-badge">Ready for Export</div>
+                </div>
+
+                <div class="output-actions-bar">
+                    <div class="action-group">
+                        <button type="button" class="btn-action highlight" id="btn-copy-prompt">
+                            <span>📋</span> Copy to Clipboard
+                        </button>
+                        <button type="button" class="btn-action" id="btn-download-txt">
+                            <span>💾</span> Download as .txt
+                        </button>
+                        <button type="button" class="btn-action" id="btn-download-md">
+                            <span>📄</span> Download as .md
+                        </button>
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); font-weight: 500;" id="char-counter-text">
+                        0 Characters | 0 Estimated Tokens
+                    </div>
+                </div>
+
+                <textarea id="output-prompt-textarea" class="prompt-textarea" readonly></textarea>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+        <span>✅</span>
+        <span id="toast-msg">Prompt copied to clipboard!</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tamil Heritage Projects. Created for token-optimized, high-fidelity AI prompt engineering.</p>
+    </footer>
+
+    <script>
+        const SERVER_URL = "http://localhost:5006";
+        
+        // State
+        let isServerOnline = false;
+        let workspaceApps = [];
+        let currentSelectedApp = null;
+        let currentScannedFiles = [];
+        let localClientFiles = []; // For standalone folder upload mode
+        let isClientMode = false;
+        let generatedPromptText = "";
+
+        // Elements
+        const statusDot = document.getElementById("status-dot");
+        const statusText = document.getElementById("status-text");
+        const appsGrid = document.getElementById("apps-grid");
+        const appCounterBadge = document.getElementById("app-counter-badge");
+        const scanDetailsCard = document.getElementById("scan-details-card");
+        const selectedAppPill = document.getElementById("selected-app-pill");
+        const statTokens = document.getElementById("stat-tokens");
+        const statIncludedFiles = document.getElementById("stat-included-files");
+        const statCodeSize = document.getElementById("stat-code-size");
+        const statTechStack = document.getElementById("stat-tech-stack");
+        const fileTreeList = document.getElementById("file-tree-list");
+        const btnSelectAll = document.getElementById("btn-select-all");
+        const btnDeselectAll = document.getElementById("btn-deselect-all");
+        const btnSmartFilter = document.getElementById("btn-smart-filter");
+        const llmTargetSelect = document.getElementById("llm-target-select");
+        const promptModeSelect = document.getElementById("prompt-mode-select");
+        const customInstructionsInput = document.getElementById("custom-instructions-input");
+        const btnGeneratePrompt = document.getElementById("btn-generate-prompt");
+        const genBtnSpinner = document.getElementById("gen-btn-spinner");
+        const genBtnText = document.getElementById("gen-btn-text");
+        const outputSection = document.getElementById("output-section");
+        const outputPromptTextarea = document.getElementById("output-prompt-textarea");
+        const btnCopyPrompt = document.getElementById("btn-copy-prompt");
+        const btnDownloadTxt = document.getElementById("btn-download-txt");
+        const btnDownloadMd = document.getElementById("btn-download-md");
+        const charCounterText = document.getElementById("char-counter-text");
+        const outputStatsBadge = document.getElementById("output-stats-badge");
+        const folderUploadInput = document.getElementById("folder-upload-input");
+        const customPathInput = document.getElementById("custom-path-input");
+        const loadPathBtn = document.getElementById("load-path-btn");
+        const toast = document.getElementById("toast");
+        const toastMsg = document.getElementById("toast-msg");
+
+        // Helper: Show Toast
+        function showToast(message) {
+            toastMsg.textContent = message;
+            toast.classList.add("show");
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+
+        // Helper: Estimate tokens
+        function estimateTokens(text) {
+            return Math.max(1, Math.floor(text.length / 4));
+        }
+
+        // 1. Check Server Status
+        async function checkServerStatus() {
+            try {
+                const res = await fetch(`${SERVER_URL}/status`);
+                if (res.ok) {
+                    const data = await res.json();
+                    statusDot.className = "status-dot online";
+                    statusText.textContent = `Local Server: ONLINE (Port 5006)`;
+                    isServerOnline = true;
+                    loadWorkspaceApps();
+                } else {
+                    throw new Error("Offline");
+                }
+            } catch (err) {
+                statusDot.className = "status-dot offline";
+                statusText.textContent = "Local Server: OFFLINE (Using Standalone Browser Mode)";
+                isServerOnline = false;
+                renderFallbackApps();
+            }
+        }
+
+        // 2. Load Workspace Apps from Server API
+        async function loadWorkspaceApps() {
+            try {
+                const res = await fetch(`${SERVER_URL}/api/apps`);
+                const data = await res.json();
+                workspaceApps = data.apps || [];
+                renderAppsGrid(workspaceApps);
+                appCounterBadge.textContent = `${workspaceApps.length} Apps Detected`;
+            } catch (err) {
+                console.error("Error loading apps:", err);
+                renderFallbackApps();
+            }
+        }
+
+        // Fallback list of known apps if server is offline
+        function renderFallbackApps() {
+            const fallbackList = [
+                { name: "attendance-tracker", rel_path: "apps/attendance-tracker", description: "Capacitor & Chart.js student attendance management system.", tech_stack: ["Vanilla JS", "Capacitor Mobile Framework", "HTML5", "CSS3"] },
+                { name: "biographies", rel_path: "apps/biographies", description: "Interactive multimedia biographies for Tamil pioneers.", tech_stack: ["HTML5", "CSS3", "Vanilla JS"] },
+                { name: "chatbot", rel_path: "apps/chatbot", description: "Voice AI Copilot with 5 synthesized personas and speech recognition.", tech_stack: ["HTML5", "CSS3", "Vanilla JS"] },
+                { name: "content-extractor", rel_path: "apps/content-extractor", description: "Token-efficient web scraper & YouTube closed-caption extractor.", tech_stack: ["HTML5", "Python 3", "CSS3"] },
+                { name: "cpu-monitor", rel_path: "apps/cpu-monitor", description: "Real-time hardware telemetry and diagnostic dashboard.", tech_stack: ["Streamlit", "Python 3"] },
+                { name: "maritime-trade-simulator", rel_path: "apps/maritime-trade-simulator", description: "Interactive ancient Tamil ocean trade routes & sea turtle migration.", tech_stack: ["HTML5", "Leaflet.js", "Vanilla JS"] },
+                { name: "tamil-history-scale", rel_path: "apps/tamil-history-scale", description: "5,000-year Tamil history timeline with floating zoom navigation.", tech_stack: ["HTML5", "CSS3", "Vanilla JS"] },
+                { name: "thirukkural-facts-finder", rel_path: "apps/thirukkural-facts-finder", description: "Fast search explorer for 1,330 couplets of Thirukkural.", tech_stack: ["HTML5", "CSS3", "Vanilla JS"] },
+                { name: "toponyms-explorer", rel_path: "apps/toponyms-explorer", description: "Geospatial mapping of Tamil toponyms across the globe.", tech_stack: ["HTML5", "Leaflet.js", "Vanilla JS"] }
+            ];
+            renderAppsGrid(fallbackList);
+            appCounterBadge.textContent = `${fallbackList.length} Apps (Select to Scan)`;
+        }
+
+        // Render App Cards
+        function renderAppsGrid(apps) {
+            appsGrid.innerHTML = "";
+            apps.forEach(app => {
+                const card = document.createElement("div");
+                card.className = "app-card-item";
+                card.dataset.appPath = app.rel_path || app.path;
+                card.dataset.appName = app.name;
+
+                const stackBadges = (app.tech_stack || []).slice(0, 3).map(t => `<span class="tag-pill code">${t}</span>`).join(" ");
+                const filesCount = app.code_files_count !== undefined ? `${app.code_files_count} files` : 'Auto-scan';
+                const sizeText = app.total_size_kb !== undefined ? `${app.total_size_kb} KB` : '';
+
+                card.innerHTML = `
+                    <div>
+                        <div class="app-item-title">
+                            <span>📦</span> ${app.name}
+                        </div>
+                        <div class="app-item-desc">${app.description || 'Application module'}</div>
+                    </div>
+                    <div class="app-item-meta">
+                        ${stackBadges}
+                        <span class="tag-pill">${filesCount}</span>
+                        ${sizeText ? `<span class="tag-pill">${sizeText}</span>` : ''}
+                    </div>
+                `;
+
+                card.addEventListener("click", () => selectApp(app.rel_path || app.path, app.name));
+                appsGrid.appendChild(card);
+            });
+        }
+
+        // 3. Select and Scan an App
+        async function selectApp(appPath, appName) {
+            isClientMode = false;
+            currentSelectedApp = { path: appPath, name: appName };
+
+            // Highlight selected card
+            document.querySelectorAll(".app-card-item").forEach(el => {
+                el.classList.toggle("selected", el.dataset.appName === appName);
+            });
+
+            selectedAppPill.textContent = appName;
+            scanDetailsCard.style.display = "block";
+            scanDetailsCard.scrollIntoView({ behavior: "smooth" });
+
+            if (isServerOnline) {
+                try {
+                    fileTreeList.innerHTML = '<div style="padding: 10px; color: var(--text-secondary);">Scanning files in folder...</div>';
+                    const res = await fetch(`${SERVER_URL}/api/scan`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ path: appPath })
+                    });
+                    const data = await res.json();
+                    if (data.files) {
+                        currentScannedFiles = data.files;
+                        renderFileTree(data.files);
+                        statTechStack.textContent = (data.tech_stack || []).join(", ") || "Web App";
+                        updateStats();
+                    }
+                } catch (err) {
+                    console.error("Scan error:", err);
+                    showToast("Failed to scan folder via server. You can upload it directly.");
+                }
+            } else {
+                showToast(`Selected ${appName}. Start server or pick folder to load full contents.`);
+            }
+        }
+
+        // Render File Tree Checkboxes
+        function renderFileTree(files) {
+            fileTreeList.innerHTML = "";
+            files.forEach((file, index) => {
+                const item = document.createElement("div");
+                item.className = "file-tree-item";
+
+                const isChecked = file.default_include ? 'checked' : '';
+                const disabled = file.is_ignored ? 'disabled' : '';
+                const badgeColor = file.is_code ? 'color: var(--color-primary);' : (file.is_large_asset ? 'color: var(--color-warning);' : 'color: var(--text-secondary);');
+
+                item.innerHTML = `
+                    <input type="checkbox" id="file_chk_${index}" data-rel-path="${file.rel_path}" data-size-kb="${file.size_kb}" ${isChecked} ${disabled}>
+                    <label for="file_chk_${index}" class="file-name" style="cursor: pointer; ${disabled ? 'opacity: 0.5;' : ''}">
+                        ${file.rel_path}
+                    </label>
+                    <span class="file-size-badge" style="${badgeColor}">
+                        ${file.size_kb} KB ${file.is_large_asset ? '[Data Asset]' : ''} ${file.is_ignored ? '[Excluded]' : ''}
+                    </span>
+                `;
+
+                const checkbox = item.querySelector("input");
+                checkbox.addEventListener("change", updateStats);
+                fileTreeList.appendChild(item);
+            });
+            updateStats();
+        }
+
+        // Update Token & Size Stats
+        function updateStats() {
+            const checkboxes = fileTreeList.querySelectorAll('input[type="checkbox"]');
+            let includedCount = 0;
+            let totalCodeKb = 0;
+
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    includedCount++;
+                    totalCodeKb += parseFloat(cb.dataset.sizeKb || 0);
+                }
+            });
+
+            // Token estimation (approx 1 KB code ~ 250 tokens)
+            const estimatedTokens = Math.round(totalCodeKb * 250);
+
+            statTokens.textContent = `~${estimatedTokens.toLocaleString()}`;
+            statIncludedFiles.textContent = `${includedCount} / ${checkboxes.length}`;
+            statCodeSize.textContent = `${totalCodeKb.toFixed(1)} KB`;
+        }
+
+        // Selection Quick Buttons
+        btnSelectAll.addEventListener("click", () => {
+            fileTreeList.querySelectorAll('input[type="checkbox"]:not([disabled])').forEach(cb => cb.checked = true);
+            updateStats();
+        });
+
+        btnDeselectAll.addEventListener("click", () => {
+            fileTreeList.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            updateStats();
+        });
+
+        btnSmartFilter.addEventListener("click", () => {
+            fileTreeList.querySelectorAll('input[type="checkbox"]').forEach((cb, idx) => {
+                if (currentScannedFiles[idx]) {
+                    cb.checked = currentScannedFiles[idx].default_include;
+                }
+            });
+            updateStats();
+        });
+
+        // 4. Custom Path Loader
+        loadPathBtn.addEventListener("click", () => {
+            const pathVal = customPathInput.value.trim();
+            if (pathVal) {
+                const folderName = pathVal.split(/[/\\]/).filter(Boolean).pop() || "Custom Folder";
+                selectApp(pathVal, folderName);
+            }
+        });
+
+        // 5. Standalone Browser Folder Upload
+        folderUploadInput.addEventListener("change", async (e) => {
+            const files = Array.from(e.target.files);
+            if (!files.length) return;
+
+            isClientMode = true;
+            localClientFiles = files;
+            const rootFolderName = files[0].webkitRelativePath.split('/')[0] || "Uploaded App";
+            currentSelectedApp = { name: rootFolderName, path: rootFolderName };
+
+            selectedAppPill.textContent = `${rootFolderName} (Local Browser Upload)`;
+            scanDetailsCard.style.display = "block";
+            scanDetailsCard.scrollIntoView({ behavior: "smooth" });
+
+            // Parse local files
+            currentScannedFiles = files.map(f => {
+                const relPath = f.webkitRelativePath.replace(`${rootFolderName}/`, '');
+                const ext = '.' + f.name.split('.').pop().toLowerCase();
+                const sizeKb = Math.round(f.size / 1024 * 100) / 100;
+                const isIgnored = ['.png', '.jpg', '.jpeg', '.zip', '.apk', '.mp4', '.mp3'].includes(ext) || f.webkitRelativePath.includes('node_modules/') || f.webkitRelativePath.includes('.git/');
+                const isCode = ['.html', '.css', '.js', '.ts', '.py', '.json', '.md', '.txt', '.yaml', '.sql'].includes(ext);
+
+                return {
+                    rel_path: relPath,
+                    name: f.name,
+                    ext: ext,
+                    size_kb: sizeKb,
+                    is_code: isCode,
+                    is_ignored: isIgnored,
+                    is_large_asset: ['.xlsx', '.csv', '.parquet', '.pdf'].includes(ext),
+                    default_include: (isCode && !isIgnored && sizeKb <= 500),
+                    fileObj: f
+                };
+            });
+
+            renderFileTree(currentScannedFiles);
+            statTechStack.textContent = "Client Uploaded Application";
+            updateStats();
+            showToast(`Loaded ${files.length} files from ${rootFolderName}`);
+        });
+
+        // 6. Generate LLM Prompt
+        btnGeneratePrompt.addEventListener("click", async () => {
+            if (!currentSelectedApp) {
+                alert("Please select or upload an app folder first.");
+                return;
+            }
+
+            // Gather selected files
+            const selectedRelPaths = [];
+            fileTreeList.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                if (cb.checked) selectedRelPaths.push(cb.dataset.relPath);
+            });
+
+            if (selectedRelPaths.length === 0) {
+                alert("Please select at least one file to include in the prompt.");
+                return;
+            }
+
+            const llmTarget = llmTargetSelect.value;
+            const promptMode = promptModeSelect.value;
+            const customInstructions = customInstructionsInput.value.trim();
+
+            // Set loading state
+            btnGeneratePrompt.disabled = true;
+            genBtnSpinner.style.display = "inline-block";
+            genBtnText.textContent = "Generating Token-Optimized Prompt...";
+
+            try {
+                if (isServerOnline && !isClientMode) {
+                    // Call backend server
+                    const res = await fetch(`${SERVER_URL}/api/generate`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            path: currentSelectedApp.path,
+                            selected_files: selectedRelPaths,
+                            llm_target: llmTarget,
+                            prompt_mode: promptMode,
+                            custom_instructions: customInstructions
+                        })
+                    });
+
+                    const data = await res.json();
+                    if (data.success) {
+                        displayGeneratedPrompt(data.prompt, data.stats);
+                    } else {
+                        throw new Error(data.error || "Failed to generate prompt");
+                    }
+                } else {
+                    // Standalone client generation
+                    const promptText = await generateClientSidePrompt(
+                        currentSelectedApp.name,
+                        selectedRelPaths,
+                        llmTarget,
+                        promptMode,
+                        customInstructions
+                    );
+                    const tokens = estimateTokens(promptText);
+                    displayGeneratedPrompt(promptText, {
+                        total_chars: promptText.length,
+                        estimated_tokens: tokens,
+                        included_files_count: selectedRelPaths.length
+                    });
+                }
+            } catch (err) {
+                console.error("Generation error:", err);
+                alert(`Error generating prompt: ${err.message}`);
+            } finally {
+                btnGeneratePrompt.disabled = false;
+                genBtnSpinner.style.display = "none";
+                genBtnText.textContent = "Generate Complete LLM Rebuild Prompt 🚀";
+            }
+        });
+
+        // Client-Side prompt generator fallback
+        async function generateClientSidePrompt(appName, selectedPaths, llmTarget, mode, instructions) {
+            const selectedMap = new Set(selectedPaths);
+            const filesToProcess = currentScannedFiles.filter(f => selectedMap.has(f.rel_path));
+            
+            let prompt = `# AI Developer Prompt: Rebuild "${appName}" Application\n\n`;
+            prompt += `> Target AI: ${llmTarget}\n> Mode: ${mode}\n\n`;
+            prompt += `## Role & Mission\nYou are an expert Principal Full-Stack Software Engineer. Rebuild the complete "${appName}" application based on the files and instructions below.\n\n`;
+
+            if (instructions) {
+                prompt += `## Specific User Instructions\n${instructions}\n\n`;
+            }
+
+            prompt += `## Source Code Files\n\n`;
+
+            for (const fileItem of filesToProcess) {
+                let textContent = "";
+                if (fileItem.fileObj) {
+                    textContent = await fileItem.fileObj.text();
+                } else {
+                    textContent = `// [File: ${fileItem.rel_path}]`;
+                }
+
+                const lang = fileItem.ext ? fileItem.ext.replace('.', '') : 'text';
+                prompt += `### File: \`${fileItem.rel_path}\` (${fileItem.size_kb} KB)\n`;
+                prompt += `\`\`\`${lang}\n${textContent.trim()}\n\`\`\`\n\n`;
+            }
+
+            prompt += `## Setup & Run Instructions\n- Save all files in their relative paths inside \`${appName}/\`.\n- Open \`index.html\` in browser or run via local server.\n`;
+            return prompt;
+        }
+
+        // Display Prompt in Output View
+        function displayGeneratedPrompt(promptText, stats) {
+            generatedPromptText = promptText;
+            outputPromptTextarea.value = promptText;
+            
+            const chars = stats.total_chars || promptText.length;
+            const tokens = stats.estimated_tokens || estimateTokens(promptText);
+            const files = stats.included_files_count || "All";
+
+            charCounterText.textContent = `${chars.toLocaleString()} Characters | ~${tokens.toLocaleString()} Estimated Tokens`;
+            outputStatsBadge.textContent = `${files} Files Packaged`;
+
+            outputSection.style.display = "flex";
+            outputSection.scrollIntoView({ behavior: "smooth" });
+            showToast("LLM Prompt generated successfully! 🚀");
+        }
+
+        // 7. Copy to Clipboard
+        btnCopyPrompt.addEventListener("click", async () => {
+            if (!generatedPromptText) return;
+            try {
+                await navigator.clipboard.writeText(generatedPromptText);
+                showToast("Prompt copied to clipboard! Ready to paste into any LLM 📋");
+                
+                // Button feedback
+                const origText = btnCopyPrompt.innerHTML;
+                btnCopyPrompt.innerHTML = "<span>✅</span> Copied!";
+                btnCopyPrompt.style.background = "var(--color-success)";
+                setTimeout(() => {
+                    btnCopyPrompt.innerHTML = origText;
+                    btnCopyPrompt.style.background = "";
+                }, 2000);
+            } catch (err) {
+                outputPromptTextarea.select();
+                document.execCommand("copy");
+                showToast("Copied to clipboard!");
+            }
+        });
+
+        // 8. Download as .txt
+        btnDownloadTxt.addEventListener("click", () => {
+            if (!generatedPromptText) return;
+            const appName = currentSelectedApp ? currentSelectedApp.name : "app";
+            downloadFile(generatedPromptText, `${appName}_llm_build_prompt.txt`, "text/plain;charset=utf-8");
+            showToast(`Downloaded ${appName}_llm_build_prompt.txt 💾`);
+        });
+
+        // 9. Download as .md
+        btnDownloadMd.addEventListener("click", () => {
+            if (!generatedPromptText) return;
+            const appName = currentSelectedApp ? currentSelectedApp.name : "app";
+            downloadFile(generatedPromptText, `${appName}_prompt_spec.md`, "text/markdown;charset=utf-8");
+            showToast(`Downloaded ${appName}_prompt_spec.md 📄`);
+        });
+
+        function downloadFile(content, filename, contentType) {
+            const blob = new Blob([content], { type: contentType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Init Check
+        checkServerStatus();
+    </script>
+</body>
+</html>

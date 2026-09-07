@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-14",
+  "last_updated": "2026-08-14 22:45:03",
+  "total_active_seconds": 38305,
+  "total_active_formatted": "10h 38m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 32670,
+      "formatted": "9h 4m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 2355,
+      "formatted": "39m 15s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 1870,
+      "formatted": "31m 10s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 755,
+      "formatted": "12m 35s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 265,
+      "formatted": "4m 25s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 120,
+      "formatted": "2m 0s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 95,
+      "formatted": "1m 35s"
+    },
+    {
+      "app": "HTML5VideoPlayer.exe",
+      "seconds": 60,
+      "formatted": "1m 0s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 50,
+      "formatted": "50s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "CredentialUIBroker.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

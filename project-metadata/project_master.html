@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workspace dashboard and project overview showing statistics and status for all active applications.">
+    <title>Workspace Projects Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #151c2c;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --donut-bg-ring: #1e293b;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .badge {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: var(--accent);
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-family: var(--font-display);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .stats-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .stat-val {
+            font-family: var(--font-display);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-lbl {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .app-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--accent-glow);
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .app-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .app-size {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .app-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .tech-badges-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.06);
+            color: #e5e7eb;
+            padding: 0.3rem 0.75rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .donut-section {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .donut-container {
+            width: 90px;
+            height: 90px;
+            flex-shrink: 0;
+        }
+
+        .donut-segment {
+            transform-origin: center;
+            transition: stroke-dasharray 0.3s ease;
+        }
+
+        .donut-text {
+            font-family: var(--font-display);
+            text-anchor: middle;
+        }
+
+        .donut-number {
+            fill: #ffffff;
+            font-size: 8px;
+            font-weight: 700;
+        }
+
+        .donut-label {
+            fill: var(--text-secondary);
+            font-size: 4px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .donut-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .legend-text {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .app-action-btn {
+            background: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.85rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            font-family: var(--font-display);
+            transition: background 0.2s ease, transform 0.1s ease;
+            display: block;
+        }
+
+        .app-action-btn:hover {
+            background: #2563eb;
+        }
+
+        .app-action-btn:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .stats-summary {
+                grid-template-columns: 1fr;
+            }
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Master Workspace Dashboard</div>
+            <h1>Workspace Applications Index</h1>
+            <p class="subtitle">A visual overview of the files, technology distribution, and entry points for all projects in this workspace.</p>
+        </header>
+
+        <section class="stats-summary">
+            <div class="stat-card">
+                <div class="stat-val">7</div>
+                <div class="stat-lbl">Total Applications</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">53</div>
+                <div class="stat-lbl">Active Code Files</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val">2884.47 KB</div>
+                <div class="stat-lbl">Total Repository Size</div>
+            </div>
+        </section>
+
+        <main class="apps-grid">
+            
+        <div class="app-card" id="app-biographies">
+            <div class="app-header">
+                <h3 class="app-title">Orissa Balu - Slideshow Biography</h3>
+                <span class="app-size">76.96 KB</span>
+            </div>
+            
+            <p class="app-desc">G. Nammalvar - Interactive Slideshow Biography. The green crusader who revived traditional Tamil agriculture.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="100.0 0.0" stroke-dashoffset="125"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">2</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.html (100.0%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/biographies/nammalvar.html" class="app-action-btn" target="_blank">
+                Launch nammalvar.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        <div class="app-card" id="app-content-extractor">
+            <div class="app-header">
+                <h3 class="app-title">Web & Video Content Extractor</h3>
+                <span class="app-size">39.88 KB</span>
+            </div>
+            
+            <p class="app-desc">Clean Text Extractor - Scrape webpages and transcribe YouTube videos easily to save tokens.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span><span class="tech-badge">Python</span><span class="tech-badge">Shell Scripting</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="53.9 46.1" stroke-dashoffset="125"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0071e3" stroke-width="4" stroke-dasharray="41.3 58.7" stroke-dashoffset="71.1"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#30cfd0" stroke-width="4" stroke-dasharray="4.8 95.2" stroke-dashoffset="29.80000000000001"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">6</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.py (53.9%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #0071e3;"></span>  <span class="legend-text">.html (41.3%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #30cfd0;"></span>  <span class="legend-text">.ps1 (4.8%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/content-extractor/index.html" class="app-action-btn" target="_blank">
+                Launch index.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        <div class="app-card" id="app-cpu-monitor">
+            <div class="app-header">
+                <h3 class="app-title">System Diagnostics & CPU Monitor Dashboard</h3>
+                <span class="app-size">74.13 KB</span>
+            </div>
+            
+            <p class="app-desc">A live performance and diagnostics dashboard tracking CPU usage, memory load, and thermal warnings for your computer.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Python</span><span class="tech-badge">JSON Data</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="61.3 38.7" stroke-dashoffset="125"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0071e3" stroke-width="4" stroke-dasharray="9.7 90.3" stroke-dashoffset="63.7"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#30cfd0" stroke-width="4" stroke-dasharray="9.2 90.8" stroke-dashoffset="54.0"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a1c4fd" stroke-width="4" stroke-dasharray="8.4 91.6" stroke-dashoffset="44.8"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fbc2eb" stroke-width="4" stroke-dasharray="6.9 93.1" stroke-dashoffset="36.39999999999999"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffe066" stroke-width="4" stroke-dasharray="4.3 95.7" stroke-dashoffset="29.499999999999986"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4facfe" stroke-width="4" stroke-dasharray="0.2 99.8" stroke-dashoffset="25.19999999999999"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="0.1 99.9" stroke-dashoffset="24.999999999999986"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">19</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.py (61.3%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #0071e3;"></span>  <span class="legend-text">.css (9.7%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #30cfd0;"></span>  <span class="legend-text">.html (9.2%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #a1c4fd;"></span>  <span class="legend-text">.js (8.4%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #fbc2eb;"></span>  <span class="legend-text">.md (6.9%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #ffe066;"></span>  <span class="legend-text">.json (4.3%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #4facfe;"></span>  <span class="legend-text">.bat (0.2%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.txt (0.1%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/cpu-monitor/index.html" class="app-action-btn" target="_blank">
+                Launch index.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        <div class="app-card" id="app-maritime-trade-simulator">
+            <div class="app-header">
+                <h3 class="app-title">Ancient Tamil Maritime Voyage Simulator</h3>
+                <span class="app-size">56.53 KB</span>
+            </div>
+            
+            <p class="app-desc">An interactive maritime voyage simulator detailing ancient Tamil trade routes, monsoons, and sea lanes.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span><span class="tech-badge">JSON Data</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="57.1 42.9" stroke-dashoffset="125"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0071e3" stroke-width="4" stroke-dasharray="22.3 77.7" stroke-dashoffset="67.9"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#30cfd0" stroke-width="4" stroke-dasharray="15.1 84.9" stroke-dashoffset="45.599999999999994"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a1c4fd" stroke-width="4" stroke-dasharray="5.5 94.5" stroke-dashoffset="30.5"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">4</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.js (57.1%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #0071e3;"></span>  <span class="legend-text">.css (22.3%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #30cfd0;"></span>  <span class="legend-text">.html (15.1%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #a1c4fd;"></span>  <span class="legend-text">.json (5.5%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/maritime-trade-simulator/index.html" class="app-action-btn" target="_blank">
+                Launch index.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        <div class="app-card" id="app-tamil-history-scale">
+            <div class="app-header">
+                <h3 class="app-title">Tamil Heritage & History Scale</h3>
+                <span class="app-size">149.23 KB</span>
+            </div>
+            
+            <p class="app-desc">An interactive timeline tracking milestones, rulers, literature, and events in Tamil history and heritage.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Python</span><span class="tech-badge">JSON Data</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="66.4 33.599999999999994" stroke-dashoffset="125"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0071e3" stroke-width="4" stroke-dasharray="10.4 89.6" stroke-dashoffset="58.599999999999994"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#30cfd0" stroke-width="4" stroke-dasharray="9.7 90.3" stroke-dashoffset="48.19999999999999"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a1c4fd" stroke-width="4" stroke-dasharray="9.2 90.8" stroke-dashoffset="38.499999999999986"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fbc2eb" stroke-width="4" stroke-dasharray="4.3 95.7" stroke-dashoffset="29.299999999999983"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">5</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.json (66.4%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #0071e3;"></span>  <span class="legend-text">.css (10.4%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #30cfd0;"></span>  <span class="legend-text">.js (9.7%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #a1c4fd;"></span>  <span class="legend-text">.py (9.2%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #fbc2eb;"></span>  <span class="legend-text">.html (4.3%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/tamil-history-scale/index.html" class="app-action-btn" target="_blank">
+                Launch index.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        <div class="app-card" id="app-thirukkural-facts-finder">
+            <div class="app-header">
+                <h3 class="app-title">திருக்குறள் சுவாரஸ்யமான உண்மைகள் | Thirukkural Facts Finder</h3>
+                <span class="app-size">2264.12 KB</span>
+            </div>
+            
+            <p class="app-desc">திருக்குறள் சுவாரஸ்யமான உண்மைகள் மற்றும் 1330 குறள்களை ஆராயும் தளம்.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Python</span><span class="tech-badge">JSON Data</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="97.3 2.700000000000003" stroke-dashoffset="125"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0071e3" stroke-width="4" stroke-dasharray="1.3 98.7" stroke-dashoffset="27.700000000000003"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#30cfd0" stroke-width="4" stroke-dasharray="0.6 99.4" stroke-dashoffset="26.400000000000006"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a1c4fd" stroke-width="4" stroke-dasharray="0.5 99.5" stroke-dashoffset="25.80000000000001"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fbc2eb" stroke-width="4" stroke-dasharray="0.3 99.7" stroke-dashoffset="25.30000000000001"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">6</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.json (97.3%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #0071e3;"></span>  <span class="legend-text">.js (1.3%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #30cfd0;"></span>  <span class="legend-text">.html (0.6%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #a1c4fd;"></span>  <span class="legend-text">.css (0.5%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #fbc2eb;"></span>  <span class="legend-text">.py (0.3%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/thirukkural-facts-finder/index.html" class="app-action-btn" target="_blank">
+                Launch index.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        <div class="app-card" id="app-toponyms-explorer">
+            <div class="app-header">
+                <h3 class="app-title">Global Tamil Toponyms Explorer</h3>
+                <span class="app-size">223.62 KB</span>
+            </div>
+            
+            <p class="app-desc">An interactive global map explorer tracing geographic place names of Tamil origin, such as Palani and Salem, across the world.</p>
+            
+            <div class="tech-badges-container">
+                <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Python</span><span class="tech-badge">JSON Data</span><span class="tech-badge">Shell Scripting</span>
+            </div>
+            
+            <div class="donut-section">
+                
+        <div class="donut-container">
+            <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="var(--card-bg)"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="var(--donut-bg-ring)" stroke-width="2.5"></circle>
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ff5e62" stroke-width="4" stroke-dasharray="64.5 35.5" stroke-dashoffset="125"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0071e3" stroke-width="4" stroke-dasharray="11.5 88.5" stroke-dashoffset="60.5"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#30cfd0" stroke-width="4" stroke-dasharray="10.6 89.4" stroke-dashoffset="49.0"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a1c4fd" stroke-width="4" stroke-dasharray="5.2 94.8" stroke-dashoffset="38.400000000000006"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fbc2eb" stroke-width="4" stroke-dasharray="4.5 95.5" stroke-dashoffset="33.2"></circle> <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffe066" stroke-width="4" stroke-dasharray="3.7 96.3" stroke-dashoffset="28.700000000000003"></circle>
+                <g class="donut-text">
+                    <text x="50%" y="46%" class="donut-number">11</text>
+                    <text x="50%" y="64%" class="donut-label">Files</text>
+                </g>
+            </svg>
+        </div>
+        
+                <div class="donut-legend">
+                    <div class="legend-item">  <span class="legend-dot" style="background-color: #ff5e62;"></span>  <span class="legend-text">.json (64.5%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #0071e3;"></span>  <span class="legend-text">.js (11.5%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #30cfd0;"></span>  <span class="legend-text">.css (10.6%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #a1c4fd;"></span>  <span class="legend-text">.py (5.2%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #fbc2eb;"></span>  <span class="legend-text">.html (4.5%)</span></div><div class="legend-item">  <span class="legend-dot" style="background-color: #ffe066;"></span>  <span class="legend-text">.ps1 (3.7%)</span></div>
+                </div>
+            </div>
+            
+            <a href="../apps/toponyms-explorer/index.html" class="app-action-btn" target="_blank">
+                Launch index.html <span>&rarr;</span>
+            </a>
+        </div>
+        
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Workspace Project Mapper. Regenerated automatically on run.</p>
+        </footer>
+    </div>
+</body>
+</html>

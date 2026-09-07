@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-15",
+  "last_updated": "2026-08-16 00:54:49",
+  "total_active_seconds": 18085,
+  "total_active_formatted": "5h 1m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 9865,
+      "formatted": "2h 44m"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 3425,
+      "formatted": "57m 5s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 1570,
+      "formatted": "26m 10s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1445,
+      "formatted": "24m 5s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 840,
+      "formatted": "14m 0s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 335,
+      "formatted": "5m 35s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 245,
+      "formatted": "4m 5s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 155,
+      "formatted": "2m 35s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 100,
+      "formatted": "1m 40s"
+    },
+    {
+      "app": "HTML5VideoPlayer.exe",
+      "seconds": 75,
+      "formatted": "1m 15s"
+    },
+    {
+      "app": "Photos.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-25",
+  "last_updated": "2026-08-25 21:05:48",
+  "total_active_seconds": 43775,
+  "total_active_formatted": "12h 9m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 42310,
+      "formatted": "11h 45m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1395,
+      "formatted": "23m 15s"
+    },
+    {
+      "app": "Zoom.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

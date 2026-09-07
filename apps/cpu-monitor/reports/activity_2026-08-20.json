@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-20",
+  "last_updated": "2026-08-20 22:33:12",
+  "total_active_seconds": 43765,
+  "total_active_formatted": "12h 9m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 37225,
+      "formatted": "10h 20m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 2740,
+      "formatted": "45m 40s"
+    },
+    {
+      "app": "EXCEL.EXE",
+      "seconds": 990,
+      "formatted": "16m 30s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 985,
+      "formatted": "16m 25s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 830,
+      "formatted": "13m 50s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 375,
+      "formatted": "6m 15s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 265,
+      "formatted": "4m 25s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 245,
+      "formatted": "4m 5s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 40,
+      "formatted": "40s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "SnippingTool.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

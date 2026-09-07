@@ -4,25 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tamil Heritage Digital Projects Portal - Explore literature, geography, organic farming, and maritime history.">
-    <title>Tamil Heritage Projects Portal</title>
+    <meta name="description" content="Workspace Applications & Services Launcher - Real-time KPI telemetry, background service controls, and one-click app launch hub.">
+    <title>Workspace Apps & Services Launcher</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-color: #f5f5f7; /* Apple's signature light grey background */
-            --accent-color: #0071e3; /* Apple Blue */
-            --accent-glow: rgba(0, 113, 227, 0.12);
-            --card-bg: #ffffff;
-            --card-border: rgba(0, 0, 0, 0.08);
-            --text-primary: #1d1d1f; /* Apple black */
-            --text-secondary: #86868b; /* Apple grey */
+            --bg-base: #f5f5f7;
+            --bg-card: #ffffff;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --border-subtle: rgba(0, 0, 0, 0.04);
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --color-primary: #0071e3;
+            --color-primary-hover: #0077ed;
+            --color-primary-glow: rgba(0, 113, 227, 0.12);
+            --color-success: #34c759;
+            --color-warning: #ff9500;
+            --color-error: #ff3b30;
+            --color-purple: #af52de;
+            --color-teal: #30b0c7;
             --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
             --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+            --font-mono: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         }
 
         * {
@@ -32,42 +40,42 @@
         }
 
         body {
-            background-color: var(--bg-color);
+            background-color: var(--bg-base);
             color: var(--text-primary);
             font-family: var(--font-body);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
-            overflow-x: hidden;
-            padding: 3rem 1.5rem;
+            padding: 3rem 1.5rem 4rem 1.5rem;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1160px;
             width: 100%;
-            margin: auto;
-            text-align: center;
         }
 
+        /* Header */
         header {
-            margin-bottom: 3.5rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            position: relative;
             animation: fadeInDown 0.8s ease-out;
         }
 
-        .badge {
+        .badge-tag {
             background: rgba(0, 113, 227, 0.06);
-            border: 1px solid rgba(0, 113, 227, 0.15);
-            color: var(--accent-color);
-            padding: 0.5rem 1rem;
+            border: 1px solid rgba(0, 113, 227, 0.16);
+            color: var(--color-primary);
+            padding: 4px 14px;
             border-radius: 9999px;
             font-size: 0.8rem;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             display: inline-block;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
             font-family: var(--font-display);
         }
 
@@ -75,363 +83,774 @@
             font-family: var(--font-display);
             font-size: 3.25rem;
             font-weight: 800;
-            line-height: 1.15;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.75rem;
             color: var(--text-primary);
-            margin-bottom: 1.25rem;
-            letter-spacing: -0.025em;
+            line-height: 1.15;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--text-secondary);
-            max-width: 650px;
+            font-weight: 400;
+            max-width: 720px;
             margin: 0 auto;
             line-height: 1.5;
-            font-weight: 400;
+        }
+
+        /* KPI Dashboard Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.8s ease-out 0.1s both;
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .kpi-icon {
+            font-size: 2.2rem;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(0, 0, 0, 0.03);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kpi-info {
+            flex-grow: 1;
+        }
+
+        .kpi-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+
+        .kpi-val {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .kpi-status-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .kpi-status-dot.online {
+            background: var(--color-success);
+            box-shadow: 0 0 8px var(--color-success);
+        }
+
+        .kpi-status-dot.idle {
+            background: var(--color-warning);
+        }
+
+        /* Section Titles */
+        .section-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2.5rem 0 1.25rem 0;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .section-title {
             font-family: var(--font-display);
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            text-align: left;
-            margin: 3.5rem 0 1.5rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--card-border);
             color: var(--text-primary);
             letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .projects-grid {
+        .section-badge {
+            background: rgba(0, 0, 0, 0.04);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Application Grid */
+        .apps-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 1.5rem;
             margin-bottom: 2rem;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
+        .app-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
             border-radius: 20px;
-            padding: 2.5rem 2rem;
-            text-decoration: none;
-            color: inherit;
-            text-align: left;
-            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-            position: relative;
-            overflow: hidden;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100%;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+            position: relative;
         }
 
-        .project-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 113, 227, 0.3);
-            box-shadow: 
-                0 12px 30px rgba(0, 0, 0, 0.06),
-                0 0 0 1px var(--accent-glow);
+        .app-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 113, 227, 0.25);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--color-primary-glow);
         }
 
-        .card-icon {
+        .app-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .app-icon {
             font-size: 2.5rem;
-            margin-bottom: 1.5rem;
             display: inline-block;
         }
 
-        .card-content {
-            flex-grow: 1;
+        .service-status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
         }
 
-        .card-title {
+        .service-status-pill.online {
+            background: rgba(52, 199, 89, 0.1);
+            border-color: rgba(52, 199, 89, 0.25);
+            color: #1e8738;
+        }
+
+        .service-status-pill.offline {
+            background: rgba(0, 0, 0, 0.03);
+            color: var(--text-secondary);
+        }
+
+        .app-title {
             font-family: var(--font-display);
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             font-weight: 700;
-            margin-bottom: 0.75rem;
             color: var(--text-primary);
+            margin-bottom: 0.5rem;
             letter-spacing: -0.01em;
         }
 
-        .card-description {
+        .app-desc {
             color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-            font-weight: 400;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
         }
 
-        .card-action {
+        .app-tags {
             display: flex;
-            align-items: center;
-            color: var(--accent-color);
-            font-weight: 600;
-            font-size: 0.95rem;
-            font-family: var(--font-display);
-            transition: transform 0.2s ease;
-        }
-
-        .card-action span {
-            margin-left: 0.4rem;
-            transition: transform 0.2s ease;
-        }
-
-        .project-card:hover .card-action span {
-            transform: translateX(4px);
-        }
-
-        /* Profile details list inside pioneer cards */
-        .profile-bullets {
-            list-style: none;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             gap: 6px;
+            margin-bottom: 1.5rem;
         }
 
-        .profile-bullets li {
-            position: relative;
-            padding-left: 16px;
+        .tag {
+            background: rgba(0, 0, 0, 0.04);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
         }
 
-        .profile-bullets li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: var(--accent-color);
-            font-weight: bold;
+        .tag.port {
+            background: rgba(0, 113, 227, 0.08);
+            color: var(--color-primary);
+            font-family: var(--font-mono);
+            font-weight: 600;
         }
 
+        /* Action Buttons */
+        .app-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn-launch {
+            flex-grow: 1;
+            background: var(--color-primary);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-launch:hover {
+            background: var(--color-primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-ctrl {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 9px 14px;
+            border-radius: 10px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            font-family: var(--font-display);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-ctrl:hover {
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        .btn-ctrl.stop {
+            color: var(--color-error);
+        }
+
+        .btn-ctrl.stop:hover {
+            background: rgba(255, 59, 48, 0.08);
+            border-color: rgba(255, 59, 48, 0.2);
+        }
+
+        /* Spotlight Card for Tamil Heritage */
+        .spotlight-card {
+            background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
+            color: #ffffff;
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .spotlight-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .spotlight-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .spotlight-content p {
+            color: #a1a1a6;
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 650px;
+            margin-bottom: 1rem;
+        }
+
+        .heritage-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .heritage-pill {
+            background: rgba(255, 255, 255, 0.1);
+            color: #f5f5f7;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 500;
+        }
+
+        .btn-spotlight {
+            background: #ffffff;
+            color: #1d1d1f;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-spotlight:hover {
+            background: #f5f5f7;
+            transform: scale(1.02);
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #1d1d1f;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Footer */
         footer {
             color: var(--text-secondary);
             font-size: 0.85rem;
-            border-top: 1px solid var(--card-border);
+            border-top: 1px solid var(--border-color);
             width: 100%;
             padding-top: 2rem;
-            margin-top: 4rem;
+            margin-top: 2rem;
             text-align: center;
             font-weight: 400;
         }
 
-        /* Animations */
         @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-15px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.25rem;
-            }
-            .projects-grid {
-                grid-template-columns: 1fr;
-                gap: 1.25rem;
-            }
+            h1 { font-size: 2.25rem; }
+            .spotlight-card { flex-direction: column; align-items: flex-start; }
+            .btn-spotlight { width: 100%; justify-content: center; }
+            .apps-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="badge">Digital Humanities</div>
-            <h1>Tamil Heritage Projects</h1>
-            <p class="subtitle">Exploring Tamil history, literature, oceanography, traditional agriculture, and culture through modern tools.</p>
+            <div class="badge-tag">Developer Operations Hub</div>
+            <h1>Workspace Apps & Services Launcher</h1>
+            <p class="subtitle">Unified dashboard with real-time KPI metrics, active background service controls, and instant 1-click launchers for all workspace applications and operations utilities.</p>
         </header>
 
-        <main>
-            <!-- SECTION 1: Interactive Applications -->
-            <h2 class="section-title">Interactive Applications</h2>
-            <div class="projects-grid">
-                <!-- Project 1: Toponyms Explorer -->
-                <a href="apps/toponyms-explorer/index.html" class="project-card" id="card-toponyms">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">🌐</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Global Toponyms Explorer</h2>
-                            <p class="card-description">
-                                An interactive geospatial map visualizing and tracing names of Tamil origin (like Palani, Salem, Pandi) mapped across the globe using Wikidata.
-                            </p>
-                        </div>
+        <!-- SECTION: Live KPIs -->
+        <section class="kpi-grid">
+            <div class="kpi-card" id="kpi-services-card">
+                <div class="kpi-icon">⚡</div>
+                <div class="kpi-info">
+                    <div class="kpi-label">Active Services</div>
+                    <div class="kpi-val" id="kpi-active-services">
+                        <span class="kpi-status-dot online"></span><span id="kpi-active-count">Probing...</span>
                     </div>
-                    <div class="card-action">
-                        Launch Application <span>&rarr;</span>
-                    </div>
-                </a>
-
-                <!-- Project 2: Thirukkural Facts Finder -->
-                <a href="apps/thirukkural-facts-finder/index.html" class="project-card" id="card-facts-finder">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">📜</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Thirukkural Facts Finder</h2>
-                            <p class="card-description">
-                                A fast search and statistical explorer for the 1,330 couplets (Kurals) of the ancient Tamil moral text, organized by chapter, section, and translation.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        Launch Application <span>&rarr;</span>
-                    </div>
-                </a>
-
-                <!-- Project 3: Tamil Heritage & History Scale -->
-                <a href="apps/tamil-history-scale/index.html" class="project-card" id="card-history-scale">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">⏳</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Tamil History & Heritage Scale</h2>
-                            <p class="card-description">
-                                An interactive timeline spanning 5,000 years of Tamil culture, rulers, literature, and milestones, with floating zoom scale navigation and live web search.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        Launch Application <span>&rarr;</span>
-                    </div>
-                </a>
-
-                <!-- Project 4: Ancient Maritime Trade & Voyage Simulator -->
-                <a href="apps/maritime-trade-simulator/index.html" class="project-card" id="card-maritime-simulator">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">🌊</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Ancient Maritime Trade & Voyage Simulator</h2>
-                            <p class="card-description">
-                                An interactive sea voyage simulator mapping ancient Tamil maritime trade routes, monsoon currents, and sea turtle migration pathways.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        Launch Application <span>&rarr;</span>
-                    </div>
-                </a>
-
-                <!-- Project 5: Voice AI Copilot -->
-                <a href="apps/chatbot/index.html" class="project-card" id="card-chatbot">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">🎙️</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Voice AI Copilot (Chatbot)</h2>
-                            <p class="card-description">
-                                A Copilot-style Voice AI assistant with 5 synthesized personas (2 male, 3 female), speech recognition, and instant time & interactive calendar engine.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        Launch Application <span>&rarr;</span>
-                    </div>
-                </a>
-
-            </div>
-
-            <!-- SECTION 2: Heritage Pioneers & Researchers -->
-            <h2 class="section-title">Heritage Pioneers & Researchers</h2>
-            <div class="projects-grid">
-                <!-- Pioneer 1: Orissa Balu -->
-                <div class="project-card" id="card-orissa-balu">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">🐢</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Orissa Balu (ஒரிசா பாலு)</h2>
-                            <p class="card-description">
-                                World-renowned Tamil researcher and oceanographer who dedicated his life to researching ancient Tamil maritime history, sea trade routes, and connection to ocean currents.
-                            </p>
-                            <ul class="profile-bullets">
-                                <li>Mapped turtle migration pathways matching ancient Tamil trade routes.</li>
-                                <li>Researched "Kumari Kandam" (sunken landmass) and maritime history.</li>
-                                <li>Linked names of Tamil origin in East Asia, Africa, and global coastlines.</li>
-                             </ul>
-                        </div>
-                    </div>
-                    <a href="apps/biographies/orissa_balu.html" class="card-action">
-                        Open Slideshow Biography <span>&rarr;</span>
-                    </a>
-                </div>
-
-                <!-- Pioneer 2: G. Nammalvar -->
-                <div class="project-card" id="card-nammalvar">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">🌱</span>
-                        <div class="card-content">
-                            <h2 class="card-title">G. Nammalvar (கோ. நம்மாழ்வார்)</h2>
-                            <p class="card-description">
-                                Pioneer agricultural scientist, organic farming crusader, and environmentalist who fought against chemical agriculture and successfully revived traditional Tamil farming systems.
-                            </p>
-                            <ul class="profile-bullets">
-                                <li>Founded "Vanagam", an ecological crusade center.</li>
-                                <li>Rescued and popularized native grain/paddy varieties in Tamil Nadu.</li>
-                                <li>Educated thousands of farmers globally in zero-cost natural farming.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="apps/biographies/nammalvar.html" class="card-action">
-                        Open Slideshow Biography <span>&rarr;</span>
-                    </a>
                 </div>
             </div>
 
-            <!-- SECTION 3: Developer & Research Tools -->
-            <h2 class="section-title">Developer & Research Tools</h2>
-            <div class="projects-grid">
-                <!-- Tool 1: Content Extractor -->
-                <a href="apps/content-extractor/index.html" class="project-card" id="card-extractor">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">⚡</span>
-                        <div class="card-content">
-                            <h2 class="card-title">Content Extractor Tool</h2>
-                            <p class="card-description">
-                                A utility to scrape webpage text or transcribe YouTube video/shorts audio, delivering clean text output to save LLM tokens during research discussions.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        Open Extractor UI <span>&rarr;</span>
-                    </div>
-                </a>
+            <div class="kpi-card">
+                <div class="kpi-icon">📦</div>
+                <div class="kpi-info">
+                    <div class="kpi-label">Total Applications</div>
+                    <div class="kpi-val" id="kpi-total-apps">8 Apps + 1 Portal</div>
+                </div>
+            </div>
 
-                <!-- Tool 2: CPU Monitor & System Diagnostics -->
-                <a href="http://localhost:8501" class="project-card" id="card-cpu-monitor" target="_blank">
-                    <div>
-                        <span class="card-icon" aria-hidden="true">💻</span>
-                        <div class="card-content">
-                            <h2 class="card-title">CPU Monitor & System Diagnostics</h2>
-                            <p class="card-description">
-                                A premium Streamlit dashboard tracking real-time hardware telemetry, active processes, and background application usage logs.
-                            </p>
-                        </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">⚙️</div>
+                <div class="kpi-info">
+                    <div class="kpi-label">Active Runtimes</div>
+                    <div class="kpi-val" style="font-size: 1.15rem; font-weight: 700;">Python 3.14 / Node 24</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon">🔄</div>
+                <div class="kpi-info">
+                    <div class="kpi-label">Service Health</div>
+                    <button type="button" id="btn-refresh-status" style="background: none; border: none; color: var(--color-primary); font-family: var(--font-display); font-size: 1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 4px;">
+                        <span>Refresh Telemetry</span> ↻
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: Productivity & AI Applications -->
+        <div class="section-header-row">
+            <h2 class="section-title"><span>🤖</span> Productivity & AI Applications</h2>
+            <span class="section-badge">5 Apps</span>
+        </div>
+
+        <div class="apps-grid">
+            <!-- App 1: AI Prompt Generator -->
+            <div class="app-card" id="card-prompt-generator">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">🤖</span>
+                        <span class="service-status-pill online" id="status-prompt-gen">● Online (Port 5006)</span>
                     </div>
-                    <div class="card-action">
-                        Open Streamlit Dashboard <span>&rarr;</span>
+                    <h3 class="app-title">AI App Prompt Generator</h3>
+                    <p class="app-desc">Scan any workspace folder to generate a token-optimized, 1-shot LLM prompt to rebuild the complete project structure and code on any machine.</p>
+                    <div class="app-tags">
+                        <span class="tag port">Port 5006</span>
+                        <span class="tag">Python 3</span>
+                        <span class="tag">LLM Engine</span>
+                        <span class="tag">Zero-Dep</span>
                     </div>
+                </div>
+                <div class="app-actions">
+                    <a href="apps/prompt_generator/index.html" class="btn-launch" target="_blank">Launch Generator 🚀</a>
+                    <button type="button" class="btn-ctrl" onclick="controlService('prompt_generator', 'start')">Start</button>
+                    <button type="button" class="btn-ctrl stop" onclick="controlService('prompt_generator', 'stop')">Stop</button>
+                </div>
+            </div>
+
+            <!-- App 2: Student Attendance Tracker -->
+            <div class="app-card" id="card-attendance">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">📋</span>
+                        <span class="service-status-pill online">● Ready</span>
+                    </div>
+                    <h3 class="app-title">Attendance Tracker</h3>
+                    <p class="app-desc">Capacitor and Chart.js high-school student attendance management, reporting, Excel sync, and chart visualization platform.</p>
+                    <div class="app-tags">
+                        <span class="tag">Vanilla JS</span>
+                        <span class="tag">Chart.js</span>
+                        <span class="tag">Capacitor Native</span>
+                        <span class="tag">Excel Sync</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="apps/attendance-tracker/index.html" class="btn-launch" target="_blank">Launch Attendance App 🚀</a>
+                </div>
+            </div>
+
+            <!-- App 3: Voice AI Copilot -->
+            <div class="app-card" id="card-chatbot">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">🎙️</span>
+                        <span class="service-status-pill online">● Ready</span>
+                    </div>
+                    <h3 class="app-title">Voice AI Copilot (Chatbot)</h3>
+                    <p class="app-desc">Copilot-style Voice AI assistant with 5 synthesized audio personas (2 male, 3 female), speech recognition, time engine, and interactive calendar.</p>
+                    <div class="app-tags">
+                        <span class="tag">Web Speech API</span>
+                        <span class="tag">5 Audio Personas</span>
+                        <span class="tag">Interactive Calendar</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="apps/chatbot/index.html" class="btn-launch" target="_blank">Launch Voice AI 🎙️</a>
+                </div>
+            </div>
+
+            <!-- App 4: Content Extractor Tool -->
+            <div class="app-card" id="card-extractor">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">⚡</span>
+                        <span class="service-status-pill" id="status-extractor">● Checking (Port 5005)</span>
+                    </div>
+                    <h3 class="app-title">Content Extractor Tool</h3>
+                    <p class="app-desc">Scrape clean raw text from any webpage or transcribe YouTube closed-captions to save tokens during LLM research and discussions.</p>
+                    <div class="app-tags">
+                        <span class="tag port">Port 5005</span>
+                        <span class="tag">Python Server</span>
+                        <span class="tag">YouTube Captions</span>
+                        <span class="tag">Web Scraper</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="apps/content-extractor/index.html" class="btn-launch" target="_blank">Launch Extractor ⚡</a>
+                    <button type="button" class="btn-ctrl" onclick="controlService('content_extractor', 'start')">Start</button>
+                    <button type="button" class="btn-ctrl stop" onclick="controlService('content_extractor', 'stop')">Stop</button>
+                </div>
+            </div>
+
+            <!-- App 5: CPU Monitor & Diagnostics -->
+            <div class="app-card" id="card-cpu-monitor">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">💻</span>
+                        <span class="service-status-pill" id="status-cpu-monitor">● Checking (Port 8501)</span>
+                    </div>
+                    <h3 class="app-title">CPU Monitor & Diagnostics</h3>
+                    <p class="app-desc">Premium Streamlit telemetry dashboard monitoring real-time CPU cores, memory utilization, hardware metrics, and active processes.</p>
+                    <div class="app-tags">
+                        <span class="tag port">Port 8501</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Hardware Telemetry</span>
+                        <span class="tag">Process Logs</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="http://localhost:8501" class="btn-launch" target="_blank">Open Streamlit Dashboard 💻</a>
+                    <button type="button" class="btn-ctrl" onclick="controlService('cpu_monitor', 'start')">Start</button>
+                    <button type="button" class="btn-ctrl stop" onclick="controlService('cpu_monitor', 'stop')">Stop</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Operations & Utilities Dashboards -->
+        <div class="section-header-row">
+            <h2 class="section-title"><span>🛠️</span> Operations & Utilities Dashboards</h2>
+            <span class="section-badge">3 Dashboards</span>
+        </div>
+
+        <div class="apps-grid">
+            <!-- Utility 1: Timesheet Tracking -->
+            <div class="app-card" id="card-timesheet">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">⏱️</span>
+                        <span class="service-status-pill online">● Ready</span>
+                    </div>
+                    <h3 class="app-title">Timesheet Tracking Dashboard</h3>
+                    <p class="app-desc">Project hours tracker, daily milestone recorder, client invoice calculations, and local export/import utility.</p>
+                    <div class="app-tags">
+                        <span class="tag">Local Storage</span>
+                        <span class="tag">Task Tracking</span>
+                        <span class="tag">Timesheet Logs</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="utilities/timesheet_tracking/index.html" class="btn-launch" target="_blank">Launch Timesheet ⏱️</a>
+                </div>
+            </div>
+
+            <!-- Utility 2: Linux Operations Dashboard -->
+            <div class="app-card" id="card-linux-dash">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">🐧</span>
+                        <span class="service-status-pill online">● Ready</span>
+                    </div>
+                    <h3 class="app-title">Linux Operations Dashboard</h3>
+                    <p class="app-desc">Vite/React enterprise Linux server dashboard managing metrics, oxlint verification, and system status telemetry.</p>
+                    <div class="app-tags">
+                        <span class="tag">React / Vite</span>
+                        <span class="tag">Oxlint</span>
+                        <span class="tag">Linux Metrics</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="utilities/linux-dashboard/dist/index.html" class="btn-launch" target="_blank">Launch Linux Dashboard 🐧</a>
+                </div>
+            </div>
+
+            <!-- Utility 3: Oracle Database Dashboard -->
+            <div class="app-card" id="card-oracle-dash">
+                <div>
+                    <div class="app-top">
+                        <span class="app-icon">🗄️</span>
+                        <span class="service-status-pill online">● Ready</span>
+                    </div>
+                    <h3 class="app-title">Oracle Database Dashboard</h3>
+                    <p class="app-desc">Oracle database performance metrics, query diagnostics, tablespace visualizer, and connection monitor.</p>
+                    <div class="app-tags">
+                        <span class="tag">Oracle DB</span>
+                        <span class="tag">SQL Diagnostics</span>
+                        <span class="tag">Tablespace Monitor</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="utilities/oracle-dashboard/index.html" class="btn-launch" target="_blank">Launch Oracle Dashboard 🗄️</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: Dedicated Tamil Heritage Spotlight Card -->
+        <section class="spotlight-card">
+            <div class="spotlight-content">
+                <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #ff9500; margin-bottom: 6px;">Dedicated Collection</div>
+                <h2>🏛️ Tamil Heritage Digital Projects Portal</h2>
+                <p>Access the isolated Tamil Heritage collection covering 5,000 years of literature, global toponyms, oceanography, maritime trade routes, and pioneer slideshow biographies.</p>
+                <div class="heritage-pills">
+                    <span class="heritage-pill">🌐 Global Toponyms Explorer</span>
+                    <span class="heritage-pill">📜 Thirukkural Facts Finder</span>
+                    <span class="heritage-pill">⏳ History & Heritage Scale</span>
+                    <span class="heritage-pill">🌊 Maritime Voyage Simulator</span>
+                    <span class="heritage-pill">🐢 Orissa Balu & Nammalvar Biographies</span>
+                </div>
+            </div>
+            <div>
+                <a href="apps/tamil-heritage/index.html" class="btn-spotlight">
+                    <span>Open Heritage Portal</span> &rarr;
                 </a>
             </div>
-        </main>
+        </section>
+
+        <!-- Toast -->
+        <div id="toast" class="toast">Action executed successfully!</div>
+
+        <footer>
+            <p>&copy; 2026 Manivasagam Karunakaran. Workspace Developer Operations & Digital Humanities Suite.</p>
+        </footer>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Manivasagam Karunakaran. Designed & built with modern Apple-style aesthetics.</p>
-    </footer>
+    <script>
+        const LAUNCHER_API = "http://localhost:5000";
+
+        // Toast feedback
+        function showToast(msg) {
+            const toast = document.getElementById("toast");
+            toast.textContent = msg;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3000);
+        }
+
+        // Check service status via port probes
+        async function probePort(url, fallbackUrl = null) {
+            try {
+                const controller = new AbortController();
+                const timeout = setTimeout(() => controller.abort(), 1200);
+                const res = await fetch(url, { mode: 'no-cors', signal: controller.signal });
+                clearTimeout(timeout);
+                return true;
+            } catch (err) {
+                return false;
+            }
+        }
+
+        async function updateTelemetry() {
+            let activeCount = 0;
+
+            // Probe Prompt Generator (Port 5006)
+            const promptGenOnline = await probePort("http://localhost:5006/status");
+            const promptGenPill = document.getElementById("status-prompt-gen");
+            if (promptGenOnline) {
+                promptGenPill.className = "service-status-pill online";
+                promptGenPill.textContent = "● Online (Port 5006)";
+                activeCount++;
+            } else {
+                promptGenPill.className = "service-status-pill offline";
+                promptGenPill.textContent = "○ Standby / Offline";
+            }
+
+            // Probe Content Extractor (Port 5005)
+            const extractorOnline = await probePort("http://localhost:5005/status");
+            const extractorPill = document.getElementById("status-extractor");
+            if (extractorOnline) {
+                extractorPill.className = "service-status-pill online";
+                extractorPill.textContent = "● Online (Port 5005)";
+                activeCount++;
+            } else {
+                extractorPill.className = "service-status-pill offline";
+                extractorPill.textContent = "○ Standby / Offline";
+            }
+
+            // Probe CPU Monitor Streamlit (Port 8501)
+            const cpuOnline = await probePort("http://localhost:8501/");
+            const cpuPill = document.getElementById("status-cpu-monitor");
+            if (cpuOnline) {
+                cpuPill.className = "service-status-pill online";
+                cpuPill.textContent = "● Online (Port 8501)";
+                activeCount++;
+            } else {
+                cpuPill.className = "service-status-pill offline";
+                cpuPill.textContent = "○ Standby / Offline";
+            }
+
+            document.getElementById("kpi-active-count").textContent = `${activeCount} Background Online`;
+        }
+
+        // Control background processes
+        async function controlService(serviceKey, action) {
+            try {
+                const res = await fetch(`${LAUNCHER_API}/api/service/${action}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ service: serviceKey })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast(data.message || `Service ${action}ed`);
+                } else {
+                    showToast(data.error || `Failed to ${action} service`);
+                }
+            } catch (err) {
+                // If launcher daemon is offline, inform user how to run
+                if (action === 'start') {
+                    showToast(`Start background server via terminal or start_server.bat`);
+                } else {
+                    showToast(`Could not reach process manager API on port 5000`);
+                }
+            }
+            setTimeout(updateTelemetry, 1500);
+        }
+
+        document.getElementById("btn-refresh-status").addEventListener("click", () => {
+            showToast("Updating service telemetry...");
+            updateTelemetry();
+        });
+
+        // Initial check and recurring probe every 12 seconds
+        updateTelemetry();
+        setInterval(updateTelemetry, 12000);
+    </script>
 </body>
 </html>

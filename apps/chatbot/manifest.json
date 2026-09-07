@@ -1,0 +1,17 @@
+{
+  "name": "Voice AI Copilot - Assistant & Deal Finder",
+  "short_name": "Voice AI Copilot",
+  "description": "Intelligent Voice Assistant with Multi-Persona Voice Synthesis, Global Clocks, Price Comparison & Voice Calibration",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236366f1'/><path d='M50 25a15 15 0 0 0-15 15v20a15 15 0 0 0 30 0V40a15 15 0 0 0-15-15z' fill='white'/></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

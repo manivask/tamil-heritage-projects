@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-12",
+  "last_updated": "2026-08-12 21:52:12",
+  "total_active_seconds": 44830,
+  "total_active_formatted": "12h 27m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 41820,
+      "formatted": "11h 37m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 685,
+      "formatted": "11m 25s"
+    },
+    {
+      "app": "Zoom.exe",
+      "seconds": 615,
+      "formatted": "10m 15s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 600,
+      "formatted": "10m 0s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 525,
+      "formatted": "8m 45s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 275,
+      "formatted": "4m 35s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 105,
+      "formatted": "1m 45s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 80,
+      "formatted": "1m 20s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 60,
+      "formatted": "1m 0s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "HTML5VideoPlayer.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "ApplicationFrameHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

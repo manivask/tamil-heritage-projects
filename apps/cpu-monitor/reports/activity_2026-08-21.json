@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-21",
+  "last_updated": "2026-08-22 00:31:24",
+  "total_active_seconds": 37460,
+  "total_active_formatted": "10h 24m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 29260,
+      "formatted": "8h 7m"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 2620,
+      "formatted": "43m 40s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 1910,
+      "formatted": "31m 50s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1540,
+      "formatted": "25m 40s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 1355,
+      "formatted": "22m 35s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 405,
+      "formatted": "6m 45s"
+    },
+    {
+      "app": "Zoom.exe",
+      "seconds": 205,
+      "formatted": "3m 25s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 80,
+      "formatted": "1m 20s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 55,
+      "formatted": "55s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

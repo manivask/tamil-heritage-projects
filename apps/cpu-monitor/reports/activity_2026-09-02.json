@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-02",
+  "last_updated": "2026-09-02 23:04:31",
+  "total_active_seconds": 34710,
+  "total_active_formatted": "9h 38m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 27525,
+      "formatted": "7h 38m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 5515,
+      "formatted": "1h 31m"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 415,
+      "formatted": "6m 55s"
+    },
+    {
+      "app": "ChatGPT.exe",
+      "seconds": 235,
+      "formatted": "3m 55s"
+    },
+    {
+      "app": "ApplicationFrameHost.exe",
+      "seconds": 225,
+      "formatted": "3m 45s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 205,
+      "formatted": "3m 25s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 170,
+      "formatted": "2m 50s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 160,
+      "formatted": "2m 40s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 70,
+      "formatted": "1m 10s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 70,
+      "formatted": "1m 10s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 55,
+      "formatted": "55s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 30,
+      "formatted": "30s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

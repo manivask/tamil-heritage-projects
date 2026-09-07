@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice AI Copilot - Assistant, Stories & Deal Finder</title>
+  <meta name="description" content="AI Copilot Voice Assistant with Interactive Kids Storytelling & Comprehension Quiz, Multi-Store Product Price Comparisons, Voice Cloning & Calibration Studio, Country Clocks, Timers, and Calendar.">
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Effects -->
+  <div class="bg-ambient-lights">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-icon-wrapper">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <h1>Voice AI Copilot</h1>
+        <p>Kids Stories, Deals, World Clocks & Voice Studio</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="header-btn calibrate-btn" id="openVoiceStudioBtn" title="Clone / Calibrate Your Voice">
+        <span>🎙️</span>
+        <span>Calibrate Voice</span>
+      </button>
+
+      <button class="header-btn" id="openVoiceModalBtn" title="Change Voice Persona">
+        <span class="voice-badge-indicator"></span>
+        <span id="currentVoiceNameBadge">Serena (Soft Female)</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <a href="../../index.html" class="header-btn" title="Back to Main Hub" style="text-decoration:none;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        <span>Portal</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Chat Container -->
+  <main class="main-container">
+
+    <!-- Copilot Center Stage (Hero Mode) -->
+    <div class="hero-stage" id="heroStage">
+      <div class="copilot-orb-container" id="copilotOrbContainer" title="Click to Speak">
+        <div class="orb-pulse"></div>
+        <div class="orb-ring"></div>
+        <div class="copilot-orb">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Waveform Animation -->
+      <div class="waveform-container" id="waveformContainer">
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+        <div class="waveform-bar"></div>
+      </div>
+      <div class="live-transcript" id="liveTranscript" role="status" aria-live="polite">
+        <span class="live-transcript-dot"></span>
+        <span id="liveTranscriptText">Listening for your voice...</span>
+      </div>
+
+      <h2 class="hero-title">How can I help you today?</h2>
+      <p class="hero-subtitle">
+        Ask for a kids story with comprehension quiz, product price comparisons, country times, or calibrate your voice.
+      </p>
+    </div>
+
+    <!-- Active Chat Viewport -->
+    <div class="chat-viewport" id="chatViewport" style="display:none;"></div>
+
+    <!-- Quick Prompt Suggestions -->
+    <div class="quick-prompts">
+      <button class="prompt-chip" data-prompt="Tell me a kids story">
+        <span>📖</span> Kids Story Time
+      </button>
+      <button class="prompt-chip" data-prompt="Find best deals for Sony WH-1000XM5">
+        <span>🎧</span> Sony XM5 Deals
+      </button>
+      <button class="prompt-chip" data-prompt="Compare prices for iPhone 15 Pro">
+        <span>📱</span> iPhone 15 Deals
+      </button>
+      <button class="prompt-chip" data-prompt="Set a 1 minute timer">
+        <span>⏱️</span> 1 Min Timer
+      </button>
+      <button class="prompt-chip" data-prompt="Compare time in Tokyo, London and New York">
+        <span>🌐</span> Compare Cities
+      </button>
+      <button class="prompt-chip" data-prompt="What time is it in Tokyo?">
+        <span>🇯🇵</span> Time in Tokyo
+      </button>
+      <button class="prompt-chip" data-prompt="Show me the calendar">
+        <span>🗓️</span> Show Calendar
+      </button>
+    </div>
+
+    <!-- Interactive Input Console -->
+    <div class="input-container" id="inputContainer">
+      <button class="action-btn mic-btn" id="micBtn" title="Speak to Copilot">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+          <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+        </svg>
+      </button>
+      
+      <input 
+        type="text" 
+        id="chatInput" 
+        class="chat-input" 
+        placeholder="Ask for a kids story, product deals, check world times, or speak..." 
+        autocomplete="off"
+      />
+
+      <button class="action-btn send-btn" id="sendBtn" title="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- App Bottom Navigation Bar -->
+  <nav class="app-bottom-nav">
+    <button class="nav-tab-item active" id="tabCopilotBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span>Copilot</span>
+    </button>
+
+    <button class="nav-tab-item" id="tabStoriesBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+      </svg>
+      <span>Kids Stories</span>
+    </button>
+
+    <button class="nav-tab-item" id="tabDealsBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span>Deal Finder</span>
+    </button>
+
+    <button class="nav-tab-item" id="tabStudioBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+        <line x1="12" y1="19" x2="12" y2="23"></line>
+        <line x1="8" y1="23" x2="16" y2="23"></line>
+      </svg>
+      <span>Voice Studio</span>
+    </button>
+
+    <button class="nav-tab-item" id="tabToolsBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
+      <span>Tools</span>
+    </button>
+  </nav>
+
+  <!-- Voice Calibration Studio Modal Overlay -->
+  <div class="modal-overlay" id="voiceStudioModalOverlay">
+    <div class="voice-studio-modal">
+      <div class="studio-header">
+        <div>
+          <h3 style="font-size:1.15rem; font-weight:700; color:#fff;">🎙️ Voice Calibration Studio</h3>
+          <p style="font-size:0.75rem; color:var(--text-muted);">Read 8 sample sentences to calibrate your personalized AI persona</p>
+        </div>
+        <button class="modal-close-btn" id="closeVoiceStudioBtn">&times;</button>
+      </div>
+
+      <!-- Studio Configuration Controls: Gender & Mode -->
+      <div class="studio-toggles-container">
+        <div class="studio-toggle-row">
+          <span class="studio-toggle-label">Profile Gender:</span>
+          <div class="pill-group" id="genderPillGroup">
+            <button class="toggle-pill-btn active" data-gender="male">👨 Male</button>
+            <button class="toggle-pill-btn" data-gender="female">👩 Female</button>
+            <button class="toggle-pill-btn" data-gender="kid">🧒 Kid</button>
+          </div>
+        </div>
+        <div class="studio-toggle-row">
+          <span class="studio-toggle-label">Sentences:</span>
+          <div class="pill-group" id="modePillGroup">
+            <button class="toggle-pill-btn active" data-mode="adult">🧑 Adult Sentences</button>
+            <button class="toggle-pill-btn" data-mode="kids">🧒 Kids Sentences</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-progress-dots" id="studioProgressDots">
+        <!-- 8 dots generated in JS -->
+      </div>
+
+      <div class="sentence-card">
+        <div class="sentence-index-tag" id="sentenceIndexTag">Sentence 1 of 8</div>
+        <div class="sentence-text" id="sentenceText">"The quick brown fox jumps over the lazy dog."</div>
+      </div>
+
+      <!-- Live 16-Band Real-Time Audio Frequency Equalizer -->
+      <div class="live-eq-container" id="liveEqContainer">
+        <div class="live-eq-bar" style="height: 10%;"></div>
+        <div class="live-eq-bar" style="height: 15%;"></div>
+        <div class="live-eq-bar" style="height: 25%;"></div>
+        <div class="live-eq-bar" style="height: 40%;"></div>
+        <div class="live-eq-bar" style="height: 60%;"></div>
+        <div class="live-eq-bar" style="height: 50%;"></div>
+        <div class="live-eq-bar" style="height: 35%;"></div>
+        <div class="live-eq-bar" style="height: 20%;"></div>
+        <div class="live-eq-bar" style="height: 30%;"></div>
+        <div class="live-eq-bar" style="height: 55%;"></div>
+        <div class="live-eq-bar" style="height: 70%;"></div>
+        <div class="live-eq-bar" style="height: 45%;"></div>
+        <div class="live-eq-bar" style="height: 30%;"></div>
+        <div class="live-eq-bar" style="height: 20%;"></div>
+        <div class="live-eq-bar" style="height: 15%;"></div>
+        <div class="live-eq-bar" style="height: 10%;"></div>
+      </div>
+
+      <div class="vu-status-row">
+        <span class="vu-indicator-badge" id="vuIndicatorBadge">⚪ Ready to Listen</span>
+        <span style="font-size: 0.72rem; color: var(--text-dim);" id="vuLevelText">Audio Level: 0%</span>
+      </div>
+
+      <div class="studio-record-console">
+        <button class="record-btn-studio" id="recordSentenceBtn" title="Tap to Record">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+          </svg>
+        </button>
+        <div class="studio-status-text" id="studioStatusText">Tap to record yourself reading the sentence above</div>
+
+        <!-- Action Buttons after recording -->
+        <div class="studio-action-buttons-row" id="studioActionButtonsRow" style="display:none;">
+          <button class="studio-action-btn" id="playSampleRecordingBtn">
+            ▶ Play My Recording
+          </button>
+          <button class="studio-action-btn primary" id="nextSentenceBtn">
+            Next Sentence ➔
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard Voice Settings Modal Overlay -->
+  <div class="modal-overlay" id="voiceModalOverlay">
+    <div class="voice-modal">
+      <div class="modal-header">
+        <h3>Voice Personas (Soft & Standard)</h3>
+        <button class="modal-close-btn" id="closeVoiceModalBtn">&times;</button>
+      </div>
+
+      <div class="voice-category-section">
+        <div class="voice-category-title">
+          <span>🌿</span> Soft & Mindful Voices (Female & Male)
+        </div>
+        <div class="voice-persona-grid" id="softVoicePersonaList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <div class="voice-category-section">
+        <div class="voice-category-title">
+          <span>🎙️</span> Standard Voices (Female & Male)
+        </div>
+        <div class="voice-persona-grid" id="standardVoicePersonaList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <div class="setting-slider-row">
+        <div class="slider-label">
+          <span>Speech Rate</span>
+          <span id="rateValueDisplay">1.0x</span>
+        </div>
+        <input type="range" id="speechRateSlider" class="styled-range" min="0.7" max="1.4" step="0.05" value="1.0">
+      </div>
+
+      <div class="setting-slider-row">
+        <div class="slider-label">
+          <span>Voice Pitch</span>
+          <span id="pitchValueDisplay">1.0x</span>
+        </div>
+        <input type="range" id="speechPitchSlider" class="styled-range" min="0.6" max="1.5" step="0.05" value="1.0">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/voice.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/deals.js"></script>
+  <script src="js/stories.js"></script>
+  <script src="js/voice-cloner.js"></script>
+  <script src="js/agent.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

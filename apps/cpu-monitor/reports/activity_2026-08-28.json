@@ -1,0 +1,123 @@
+{
+  "date": "2026-08-28",
+  "last_updated": "2026-08-28 23:26:35",
+  "total_active_seconds": 34170,
+  "total_active_formatted": "9h 29m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 18745,
+      "formatted": "5h 12m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 6665,
+      "formatted": "1h 51m"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 4100,
+      "formatted": "1h 8m"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 1600,
+      "formatted": "26m 40s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 1005,
+      "formatted": "16m 45s"
+    },
+    {
+      "app": "studio64.exe",
+      "seconds": 940,
+      "formatted": "15m 40s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 165,
+      "formatted": "2m 45s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 155,
+      "formatted": "2m 35s"
+    },
+    {
+      "app": "EXCEL.EXE",
+      "seconds": 130,
+      "formatted": "2m 10s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 130,
+      "formatted": "2m 10s"
+    },
+    {
+      "app": "notepad++.exe",
+      "seconds": 125,
+      "formatted": "2m 5s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 105,
+      "formatted": "1m 45s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 90,
+      "formatted": "1m 30s"
+    },
+    {
+      "app": "ApplicationFrameHost.exe",
+      "seconds": 50,
+      "formatted": "50s"
+    },
+    {
+      "app": "Zoom.exe",
+      "seconds": 35,
+      "formatted": "35s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 35,
+      "formatted": "35s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 30,
+      "formatted": "30s"
+    },
+    {
+      "app": "npp.8.9.8.Installer.x64.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 20,
+      "formatted": "20s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "ShellExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

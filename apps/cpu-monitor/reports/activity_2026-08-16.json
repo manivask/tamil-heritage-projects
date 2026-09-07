@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-16",
+  "last_updated": "2026-08-17 00:00:04",
+  "total_active_seconds": 6030,
+  "total_active_formatted": "1h 40m",
+  "activities": [
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 3680,
+      "formatted": "1h 1m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1195,
+      "formatted": "19m 55s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 795,
+      "formatted": "13m 15s"
+    },
+    {
+      "app": "EXCEL.EXE",
+      "seconds": 240,
+      "formatted": "4m 0s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 65,
+      "formatted": "1m 5s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 45,
+      "formatted": "45s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 10,
+      "formatted": "10s"
+    }
+  ]
+}

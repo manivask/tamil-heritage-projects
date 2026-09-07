@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-17",
+  "last_updated": "2026-08-17 21:28:00",
+  "total_active_seconds": 47665,
+  "total_active_formatted": "13h 14m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 40200,
+      "formatted": "11h 10m"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 2520,
+      "formatted": "42m 0s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 2035,
+      "formatted": "33m 55s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1405,
+      "formatted": "23m 25s"
+    },
+    {
+      "app": "EXCEL.EXE",
+      "seconds": 390,
+      "formatted": "6m 30s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 375,
+      "formatted": "6m 15s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 335,
+      "formatted": "5m 35s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 105,
+      "formatted": "1m 45s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 105,
+      "formatted": "1m 45s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 45,
+      "formatted": "45s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 35,
+      "formatted": "35s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 30,
+      "formatted": "30s"
+    },
+    {
+      "app": "ShellExperienceHost.exe",
+      "seconds": 30,
+      "formatted": "30s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

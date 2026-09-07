@@ -11,3 +11,5 @@ Thumbs.db
 
 # Local standalone copies
 apps/attendance-tracker*
+oracleJdk-26/
+node_modules/

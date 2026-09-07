@@ -1,0 +1,98 @@
+{
+  "date": "2026-08-10",
+  "last_updated": "2026-08-10 21:42:03",
+  "total_active_seconds": 16050,
+  "total_active_formatted": "4h 27m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 5545,
+      "formatted": "1h 32m"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 4960,
+      "formatted": "1h 22m"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 1830,
+      "formatted": "30m 30s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1120,
+      "formatted": "18m 40s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 740,
+      "formatted": "12m 20s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 640,
+      "formatted": "10m 40s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 405,
+      "formatted": "6m 45s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 310,
+      "formatted": "5m 10s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 190,
+      "formatted": "3m 10s"
+    },
+    {
+      "app": "EXCEL.EXE",
+      "seconds": 85,
+      "formatted": "1m 25s"
+    },
+    {
+      "app": "ShellExperienceHost.exe",
+      "seconds": 80,
+      "formatted": "1m 20s"
+    },
+    {
+      "app": "HTML5VideoPlayer.exe",
+      "seconds": 40,
+      "formatted": "40s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 40,
+      "formatted": "40s"
+    },
+    {
+      "app": "OpenWith.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

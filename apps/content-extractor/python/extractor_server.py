@@ -39,10 +39,10 @@ def save_content_to_portal(url, content):
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         
         if is_nammalvar:
-            target_file = os.path.join(base_dir, "apps", "biographies", "nammalvar.html")
+            target_file = os.path.join(base_dir, "apps", "tamil-heritage", "biographies", "nammalvar.html")
             pioneer_name = "G. Nammalvar"
         elif is_orissa_balu:
-            target_file = os.path.join(base_dir, "apps", "biographies", "orissa_balu.html")
+            target_file = os.path.join(base_dir, "apps", "tamil-heritage", "biographies", "orissa_balu.html")
             pioneer_name = "Orissa Balu"
         else:
             return False, "Could not classify the content automatically. Please ensure the page content mentions 'Balu' or 'Nammalvar' to route it."
@@ -82,7 +82,7 @@ def save_content_to_portal(url, content):
                             img_url = f"{parsed_uri.scheme}://{parsed_uri.netloc}{img_url}"
                             
                         # Download image locally to html/images
-                        images_dir = os.path.join(base_dir, "apps", "biographies", "images")
+                        images_dir = os.path.join(base_dir, "apps", "tamil-heritage", "biographies", "images")
                         os.makedirs(images_dir, exist_ok=True)
                         
                         timestamp = int(time.time())

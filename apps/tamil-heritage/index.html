@@ -1,0 +1,389 @@
+<!-- Script Designer / AI Prompt Engineer : Manivasagam Karunakaran -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tamil Heritage Digital Projects Portal - Explore literature, geography, organic farming, and maritime history.">
+    <title>Tamil Heritage Projects Portal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #f5f5f7;
+            --accent-color: #0071e3;
+            --accent-glow: rgba(0, 113, 227, 0.12);
+            --card-bg: #ffffff;
+            --card-border: rgba(0, 0, 0, 0.08);
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
+            --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 3.5rem;
+            position: relative;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .back-nav {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 10px;
+            background: rgba(0, 113, 227, 0.06);
+            transition: all 0.2s ease;
+        }
+
+        .back-nav:hover {
+            background: rgba(0, 113, 227, 0.12);
+            transform: translateX(-2px);
+        }
+
+        .badge {
+            background: rgba(0, 113, 227, 0.06);
+            border: 1px solid rgba(0, 113, 227, 0.15);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            font-family: var(--font-display);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 3.25rem;
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.025em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-align: left;
+            margin: 3.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--card-border);
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-decoration: none;
+            color: inherit;
+            text-align: left;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 113, 227, 0.3);
+            box-shadow: 
+                0 12px 30px rgba(0, 0, 0, 0.06),
+                0 0 0 1px var(--accent-glow);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        .card-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        .card-action {
+            display: flex;
+            align-items: center;
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            font-family: var(--font-display);
+            transition: transform 0.2s ease;
+        }
+
+        .card-action span {
+            margin-left: 0.4rem;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover .card-action span {
+            transform: translateX(4px);
+        }
+
+        .profile-bullets {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .profile-bullets li {
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .profile-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        footer {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+            width: 100%;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.25rem; }
+            .back-nav { position: static; margin-bottom: 1.5rem; display: inline-flex; }
+            .projects-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../index.html" class="back-nav">&larr; Back to Workspace Apps Launcher</a>
+            <div class="badge">Digital Humanities</div>
+            <h1>Tamil Heritage Projects</h1>
+            <p class="subtitle">Exploring Tamil history, literature, oceanography, traditional agriculture, and culture through modern digital applications.</p>
+        </header>
+
+        <main>
+            <!-- SECTION 1: Interactive Applications -->
+            <h2 class="section-title">Interactive Applications</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Toponyms Explorer -->
+                <a href="toponyms-explorer/index.html" class="project-card" id="card-toponyms">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🌐</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Global Toponyms Explorer</h2>
+                            <p class="card-description">
+                                An interactive geospatial map visualizing and tracing names of Tamil origin (like Palani, Salem, Pandi) mapped across the globe using Wikidata.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        Launch Application <span>&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Project 2: Thirukkural Facts Finder -->
+                <a href="thirukkural-facts-finder/index.html" class="project-card" id="card-facts-finder">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">📜</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Thirukkural Facts Finder</h2>
+                            <p class="card-description">
+                                A fast search and statistical explorer for the 1,330 couplets (Kurals) of the ancient Tamil moral text, organized by chapter, section, and translation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        Launch Application <span>&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Project 3: Tamil Heritage & History Scale -->
+                <a href="tamil-history-scale/index.html" class="project-card" id="card-history-scale">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">⏳</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Tamil History & Heritage Scale</h2>
+                            <p class="card-description">
+                                An interactive timeline spanning 5,000 years of Tamil culture, rulers, literature, and milestones, with floating zoom scale navigation and live web search.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        Launch Application <span>&rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Project 4: Ancient Maritime Trade & Voyage Simulator -->
+                <a href="maritime-trade-simulator/index.html" class="project-card" id="card-maritime-simulator">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🌊</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Ancient Maritime Trade & Voyage Simulator</h2>
+                            <p class="card-description">
+                                An interactive sea voyage simulator mapping ancient Tamil maritime trade routes, monsoon currents, and sea turtle migration pathways.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        Launch Application <span>&rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- SECTION 2: Heritage Pioneers & Researchers -->
+            <h2 class="section-title">Heritage Pioneers & Researchers</h2>
+            <div class="projects-grid">
+                <!-- Pioneer 1: Orissa Balu -->
+                <div class="project-card" id="card-orissa-balu">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🐢</span>
+                        <div class="card-content">
+                            <h2 class="card-title">Orissa Balu (ஒரிசா பாலு)</h2>
+                            <p class="card-description">
+                                World-renowned Tamil researcher and oceanographer who dedicated his life to researching ancient Tamil maritime history, sea trade routes, and connection to ocean currents.
+                            </p>
+                            <ul class="profile-bullets">
+                                <li>Mapped turtle migration pathways matching ancient Tamil trade routes.</li>
+                                <li>Researched "Kumari Kandam" (sunken landmass) and maritime history.</li>
+                                <li>Linked names of Tamil origin in East Asia, Africa, and global coastlines.</li>
+                             </ul>
+                        </div>
+                    </div>
+                    <a href="biographies/orissa_balu.html" class="card-action">
+                        Open Slideshow Biography <span>&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Pioneer 2: G. Nammalvar -->
+                <div class="project-card" id="card-nammalvar">
+                    <div>
+                        <span class="card-icon" aria-hidden="true">🌱</span>
+                        <div class="card-content">
+                            <h2 class="card-title">G. Nammalvar (கோ. நம்மாழ்வார்)</h2>
+                            <p class="card-description">
+                                Pioneer agricultural scientist, organic farming crusader, and environmentalist who fought against chemical agriculture and successfully revived traditional Tamil farming systems.
+                            </p>
+                            <ul class="profile-bullets">
+                                <li>Founded "Vanagam", an ecological crusade center.</li>
+                                <li>Rescued and popularized native grain/paddy varieties in Tamil Nadu.</li>
+                                <li>Educated thousands of farmers globally in zero-cost natural farming.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="biographies/nammalvar.html" class="card-action">
+                        Open Slideshow Biography <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Tamil Heritage Projects. Maintained as a dedicated digital humanities collection.</p>
+        </footer>
+    </div>
+</body>
+</html>

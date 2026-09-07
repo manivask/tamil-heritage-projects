@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-26",
+  "last_updated": "2026-08-26 21:58:21",
+  "total_active_seconds": 25500,
+  "total_active_formatted": "7h 5m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 13400,
+      "formatted": "3h 43m"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 4525,
+      "formatted": "1h 15m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 4395,
+      "formatted": "1h 13m"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 1455,
+      "formatted": "24m 15s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 1045,
+      "formatted": "17m 25s"
+    },
+    {
+      "app": "Omnissa-Horizon-Client-2606-8.19.0-32215845441.exe",
+      "seconds": 210,
+      "formatted": "3m 30s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 165,
+      "formatted": "2m 45s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 70,
+      "formatted": "1m 10s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 70,
+      "formatted": "1m 10s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 60,
+      "formatted": "1m 0s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 55,
+      "formatted": "55s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

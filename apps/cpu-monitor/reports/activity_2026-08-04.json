@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-04",
+  "last_updated": "2026-08-04 19:26:50",
+  "total_active_seconds": 40675,
+  "total_active_formatted": "11h 17m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 38325,
+      "formatted": "10h 38m"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 1980,
+      "formatted": "33m 0s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 245,
+      "formatted": "4m 5s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 55,
+      "formatted": "55s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "ShellExperienceHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "StartMenuExperienceHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

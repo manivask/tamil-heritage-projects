@@ -1,0 +1,18 @@
+{
+  "date": "2026-08-03",
+  "last_updated": "2026-08-03 18:21:21",
+  "total_active_seconds": 2055,
+  "total_active_formatted": "34m 15s",
+  "activities": [
+    {
+      "app": "chrome.exe",
+      "seconds": 2035,
+      "formatted": "33m 55s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    }
+  ]
+}

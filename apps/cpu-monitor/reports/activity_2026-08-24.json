@@ -1,0 +1,118 @@
+{
+  "date": "2026-08-24",
+  "last_updated": "2026-08-24 22:57:11",
+  "total_active_seconds": 21015,
+  "total_active_formatted": "5h 50m",
+  "activities": [
+    {
+      "app": "sqldeveloper64W.exe",
+      "seconds": 4005,
+      "formatted": "1h 6m"
+    },
+    {
+      "app": "horizon-client.exe",
+      "seconds": 3955,
+      "formatted": "1h 5m"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 2360,
+      "formatted": "39m 20s"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 2140,
+      "formatted": "35m 40s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 1850,
+      "formatted": "30m 50s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1645,
+      "formatted": "27m 25s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 1465,
+      "formatted": "24m 25s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 1275,
+      "formatted": "21m 15s"
+    },
+    {
+      "app": "msiexec.exe",
+      "seconds": 1195,
+      "formatted": "19m 55s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 360,
+      "formatted": "6m 0s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 275,
+      "formatted": "4m 35s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 255,
+      "formatted": "4m 15s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 125,
+      "formatted": "2m 5s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "ShellExperienceHost.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "ApplicationFrameHost.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "setup.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "VC_redist.x64.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "OpenWith.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "putty.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

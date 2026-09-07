@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-27",
+  "last_updated": "2026-08-27 22:25:03",
+  "total_active_seconds": 42170,
+  "total_active_formatted": "11h 42m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 32290,
+      "formatted": "8h 58m"
+    },
+    {
+      "app": "Code.exe",
+      "seconds": 3405,
+      "formatted": "56m 45s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 1825,
+      "formatted": "30m 25s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 1385,
+      "formatted": "23m 5s"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1305,
+      "formatted": "21m 45s"
+    },
+    {
+      "app": "studio64.exe",
+      "seconds": 585,
+      "formatted": "9m 45s"
+    },
+    {
+      "app": "Zoom.exe",
+      "seconds": 415,
+      "formatted": "6m 55s"
+    },
+    {
+      "app": "ShellExperienceHost.exe",
+      "seconds": 275,
+      "formatted": "4m 35s"
+    },
+    {
+      "app": "Antigravity IDE.exe",
+      "seconds": 190,
+      "formatted": "3m 10s"
+    },
+    {
+      "app": "WhatsApp.Root.exe",
+      "seconds": 180,
+      "formatted": "3m 0s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 135,
+      "formatted": "2m 15s"
+    },
+    {
+      "app": "ONENOTE.EXE",
+      "seconds": 75,
+      "formatted": "1m 15s"
+    },
+    {
+      "app": "mscopilot.exe",
+      "seconds": 35,
+      "formatted": "35s"
+    },
+    {
+      "app": "android-studio-quail3-patch1-windows.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 15,
+      "formatted": "15s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "Notepad.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "PickerHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

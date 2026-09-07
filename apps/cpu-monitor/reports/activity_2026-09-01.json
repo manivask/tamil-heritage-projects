@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-01",
+  "last_updated": "2026-09-01 22:11:25",
+  "total_active_seconds": 46385,
+  "total_active_formatted": "12h 53m",
+  "activities": [
+    {
+      "app": "horizon-client.exe",
+      "seconds": 44275,
+      "formatted": "12h 17m"
+    },
+    {
+      "app": "chrome.exe",
+      "seconds": 1470,
+      "formatted": "24m 30s"
+    },
+    {
+      "app": "explorer.exe",
+      "seconds": 265,
+      "formatted": "4m 25s"
+    },
+    {
+      "app": "msedge.exe",
+      "seconds": 230,
+      "formatted": "3m 50s"
+    },
+    {
+      "app": "ms-teams.exe",
+      "seconds": 65,
+      "formatted": "1m 5s"
+    },
+    {
+      "app": "Zoom.exe",
+      "seconds": 25,
+      "formatted": "25s"
+    },
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "ShellHost.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "LockApp.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "msiexec.exe",
+      "seconds": 10,
+      "formatted": "10s"
+    },
+    {
+      "app": "SearchHost.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "Idle/Unknown",
+      "seconds": 5,
+      "formatted": "5s"
+    },
+    {
+      "app": "python.exe",
+      "seconds": 5,
+      "formatted": "5s"
+    }
+  ]
+}

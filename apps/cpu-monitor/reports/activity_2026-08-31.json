@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-31",
+  "last_updated": "2026-08-31 08:55:11",
+  "total_active_seconds": 20,
+  "total_active_formatted": "20s",
+  "activities": [
+    {
+      "app": "WindowsTerminal.exe",
+      "seconds": 20,
+      "formatted": "20s"
+    }
+  ]
+}
